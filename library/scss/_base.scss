@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Ed Hardy
+Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -19,7 +19,7 @@ body {
 	font-family: $serif;
 	font-size: 100%;
 	line-height: 1.5;
-	color: #565656;
+	color: #FFFFFF;
 }
 
 /********************
@@ -167,7 +167,7 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
+	border: 0px;
 	border-bottom: 0;
 
 	li {
@@ -176,7 +176,6 @@ and more scalable.
 			display: block;
 			text-decoration: none;
 			padding: 10px 10px;
-			background-color: #eee;
 			border-bottom: 1px solid #ccc;
 
 			/*

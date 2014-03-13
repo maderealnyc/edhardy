@@ -27,8 +27,34 @@
 		<?php // or, set /favicon.ico for IE10 win ?>
 		<meta name="msapplication-TileColor" content="#f01d4f">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
-
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+	    <script type="text/javascript">
+	      // debounce utility from underscorejs.org
+	      var debounce = function(func, wait, immediate) {
+	        var timeout;
+	        return function() {
+	          var context = this, args = arguments;
+	          var later = function() {
+	            timeout = null;
+	            if (!immediate) func.apply(context, args);
+	          };
+	          if (immediate && !timeout) func.apply(context, args);
+	          clearTimeout(timeout);
+	          timeout = setTimeout(later, wait);
+	        };
+	      };
+	    </script>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    	    <script src="/wp-content/themes/edhardy/library/js/tiles.js"></script>
+	    <script type="text/javascript">
+	        // fallback to version hosted on thinkpixellab.com if local version doesn't exist
+	        if (typeof Tiles == 'undefined') {
+	            var url = 'http://thinkpixellab.com/tilesjs/tiles.js';
+	            document.write('<' + 'script src="' + url + '"></' + 'script' + '>');
+	        }
+	    </script>
 
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
