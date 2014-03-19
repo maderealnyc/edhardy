@@ -1726,18 +1726,19 @@ you can add resource intensive styles.
 
   /* line 247, ../scss/_768up.scss */
   #american-art-legend {
+    background-color: #f3f3f3;
     background: url(../images/home/ed-hardy-profile.png) no-repeat bottom right, url(../images/home/home-bg-3.jpg) no-repeat;
     width: 100%;
     min-height: 590px;
   }
-  /* line 252, ../scss/_768up.scss */
+  /* line 253, ../scss/_768up.scss */
   #american-art-legend h2 {
     background: url(../images/home/hdr-art-legend.png) no-repeat;
     margin: 30px 0 0 9px;
     width: 398px;
     height: 252px;
   }
-  /* line 259, ../scss/_768up.scss */
+  /* line 260, ../scss/_768up.scss */
   #american-art-legend p {
     color: #323232;
     font-size: 1.125em;
@@ -1749,28 +1750,28 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 272, ../scss/_768up.scss */
+  /* line 273, ../scss/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 276, ../scss/_768up.scss */
+  /* line 277, ../scss/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 281, ../scss/_768up.scss */
+  /* line 282, ../scss/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 286, ../scss/_768up.scss */
+  /* line 287, ../scss/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 294, ../scss/_768up.scss */
+  /* line 295, ../scss/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -1795,7 +1796,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 402, ../scss/_768up.scss */
+  /* line 403, ../scss/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.

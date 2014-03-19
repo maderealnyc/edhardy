@@ -27,34 +27,11 @@
 		<?php // or, set /favicon.ico for IE10 win ?>
 		<meta name="msapplication-TileColor" content="#f01d4f">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
+
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
-	    <script type="text/javascript">
-	      // debounce utility from underscorejs.org
-	      var debounce = function(func, wait, immediate) {
-	        var timeout;
-	        return function() {
-	          var context = this, args = arguments;
-	          var later = function() {
-	            timeout = null;
-	            if (!immediate) func.apply(context, args);
-	          };
-	          if (immediate && !timeout) func.apply(context, args);
-	          clearTimeout(timeout);
-	          timeout = setTimeout(later, wait);
-	        };
-	      };
-	    </script>
-	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-	    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
-    	    <script src="/wp-content/themes/edhardy/library/js/tiles.js"></script>
-	    <script type="text/javascript">
-	        // fallback to version hosted on thinkpixellab.com if local version doesn't exist
-	        if (typeof Tiles == 'undefined') {
-	            var url = 'http://thinkpixellab.com/tilesjs/tiles.js';
-	            document.write('<' + 'script src="' + url + '"></' + 'script' + '>');
-	        }
-	    </script>
+
+		<!-- Rockwell Font -->
+		<script type="text/javascript" src="http://fast.fonts.net/jsapi/e46af804-e87a-4682-b3ae-89da7497cf4c.js"></script>
 
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
@@ -74,7 +51,7 @@
 				<div id="inner-header" class="wrap clearfix">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/logo.png" alt=""></a>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>

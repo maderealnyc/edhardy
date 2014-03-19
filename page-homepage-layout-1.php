@@ -6,91 +6,42 @@ Template Name: Homepage Layout 1
 
 <?php get_header(); ?>
 
-			<div id="content">
+	<div id="content">
 
-				<div id="inner-content" class="wrap clearfix">
+		<div id="inner-content" class="wrap clearfix">
 
-						<div id="main" class="eightcol first clearfix" role="main">
+			<div id="main" class="twelvecol first clearfix" role="main">
 
-							<h1>Homepage (Layout 1)</h1>
+				<div class="threecol grid"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/1/home-1.jpg" alt=""></div>
+				<div class="threecol grid"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/1/home-2.jpg" alt=""></div>
+				<div class="threecol grid"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/1/home-3.jpg" alt=""></div>
+				<div class="threecol grid"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/1/home-4.jpg" alt=""></div>
 
-							<style type="text/css">
-							.grid {
-							    width: 1000px;
-							    height: 1000px;
-							    margin: 0px 0px;
-							    border: 0px;
-							    clear: both;
-							}
+				<div class="threecol grid"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/1/home-5.jpg" alt=""></div>
+				<div class="threecol grid"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/1/home-6.jpg" alt=""></div>
+				<div class="threecol grid"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/1/home-7.jpg" alt=""></div>
+				<div class="threecol grid"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/1/home-8.jpg" alt=""></div>
 
-							.grid > div {
-							    background-color: white;
-							    position: absolute;
-							}
+				<div class="threecol grid"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/1/home-9.jpg" alt=""></div>
+				<div class="threecol grid"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/1/home-10.jpg" alt=""></div>
+				<div class="threecol grid"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/1/home-11.jpg" alt=""></div>
+				<div class="threecol grid"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/1/home-12.jpg" alt=""></div>
 
-							.dev-tile-number, .dev-tile-size {
-							    font-size: 36px;
-							    padding: 10px;
-							}
+				<div class="twelvecol grid clearfix"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/home-bg-1.jpg" alt=""></div>
 
-							.dev-tiles-templates ul {
-							    margin-bottom: 10px;
-							}
+				<div class="twelvecol clearfix" id="who-is-ed-hardy">
+					<h2 class="image-replacement">Who Is Ed Hardy?</h2>
+				</div>
 
-							.dev-template {
-							    margin-right: 20px;
-							    height: 35px;
-							    display: inline-block;
-							    background: url(/wp-content/themes/edhardy/library/images/tilesjs/tiles-sprite.png) no-repeat;
-							    cursor: pointer;
-							}
-
-							.dev-template.selected {
-							    background-position-y: -200px;
-							}
-
-							.dev-l1 {
-							    width: 47px;
-							}
-
-							.dev-l2 {
-							    width: 47px;
-							    background-position-x: -68px;
-							}
-
-							.dev-l3 {
-							    width: 39px;
-							    background-position-x: -135px;
-							}
-
-							.dev-l4 {
-							    width: 39px;
-							    background-position-x: -194px;
-							}
-
-							.dev-l5 {
-							    width: 47px;
-							    background-position-x: -245px;
-							    margin-right: 0px;
-							}
-							</style>
-							<script src="/wp-content/themes/edhardy/library/js/homepage-layout1-tiles.js"></script>
-							<div id="homepage-layout1-templates" class="dev-tiles-templates">
-							    <ul>
-							        <li id="homepage-layout1-t1" class="dev-l1 selected dev-template"></li>
-							        <li class="dev-l2 dev-template"></li>
-							        <li class="dev-l3 dev-template"></li>
-							        <li class="dev-l4 dev-template"></li>
-							        <li class="dev-l5 dev-template"></li>
-							    </ul>
-							</div>
-							<br style="clear:both;"/>
-							<div id="homepage-layout1-grid" class="grid"></div>
-
-						</div>
-
+				<div class="twelvecol clearfix" id="american-art-legend">
+					<h2 class="image-replacement">An American Art Legend</h2>
+					<p>Don Ed Hardy brought tattoo artistry out of the dark and into the glamorous world of fashion. He quickly became recognized for his incorporation of the Japanese art form and American style. In 2002, Hardy stepped into the fashion space when he licensed his art designs to be made into a clothing line. In two short years the Ed Hardy line became one of the most desired and recognizable brands of its time. Don Ed Hardy continues to be one of the most influential designers and his artwork has stood the test of time in the tattoo, art, and fashion world.</p>
 				</div>
 
 			</div>
+
+		</div>
+
+	</div>
 
 <?php get_footer(); ?>
