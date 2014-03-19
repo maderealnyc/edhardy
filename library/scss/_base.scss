@@ -16,7 +16,8 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $serif;
+	background: #000;
+	font-family: $rw;
 	font-size: 100%;
 	line-height: 1.5;
 	color: #FFFFFF;
@@ -68,7 +69,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -105,7 +106,7 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: $sans-serif;
+	font-family: $rw;
 	text-rendering: optimizelegibility;
 	font-weight: 500;
 	/*
@@ -241,9 +242,9 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 
-#content {
+/* #content {
 	margin-top: 2.2em;
-}
+} */
 
 		.hentry {
 
@@ -433,7 +434,7 @@ PAGE NAVI STYLES
                 	font-weight: bold;
                 }
                 a:hover, a:focus {
-                    
+
                 }
             }
         }
