@@ -42,6 +42,8 @@ Template Name: Homepage Layout 1
 
 		</div>
 
+		<?php include('homepage-variables-controller.php'); ?>
+
 	</div>
 
 <?php get_footer(); ?>
