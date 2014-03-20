@@ -4,7 +4,55 @@
 <?php // Demo Mode Enabled? ?>
 <?php $demo_mode_enabled = true; ?>
 
-<?php // ///// Homepage Layout 1 ///////////////////////////////////////////////////////////////////////////// ?>
+<?php /////// Instagram Feed Testing ///////////////////////////////////////////////////////////////////////////// ?>
+
+<h3>Instagram Feed Testing</h3>
+<!--
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'OfficialEdHardy',
+        clientId: 'b8bbb9934df3402781645208fcfcdcca'
+    });
+    feed.run();
+</script>
+-->
+<script type="text/javascript">
+    var intagramTile2 = new Instafeed({
+        get: 'user',
+        userId: 50320184,
+        accessToken: '50320184.467ede5.a99c8bbf270145c9ad8c2414e8e20bad',
+        target: 'intagram_tile_2',
+        sortBy: 'most-recent',
+        resolution: 'low_resolution',
+        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" width="300" height="300"/></a>',
+        limit: 1
+    });
+    intagramTile2.run();
+</script>
+<div id="intagram_tile_2"></div>
+
+<script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: 50320184,
+        accessToken: '50320184.467ede5.a99c8bbf270145c9ad8c2414e8e20bad',
+        target: 'instafeed',
+        sortBy: 'most-recent',
+        resolution: 'low_resolution',
+        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" width="300" height="300"/></a>',
+        limit: 4
+    });
+    userFeed.run();
+
+    instagram_images = new array();
+	instagram_images.push(userFeed[0]);
+	document.write("instagram_images[0]" + instagram_images[0].name);
+
+</script>
+<div id="instafeed"></div>
+
+<?php /////// Homepage Layout 1 ///////////////////////////////////////////////////////////////////////////// ?>
 
 <?php if( $page_template_slug == 'page-homepage-layout-1.php' ): ?>
 
@@ -116,7 +164,7 @@
 
 <?php endif; ?>
 
-<?php // ///// Homepage Layout 2 ///////////////////////////////////////////////////////////////////////////// ?>
+<?php /////// Homepage Layout 2 ///////////////////////////////////////////////////////////////////////////// ?>
 
 <?php if( $page_template_slug == 'page-homepage-layout-2.php' ): ?>
 
@@ -203,7 +251,7 @@
 
 <?php endif; ?>
 
-<?php // ///// Homepage Layout 3 ///////////////////////////////////////////////////////////////////////////// ?>
+<?php /////// Homepage Layout 3 ///////////////////////////////////////////////////////////////////////////// ?>
 
 <?php if( $page_template_slug == 'page-homepage-layout-3.php' ): ?>
 
