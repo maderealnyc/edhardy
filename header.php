@@ -54,7 +54,7 @@
 				<div id="inner-header" class="wrap clearfix">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/logo.png" alt=""></a>
+					<a id="logo" class="image-replacement" href="<?php echo home_url(); ?>" rel="nofollow">Ed Hardy</a>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>

@@ -150,7 +150,7 @@ NAVIGATION STYLES
 	}
 	li.nav-newsletter {
 		padding: 9px;
-		background: url(../images/separator-newsletter.png) no-repeat 0 0, url(../images/separator-newsletter.png) no-repeat 100% 0;
+		background: url(../images/separator-newsletter.png) no-repeat 0 0;
 	}
 	li.nav-newsletter a {
 		background: url(../images/arrow-newsletter.png) no-repeat 100% 50%;
@@ -164,6 +164,9 @@ NAVIGATION STYLES
 			display: block;
 			font-size: 11px;
 		}
+	}
+	li.nav-facebook {
+		background: url(../images/separator-newsletter.png) no-repeat 0 0;
 	}
 	li.nav-facebook a,
 	li.nav-twitter a,
@@ -221,50 +224,6 @@ NAVIGATION STYLES
 	}  /* end current highlighters */
 
 } /* end .nav */
-
-/*********************
-CONTENT STYLES
-*********************/
-
-.grid {
-	line-height: 0;
-}
-
-#who-is-ed-hardy {
-	background: url(../images/home/home-bg-2.jpg) no-repeat;
-	width: 100%;
-	min-height: 600px;
-
-	h2 {
-		background: url(../images/home/hdr-who-is.png) no-repeat;
-		width: 419px;
-		height: 114px;
-		margin: 186px auto 0;
-		text-align: center;
-	}
-}
-
-#american-art-legend {
-	background-color: #f3f3f3;
-	background: url(../images/home/ed-hardy-profile.png) no-repeat bottom right, url(../images/home/home-bg-3.jpg) no-repeat;
-	width: 100%;
-	min-height: 590px;
-
-	h2 {
-		background: url(../images/home/hdr-art-legend.png) no-repeat;
-		margin: 30px 0 0 9px;
-		width: 398px;
-		height: 252px;
-	}
-
-	p {
-		color: #323232;
-		font-size: 1.125em;
-		line-height: 1.875;
-    	margin: 35px 0 0 35px;
-   		width: 55%;
-	}
-}
 
 /*********************
 SIDEBARS & ASIDES

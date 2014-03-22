@@ -32,12 +32,25 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 @import "base";
 
 /*
+BASE (MOBILE) SIZE -- LANDSCAPE
+*/
+@media only screen and (min-width : 320px) and (max-width : 480px) and (orientation : landscape) {
+
+	// styles in base_landscape.scss
+	@import "base480";
+
+} // end of media query
+
+/*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
 tweeners.
 */
 @media only screen and (min-width: 481px) {
+
+	// import grids
+	@import "grid";
 
 	// styles in 481up.scss
 	@import "481up";
@@ -104,9 +117,9 @@ iPHONE 5 MEDIA QUERY
 Want to get fancy for no good reason? Knock yourself out.
 */
 @media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  
+
   // iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
-  
+
 }
 
 /*

@@ -23,6 +23,11 @@ body {
 	color: #FFFFFF;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -153,7 +158,21 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	#inner-header {
+		padding: 14px 0 0;
+	}
+
+	#logo {
+		background: url(../images/sprite-logo.png) no-repeat;
+		display: block;
+		width: 171px;
+		height: 34px;
+		margin-left: 10px;
+
+		&:hover {
+			background-position: 0 -34px;
+		}
+	}
 
 /*********************
 NAVIGATION STYLES
@@ -396,6 +415,57 @@ POSTS & CONTENT STYLES
 		.size-large {}
 		.size-medium {}
 		.size-thumbnail {}
+
+.grid {
+
+	img {
+		float: left;
+		width: 100%;
+	}
+}
+
+#who-is-ed-hardy {
+	background: url(../images/home/home-bg-2.jpg) no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+	position: relative;
+
+	h2 {
+		background: url(../images/home/hdr-who-is.png) no-repeat;
+		background-size: 100%;
+		height: 0;
+	    margin: 11.5% auto 0;
+	    padding-top: 27.2%;
+	    text-align: center;
+	    width: 95%;
+	    max-width: 419px;
+	}
+}
+
+#american-art-legend {
+	background-color: #f3f3f3;
+	background: url(../images/home/home-bg-3.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+	position: relative;
+
+	h2 {
+		background: url(../images/home/hdr-art-legend.png) no-repeat;
+		background-size: contain;
+		height: 0;
+		margin: 2.5% 0.75% 0;
+	    padding-top: 63%;
+	    // width: 100%;
+	    max-width: 398px;
+	}
+
+	p {
+		color: #323232;
+    	margin: 2% 2.7%;
+	}
+}
 
 /******************************************************************
 PAGE NAVI STYLES
