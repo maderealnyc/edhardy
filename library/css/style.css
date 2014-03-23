@@ -523,6 +523,29 @@ TOOLS
   overflow: hidden;
 }
 
+/* line 48, ../scss/_mixins.scss */
+.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+  -webkit-transition: all .6s ease;
+  /* Fade to color for Chrome and Safari */
+  transition: all 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  /* Fix for transition flickering */
+  backface-visibility: hidden;
+  /* Fix for transition flickering */
+}
+
+/* line 58, ../scss/_mixins.scss */
+.grayscale:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+
 /*********************
 COLORS
 Need help w/ choosing your colors? Try this site out:
@@ -558,53 +581,53 @@ TYPOGRAPHY
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-/* line 110, ../scss/_mixins.scss */
+/* line 125, ../scss/_mixins.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
 }
 
-/* line 116, ../scss/_mixins.scss */
+/* line 131, ../scss/_mixins.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 117, ../scss/_mixins.scss */
+/* line 132, ../scss/_mixins.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 118, ../scss/_mixins.scss */
+/* line 133, ../scss/_mixins.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 122, ../scss/_mixins.scss */
+/* line 137, ../scss/_mixins.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
 }
 
-/* line 128, ../scss/_mixins.scss */
+/* line 143, ../scss/_mixins.scss */
 .alert-help {
   border-color: #e8dc59;
   background: #ebe16f;
 }
 
-/* line 134, ../scss/_mixins.scss */
+/* line 149, ../scss/_mixins.scss */
 .alert-info {
   border-color: #bfe4f4;
   background: #d5edf8;
 }
 
-/* line 140, ../scss/_mixins.scss */
+/* line 155, ../scss/_mixins.scss */
 .alert-error {
   border-color: #f8cdce;
   background: #fbe3e4;
 }
 
-/* line 146, ../scss/_mixins.scss */
+/* line 161, ../scss/_mixins.scss */
 .alert-success {
   border-color: #deeaae;
   background: #e6efc2;
@@ -634,7 +657,7 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 208, ../scss/_mixins.scss */
+/* line 223, ../scss/_mixins.scss */
 .button, .button:visited {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #dedede;
@@ -658,7 +681,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, white, #f2f2f2);
   background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
 }
-/* line 227, ../scss/_mixins.scss */
+/* line 242, ../scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
   color: white;
   border: 1px solid #dedede;
@@ -671,7 +694,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
   background-image: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
 }
-/* line 235, ../scss/_mixins.scss */
+/* line 250, ../scss/_mixins.scss */
 .button:active, .button:visited:active {
   background-color: white;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(white));
@@ -681,7 +704,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #f2f2f2, #ffffff);
 }
 
-/* line 240, ../scss/_mixins.scss */
+/* line 255, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -693,7 +716,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
-/* line 246, ../scss/_mixins.scss */
+/* line 261, ../scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background-color: #1472ad;
@@ -703,7 +726,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1784c9, #1472ad);
   background-image: linear-gradient(to bottom, #1784c9, #1472ad);
 }
-/* line 250, ../scss/_mixins.scss */
+/* line 265, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background-color: #1990db;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
@@ -1029,7 +1052,79 @@ POSTS & CONTENT STYLES
   width: 100%;
 }
 
-/* line 427, ../scss/_base.scss */
+/* line 428, ../scss/_base.scss */
+#twitter_feed_tile,
+#follow_us_tile {
+  background-size: contain;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+/* line 436, ../scss/_base.scss */
+#follow_us_tile h2 {
+  font-family: "Rockwell W01 Light";
+  font-size: 2.812em;
+  margin: 28% auto 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 444, ../scss/_base.scss */
+#follow_us_tile ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 256px;
+}
+/* line 450, ../scss/_base.scss */
+#follow_us_tile ul li {
+  float: left;
+  margin-right: 12px;
+}
+/* line 454, ../scss/_base.scss */
+#follow_us_tile ul li a {
+  background: url(../images/home/sprite-follow-us.png) no-repeat;
+  display: block;
+  width: 55px;
+  height: 60px;
+}
+/* line 462, ../scss/_base.scss */
+#follow_us_tile ul li.facebook a {
+  background-position: 0 0;
+}
+/* line 465, ../scss/_base.scss */
+#follow_us_tile ul li.facebook a:hover {
+  background-position: 0 -60px;
+}
+/* line 470, ../scss/_base.scss */
+#follow_us_tile ul li.twitter a {
+  background-position: -67px 0;
+}
+/* line 473, ../scss/_base.scss */
+#follow_us_tile ul li.twitter a:hover {
+  background-position: -67px -60px;
+}
+/* line 478, ../scss/_base.scss */
+#follow_us_tile ul li.instagram a {
+  background-position: -134px 0;
+}
+/* line 481, ../scss/_base.scss */
+#follow_us_tile ul li.instagram a:hover {
+  background-position: -134px -60px;
+}
+/* line 486, ../scss/_base.scss */
+#follow_us_tile ul li.pinterest {
+  margin-right: 0;
+}
+/* line 490, ../scss/_base.scss */
+#follow_us_tile ul li.pinterest a {
+  background-position: -200px 0;
+}
+/* line 493, ../scss/_base.scss */
+#follow_us_tile ul li.pinterest a:hover {
+  background-position: -200px -60px;
+}
+
+/* line 504, ../scss/_base.scss */
 #who-is-ed-hardy {
   background: url(../images/home/home-bg-2.jpg) no-repeat;
   background-size: 100%;
@@ -1038,7 +1133,7 @@ POSTS & CONTENT STYLES
   padding-bottom: 50%;
   position: relative;
 }
-/* line 435, ../scss/_base.scss */
+/* line 512, ../scss/_base.scss */
 #who-is-ed-hardy h2 {
   background: url(../images/home/hdr-who-is.png) no-repeat;
   background-size: 100%;
@@ -1050,7 +1145,7 @@ POSTS & CONTENT STYLES
   max-width: 419px;
 }
 
-/* line 447, ../scss/_base.scss */
+/* line 524, ../scss/_base.scss */
 #american-art-legend {
   background-color: #f3f3f3;
   background: url(../images/home/home-bg-3.jpg) no-repeat center center;
@@ -1058,7 +1153,7 @@ POSTS & CONTENT STYLES
   width: 100%;
   position: relative;
 }
-/* line 454, ../scss/_base.scss */
+/* line 531, ../scss/_base.scss */
 #american-art-legend h2 {
   background: url(../images/home/hdr-art-legend.png) no-repeat;
   background-size: contain;
@@ -1067,7 +1162,7 @@ POSTS & CONTENT STYLES
   padding-top: 63%;
   max-width: 398px;
 }
-/* line 464, ../scss/_base.scss */
+/* line 541, ../scss/_base.scss */
 #american-art-legend p {
   color: #323232;
   margin: 2% 2.7%;
@@ -1076,17 +1171,17 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 475, ../scss/_base.scss */
+/* line 552, ../scss/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 
-/* line 478, ../scss/_base.scss */
+/* line 555, ../scss/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 480, ../scss/_base.scss */
+/* line 557, ../scss/_base.scss */
 .pagination ul {
   display: inline-block;
   white-space: nowrap;
@@ -1094,7 +1189,7 @@ PAGE NAVI STYLES
   clear: both;
   margin: 1px;
 }
-/* line 486, ../scss/_base.scss */
+/* line 563, ../scss/_base.scss */
 .pagination ul li {
   padding: 0;
   margin: 0;
@@ -1102,7 +1197,7 @@ PAGE NAVI STYLES
   display: inline;
   overflow: hidden;
 }
-/* line 492, ../scss/_base.scss */
+/* line 569, ../scss/_base.scss */
 .pagination ul li a, .pagination ul li span {
   margin: 0;
   text-decoration: none;
@@ -1114,18 +1209,18 @@ PAGE NAVI STYLES
   min-width: 1em;
   display: block;
 }
-/* line 503, ../scss/_base.scss */
+/* line 580, ../scss/_base.scss */
 .pagination ul li span.current {
   font-weight: bold;
 }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 518, ../scss/_base.scss */
+/* line 595, ../scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 522, ../scss/_base.scss */
+/* line 599, ../scss/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1135,12 +1230,12 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 533, ../scss/_base.scss */
+/* line 610, ../scss/_base.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 550, ../scss/_base.scss */
+/* line 627, ../scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1151,7 +1246,7 @@ COMMENT STYLES
   /* comment reply link */
   /* end .commentlist .comment-reply-link */
 }
-/* line 552, ../scss/_base.scss */
+/* line 629, ../scss/_base.scss */
 .commentlist li {
   position: relative;
   clear: both;
@@ -1161,63 +1256,63 @@ COMMENT STYLES
   padding: 0.7335em 10px;
   /* end .commentlist li ul.children */
 }
-/* line 560, ../scss/_base.scss */
+/* line 637, ../scss/_base.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 564, ../scss/_base.scss */
+/* line 641, ../scss/_base.scss */
 .commentlist li ul.children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 582, ../scss/_base.scss */
+/* line 659, ../scss/_base.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 586, ../scss/_base.scss */
+/* line 663, ../scss/_base.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 591, ../scss/_base.scss */
+/* line 668, ../scss/_base.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 605, ../scss/_base.scss */
+/* line 682, ../scss/_base.scss */
 .commentlist .odd {
   background: #eee;
 }
-/* line 608, ../scss/_base.scss */
+/* line 685, ../scss/_base.scss */
 .commentlist .even {
   background: #fefefe;
 }
-/* line 623, ../scss/_base.scss */
+/* line 700, ../scss/_base.scss */
 .commentlist .vcard {
   margin-left: 50px;
 }
-/* line 626, ../scss/_base.scss */
+/* line 703, ../scss/_base.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 634, ../scss/_base.scss */
+/* line 711, ../scss/_base.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 637, ../scss/_base.scss */
+/* line 714, ../scss/_base.scss */
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
-/* line 641, ../scss/_base.scss */
+/* line 718, ../scss/_base.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 651, ../scss/_base.scss */
+/* line 728, ../scss/_base.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -1225,17 +1320,17 @@ COMMENT STYLES
   border: 1px solid #cecece;
   background: #fff;
 }
-/* line 676, ../scss/_base.scss */
+/* line 753, ../scss/_base.scss */
 .commentlist .comment_content {
   margin-left: 50px;
 }
-/* line 679, ../scss/_base.scss */
+/* line 756, ../scss/_base.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 688, ../scss/_base.scss */
+/* line 765, ../scss/_base.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1247,7 +1342,7 @@ COMMENT STYLES
   font-weight: 700;
   font-size: 0.9em;
 }
-/* line 700, ../scss/_base.scss */
+/* line 777, ../scss/_base.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1256,27 +1351,27 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 712, ../scss/_base.scss */
+/* line 789, ../scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
-/* line 716, ../scss/_base.scss */
+/* line 793, ../scss/_base.scss */
 .respond-form form {
   margin: 0.75em 0;
 }
-/* line 719, ../scss/_base.scss */
+/* line 796, ../scss/_base.scss */
 .respond-form form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 725, ../scss/_base.scss */
+/* line 802, ../scss/_base.scss */
 .respond-form form li label,
 .respond-form form li small {
   display: none;
 }
-/* line 733, ../scss/_base.scss */
+/* line 810, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
@@ -1287,14 +1382,14 @@ COMMENT FORM STYLES
   line-height: 1.5em;
   /* form validation */
 }
-/* line 739, ../scss/_base.scss */
+/* line 816, ../scss/_base.scss */
 .respond-form form input[type=text]:focus,
 .respond-form form input[type=email]:focus,
 .respond-form form input[type=url]:focus,
 .respond-form form textarea:focus {
   background: #fff;
 }
-/* line 744, ../scss/_base.scss */
+/* line 821, ../scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1307,14 +1402,14 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 757, ../scss/_base.scss */
+/* line 834, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 762, ../scss/_base.scss */
+/* line 839, ../scss/_base.scss */
 .respond-form form textarea {
   resize: none;
   width: 97.3%;
@@ -1323,7 +1418,7 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-/* line 775, ../scss/_base.scss */
+/* line 852, ../scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -1331,13 +1426,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 788, ../scss/_base.scss */
+/* line 865, ../scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 793, ../scss/_base.scss */
+/* line 870, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1345,7 +1440,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 809, ../scss/_base.scss */
+/* line 886, ../scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
@@ -1353,7 +1448,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 830, ../scss/_base.scss */
+/* line 907, ../scss/_base.scss */
 .footer {
   clear: both;
 }
@@ -1382,7 +1477,13 @@ BASE (MOBILE) SIZE -- LANDSCAPE
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 15, ../scss/_base480.scss */
+  /* line 14, ../scss/_base480.scss */
+  #twitter_feed_tile,
+  #follow_us_tile {
+    padding-bottom: 100%;
+  }
+
+  /* line 20, ../scss/_base480.scss */
   #american-art-legend h2 {
     padding-top: 54%;
   }
@@ -1398,99 +1499,42 @@ tweeners.
   Site Name: Ed Hardy
   Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
   
-  Stylesheet: Grid Stylesheet
-  
-  I've seperated the grid so you can swap it out easily. It's
-  called at the top the style.scss stylesheet.
-  
-  There are a ton of grid solutions out there. You should definitely
-  experiment with your own. Here are some recommendations:
-  
-  http://gridsetapp.com - Love this site. Responsive Grids made easy.
-  http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-  http://gridpak.com/ - Create your own responsive grid.
-  
-  The grid below is a combination of the 1140 grid and Twitter Boostrap.
-  I liked 1140 but Boostrap's grid was way more detailed so I merged them
-  together, let's see how this works out. If you want to use 1140, the original
-  values are commented out on each line.
-  
-  Agustin -- I changed this to use a 1200 grid since design is that way via Gridpak.
+  Stylesheet: Grid Stylesheet -- Tablet
   
   ******************************************************************/
-  /* line 26, ../scss/_grid.scss */
-  .onecol {
-    width: 8.33333333333%;
-  }
-
-  /* line 27, ../scss/_grid.scss */
-  .twocol {
-    width: 16.6666666667%;
-  }
-
-  /* line 28, ../scss/_grid.scss */
+  /* line 9, ../scss/_gridtablet.scss */
   .threecol {
-    width: 25.0%;
-  }
-
-  /* line 29, ../scss/_grid.scss */
-  .fourcol {
-    width: 33.3333333333%;
-  }
-
-  /* line 30, ../scss/_grid.scss */
-  .fivecol {
-    width: 41.6666666667%;
-  }
-
-  /* line 31, ../scss/_grid.scss */
-  .sixcol {
     width: 50.0%;
   }
 
-  /* line 32, ../scss/_grid.scss */
-  .sevencol {
-    width: 58.3333333333%;
+  /* line 10, ../scss/_gridtablet.scss */
+  .sixcol {
+    width: 100%;
   }
 
-  /* line 33, ../scss/_grid.scss */
-  .eightcol {
-    width: 66.6666666667%;
-  }
-
-  /* line 34, ../scss/_grid.scss */
+  /* line 11, ../scss/_gridtablet.scss */
   .ninecol {
-    width: 75.0%;
+    width: 100%;
   }
 
-  /* line 35, ../scss/_grid.scss */
-  .tencol {
-    width: 83.3333333333%;
-  }
-
-  /* line 36, ../scss/_grid.scss */
-  .elevencol {
-    width: 91.6666666667%;
-  }
-
-  /* line 37, ../scss/_grid.scss */
+  /* line 12, ../scss/_gridtablet.scss */
   .twelvecol {
     width: 100%;
   }
 
-  /* line 40, ../scss/_grid.scss */
+  /* line 15, ../scss/_gridtablet.scss */
   .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
     position: relative;
     float: left;
     margin-left: 0;
   }
 
-  /* line 46, ../scss/_grid.scss */
+  /* line 21, ../scss/_gridtablet.scss */
   .first {
     margin-left: 0;
   }
 
-  /* line 50, ../scss/_grid.scss */
+  /* line 25, ../scss/_gridtablet.scss */
   .last {
     float: right;
   }
@@ -1570,6 +1614,12 @@ tweeners.
 
   /* end .entry-content */
   /* line 99, ../scss/_481up.scss */
+  #twitter_feed_tile,
+  #follow_us_tile {
+    padding-bottom: 50%;
+  }
+
+  /* line 104, ../scss/_481up.scss */
   #who-is-ed-hardy h2 {
     background-size: contain;
     margin: 17.5% auto 0;
@@ -1577,18 +1627,18 @@ tweeners.
     width: 100%;
   }
 
-  /* line 107, ../scss/_481up.scss */
+  /* line 112, ../scss/_481up.scss */
   #american-art-legend {
     background: url(../images/home/ed-hardy-profile.png) no-repeat bottom right, url(../images/home/home-bg-3.jpg) no-repeat center center;
     background-size: 42%, cover;
     width: 100%;
     position: relative;
   }
-  /* line 113, ../scss/_481up.scss */
+  /* line 118, ../scss/_481up.scss */
   #american-art-legend h2 {
     padding-top: 24.61%;
   }
-  /* line 117, ../scss/_481up.scss */
+  /* line 122, ../scss/_481up.scss */
   #american-art-legend p {
     width: 55%;
   }
@@ -1613,99 +1663,42 @@ you can add resource intensive styles.
   Site Name: Ed Hardy
   Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
   
-  Stylesheet: Grid Stylesheet
-  
-  I've seperated the grid so you can swap it out easily. It's
-  called at the top the style.scss stylesheet.
-  
-  There are a ton of grid solutions out there. You should definitely
-  experiment with your own. Here are some recommendations:
-  
-  http://gridsetapp.com - Love this site. Responsive Grids made easy.
-  http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-  http://gridpak.com/ - Create your own responsive grid.
-  
-  The grid below is a combination of the 1140 grid and Twitter Boostrap.
-  I liked 1140 but Boostrap's grid was way more detailed so I merged them
-  together, let's see how this works out. If you want to use 1140, the original
-  values are commented out on each line.
-  
-  Agustin -- I changed this to use a 1200 grid since design is that way via Gridpak.
+  Stylesheet: Grid Stylesheet -- Tablet
   
   ******************************************************************/
-  /* line 26, ../scss/_grid.scss */
-  .onecol {
-    width: 8.33333333333%;
-  }
-
-  /* line 27, ../scss/_grid.scss */
-  .twocol {
-    width: 16.6666666667%;
-  }
-
-  /* line 28, ../scss/_grid.scss */
+  /* line 9, ../scss/_gridtablet.scss */
   .threecol {
-    width: 25.0%;
-  }
-
-  /* line 29, ../scss/_grid.scss */
-  .fourcol {
-    width: 33.3333333333%;
-  }
-
-  /* line 30, ../scss/_grid.scss */
-  .fivecol {
-    width: 41.6666666667%;
-  }
-
-  /* line 31, ../scss/_grid.scss */
-  .sixcol {
     width: 50.0%;
   }
 
-  /* line 32, ../scss/_grid.scss */
-  .sevencol {
-    width: 58.3333333333%;
+  /* line 10, ../scss/_gridtablet.scss */
+  .sixcol {
+    width: 100%;
   }
 
-  /* line 33, ../scss/_grid.scss */
-  .eightcol {
-    width: 66.6666666667%;
-  }
-
-  /* line 34, ../scss/_grid.scss */
+  /* line 11, ../scss/_gridtablet.scss */
   .ninecol {
-    width: 75.0%;
+    width: 100%;
   }
 
-  /* line 35, ../scss/_grid.scss */
-  .tencol {
-    width: 83.3333333333%;
-  }
-
-  /* line 36, ../scss/_grid.scss */
-  .elevencol {
-    width: 91.6666666667%;
-  }
-
-  /* line 37, ../scss/_grid.scss */
+  /* line 12, ../scss/_gridtablet.scss */
   .twelvecol {
     width: 100%;
   }
 
-  /* line 40, ../scss/_grid.scss */
+  /* line 15, ../scss/_gridtablet.scss */
   .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
     position: relative;
     float: left;
     margin-left: 0;
   }
 
-  /* line 46, ../scss/_grid.scss */
+  /* line 21, ../scss/_gridtablet.scss */
   .first {
     margin-left: 0;
   }
 
-  /* line 50, ../scss/_grid.scss */
+  /* line 25, ../scss/_gridtablet.scss */
   .last {
     float: right;
   }
@@ -1924,30 +1917,39 @@ you can add resource intensive styles.
 
   /* end .nav */
   /*********************
+  POSTS & CONTENT STYLES
+  *********************/
+  /* line 233, ../scss/_768up.scss */
+  #twitter_feed_tile,
+  #follow_us_tile {
+    padding-bottom: 50%;
+  }
+
+  /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 232, ../scss/_768up.scss */
+  /* line 241, ../scss/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 236, ../scss/_768up.scss */
+  /* line 245, ../scss/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 241, ../scss/_768up.scss */
+  /* line 250, ../scss/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 246, ../scss/_768up.scss */
+  /* line 255, ../scss/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 254, ../scss/_768up.scss */
+  /* line 263, ../scss/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -1972,7 +1974,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 362, ../scss/_768up.scss */
+  /* line 371, ../scss/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
@@ -1983,13 +1985,108 @@ you can add resource intensive styles.
 
   /* end .footer-links */
 }
-/*
-DESKTOP
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
-*/
-@media only screen and (min-width: 1030px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /******************************************************************
+  Site Name: Ed Hardy
+  Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
+  
+  Stylesheet: Grid Stylesheet
+  
+  I've seperated the grid so you can swap it out easily. It's
+  called at the top the style.scss stylesheet.
+  
+  There are a ton of grid solutions out there. You should definitely
+  experiment with your own. Here are some recommendations:
+  
+  http://gridsetapp.com - Love this site. Responsive Grids made easy.
+  http://susy.oddbird.net/ - Grids using Compass. Very elegant.
+  http://gridpak.com/ - Create your own responsive grid.
+  
+  The grid below is a combination of the 1140 grid and Twitter Boostrap.
+  I liked 1140 but Boostrap's grid was way more detailed so I merged them
+  together, let's see how this works out. If you want to use 1140, the original
+  values are commented out on each line.
+  
+  Agustin -- I changed this to use a 1200 grid since design is that way via Gridpak.
+  
+  ******************************************************************/
+  /* line 26, ../scss/_grid.scss */
+  .onecol {
+    width: 8.33333333333%;
+  }
+
+  /* line 27, ../scss/_grid.scss */
+  .twocol {
+    width: 16.6666666667%;
+  }
+
+  /* line 28, ../scss/_grid.scss */
+  .threecol {
+    width: 25.0%;
+  }
+
+  /* line 29, ../scss/_grid.scss */
+  .fourcol {
+    width: 33.3333333333%;
+  }
+
+  /* line 30, ../scss/_grid.scss */
+  .fivecol {
+    width: 41.6666666667%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .sixcol {
+    width: 50.0%;
+  }
+
+  /* line 32, ../scss/_grid.scss */
+  .sevencol {
+    width: 58.3333333333%;
+  }
+
+  /* line 33, ../scss/_grid.scss */
+  .eightcol {
+    width: 66.6666666667%;
+  }
+
+  /* line 34, ../scss/_grid.scss */
+  .ninecol {
+    width: 75.0%;
+  }
+
+  /* line 35, ../scss/_grid.scss */
+  .tencol {
+    width: 83.3333333333%;
+  }
+
+  /* line 36, ../scss/_grid.scss */
+  .elevencol {
+    width: 91.6666666667%;
+  }
+
+  /* line 37, ../scss/_grid.scss */
+  .twelvecol {
+    width: 100%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+    position: relative;
+    float: left;
+    margin-left: 0;
+  }
+
+  /* line 46, ../scss/_grid.scss */
+  .first {
+    margin-left: 0;
+  }
+
+  /* line 50, ../scss/_grid.scss */
+  .last {
+    float: right;
+  }
+
   /******************************************************************
   Site Name: Ed Hardy
   Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
@@ -2004,6 +2101,12 @@ you can add resource intensive styles.
   POSTS & CONTENT STYLES
   *********************/
   /* line 17, ../scss/_1030up.scss */
+  #twitter_feed_tile,
+  #follow_us_tile {
+    padding-bottom: 25%;
+  }
+
+  /* line 22, ../scss/_1030up.scss */
   #who-is-ed-hardy h2 {
     background-size: 100%;
     margin: 15.5% auto 0;
@@ -2011,20 +2114,175 @@ you can add resource intensive styles.
     width: 34.92%;
   }
 
-  /* line 25, ../scss/_1030up.scss */
+  /* line 30, ../scss/_1030up.scss */
   #american-art-legend {
     background-size: 42% 98%, 100% 100%;
     height: 0;
     padding-bottom: 50%;
   }
-  /* line 30, ../scss/_1030up.scss */
+  /* line 35, ../scss/_1030up.scss */
   #american-art-legend h2 {
     background-size: 100%;
     margin: 2.5% 0 0 0.75%;
     padding-top: 21%;
     width: 100%;
   }
-  /* line 37, ../scss/_1030up.scss */
+  /* line 42, ../scss/_1030up.scss */
+  #american-art-legend p {
+    font-size: 1.125em;
+    line-height: 1.875;
+    width: 55%;
+  }
+}
+/*
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 1030px) {
+  /******************************************************************
+  Site Name: Ed Hardy
+  Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
+  
+  Stylesheet: Grid Stylesheet
+  
+  I've seperated the grid so you can swap it out easily. It's
+  called at the top the style.scss stylesheet.
+  
+  There are a ton of grid solutions out there. You should definitely
+  experiment with your own. Here are some recommendations:
+  
+  http://gridsetapp.com - Love this site. Responsive Grids made easy.
+  http://susy.oddbird.net/ - Grids using Compass. Very elegant.
+  http://gridpak.com/ - Create your own responsive grid.
+  
+  The grid below is a combination of the 1140 grid and Twitter Boostrap.
+  I liked 1140 but Boostrap's grid was way more detailed so I merged them
+  together, let's see how this works out. If you want to use 1140, the original
+  values are commented out on each line.
+  
+  Agustin -- I changed this to use a 1200 grid since design is that way via Gridpak.
+  
+  ******************************************************************/
+  /* line 26, ../scss/_grid.scss */
+  .onecol {
+    width: 8.33333333333%;
+  }
+
+  /* line 27, ../scss/_grid.scss */
+  .twocol {
+    width: 16.6666666667%;
+  }
+
+  /* line 28, ../scss/_grid.scss */
+  .threecol {
+    width: 25.0%;
+  }
+
+  /* line 29, ../scss/_grid.scss */
+  .fourcol {
+    width: 33.3333333333%;
+  }
+
+  /* line 30, ../scss/_grid.scss */
+  .fivecol {
+    width: 41.6666666667%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .sixcol {
+    width: 50.0%;
+  }
+
+  /* line 32, ../scss/_grid.scss */
+  .sevencol {
+    width: 58.3333333333%;
+  }
+
+  /* line 33, ../scss/_grid.scss */
+  .eightcol {
+    width: 66.6666666667%;
+  }
+
+  /* line 34, ../scss/_grid.scss */
+  .ninecol {
+    width: 75.0%;
+  }
+
+  /* line 35, ../scss/_grid.scss */
+  .tencol {
+    width: 83.3333333333%;
+  }
+
+  /* line 36, ../scss/_grid.scss */
+  .elevencol {
+    width: 91.6666666667%;
+  }
+
+  /* line 37, ../scss/_grid.scss */
+  .twelvecol {
+    width: 100%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+    position: relative;
+    float: left;
+    margin-left: 0;
+  }
+
+  /* line 46, ../scss/_grid.scss */
+  .first {
+    margin-left: 0;
+  }
+
+  /* line 50, ../scss/_grid.scss */
+  .last {
+    float: right;
+  }
+
+  /******************************************************************
+  Site Name: Ed Hardy
+  Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
+  
+  Stylesheet: Desktop Stylsheet
+  
+  This is the desktop size. It's larger than an iPad so it will only
+  be seen on the Desktop.
+  
+  ******************************************************************/
+  /*********************
+  POSTS & CONTENT STYLES
+  *********************/
+  /* line 17, ../scss/_1030up.scss */
+  #twitter_feed_tile,
+  #follow_us_tile {
+    padding-bottom: 25%;
+  }
+
+  /* line 22, ../scss/_1030up.scss */
+  #who-is-ed-hardy h2 {
+    background-size: 100%;
+    margin: 15.5% auto 0;
+    padding-top: 27.2%;
+    width: 34.92%;
+  }
+
+  /* line 30, ../scss/_1030up.scss */
+  #american-art-legend {
+    background-size: 42% 98%, 100% 100%;
+    height: 0;
+    padding-bottom: 50%;
+  }
+  /* line 35, ../scss/_1030up.scss */
+  #american-art-legend h2 {
+    background-size: 100%;
+    margin: 2.5% 0 0 0.75%;
+    padding-top: 21%;
+    width: 100%;
+  }
+  /* line 42, ../scss/_1030up.scss */
   #american-art-legend p {
     font-size: 1.125em;
     line-height: 1.875;

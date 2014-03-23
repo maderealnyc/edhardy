@@ -424,6 +424,83 @@ POSTS & CONTENT STYLES
 	}
 }
 
+#twitter_feed_tile,
+#follow_us_tile {
+    background-size: contain;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+#follow_us_tile {
+
+	h2 {
+		font-family: $rw-light;
+		font-size: 2.812em;
+		margin: 28% auto 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0 auto;
+		padding: 0;
+		max-width: 256px;
+
+		li {
+			float: left;
+			margin-right: 12px;
+
+			a {
+				background: url(../images/home/sprite-follow-us.png) no-repeat;
+				display: block;
+				width: 55px;
+				height: 60px;
+			}
+		}
+
+		li.facebook a {
+			background-position: 0 0;
+
+			&:hover {
+				background-position: 0 -60px;
+			}
+		}
+
+		li.twitter a {
+			background-position: -67px 0;
+
+			&:hover {
+				background-position: -67px -60px;
+			}
+		}
+
+		li.instagram a {
+			background-position: -134px 0;
+
+			&:hover {
+				background-position: -134px -60px;
+			}
+		}
+
+		li.pinterest {
+			margin-right: 0;
+		}
+
+		li.pinterest a {
+			background-position: -200px 0;
+
+			&:hover {
+				background-position: -200px -60px;
+			}
+		}
+	}
+}
+
+#page-template-page-homepage-layout-2-php #follow_us_tile {
+
+}
+
 #who-is-ed-hardy {
 	background: url(../images/home/home-bg-2.jpg) no-repeat;
     background-size: 100%;

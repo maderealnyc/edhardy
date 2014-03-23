@@ -1,0 +1,27 @@
+/******************************************************************
+Site Name: Ed Hardy
+Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
+
+Stylesheet: Grid Stylesheet -- Tablet
+
+******************************************************************/
+
+.threecol  { width: 50.0%; }
+.sixcol    { width: 100%; }
+.ninecol   { width: 100%; }
+.twelvecol { width: 100%; }
+
+// layout & column defaults
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+  position: relative;
+  float: left;
+  margin-left: 0;
+}
+
+.first {
+  margin-left: 0;
+}
+
+.last {
+  float: right;
+}
