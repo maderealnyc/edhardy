@@ -198,6 +198,8 @@
     instagramTile1.run();
 </script>
 
+<?php if( $page_template_slug == 'page-homepage-layout-1.php' ): ?>
+
 <script type="text/javascript">
     var instagramTile2 = new Instafeed({
         get: 'user',
@@ -248,3 +250,5 @@
     });
     instagramTile4.run();
 </script>
+
+<?php endif; ?>
