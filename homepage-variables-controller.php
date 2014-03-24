@@ -262,3 +262,10 @@
 	<div class="threecol grid clearfix" id="instagram_hp_3_tile_5"></div>
 
 <?php endif; ?>
+
+<?php /////// Image Below Grid (All 3 Homepage layouts) ///////////////////////////////////////////////////////////// ?>
+
+<?php $image_below_grid = get_field('image_below_grid'); ?>
+<?php if( !empty($image_below_grid) ): ?>
+	<div class="twelvecol grid clearfix" id="image_below_grid"><img src="<?php echo $image_below_grid['url']; ?>" alt="<?php echo $image_below_grid['alt']; ?>"/></div>
+<?php endif; ?>
