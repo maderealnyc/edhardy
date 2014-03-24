@@ -36,8 +36,11 @@ BASE (MOBILE) SIZE -- LANDSCAPE
 */
 @media only screen and (min-width : 320px) and (max-width : 480px) and (orientation : landscape) {
 
-	// styles in base_landscape.scss
-	@import "base480";
+	// import grids
+	@import "gridmobiletablet";
+
+	// styles in 480landscape.scss
+	@import "480landscape";
 
 } // end of media query
 
@@ -50,7 +53,7 @@ tweeners.
 @media only screen and (min-width: 481px) {
 
 	// import grids
-	@import "gridtablet";
+	@import "gridmobiletablet";
 
 	// styles in 481up.scss
 	@import "481up";
@@ -66,20 +69,26 @@ you can add resource intensive styles.
 @media only screen and (min-width: 768px) {
 
 	// import grids
-	@import "gridtablet";
+	@import "gridmobiletablet";
 
 	// styles in 768up.scss
 	@import "768up";
 
 } // end of media query
 
-@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+/*
+DESKTOP -- 1024PX LANDSCAPE
+*/
+@media only screen and (min-width : 1024px) and (orientation : landscape) {
 
 	// import grids
 	@import "grid";
 
 	// styles in 768up.scss
-	@import "1030up";
+	@import "768up";
+
+	// styles in 1024landscape.scss
+	@import "1024landscape";
 
 } // end of media query
 

@@ -11,17 +11,17 @@
 	<?php // Homepage Layout 1 Tile 1 (Static Image Tile) ?>
 	<?php $hp1_tile_1_bg_image = get_field('hp1_tile_1_bg_image'); ?>
 	<?php if( $demo_mode_enabled && !empty($hp1_tile_1_bg_image) ): ?>
-		<div class="threecol grid clearfix" id="tile_1"><img class="grayscale" src="<?php echo $hp1_tile_1_bg_image['url']; ?>" alt="<?php echo $hp1_tile_1_bg_image['alt']; ?>" /></div>
+		<div class="threecol grid clearfix hideme" id="tile_1"><img class="grayscale" src="<?php echo $hp1_tile_1_bg_image['url']; ?>" alt="<?php echo $hp1_tile_1_bg_image['alt']; ?>" /></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 2 (Instagram Tile) ?>
 	<?php if( $demo_mode_enabled ): ?>
-		<div class="threecol grid clearfix" id="tile_2"></div>
+		<div class="threecol grid clearfix hideme" id="tile_2"></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 3 (Instagram Tile) ?>
 	<?php if( $demo_mode_enabled ): ?>
-		<div class="threecol grid clearfix" id="tile_3"></div>
+		<div class="threecol grid clearfix hideme" id="tile_3"></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 4 (Latest News Tile) ?>
@@ -38,13 +38,13 @@
 
 	<?php // Homepage Layout 1 Tile 6 (Instagram Tile) ?>
 	<?php if( $demo_mode_enabled ): ?>
-		<div class="threecol grid clearfix" id="tile_6"></div>
+		<div class="threecol grid clearfix hideme" id="tile_6"></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 7 (Static Image Tile) ?>
 	<?php $hp1_tile_7_bg_image = get_field('hp1_tile_7_bg_image'); ?>
 	<?php if( $demo_mode_enabled && !empty($hp1_tile_7_bg_image) ): ?>
-		<div class="threecol grid clearfix" id="tile_7"><img class="grayscale" src="<?php echo $hp1_tile_7_bg_image['url']; ?>" alt="<?php echo $hp1_tile_7_bg_image['alt']; ?>" /></div>
+		<div class="threecol grid clearfix hideme" id="tile_7"><img class="grayscale" src="<?php echo $hp1_tile_7_bg_image['url']; ?>" alt="<?php echo $hp1_tile_7_bg_image['alt']; ?>" /></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 8 (Twitter Feed Tile) ?>
@@ -62,7 +62,7 @@
 	<?php // Homepage Layout 1 Tile 10 (Static Image Tile) ?>
 	<?php $hp1_tile_10_bg_image = get_field('hp1_tile_10_bg_image'); ?>
 	<?php if( $demo_mode_enabled && !empty($hp1_tile_10_bg_image) ): ?>
-		<div class="threecol grid clearfix" id="tile_10"><img class="grayscale" src="<?php echo $hp1_tile_10_bg_image['url']; ?>" alt="<?php echo $hp1_tile_10_bg_image['alt']; ?>" /></div>
+		<div class="threecol grid clearfix hideme" id="tile_10"><img class="grayscale" src="<?php echo $hp1_tile_10_bg_image['url']; ?>" alt="<?php echo $hp1_tile_10_bg_image['alt']; ?>" /></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 11 (Follow Us Tile) ?>

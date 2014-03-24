@@ -16,7 +16,7 @@ Template Name: Homepage Layout 1
 
 				<div class="twelvecol grid clearfix"><img src="<?php echo get_stylesheet_directory_uri() ?>/library/images/home/home-bg-1.jpg" alt=""></div>
 
-				<div class="twelvecol clearfix" id="who-is-ed-hardy">
+				<div class="twelvecol clearfix" id="about">
 					<h2 class="image-replacement">Who Is Ed Hardy?</h2>
 				</div>
 

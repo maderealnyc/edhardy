@@ -34,7 +34,7 @@
 		<script type="text/javascript" src="http://fast.fonts.net/jsapi/e46af804-e87a-4682-b3ae-89da7497cf4c.js"></script>
 
 		<!-- Instagram Feed -->
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/library/js/libs/instafeed.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/library/js/libs/instafeed.min.js"></script>
 
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>

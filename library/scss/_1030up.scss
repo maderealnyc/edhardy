@@ -10,6 +10,14 @@ be seen on the Desktop.
 ******************************************************************/
 
 /*********************
+GENERAL STYLES
+*********************/
+
+.hideme {
+	display: block;
+}
+
+/*********************
 POSTS & CONTENT STYLES
 *********************/
 
@@ -18,7 +26,7 @@ POSTS & CONTENT STYLES
     padding-bottom: 25%;
 }
 
-#who-is-ed-hardy {
+#about {
 	h2 {
 		background-size: 100%;
 	    margin: 15.5% auto 0;

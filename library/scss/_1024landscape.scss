@@ -2,9 +2,17 @@
 Site Name: Ed Hardy
 Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
 
-Stylesheet: Base Mobile Stylesheet -- 480px Landscape
+Stylesheet: Base Mobile Stylesheet -- 1024px Landscape
 
 ******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+.hideme {
+	display: block;
+}
 
 /*********************
 POSTS & CONTENT STYLES
@@ -12,12 +20,5 @@ POSTS & CONTENT STYLES
 
 #twitter_feed_tile,
 #follow_us_tile {
-    padding-bottom: 100%;
-}
-
-#american-art-legend {
-
-	h2 {
-	    padding-top: 54%;
-	}
+    padding-bottom: 25%;
 }

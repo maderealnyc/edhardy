@@ -28,6 +28,10 @@ img {
 	height: auto;
 }
 
+.hideme {
+	display: none;
+}
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -501,7 +505,7 @@ POSTS & CONTENT STYLES
 
 }
 
-#who-is-ed-hardy {
+#about {
 	background: url(../images/home/home-bg-2.jpg) no-repeat;
     background-size: 100%;
     width: 100%;
