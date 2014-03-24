@@ -1051,90 +1051,99 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
-/* line 425, ../scss/_base.scss */
+/* line 424, ../scss/_base.scss */
 .grid img {
   float: left;
   width: 100%;
 }
 
-/* line 432, ../scss/_base.scss */
-#twitter_feed_tile,
-#follow_us_tile {
+/* line 430, ../scss/_base.scss */
+.gridbg {
   background-size: contain;
   height: 0;
   padding-bottom: 100%;
 }
-
-/* line 440, ../scss/_base.scss */
-#follow_us_tile h2 {
+/* line 435, ../scss/_base.scss */
+.gridbg a {
+  text-decoration: none;
+}
+/* line 439, ../scss/_base.scss */
+.gridbg h2 {
   font-family: "Rockwell W01 Light";
   font-size: 2.812em;
-  margin: 28% auto 0;
+  line-height: 1em;
+  margin: 35% auto 0;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 448, ../scss/_base.scss */
+/* line 447, ../scss/_base.scss */
+.gridbg h2 strong {
+  display: block;
+  font-family: "Rockwell W01 Bold";
+}
+
+/* line 456, ../scss/_base.scss */
 #follow_us_tile ul {
   list-style: none;
   margin: 0 auto;
   padding: 0;
   max-width: 256px;
 }
-/* line 454, ../scss/_base.scss */
+/* line 462, ../scss/_base.scss */
 #follow_us_tile ul li {
   float: left;
   margin-right: 4.69%;
 }
-/* line 458, ../scss/_base.scss */
+/* line 466, ../scss/_base.scss */
 #follow_us_tile ul li a {
   background: url(../images/home/sprite-follow-us.png) no-repeat;
   display: block;
   width: 55px;
   height: 60px;
 }
-/* line 466, ../scss/_base.scss */
+/* line 474, ../scss/_base.scss */
 #follow_us_tile ul li.facebook a {
   background-position: 0 0;
 }
-/* line 469, ../scss/_base.scss */
+/* line 477, ../scss/_base.scss */
 #follow_us_tile ul li.facebook a:hover {
   background-position: 0 -60px;
 }
-/* line 474, ../scss/_base.scss */
+/* line 482, ../scss/_base.scss */
 #follow_us_tile ul li.twitter a {
   background-position: -67px 0;
 }
-/* line 477, ../scss/_base.scss */
+/* line 485, ../scss/_base.scss */
 #follow_us_tile ul li.twitter a:hover {
   background-position: -67px -60px;
 }
-/* line 482, ../scss/_base.scss */
+/* line 490, ../scss/_base.scss */
 #follow_us_tile ul li.instagram a {
   background-position: -134px 0;
 }
-/* line 485, ../scss/_base.scss */
+/* line 493, ../scss/_base.scss */
 #follow_us_tile ul li.instagram a:hover {
   background-position: -134px -60px;
 }
-/* line 490, ../scss/_base.scss */
+/* line 498, ../scss/_base.scss */
 #follow_us_tile ul li.pinterest {
   margin-right: 0;
 }
-/* line 494, ../scss/_base.scss */
+/* line 502, ../scss/_base.scss */
 #follow_us_tile ul li.pinterest a {
   background-position: -200px 0;
 }
-/* line 497, ../scss/_base.scss */
+/* line 505, ../scss/_base.scss */
 #follow_us_tile ul li.pinterest a:hover {
   background-position: -200px -60px;
 }
 
-/* line 506, ../scss/_base.scss */
+/* line 514, ../scss/_base.scss */
 .page-template-page-homepage-layout-2-php #follow_us_tile h2 {
-  margin: 13% auto 0;
+  margin: 17% auto 0;
 }
 
-/* line 512, ../scss/_base.scss */
+/* line 520, ../scss/_base.scss */
 #about {
   background: url(../images/home/home-bg-2.jpg) no-repeat;
   background-size: 100%;
@@ -1143,7 +1152,7 @@ POSTS & CONTENT STYLES
   padding-bottom: 50%;
   position: relative;
 }
-/* line 520, ../scss/_base.scss */
+/* line 528, ../scss/_base.scss */
 #about h2 {
   background: url(../images/home/hdr-who-is.png) no-repeat;
   background-size: 100%;
@@ -1155,7 +1164,7 @@ POSTS & CONTENT STYLES
   max-width: 419px;
 }
 
-/* line 532, ../scss/_base.scss */
+/* line 540, ../scss/_base.scss */
 #american-art-legend {
   background-color: #f3f3f3;
   background: url(../images/home/home-bg-3.jpg) no-repeat center center;
@@ -1163,7 +1172,7 @@ POSTS & CONTENT STYLES
   width: 100%;
   position: relative;
 }
-/* line 539, ../scss/_base.scss */
+/* line 547, ../scss/_base.scss */
 #american-art-legend h2 {
   background: url(../images/home/hdr-art-legend.png) no-repeat;
   background-size: contain;
@@ -1172,7 +1181,7 @@ POSTS & CONTENT STYLES
   padding-top: 63%;
   max-width: 398px;
 }
-/* line 549, ../scss/_base.scss */
+/* line 557, ../scss/_base.scss */
 #american-art-legend p {
   color: #323232;
   margin: 2% 2.7%;
@@ -1181,17 +1190,17 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 560, ../scss/_base.scss */
+/* line 568, ../scss/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 
-/* line 563, ../scss/_base.scss */
+/* line 571, ../scss/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 565, ../scss/_base.scss */
+/* line 573, ../scss/_base.scss */
 .pagination ul {
   display: inline-block;
   white-space: nowrap;
@@ -1199,7 +1208,7 @@ PAGE NAVI STYLES
   clear: both;
   margin: 1px;
 }
-/* line 571, ../scss/_base.scss */
+/* line 579, ../scss/_base.scss */
 .pagination ul li {
   padding: 0;
   margin: 0;
@@ -1207,7 +1216,7 @@ PAGE NAVI STYLES
   display: inline;
   overflow: hidden;
 }
-/* line 577, ../scss/_base.scss */
+/* line 585, ../scss/_base.scss */
 .pagination ul li a, .pagination ul li span {
   margin: 0;
   text-decoration: none;
@@ -1219,18 +1228,18 @@ PAGE NAVI STYLES
   min-width: 1em;
   display: block;
 }
-/* line 588, ../scss/_base.scss */
+/* line 596, ../scss/_base.scss */
 .pagination ul li span.current {
   font-weight: bold;
 }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 603, ../scss/_base.scss */
+/* line 611, ../scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 607, ../scss/_base.scss */
+/* line 615, ../scss/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1240,12 +1249,12 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 618, ../scss/_base.scss */
+/* line 626, ../scss/_base.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 635, ../scss/_base.scss */
+/* line 643, ../scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1256,7 +1265,7 @@ COMMENT STYLES
   /* comment reply link */
   /* end .commentlist .comment-reply-link */
 }
-/* line 637, ../scss/_base.scss */
+/* line 645, ../scss/_base.scss */
 .commentlist li {
   position: relative;
   clear: both;
@@ -1266,63 +1275,63 @@ COMMENT STYLES
   padding: 0.7335em 10px;
   /* end .commentlist li ul.children */
 }
-/* line 645, ../scss/_base.scss */
+/* line 653, ../scss/_base.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 649, ../scss/_base.scss */
+/* line 657, ../scss/_base.scss */
 .commentlist li ul.children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 667, ../scss/_base.scss */
+/* line 675, ../scss/_base.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 671, ../scss/_base.scss */
+/* line 679, ../scss/_base.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 676, ../scss/_base.scss */
+/* line 684, ../scss/_base.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 690, ../scss/_base.scss */
+/* line 698, ../scss/_base.scss */
 .commentlist .odd {
   background: #eee;
 }
-/* line 693, ../scss/_base.scss */
+/* line 701, ../scss/_base.scss */
 .commentlist .even {
   background: #fefefe;
 }
-/* line 708, ../scss/_base.scss */
+/* line 716, ../scss/_base.scss */
 .commentlist .vcard {
   margin-left: 50px;
 }
-/* line 711, ../scss/_base.scss */
+/* line 719, ../scss/_base.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 719, ../scss/_base.scss */
+/* line 727, ../scss/_base.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 722, ../scss/_base.scss */
+/* line 730, ../scss/_base.scss */
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
-/* line 726, ../scss/_base.scss */
+/* line 734, ../scss/_base.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 736, ../scss/_base.scss */
+/* line 744, ../scss/_base.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -1330,17 +1339,17 @@ COMMENT STYLES
   border: 1px solid #cecece;
   background: #fff;
 }
-/* line 761, ../scss/_base.scss */
+/* line 769, ../scss/_base.scss */
 .commentlist .comment_content {
   margin-left: 50px;
 }
-/* line 764, ../scss/_base.scss */
+/* line 772, ../scss/_base.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 773, ../scss/_base.scss */
+/* line 781, ../scss/_base.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1352,7 +1361,7 @@ COMMENT STYLES
   font-weight: 700;
   font-size: 0.9em;
 }
-/* line 785, ../scss/_base.scss */
+/* line 793, ../scss/_base.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1361,27 +1370,27 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 797, ../scss/_base.scss */
+/* line 805, ../scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
-/* line 801, ../scss/_base.scss */
+/* line 809, ../scss/_base.scss */
 .respond-form form {
   margin: 0.75em 0;
 }
-/* line 804, ../scss/_base.scss */
+/* line 812, ../scss/_base.scss */
 .respond-form form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 810, ../scss/_base.scss */
+/* line 818, ../scss/_base.scss */
 .respond-form form li label,
 .respond-form form li small {
   display: none;
 }
-/* line 818, ../scss/_base.scss */
+/* line 826, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
@@ -1392,14 +1401,14 @@ COMMENT FORM STYLES
   line-height: 1.5em;
   /* form validation */
 }
-/* line 824, ../scss/_base.scss */
+/* line 832, ../scss/_base.scss */
 .respond-form form input[type=text]:focus,
 .respond-form form input[type=email]:focus,
 .respond-form form input[type=url]:focus,
 .respond-form form textarea:focus {
   background: #fff;
 }
-/* line 829, ../scss/_base.scss */
+/* line 837, ../scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1412,14 +1421,14 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 842, ../scss/_base.scss */
+/* line 850, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 847, ../scss/_base.scss */
+/* line 855, ../scss/_base.scss */
 .respond-form form textarea {
   resize: none;
   width: 97.3%;
@@ -1428,7 +1437,7 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-/* line 860, ../scss/_base.scss */
+/* line 868, ../scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -1436,13 +1445,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 873, ../scss/_base.scss */
+/* line 881, ../scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 878, ../scss/_base.scss */
+/* line 886, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1450,7 +1459,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 894, ../scss/_base.scss */
+/* line 902, ../scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
@@ -1458,7 +1467,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 915, ../scss/_base.scss */
+/* line 923, ../scss/_base.scss */
 .footer {
   clear: both;
 }
@@ -1531,16 +1540,15 @@ BASE (MOBILE) SIZE -- LANDSCAPE
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 14, ../scss/_480landscape.scss */
-  #twitter_feed_tile,
-  #follow_us_tile {
+  /* line 13, ../scss/_480landscape.scss */
+  .gridbg {
     padding-bottom: 50%;
   }
-
-  /* line 19, ../scss/_480landscape.scss */
-  #follow_us_tile h2 {
+  /* line 16, ../scss/_480landscape.scss */
+  .gridbg h2 {
     font-size: 2.5em;
   }
+
   /* line 23, ../scss/_480landscape.scss */
   #follow_us_tile ul li {
     margin-right: 2.75%;
@@ -1676,13 +1684,12 @@ tweeners.
   }
 
   /* end .entry-content */
-  /* line 99, ../scss/_481up.scss */
-  #twitter_feed_tile,
-  #follow_us_tile {
+  /* line 98, ../scss/_481up.scss */
+  .gridbg {
     padding-bottom: 50%;
   }
 
-  /* line 104, ../scss/_481up.scss */
+  /* line 103, ../scss/_481up.scss */
   #about h2 {
     background-size: contain;
     margin: 17.5% auto 0;
@@ -1690,18 +1697,18 @@ tweeners.
     width: 100%;
   }
 
-  /* line 112, ../scss/_481up.scss */
+  /* line 111, ../scss/_481up.scss */
   #american-art-legend {
     background: url(../images/home/ed-hardy-profile.png) no-repeat bottom right, url(../images/home/home-bg-3.jpg) no-repeat center center;
     background-size: 42%, cover;
     width: 100%;
     position: relative;
   }
-  /* line 118, ../scss/_481up.scss */
+  /* line 117, ../scss/_481up.scss */
   #american-art-legend h2 {
     padding-top: 24.61%;
   }
-  /* line 122, ../scss/_481up.scss */
+  /* line 121, ../scss/_481up.scss */
   #american-art-legend p {
     width: 55%;
   }
@@ -1982,37 +1989,36 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 233, ../scss/_768up.scss */
-  #twitter_feed_tile,
-  #follow_us_tile {
+  /* line 232, ../scss/_768up.scss */
+  .gridbg {
     padding-bottom: 50%;
   }
 
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 241, ../scss/_768up.scss */
+  /* line 240, ../scss/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 245, ../scss/_768up.scss */
+  /* line 244, ../scss/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 250, ../scss/_768up.scss */
+  /* line 249, ../scss/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 255, ../scss/_768up.scss */
+  /* line 254, ../scss/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 263, ../scss/_768up.scss */
+  /* line 262, ../scss/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -2037,7 +2043,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 371, ../scss/_768up.scss */
+  /* line 370, ../scss/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
@@ -2177,18 +2183,17 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 25, ../scss/_1024up.scss */
-  #twitter_feed_tile,
-  #follow_us_tile {
+  /* line 24, ../scss/_1024up.scss */
+  .gridbg {
     padding-bottom: 25%;
   }
 
-  /* line 31, ../scss/_1024up.scss */
+  /* line 30, ../scss/_1024up.scss */
   .page-template-page-homepage-layout-1-php #follow_us_tile h2 {
     font-size: 2.5em;
   }
 
-  /* line 38, ../scss/_1024up.scss */
+  /* line 37, ../scss/_1024up.scss */
   #about h2 {
     background-size: 100%;
     margin: 15.5% auto 0;
@@ -2196,13 +2201,13 @@ you can add resource intensive styles.
     width: 34.92%;
   }
 
-  /* line 46, ../scss/_1024up.scss */
+  /* line 45, ../scss/_1024up.scss */
   #american-art-legend {
     background-size: 42% 98%, 100% 100%;
     height: 0;
     padding-bottom: 50%;
   }
-  /* line 51, ../scss/_1024up.scss */
+  /* line 50, ../scss/_1024up.scss */
   #american-art-legend h2 {
     padding-top: 21%;
   }
@@ -2222,7 +2227,12 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
-  /* line 13, ../scss/_1240up.scss */
+  /* line 14, ../scss/_1240up.scss */
+  .page-template-page-homepage-layout-1-php #follow_us_tile h2 {
+    font-size: 2.812em;
+  }
+
+  /* line 21, ../scss/_1240up.scss */
   #american-art-legend p {
     font-size: 1.125em;
     line-height: 1.875;

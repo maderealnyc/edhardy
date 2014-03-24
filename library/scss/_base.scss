@@ -421,29 +421,37 @@ POSTS & CONTENT STYLES
 		.size-thumbnail {}
 
 .grid {
-
 	img {
 		float: left;
 		width: 100%;
 	}
 }
 
-#twitter_feed_tile,
-#follow_us_tile {
+.gridbg {
     background-size: contain;
     height: 0;
     padding-bottom: 100%;
-}
 
-#follow_us_tile {
+	a {
+		text-decoration: none;
+	}
 
 	h2 {
 		font-family: $rw-light;
 		font-size: 2.812em;
-		margin: 28% auto 0;
+		line-height: 1em;
+		margin: 35% auto 0;
 		text-align: center;
 		text-transform: uppercase;
+
+		strong {
+			display: block;
+			font-family: $rw-bold;
+		}
 	}
+}
+
+#follow_us_tile {
 
 	ul {
 		list-style: none;
@@ -504,7 +512,7 @@ POSTS & CONTENT STYLES
 .page-template-page-homepage-layout-2-php {
 	#follow_us_tile {
 		h2 {
-			margin: 13% auto 0;
+			margin: 17% auto 0;
 		}
 	}
 }

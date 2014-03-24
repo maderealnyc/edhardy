@@ -10,15 +10,15 @@ Stylesheet: Base Mobile Stylesheet -- 480px Landscape
 POSTS & CONTENT STYLES
 *********************/
 
-#twitter_feed_tile,
-#follow_us_tile {
+.gridbg {
     padding-bottom: 50%;
-}
 
-#follow_us_tile {
 	h2 {
 		font-size: 2.5em;
 	}
+}
+
+#follow_us_tile {
 	ul {
 		li {
 			margin-right: 2.75%;
