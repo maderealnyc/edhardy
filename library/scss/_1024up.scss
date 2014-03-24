@@ -26,6 +26,14 @@ POSTS & CONTENT STYLES
     padding-bottom: 25%;
 }
 
+.page-template-page-homepage-layout-1-php {
+	#follow_us_tile {
+		h2 {
+			font-size: 2.5em;
+		}
+	}
+}
+
 #about {
 	h2 {
 		background-size: 100%;
@@ -41,15 +49,8 @@ POSTS & CONTENT STYLES
     padding-bottom: 50%;
 
 	h2 {
-		background-size: 100%;
-		margin: 2.5% 0 0 0.75%;
+		// margin: 2.5% 0 0 0.75%;
     	padding-top: 21%;
-    	width: 100%;
-	}
-
-	p {
-		font-size: 1.125em;
-		line-height: 1.875;
-   		width: 55%;
+    	// width: 100%;
 	}
 }

@@ -453,7 +453,7 @@ POSTS & CONTENT STYLES
 
 		li {
 			float: left;
-			margin-right: 12px;
+			margin-right: 4.69%;
 
 			a {
 				background: url(../images/home/sprite-follow-us.png) no-repeat;
@@ -501,8 +501,12 @@ POSTS & CONTENT STYLES
 	}
 }
 
-#page-template-page-homepage-layout-2-php #follow_us_tile {
-
+.page-template-page-homepage-layout-2-php {
+	#follow_us_tile {
+		h2 {
+			margin: 13% auto 0;
+		}
+	}
 }
 
 #about {

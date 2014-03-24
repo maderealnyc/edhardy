@@ -1083,7 +1083,7 @@ POSTS & CONTENT STYLES
 /* line 454, ../scss/_base.scss */
 #follow_us_tile ul li {
   float: left;
-  margin-right: 12px;
+  margin-right: 4.69%;
 }
 /* line 458, ../scss/_base.scss */
 #follow_us_tile ul li a {
@@ -1129,7 +1129,12 @@ POSTS & CONTENT STYLES
   background-position: -200px -60px;
 }
 
-/* line 508, ../scss/_base.scss */
+/* line 506, ../scss/_base.scss */
+.page-template-page-homepage-layout-2-php #follow_us_tile h2 {
+  margin: 13% auto 0;
+}
+
+/* line 512, ../scss/_base.scss */
 #about {
   background: url(../images/home/home-bg-2.jpg) no-repeat;
   background-size: 100%;
@@ -1138,7 +1143,7 @@ POSTS & CONTENT STYLES
   padding-bottom: 50%;
   position: relative;
 }
-/* line 516, ../scss/_base.scss */
+/* line 520, ../scss/_base.scss */
 #about h2 {
   background: url(../images/home/hdr-who-is.png) no-repeat;
   background-size: 100%;
@@ -1150,7 +1155,7 @@ POSTS & CONTENT STYLES
   max-width: 419px;
 }
 
-/* line 528, ../scss/_base.scss */
+/* line 532, ../scss/_base.scss */
 #american-art-legend {
   background-color: #f3f3f3;
   background: url(../images/home/home-bg-3.jpg) no-repeat center center;
@@ -1158,7 +1163,7 @@ POSTS & CONTENT STYLES
   width: 100%;
   position: relative;
 }
-/* line 535, ../scss/_base.scss */
+/* line 539, ../scss/_base.scss */
 #american-art-legend h2 {
   background: url(../images/home/hdr-art-legend.png) no-repeat;
   background-size: contain;
@@ -1167,7 +1172,7 @@ POSTS & CONTENT STYLES
   padding-top: 63%;
   max-width: 398px;
 }
-/* line 545, ../scss/_base.scss */
+/* line 549, ../scss/_base.scss */
 #american-art-legend p {
   color: #323232;
   margin: 2% 2.7%;
@@ -1176,17 +1181,17 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 556, ../scss/_base.scss */
+/* line 560, ../scss/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 
-/* line 559, ../scss/_base.scss */
+/* line 563, ../scss/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 561, ../scss/_base.scss */
+/* line 565, ../scss/_base.scss */
 .pagination ul {
   display: inline-block;
   white-space: nowrap;
@@ -1194,7 +1199,7 @@ PAGE NAVI STYLES
   clear: both;
   margin: 1px;
 }
-/* line 567, ../scss/_base.scss */
+/* line 571, ../scss/_base.scss */
 .pagination ul li {
   padding: 0;
   margin: 0;
@@ -1202,7 +1207,7 @@ PAGE NAVI STYLES
   display: inline;
   overflow: hidden;
 }
-/* line 573, ../scss/_base.scss */
+/* line 577, ../scss/_base.scss */
 .pagination ul li a, .pagination ul li span {
   margin: 0;
   text-decoration: none;
@@ -1214,18 +1219,18 @@ PAGE NAVI STYLES
   min-width: 1em;
   display: block;
 }
-/* line 584, ../scss/_base.scss */
+/* line 588, ../scss/_base.scss */
 .pagination ul li span.current {
   font-weight: bold;
 }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 599, ../scss/_base.scss */
+/* line 603, ../scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 603, ../scss/_base.scss */
+/* line 607, ../scss/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1235,12 +1240,12 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 614, ../scss/_base.scss */
+/* line 618, ../scss/_base.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 631, ../scss/_base.scss */
+/* line 635, ../scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1251,7 +1256,7 @@ COMMENT STYLES
   /* comment reply link */
   /* end .commentlist .comment-reply-link */
 }
-/* line 633, ../scss/_base.scss */
+/* line 637, ../scss/_base.scss */
 .commentlist li {
   position: relative;
   clear: both;
@@ -1261,63 +1266,63 @@ COMMENT STYLES
   padding: 0.7335em 10px;
   /* end .commentlist li ul.children */
 }
-/* line 641, ../scss/_base.scss */
+/* line 645, ../scss/_base.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 645, ../scss/_base.scss */
+/* line 649, ../scss/_base.scss */
 .commentlist li ul.children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 663, ../scss/_base.scss */
+/* line 667, ../scss/_base.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 667, ../scss/_base.scss */
+/* line 671, ../scss/_base.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 672, ../scss/_base.scss */
+/* line 676, ../scss/_base.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 686, ../scss/_base.scss */
+/* line 690, ../scss/_base.scss */
 .commentlist .odd {
   background: #eee;
 }
-/* line 689, ../scss/_base.scss */
+/* line 693, ../scss/_base.scss */
 .commentlist .even {
   background: #fefefe;
 }
-/* line 704, ../scss/_base.scss */
+/* line 708, ../scss/_base.scss */
 .commentlist .vcard {
   margin-left: 50px;
 }
-/* line 707, ../scss/_base.scss */
+/* line 711, ../scss/_base.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 715, ../scss/_base.scss */
+/* line 719, ../scss/_base.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 718, ../scss/_base.scss */
+/* line 722, ../scss/_base.scss */
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
-/* line 722, ../scss/_base.scss */
+/* line 726, ../scss/_base.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 732, ../scss/_base.scss */
+/* line 736, ../scss/_base.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -1325,17 +1330,17 @@ COMMENT STYLES
   border: 1px solid #cecece;
   background: #fff;
 }
-/* line 757, ../scss/_base.scss */
+/* line 761, ../scss/_base.scss */
 .commentlist .comment_content {
   margin-left: 50px;
 }
-/* line 760, ../scss/_base.scss */
+/* line 764, ../scss/_base.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 769, ../scss/_base.scss */
+/* line 773, ../scss/_base.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1347,7 +1352,7 @@ COMMENT STYLES
   font-weight: 700;
   font-size: 0.9em;
 }
-/* line 781, ../scss/_base.scss */
+/* line 785, ../scss/_base.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1356,27 +1361,27 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 793, ../scss/_base.scss */
+/* line 797, ../scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
-/* line 797, ../scss/_base.scss */
+/* line 801, ../scss/_base.scss */
 .respond-form form {
   margin: 0.75em 0;
 }
-/* line 800, ../scss/_base.scss */
+/* line 804, ../scss/_base.scss */
 .respond-form form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 806, ../scss/_base.scss */
+/* line 810, ../scss/_base.scss */
 .respond-form form li label,
 .respond-form form li small {
   display: none;
 }
-/* line 814, ../scss/_base.scss */
+/* line 818, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
@@ -1387,14 +1392,14 @@ COMMENT FORM STYLES
   line-height: 1.5em;
   /* form validation */
 }
-/* line 820, ../scss/_base.scss */
+/* line 824, ../scss/_base.scss */
 .respond-form form input[type=text]:focus,
 .respond-form form input[type=email]:focus,
 .respond-form form input[type=url]:focus,
 .respond-form form textarea:focus {
   background: #fff;
 }
-/* line 825, ../scss/_base.scss */
+/* line 829, ../scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1407,14 +1412,14 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 838, ../scss/_base.scss */
+/* line 842, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 843, ../scss/_base.scss */
+/* line 847, ../scss/_base.scss */
 .respond-form form textarea {
   resize: none;
   width: 97.3%;
@@ -1423,7 +1428,7 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-/* line 856, ../scss/_base.scss */
+/* line 860, ../scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -1431,13 +1436,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 869, ../scss/_base.scss */
+/* line 873, ../scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 874, ../scss/_base.scss */
+/* line 878, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1445,7 +1450,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 890, ../scss/_base.scss */
+/* line 894, ../scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
@@ -1453,7 +1458,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 911, ../scss/_base.scss */
+/* line 915, ../scss/_base.scss */
 .footer {
   clear: both;
 }
@@ -1532,7 +1537,16 @@ BASE (MOBILE) SIZE -- LANDSCAPE
     padding-bottom: 50%;
   }
 
-  /* line 20, ../scss/_480landscape.scss */
+  /* line 19, ../scss/_480landscape.scss */
+  #follow_us_tile h2 {
+    font-size: 2.5em;
+  }
+  /* line 23, ../scss/_480landscape.scss */
+  #follow_us_tile ul li {
+    margin-right: 2.75%;
+  }
+
+  /* line 30, ../scss/_480landscape.scss */
   #american-art-legend h2 {
     padding-top: 54%;
   }
@@ -2035,422 +2049,12 @@ you can add resource intensive styles.
   /* end .footer-links */
 }
 /*
-DESKTOP -- 1024PX LANDSCAPE
-*/
-@media only screen and (min-width: 1024px) and (orientation: landscape) {
-  /******************************************************************
-  Site Name: Ed Hardy
-  Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
-  
-  Stylesheet: Grid Stylesheet
-  
-  I've seperated the grid so you can swap it out easily. It's
-  called at the top the style.scss stylesheet.
-  
-  There are a ton of grid solutions out there. You should definitely
-  experiment with your own. Here are some recommendations:
-  
-  http://gridsetapp.com - Love this site. Responsive Grids made easy.
-  http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-  http://gridpak.com/ - Create your own responsive grid.
-  
-  The grid below is a combination of the 1140 grid and Twitter Boostrap.
-  I liked 1140 but Boostrap's grid was way more detailed so I merged them
-  together, let's see how this works out. If you want to use 1140, the original
-  values are commented out on each line.
-  
-  Agustin -- I changed this to use a 1200 grid since design is that way via Gridpak.
-  
-  ******************************************************************/
-  /* line 26, ../scss/_grid.scss */
-  .onecol {
-    width: 8.33333333333%;
-  }
-
-  /* line 27, ../scss/_grid.scss */
-  .twocol {
-    width: 16.6666666667%;
-  }
-
-  /* line 28, ../scss/_grid.scss */
-  .threecol {
-    width: 25.0%;
-  }
-
-  /* line 29, ../scss/_grid.scss */
-  .fourcol {
-    width: 33.3333333333%;
-  }
-
-  /* line 30, ../scss/_grid.scss */
-  .fivecol {
-    width: 41.6666666667%;
-  }
-
-  /* line 31, ../scss/_grid.scss */
-  .sixcol {
-    width: 50.0%;
-  }
-
-  /* line 32, ../scss/_grid.scss */
-  .sevencol {
-    width: 58.3333333333%;
-  }
-
-  /* line 33, ../scss/_grid.scss */
-  .eightcol {
-    width: 66.6666666667%;
-  }
-
-  /* line 34, ../scss/_grid.scss */
-  .ninecol {
-    width: 75.0%;
-  }
-
-  /* line 35, ../scss/_grid.scss */
-  .tencol {
-    width: 83.3333333333%;
-  }
-
-  /* line 36, ../scss/_grid.scss */
-  .elevencol {
-    width: 91.6666666667%;
-  }
-
-  /* line 37, ../scss/_grid.scss */
-  .twelvecol {
-    width: 100%;
-  }
-
-  /* line 40, ../scss/_grid.scss */
-  .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
-    position: relative;
-    float: left;
-    margin-left: 0;
-  }
-
-  /* line 46, ../scss/_grid.scss */
-  .first {
-    margin-left: 0;
-  }
-
-  /* line 50, ../scss/_grid.scss */
-  .last {
-    float: right;
-  }
-
-  /******************************************************************
-  Site Name: Ed Hardy
-  Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
-  
-  Stylesheet: Tablet & Small Desktop Stylesheet
-  
-  Here's where you can start getting into the good stuff.
-  This size will work on iPads, other tablets, and desktops.
-  So you can start working with more styles, background images,
-  and other resources. You'll also notice the grid starts to
-  come into play. Have fun!
-  
-  ******************************************************************/
-  /*********************
-  GENERAL STYLES
-  *********************/
-  /*********************
-  LAYOUT & GRID STYLES
-  *********************/
-  /* line 26, ../scss/_768up.scss */
-  .wrap {
-    max-width: 1200px;
-  }
-
-  /*********************
-  HEADER STYLES
-  *********************/
-  /* line 36, ../scss/_768up.scss */
-  #inner-header {
-    padding: 14px;
-  }
-
-  /* line 40, ../scss/_768up.scss */
-  #logo {
-    float: left;
-  }
-
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  /* line 48, ../scss/_768up.scss */
-  .nav {
-    background: black;
-    border: 0;
-    float: right;
-    margin: 0;
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */
-  }
-  /* line 53, ../scss/_768up.scss */
-  .nav ul {
-    margin-top: 0;
-  }
-  /* line 56, ../scss/_768up.scss */
-  .nav li {
-    float: left;
-    padding: 9px 16px 9px 8px;
-    position: relative;
-    /*
-    plan your menus and drop-downs wisely.
-    */
-    /* showing sub-menus */
-  }
-  /* line 61, ../scss/_768up.scss */
-  .nav li a {
-    border-bottom: 0;
-    line-height: 1;
-    opacity: 0.65;
-    padding: 0;
-    text-transform: uppercase;
-    /*
-    you can use hover styles here even though this size
-    has the possibility of being a mobile device.
-    */
-  }
-  /* line 73, ../scss/_768up.scss */
-  .nav li a:hover, .nav li a:focus {
-    opacity: 1;
-  }
-  /* line 86, ../scss/_768up.scss */
-  .nav li ul.sub-menu,
-  .nav li ul.children {
-    margin-top: 0;
-    border: 1px solid #ccc;
-    border-top: 0;
-    position: absolute;
-    overflow: hidden;
-    visibility: hidden;
-    z-index: 8999;
-    /* highlight sub-menu current page */
-  }
-  /* line 95, ../scss/_768up.scss */
-  .nav li ul.sub-menu li,
-  .nav li ul.children li {
-    /*
-    if you need to go deeper, go nuts
-    just remember deeper menus suck
-    for usability. k, bai.
-    */
-  }
-  /* line 97, ../scss/_768up.scss */
-  .nav li ul.sub-menu li a,
-  .nav li ul.children li a {
-    padding-left: 10px;
-    border-right: 0;
-    display: block;
-    width: 180px;
-    border-bottom: 1px solid #ccc;
-  }
-  /* line 114, ../scss/_768up.scss */
-  .nav li ul.sub-menu li:last-child a,
-  .nav li ul.children li:last-child a {
-    border-bottom: 0;
-  }
-  /* line 136, ../scss/_768up.scss */
-  .nav li:hover ul {
-    top: auto;
-    overflow: visible;
-    visibility: visible;
-  }
-  /* line 148, ../scss/_768up.scss */
-  .nav li.nav-facebook,
-  .nav li.nav-twitter,
-  .nav li.nav-youtube,
-  .nav li.nav-instagram,
-  .nav li.nav-pinterest {
-    padding: 9px 4.5px 9px 9px;
-  }
-  /* line 151, ../scss/_768up.scss */
-  .nav li.nav-newsletter {
-    padding: 9px;
-    background: url(../images/separator-newsletter.png) no-repeat 0 0;
-  }
-  /* line 155, ../scss/_768up.scss */
-  .nav li.nav-newsletter a {
-    background: url(../images/arrow-newsletter.png) no-repeat 100% 50%;
-    font-size: 8.5px;
-    padding-right: 19px;
-  }
-  /* line 159, ../scss/_768up.scss */
-  .nav li.nav-newsletter a:hover {
-    color: #c02f1a;
-  }
-  /* line 163, ../scss/_768up.scss */
-  .nav li.nav-newsletter a strong {
-    display: block;
-    font-size: 11px;
-  }
-  /* line 168, ../scss/_768up.scss */
-  .nav li.nav-facebook {
-    background: url(../images/separator-newsletter.png) no-repeat 0 0;
-  }
-  /* line 175, ../scss/_768up.scss */
-  .nav li.nav-facebook a,
-  .nav li.nav-twitter a,
-  .nav li.nav-youtube a,
-  .nav li.nav-instagram a,
-  .nav li.nav-pinterest a {
-    background: url(../images/sprite-social.png) no-repeat;
-    display: block;
-    height: 17px;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  /* line 183, ../scss/_768up.scss */
-  .nav li.nav-facebook a {
-    background-position: 0 0;
-    width: 10px;
-  }
-  /* line 186, ../scss/_768up.scss */
-  .nav li.nav-facebook a:hover {
-    background-position: 0 -17px;
-  }
-  /* line 190, ../scss/_768up.scss */
-  .nav li.nav-twitter a {
-    background-position: -10px 0;
-    width: 16px;
-  }
-  /* line 193, ../scss/_768up.scss */
-  .nav li.nav-twitter a:hover {
-    background-position: -10px -17px;
-  }
-  /* line 197, ../scss/_768up.scss */
-  .nav li.nav-youtube a {
-    background-position: -26px 0;
-    width: 19px;
-  }
-  /* line 200, ../scss/_768up.scss */
-  .nav li.nav-youtube a:hover {
-    background-position: -26px -17px;
-  }
-  /* line 204, ../scss/_768up.scss */
-  .nav li.nav-instagram a {
-    background-position: -45px 0;
-    width: 16px;
-  }
-  /* line 207, ../scss/_768up.scss */
-  .nav li.nav-instagram a:hover {
-    background-position: -45px -17px;
-  }
-  /* line 211, ../scss/_768up.scss */
-  .nav li.nav-pinterest a {
-    background-position: -61px 0;
-    width: 11px;
-  }
-  /* line 214, ../scss/_768up.scss */
-  .nav li.nav-pinterest a:hover {
-    background-position: -61px -17px;
-  }
-
-  /* end .nav */
-  /*********************
-  POSTS & CONTENT STYLES
-  *********************/
-  /* line 233, ../scss/_768up.scss */
-  #twitter_feed_tile,
-  #follow_us_tile {
-    padding-bottom: 50%;
-  }
-
-  /*********************
-  SIDEBARS & ASIDES
-  *********************/
-  /* line 241, ../scss/_768up.scss */
-  .sidebar {
-    margin-top: 2.2em;
-  }
-
-  /* line 245, ../scss/_768up.scss */
-  .widgettitle {
-    border-bottom: 2px solid #444;
-    margin-bottom: 0.75em;
-  }
-
-  /* line 250, ../scss/_768up.scss */
-  .widget {
-    padding: 0 10px;
-    margin: 2.2em 0;
-  }
-  /* line 255, ../scss/_768up.scss */
-  .widget ul li {
-    margin-bottom: 0.75em;
-    /* deep nesting */
-  }
-  /* line 263, ../scss/_768up.scss */
-  .widget ul li ul {
-    margin-top: 0.75em;
-    padding-left: 1em;
-  }
-
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  you'll probably need to do quite a bit
-  of overriding here if you styled them for
-  mobile. Make sure to double check these!
-  */
-  /* line 371, ../scss/_768up.scss */
-  .footer-links ul li {
-    /*
-    be careful with the depth of your menus.
-    it's very rare to have multi-depth menus in
-    the footer.
-    */
-  }
-
-  /* end .footer-links */
-  /******************************************************************
-  Site Name: Ed Hardy
-  Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
-  
-  Stylesheet: Base Mobile Stylesheet -- 1024px Landscape
-  
-  ******************************************************************/
-  /*********************
-  GENERAL STYLES
-  *********************/
-  /* line 13, ../scss/_1024landscape.scss */
-  .hideme {
-    display: block;
-  }
-
-  /*********************
-  POSTS & CONTENT STYLES
-  *********************/
-  /* line 22, ../scss/_1024landscape.scss */
-  #twitter_feed_tile,
-  #follow_us_tile {
-    padding-bottom: 25%;
-  }
-}
-/*
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 */
-@media only screen and (min-width: 1030px) {
+@media only screen and (min-width: 1024px) {
   /******************************************************************
   Site Name: Ed Hardy
   Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
@@ -2565,7 +2169,7 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
-  /* line 16, ../scss/_1030up.scss */
+  /* line 16, ../scss/_1024up.scss */
   .hideme {
     display: block;
   }
@@ -2573,13 +2177,18 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 25, ../scss/_1030up.scss */
+  /* line 25, ../scss/_1024up.scss */
   #twitter_feed_tile,
   #follow_us_tile {
     padding-bottom: 25%;
   }
 
-  /* line 30, ../scss/_1030up.scss */
+  /* line 31, ../scss/_1024up.scss */
+  .page-template-page-homepage-layout-1-php #follow_us_tile h2 {
+    font-size: 2.5em;
+  }
+
+  /* line 38, ../scss/_1024up.scss */
   #about h2 {
     background-size: 100%;
     margin: 15.5% auto 0;
@@ -2587,24 +2196,15 @@ you can add resource intensive styles.
     width: 34.92%;
   }
 
-  /* line 38, ../scss/_1030up.scss */
+  /* line 46, ../scss/_1024up.scss */
   #american-art-legend {
     background-size: 42% 98%, 100% 100%;
     height: 0;
     padding-bottom: 50%;
   }
-  /* line 43, ../scss/_1030up.scss */
+  /* line 51, ../scss/_1024up.scss */
   #american-art-legend h2 {
-    background-size: 100%;
-    margin: 2.5% 0 0 0.75%;
     padding-top: 21%;
-    width: 100%;
-  }
-  /* line 50, ../scss/_1030up.scss */
-  #american-art-legend p {
-    font-size: 1.125em;
-    line-height: 1.875;
-    width: 55%;
   }
 }
 /*
@@ -2622,6 +2222,12 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
+  /* line 13, ../scss/_1240up.scss */
+  #american-art-legend p {
+    font-size: 1.125em;
+    line-height: 1.875;
+    width: 55%;
+  }
 }
 /*
 RETINA (2x RESOLUTION DEVICES)
