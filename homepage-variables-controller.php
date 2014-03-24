@@ -42,7 +42,7 @@
 				instagram_hp_1_tile_3_count = 0;
 			},
 			filter: function(image) {
-				return (instagram_hp_1_tile_3_count++ == 2) ? true : false;
+				return (instagram_hp_1_tile_3_count++ == 1) ? true : false;
 			}
 	    });
 	    instagramHP1Tile3.run();
@@ -76,10 +76,10 @@
 				instagram_hp_1_tile_6_count = 0;
 			},
 			filter: function(image) {
-				return (instagram_hp_1_tile_6_count++ == 3) ? true : false;
+				return (instagram_hp_1_tile_6_count++ == 2) ? true : false;
 			}
 	    });
-	    //instagramHP1Tile6.run();
+	    instagramHP1Tile6.run();
 	</script>
 	<div class="threecol grid clearfix hideme" id="instagram_hp_1_tile_6"></div>
 
@@ -136,10 +136,10 @@
 				instagram_hp_1_tile_12_count = 0;
 			},
 			filter: function(image) {
-				return (instagram_hp_1_tile_12_count++ == 4) ? true : false;
+				return (instagram_hp_1_tile_12_count++ == 3) ? true : false;
 			}
 	    });
-	    //instagramHP1Tile12.run();
+	    instagramHP1Tile12.run();
 	</script>
 	<div class="threecol grid clearfix" id="instagram_hp_1_tile_12"></div>
 
