@@ -19,6 +19,8 @@ Template Name: Homepage Layout 2
 				</div>
 
 				<?php include('american-art-legend.php'); ?>
+				
+				<?php include('footer-video.php'); ?>
 
 			</div>
 

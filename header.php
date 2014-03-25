@@ -37,6 +37,10 @@
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
 
+		<!-- MediaElement JS + CSS -->
+		<script src="<?php echo get_template_directory_uri(); ?>/library/js/libs/mediaelement-and-player.min.js"></script>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/mediaelementplayer.css" />
+
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
 

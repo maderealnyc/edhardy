@@ -20,6 +20,8 @@ Template Name: Homepage Layout 1
 
 				<?php include('american-art-legend.php'); ?>
 
+				<?php include('footer-video.php'); ?>
+
 			</div>
 
 		</div>
