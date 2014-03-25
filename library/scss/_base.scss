@@ -163,7 +163,6 @@ HEADER STYLES
 .header {}
 
 	#inner-header {
-		padding: 14px 0 0;
 	}
 
 	#logo {
@@ -171,7 +170,7 @@ HEADER STYLES
 		display: block;
 		width: 171px;
 		height: 34px;
-		margin-left: 10px;
+		margin: 14px auto;
 
 		&:hover {
 			background-position: 0 -34px;
@@ -182,6 +181,136 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 
+.top-nav {
+	background: black;
+	border: 0;
+	margin: 0;
+	ul {
+		margin-top:0;
+	}
+	> li {
+		border-top: 1px solid #fff;
+		position: relative;
+
+		a {
+			border-bottom: 0;
+			display: block;
+			line-height: 1;
+			opacity: 0.65;
+			padding: 9px;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+
+			&:hover, &:focus {
+				opacity: 1;
+			}
+
+		}
+
+		&:first-child {}
+		&:last-child {}
+
+		/*
+		social links
+		*/
+		ul.sub-menu {
+			border-top: 1px solid #fff;
+			margin: 0 auto;
+			overflow: hidden;
+			text-align: center;
+
+			li {
+				display: inline-block;
+			}
+
+			li.nav-facebook,
+			li.nav-twitter,
+			li.nav-youtube,
+			li.nav-instagram,
+			li.nav-pinterest {
+				padding: 9px 4.5px 9px 9px;
+			}
+			li.nav-facebook a,
+			li.nav-twitter a,
+			li.nav-youtube a,
+			li.nav-instagram a,
+			li.nav-pinterest a {
+				background: url(../images/sprite-social.png) no-repeat;
+				display: block;
+				height: 17px;
+				padding: 0;
+				text-indent: 100%;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			li.nav-facebook a {
+				background-position: 0 0;
+				width: 10px;
+				&:hover {
+					background-position: 0 -17px;
+				}
+			}
+			li.nav-twitter a {
+				background-position: -10px 0;
+				width: 16px;
+				&:hover {
+					background-position: -10px -17px;
+				}
+			}
+			li.nav-youtube a {
+				background-position: -26px 0;
+				width: 19px;
+				&:hover {
+					background-position: -26px -17px;
+				}
+			}
+			li.nav-instagram a {
+				background-position: -45px 0;
+				width: 16px;
+				&:hover {
+					background-position: -45px -17px;
+				}
+			}
+			li.nav-pinterest a {
+				background-position: -61px 0;
+				width: 11px;
+				&:hover {
+					background-position: -61px -17px;
+				}
+			}
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+li.nav-newsletter > a {
+	font-size: 8.5px;
+	letter-spacing: 0.12em;
+	&:hover {
+		color: #c02f1a;
+	}
+
+	strong {
+		display: block;
+		font-size: 11px;
+		letter-spacing: 0.2em;
+	}
+}
+
 /*
 all navs have a .nav class applied via
 the wp_menu function; this is so we can
@@ -190,7 +319,7 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
-.nav {
+.footer-nav {
 	border: 0px;
 	border-bottom: 0;
 
@@ -259,7 +388,6 @@ and more scalable.
 	}  /* end current highlighters */
 
 } /* end .nav */
-
 
 /*********************
 POSTS & CONTENT STYLES
@@ -433,6 +561,8 @@ POSTS & CONTENT STYLES
     padding-bottom: 100%;
 
 	a {
+		display: inline-block;
+		width: 100%;
 		text-decoration: none;
 	}
 
@@ -440,18 +570,23 @@ POSTS & CONTENT STYLES
 		font-family: $rw-light;
 		font-size: 2.812em;
 		line-height: 1em;
-		margin: 35% auto 0;
+		margin: 35% auto;
 		text-align: center;
 		text-transform: uppercase;
 
 		strong {
 			display: block;
 			font-family: $rw-bold;
+			font-weight: normal;
 		}
 	}
 }
 
 #follow_us_tile {
+
+	h2 {
+		margin-bottom: 6px;
+	}
 
 	ul {
 		list-style: none;

@@ -19,6 +19,10 @@ GENERAL STYLES
 
 body {}
 
+.hidemedesktop {
+	display: none;
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -39,13 +43,14 @@ HEADER STYLES
 
 	#logo {
 		float: left;
+		margin: 0;
 	}
 
 /*********************
 NAVIGATION STYLES
 *********************/
 
-.nav {
+.top-nav {
 	background: black;
 	border: 0;
 	float: right;
@@ -53,17 +58,16 @@ NAVIGATION STYLES
 	ul {
 		margin-top:0;
 	}
-	li {
+	> li {
+		border: none;
 		float: left;
-		padding: 9px 16px 9px 8px;
+		padding: 5px 16px 9px 8px;
 		position: relative;
 
 		a {
 			border-bottom: 0;
-			line-height: 1;
-			opacity: 0.65;
-			padding: 0;
-			text-transform: uppercase;
+			display: inline;
+			text-align: left;
 
 			/*
 			you can use hover styles here even though this size
@@ -80,140 +84,50 @@ NAVIGATION STYLES
 		&:last-child {}
 
 		/*
-		plan your menus and drop-downs wisely.
+		social links
 		*/
-		ul.sub-menu,
-		ul.children {
-			margin-top: 0;
-			border: 1px solid #ccc;
-			border-top: 0;
-			position: absolute;
-			overflow: hidden;
-			visibility: hidden;
-			z-index: 8999;
+		ul.sub-menu {
+			border: none;
+			float: left;
+			margin: 0 0 0 8px;
+			text-align: left;
 
 			li {
-
-				a {
-					padding-left: 10px;
-					border-right: 0;
-					display: block;
-					width: 180px;
-					border-bottom: 1px solid #ccc;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-				}
-
-				&:first-child {}
-
-				&:last-child {
-
-					a {
-						border-bottom: 0;
-					}
-				}
-
-				/*
-				if you need to go deeper, go nuts
-				just remember deeper menus suck
-				for usability. k, bai.
-				*/
-				ul {}
+				display: inline;
+				float: left;
 			}
 
-			/* highlight sub-menu current page */
-			li.current-menu-item,
-			li.current_page_item,
-			li.current-page-ancestor {
-				a {}
+			li.nav-facebook,
+			li.nav-twitter,
+			li.nav-youtube,
+			li.nav-instagram,
+			li.nav-pinterest {
+				padding: 9px 4.5px 9px 9px;
 			}
-		}
+			li.nav-facebook {
+				background: url(../images/separator-newsletter.png) no-repeat 0 0;
+			}
 
-		/* showing sub-menus */
-		&:hover ul {
-			top: auto;
-			overflow: visible;
-			visibility:visible;
 		}
 
 	} /* end .menu ul li */
 
-	li.nav-facebook,
-	li.nav-twitter,
-	li.nav-youtube,
-	li.nav-instagram,
-	li.nav-pinterest {
-		padding: 9px 4.5px 9px 9px;
-	}
-	li.nav-newsletter {
-		padding: 9px;
-		background: url(../images/separator-newsletter.png) no-repeat 0 0;
-	}
-	li.nav-newsletter a {
-		background: url(../images/arrow-newsletter.png) no-repeat 100% 50%;
-		font-size: 8.5px;
-		padding-right: 19px;
-		&:hover {
-			color: #c02f1a;
+	li.nav-about,
+	li.nav-lookbook {
+		a {
+			padding: 0 0 4px 0;
+			&:hover {
+				background: url(../images/sprite-navhover.png) no-repeat;
+			}
 		}
+	}
 
-		strong {
-			display: block;
-			font-size: 11px;
-		}
+	li.nav-about a:hover {
+		background-position: 0 100%;
 	}
-	li.nav-facebook {
-		background: url(../images/separator-newsletter.png) no-repeat 0 0;
-	}
-	li.nav-facebook a,
-	li.nav-twitter a,
-	li.nav-youtube a,
-	li.nav-instagram a,
-	li.nav-pinterest a {
-		background: url(../images/sprite-social.png) no-repeat;
-		display: block;
-		height: 17px;
-		text-indent: 100%;
-		white-space: nowrap;
-		overflow: hidden;
-	}
-	li.nav-facebook a {
-		background-position: 0 0;
-		width: 10px;
-		&:hover {
-			background-position: 0 -17px;
-		}
-	}
-	li.nav-twitter a {
-		background-position: -10px 0;
-		width: 16px;
-		&:hover {
-			background-position: -10px -17px;
-		}
-	}
-	li.nav-youtube a {
-		background-position: -26px 0;
-		width: 19px;
-		&:hover {
-			background-position: -26px -17px;
-		}
-	}
-	li.nav-instagram a {
-		background-position: -45px 0;
-		width: 16px;
-		&:hover {
-			background-position: -45px -17px;
-		}
-	}
-	li.nav-pinterest a {
-		background-position: -61px 0;
-		width: 11px;
-		&:hover {
-			background-position: -61px -17px;
-		}
+
+	li.nav-lookbook a:hover {
+		background-position: -68px 100%;
 	}
 
 	/* highlight current page */
@@ -224,6 +138,20 @@ NAVIGATION STYLES
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+li.nav-newsletter {
+	padding: 0;
+	background: url(../images/separator-newsletter.png) no-repeat 0 0;
+}
+
+li.nav-newsletter-mobile {
+	display: none;
+}
+li.nav-newsletter > a {
+	float: left;
+	background: url(../images/arrow-newsletter.png) no-repeat 100% 50%;
+	padding-right: 19px;
+}
 
 /*********************
 POSTS & CONTENT STYLES
