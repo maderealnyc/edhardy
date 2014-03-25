@@ -12,7 +12,7 @@ without the media queries. No need to worry about editing anything!
 ******************************************************************/
 /*
 Remember, all the BASE styles are called already since IE can
-read those. Below, we need to import only the stuff IE can't 
+read those. Below, we need to import only the stuff IE can't
 understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 */
@@ -67,6 +67,29 @@ TOOLS
   overflow: hidden;
 }
 
+/* line 48, ../scss/_mixins.scss */
+.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+  -webkit-transition: all .6s ease;
+  /* Fade to color for Chrome and Safari */
+  transition: all 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  /* Fix for transition flickering */
+  backface-visibility: hidden;
+  /* Fix for transition flickering */
+}
+
+/* line 58, ../scss/_mixins.scss */
+.grayscale:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+
 /*********************
 COLORS
 Need help w/ choosing your colors? Try this site out:
@@ -102,53 +125,53 @@ TYPOGRAPHY
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-/* line 110, ../scss/_mixins.scss */
+/* line 125, ../scss/_mixins.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
 }
 
-/* line 116, ../scss/_mixins.scss */
+/* line 131, ../scss/_mixins.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 117, ../scss/_mixins.scss */
+/* line 132, ../scss/_mixins.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 118, ../scss/_mixins.scss */
+/* line 133, ../scss/_mixins.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 122, ../scss/_mixins.scss */
+/* line 137, ../scss/_mixins.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
 }
 
-/* line 128, ../scss/_mixins.scss */
+/* line 143, ../scss/_mixins.scss */
 .alert-help {
   border-color: #e8dc59;
   background: #ebe16f;
 }
 
-/* line 134, ../scss/_mixins.scss */
+/* line 149, ../scss/_mixins.scss */
 .alert-info {
   border-color: #bfe4f4;
   background: #d5edf8;
 }
 
-/* line 140, ../scss/_mixins.scss */
+/* line 155, ../scss/_mixins.scss */
 .alert-error {
   border-color: #f8cdce;
   background: #fbe3e4;
 }
 
-/* line 146, ../scss/_mixins.scss */
+/* line 161, ../scss/_mixins.scss */
 .alert-success {
   border-color: #deeaae;
   background: #e6efc2;
@@ -178,7 +201,7 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 208, ../scss/_mixins.scss */
+/* line 222, ../scss/_mixins.scss */
 .button, .button:visited {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #dedede;
@@ -202,7 +225,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, white, #f2f2f2);
   background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
 }
-/* line 227, ../scss/_mixins.scss */
+/* line 241, ../scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
   color: white;
   border: 1px solid #dedede;
@@ -215,7 +238,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
   background-image: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
 }
-/* line 235, ../scss/_mixins.scss */
+/* line 249, ../scss/_mixins.scss */
 .button:active, .button:visited:active {
   background-color: white;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(white));
@@ -225,7 +248,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #f2f2f2, #ffffff);
 }
 
-/* line 240, ../scss/_mixins.scss */
+/* line 254, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -237,7 +260,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
-/* line 246, ../scss/_mixins.scss */
+/* line 260, ../scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background-color: #1472ad;
@@ -247,7 +270,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1784c9, #1472ad);
   background-image: linear-gradient(to bottom, #1784c9, #1472ad);
 }
-/* line 250, ../scss/_mixins.scss */
+/* line 264, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background-color: #1990db;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
@@ -364,10 +387,10 @@ Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
 
 Stylesheet: 481px and Up Stylesheet
 
-This stylesheet is loaded for larger devices. It's set to 
+This stylesheet is loaded for larger devices. It's set to
 481px because at 480px it would load on a landscaped iPhone.
 This isn't ideal because then you would be loading all those
-extra styles on that same mobile connection. 
+extra styles on that same mobile connection.
 
 A word of warning. This size COULD be a larger mobile device,
 so you still want to keep it pretty light and simply expand
@@ -432,6 +455,37 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
+/* line 98, ../scss/_481up.scss */
+.gridbg {
+  padding-bottom: 50%;
+}
+
+/* line 103, ../scss/_481up.scss */
+#about h2 {
+  background-size: contain;
+  -ms-behavior: url(/backgroundsize.min.htc);
+  margin: 17.5% auto 0;
+  padding-top: 20%;
+  width: 100%;
+}
+
+/* line 113, ../scss/_481up.scss */
+#american-art-legend {
+  background: url(../images/home/ed-hardy-profile.png) no-repeat bottom right, url(../images/home/home-bg-3-full.jpg) no-repeat center center;
+  background-size: 42% auto, cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
+  width: 100%;
+  position: relative;
+}
+/* line 120, ../scss/_481up.scss */
+#american-art-legend h2 {
+  padding-top: 24.61%;
+}
+/* line 124, ../scss/_481up.scss */
+#american-art-legend p {
+  width: 53%;
+}
+
 /*********************
 FOOTER STYLES
 *********************/
@@ -456,10 +510,15 @@ come into play. Have fun!
 /*********************
 GENERAL STYLES
 *********************/
+/* line 22, ../scss/_768up.scss */
+.hidemedesktop {
+  display: none;
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-/* line 26, ../scss/_768up.scss */
+/* line 30, ../scss/_768up.scss */
 .wrap {
   max-width: 1200px;
 }
@@ -467,21 +526,22 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
-/* line 36, ../scss/_768up.scss */
+/* line 40, ../scss/_768up.scss */
 #inner-header {
   padding: 14px;
 }
 
-/* line 40, ../scss/_768up.scss */
+/* line 44, ../scss/_768up.scss */
 #logo {
   float: left;
+  margin: 0;
 }
 
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 48, ../scss/_768up.scss */
-.nav {
+/* line 53, ../scss/_768up.scss */
+.top-nav {
   background: black;
   border: 0;
   float: right;
@@ -490,236 +550,125 @@ NAVIGATION STYLES
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 53, ../scss/_768up.scss */
-.nav ul {
+/* line 58, ../scss/_768up.scss */
+.top-nav ul {
   margin-top: 0;
 }
-/* line 56, ../scss/_768up.scss */
-.nav li {
+/* line 61, ../scss/_768up.scss */
+.top-nav > li {
+  border: none;
   float: left;
-  padding: 9px 16px 9px 8px;
+  padding: 5px 16px 9px 8px;
   position: relative;
   /*
-  plan your menus and drop-downs wisely.
+  social links
   */
-  /* showing sub-menus */
 }
-/* line 61, ../scss/_768up.scss */
-.nav li a {
+/* line 67, ../scss/_768up.scss */
+.top-nav > li a {
   border-bottom: 0;
-  line-height: 1;
-  opacity: 0.65;
-  padding: 0;
-  text-transform: uppercase;
+  display: inline;
+  text-align: left;
   /*
   you can use hover styles here even though this size
   has the possibility of being a mobile device.
   */
 }
-/* line 73, ../scss/_768up.scss */
-.nav li a:hover, .nav li a:focus {
-  opacity: 1;
+/* line 88, ../scss/_768up.scss */
+.top-nav > li ul.sub-menu {
+  border: none;
+  float: left;
+  margin: 0 0 0 8px;
+  text-align: left;
 }
-/* line 86, ../scss/_768up.scss */
-.nav li ul.sub-menu,
-.nav li ul.children {
-  margin-top: 0;
-  border: 1px solid #ccc;
-  border-top: 0;
-  position: absolute;
-  overflow: hidden;
-  visibility: hidden;
-  z-index: 8999;
-  /* highlight sub-menu current page */
+/* line 94, ../scss/_768up.scss */
+.top-nav > li ul.sub-menu li {
+  display: inline;
+  float: left;
 }
-/* line 95, ../scss/_768up.scss */
-.nav li ul.sub-menu li,
-.nav li ul.children li {
-  /*
-  if you need to go deeper, go nuts
-  just remember deeper menus suck
-  for usability. k, bai.
-  */
-}
-/* line 97, ../scss/_768up.scss */
-.nav li ul.sub-menu li a,
-.nav li ul.children li a {
-  padding-left: 10px;
-  border-right: 0;
-  display: block;
-  width: 180px;
-  border-bottom: 1px solid #ccc;
-}
-/* line 114, ../scss/_768up.scss */
-.nav li ul.sub-menu li:last-child a,
-.nav li ul.children li:last-child a {
-  border-bottom: 0;
-}
-/* line 136, ../scss/_768up.scss */
-.nav li:hover ul {
-  top: auto;
-  overflow: visible;
-  visibility: visible;
-}
-/* line 148, ../scss/_768up.scss */
-.nav li.nav-facebook,
-.nav li.nav-twitter,
-.nav li.nav-youtube,
-.nav li.nav-instagram,
-.nav li.nav-pinterest {
+/* line 103, ../scss/_768up.scss */
+.top-nav > li ul.sub-menu li.nav-facebook,
+.top-nav > li ul.sub-menu li.nav-twitter,
+.top-nav > li ul.sub-menu li.nav-youtube,
+.top-nav > li ul.sub-menu li.nav-instagram,
+.top-nav > li ul.sub-menu li.nav-pinterest {
   padding: 9px 4.5px 9px 9px;
 }
-/* line 151, ../scss/_768up.scss */
-.nav li.nav-newsletter {
-  padding: 9px;
-  background: url(../images/separator-newsletter.png) no-repeat 0 0, url(../images/separator-newsletter.png) no-repeat 100% 0;
+/* line 106, ../scss/_768up.scss */
+.top-nav > li ul.sub-menu li.nav-facebook {
+  background: url(../images/separator-newsletter.png) no-repeat 0 0;
 }
-/* line 155, ../scss/_768up.scss */
-.nav li.nav-newsletter a {
-  background: url(../images/arrow-newsletter.png) no-repeat 100% 50%;
-  font-size: 8.5px;
-  padding-right: 19px;
+/* line 116, ../scss/_768up.scss */
+.top-nav li.nav-about a,
+.top-nav li.nav-lookbook a {
+  padding: 0 0 4px 0;
 }
-/* line 159, ../scss/_768up.scss */
-.nav li.nav-newsletter a:hover {
-  color: #c02f1a;
+/* line 118, ../scss/_768up.scss */
+.top-nav li.nav-about a:hover,
+.top-nav li.nav-lookbook a:hover {
+  background: url(../images/sprite-navhover.png) no-repeat;
 }
-/* line 163, ../scss/_768up.scss */
-.nav li.nav-newsletter a strong {
-  display: block;
-  font-size: 11px;
+/* line 124, ../scss/_768up.scss */
+.top-nav li.nav-about a:hover {
+  background-position: 0 100%;
 }
-/* line 172, ../scss/_768up.scss */
-.nav li.nav-facebook a,
-.nav li.nav-twitter a,
-.nav li.nav-youtube a,
-.nav li.nav-instagram a,
-.nav li.nav-pinterest a {
-  background: url(../images/sprite-social.png) no-repeat;
-  display: block;
-  height: 17px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-/* line 180, ../scss/_768up.scss */
-.nav li.nav-facebook a {
-  background-position: 0 0;
-  width: 10px;
-}
-/* line 183, ../scss/_768up.scss */
-.nav li.nav-facebook a:hover {
-  background-position: 0 -17px;
-}
-/* line 187, ../scss/_768up.scss */
-.nav li.nav-twitter a {
-  background-position: -10px 0;
-  width: 16px;
-}
-/* line 190, ../scss/_768up.scss */
-.nav li.nav-twitter a:hover {
-  background-position: -10px -17px;
-}
-/* line 194, ../scss/_768up.scss */
-.nav li.nav-youtube a {
-  background-position: -26px 0;
-  width: 19px;
-}
-/* line 197, ../scss/_768up.scss */
-.nav li.nav-youtube a:hover {
-  background-position: -26px -17px;
-}
-/* line 201, ../scss/_768up.scss */
-.nav li.nav-instagram a {
-  background-position: -45px 0;
-  width: 16px;
-}
-/* line 204, ../scss/_768up.scss */
-.nav li.nav-instagram a:hover {
-  background-position: -45px -17px;
-}
-/* line 208, ../scss/_768up.scss */
-.nav li.nav-pinterest a {
-  background-position: -61px 0;
-  width: 11px;
-}
-/* line 211, ../scss/_768up.scss */
-.nav li.nav-pinterest a:hover {
-  background-position: -61px -17px;
+/* line 128, ../scss/_768up.scss */
+.top-nav li.nav-lookbook a:hover {
+  background-position: -68px 100%;
 }
 
 /* end .nav */
+/* line 141, ../scss/_768up.scss */
+li.nav-newsletter {
+  padding: 0;
+  background: url(../images/separator-newsletter.png) no-repeat 0 0;
+}
+
+/* line 146, ../scss/_768up.scss */
+li.nav-newsletter-mobile {
+  display: none;
+}
+
+/* line 149, ../scss/_768up.scss */
+li.nav-newsletter > a {
+  float: left;
+  background: url(../images/arrow-newsletter.png) no-repeat 100% 50%;
+  padding-right: 19px;
+}
+
 /*********************
-CONTENT STYLES
+POSTS & CONTENT STYLES
 *********************/
-/* line 229, ../scss/_768up.scss */
-.grid {
-  line-height: 0;
-}
-
-/* line 233, ../scss/_768up.scss */
-#who-is-ed-hardy {
-  background: url(../images/home/home-bg-2.jpg) no-repeat;
-  width: 100%;
-  min-height: 600px;
-}
-/* line 238, ../scss/_768up.scss */
-#who-is-ed-hardy h2 {
-  background: url(../images/home/hdr-who-is.png) no-repeat;
-  width: 419px;
-  height: 114px;
-  margin: 186px auto 0;
-  text-align: center;
-}
-
-/* line 247, ../scss/_768up.scss */
-#american-art-legend {
-  background-color: #f3f3f3;
-  background: url(../images/home/ed-hardy-profile.png) no-repeat bottom right, url(../images/home/home-bg-3.jpg) no-repeat;
-  width: 100%;
-  min-height: 590px;
-}
-/* line 253, ../scss/_768up.scss */
-#american-art-legend h2 {
-  background: url(../images/home/hdr-art-legend.png) no-repeat;
-  margin: 30px 0 0 9px;
-  width: 398px;
-  height: 252px;
-}
-/* line 260, ../scss/_768up.scss */
-#american-art-legend p {
-  color: #323232;
-  font-size: 1.125em;
-  line-height: 1.875;
-  margin: 35px 0 0 35px;
-  width: 55%;
+/* line 159, ../scss/_768up.scss */
+.gridbg {
+  padding-bottom: 50%;
 }
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 273, ../scss/_768up.scss */
+/* line 167, ../scss/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 277, ../scss/_768up.scss */
+/* line 171, ../scss/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 282, ../scss/_768up.scss */
+/* line 176, ../scss/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 287, ../scss/_768up.scss */
+/* line 181, ../scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 295, ../scss/_768up.scss */
+/* line 189, ../scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -739,33 +688,129 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-/* line 403, ../scss/_768up.scss */
-.footer-links ul li {
-  /*
-  be careful with the depth of your menus.
-  it's very rare to have multi-depth menus in
-  the footer.
-  */
+/* line 290, ../scss/_768up.scss */
+.copyright {
+  float: left;
+  text-align: left;
 }
 
-/* end .footer-links */
+/* line 295, ../scss/_768up.scss */
+.footer-nav {
+  float: right;
+}
+/* line 297, ../scss/_768up.scss */
+.footer-nav ul {
+  margin-top: 0;
+}
+/* line 301, ../scss/_768up.scss */
+.footer-nav > li {
+  border: none;
+  float: left;
+  padding: 5px 16px 9px 8px;
+  position: relative;
+}
+/* line 307, ../scss/_768up.scss */
+.footer-nav > li a {
+  display: inline;
+  padding: 0;
+  text-align: left;
+}
+
 /******************************************************************
 Site Name: Ed Hardy
 Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
 
-Stylesheet: Desktop Stylsheet
+Stylesheet: Desktop Stylesheet
 
 This is the desktop size. It's larger than an iPad so it will only
-be seen on the Desktop. 
+be seen on the Desktop.
 
 ******************************************************************/
-/* 
-you can call the larger styles if you want, but there's really no need 
+/*********************
+GENERAL STYLES
+*********************/
+/* line 16, ../scss/_1030up.scss */
+.hideme {
+  display: block;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+/* line 24, ../scss/_1030up.scss */
+.gridbg {
+  padding-bottom: 25%;
+}
+/* line 29, ../scss/_1030up.scss */
+.gridbg a h2 {
+  -webkit-transition: all 0.2s ease-in-out;
+  -transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  font-size: 5em;
+}
+/* line 35, ../scss/_1030up.scss */
+.gridbg a:hover h2 {
+  opacity: 1;
+  font-size: 2.3em;
+}
+
+/* line 45, ../scss/_1030up.scss */
+#about_tile:after {
+  opacity: 0;
+}
+/* line 49, ../scss/_1030up.scss */
+#about_tile:hover:after {
+  opacity: 0.9;
+}
+
+/* line 56, ../scss/_1030up.scss */
+#follow_us_tile h2 {
+  -webkit-transition: all 0.2s ease-in-out;
+  -transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+/* line 60, ../scss/_1030up.scss */
+#follow_us_tile ul {
+  -webkit-transition: all 0.2s ease-in-out;
+  -transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+/* line 65, ../scss/_1030up.scss */
+#follow_us_tile:hover h2 {
+  opacity: 1;
+  font-size: 2.3em;
+}
+/* line 69, ../scss/_1030up.scss */
+#follow_us_tile:hover ul {
+  opacity: 1;
+}
+
+/* line 76, ../scss/_1030up.scss */
+#about h2 {
+  background-size: 100% auto;
+  -ms-behavior: url(/backgroundsize.min.htc);
+  margin: 15.5% auto 1%;
+  padding-top: 27.2%;
+  width: 34.92%;
+}
+
+/* line 85, ../scss/_1030up.scss */
+#american-art-legend {
+  background-size: 42% 98%, 100% auto;
+  -ms-behavior: url(/backgroundsize.min.htc);
+  height: 0;
+  padding-bottom: 50%;
+}
+/* line 91, ../scss/_1030up.scss */
+#american-art-legend h2 {
+  padding-top: 21%;
+}
+
+/*
+you can call the larger styles if you want, but there's really no need
 */
 /******************************************************************
 ADDITIONAL IE FIXES

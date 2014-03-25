@@ -9,10 +9,28 @@ on larger screens.
 
 ******************************************************************/
 
-.page-template-page-homepage-layout-1-php {
-	.gridbg {
+.gridbg {
+	a {
+		h2 {
+		}
+		&:hover {
+			h2 {
+				font-size: 2.812em;
+			}
+		}
+	}
+}
+
+#follow_us_tile {
+	h2 {
+	}
+	ul {
+	}
+	&:hover {
 		h2 {
 			font-size: 2.812em;
+		}
+		ul {
 		}
 	}
 }

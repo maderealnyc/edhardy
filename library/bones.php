@@ -122,17 +122,27 @@ SCRIPTS & ENQUEUEING
 
 // loading modernizr and jquery, and reply script
 function bones_scripts_and_styles() {
+	global $wp_scripts; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
 	global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
 	if (!is_admin()) {
 
 		// modernizr (without media query polyfill)
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
+		// html5shiv
+		wp_register_script( 'bones-html5shiv', get_stylesheet_directory_uri() . '/library/js/libs/html5shiv.js', array(), '', false );
+
 		// instafeed
 		wp_register_script( 'bones-instafeed', get_stylesheet_directory_uri() . '/library/js/libs/instafeed.min.js', array(), '', false );
 
+		// mediaelement
+		wp_register_script( 'bones-mediaelement', get_stylesheet_directory_uri() . '/library/js/libs/mediaelement-and-player.min.js', array(), '', false );
+
 		// register main stylesheet
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+
+		// mediaelement stylesheet
+		wp_register_style( 'bones-mediaelement-stylesheet', get_stylesheet_directory_uri() . '/library/css/mediaelementplayer.css', array(), '' );
 
 		// ie-only stylesheet
 		wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
@@ -147,10 +157,14 @@ function bones_scripts_and_styles() {
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
+		wp_enqueue_script( 'bones-html5shiv' );
 		wp_enqueue_script( 'bones-instafeed' );
+		wp_enqueue_script( 'bones-mediaelement' );
 		wp_enqueue_style( 'bones-stylesheet' );
+		wp_enqueue_style( 'bones-mediaelement-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
 
+		$wp_scripts->add_data( 'bones-html5shiv', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie html5shiv script
 		$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
 		/*

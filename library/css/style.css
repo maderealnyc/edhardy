@@ -657,7 +657,7 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 223, ../scss/_mixins.scss */
+/* line 222, ../scss/_mixins.scss */
 .button, .button:visited {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #dedede;
@@ -681,7 +681,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, white, #f2f2f2);
   background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
 }
-/* line 242, ../scss/_mixins.scss */
+/* line 241, ../scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
   color: white;
   border: 1px solid #dedede;
@@ -694,7 +694,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
   background-image: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
 }
-/* line 250, ../scss/_mixins.scss */
+/* line 249, ../scss/_mixins.scss */
 .button:active, .button:visited:active {
   background-color: white;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(white));
@@ -704,7 +704,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #f2f2f2, #ffffff);
 }
 
-/* line 255, ../scss/_mixins.scss */
+/* line 254, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -716,7 +716,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
-/* line 261, ../scss/_mixins.scss */
+/* line 260, ../scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background-color: #1472ad;
@@ -726,7 +726,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1784c9, #1472ad);
   background-image: linear-gradient(to bottom, #1784c9, #1472ad);
 }
-/* line 265, ../scss/_mixins.scss */
+/* line 264, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background-color: #1990db;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
@@ -1145,16 +1145,20 @@ POSTS & CONTENT STYLES
 /* line 480, ../scss/_base.scss */
 .gridbg {
   background-size: contain;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 0;
   padding-bottom: 100%;
+  position: relative;
 }
-/* line 485, ../scss/_base.scss */
-.gridbg a {
+/* line 487, ../scss/_base.scss */
+.gridbg > a {
   display: inline-block;
   width: 100%;
   text-decoration: none;
+  position: absolute;
+  z-index: 1;
 }
-/* line 491, ../scss/_base.scss */
+/* line 495, ../scss/_base.scss */
 .gridbg h2 {
   font-family: "Rockwell W01 Light";
   font-size: 2.812em;
@@ -1163,91 +1167,119 @@ POSTS & CONTENT STYLES
   text-align: center;
   text-transform: uppercase;
 }
-/* line 499, ../scss/_base.scss */
+/* line 503, ../scss/_base.scss */
 .gridbg h2 strong {
   display: block;
   font-family: "Rockwell W01 Bold";
   font-weight: normal;
 }
 
-/* line 509, ../scss/_base.scss */
+/* line 511, ../scss/_base.scss */
+#about_tile {
+  -webkit-transition: all 0.2s ease-in-out;
+  -transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+/* line 515, ../scss/_base.scss */
+#about_tile:after {
+  backface-visibility: hidden;
+  content: "";
+  background: #000;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 534, ../scss/_base.scss */
 #follow_us_tile h2 {
   margin-bottom: 6px;
 }
-/* line 513, ../scss/_base.scss */
+/* line 538, ../scss/_base.scss */
 #follow_us_tile ul {
   list-style: none;
   margin: 0 auto;
   padding: 0;
   max-width: 256px;
 }
-/* line 519, ../scss/_base.scss */
+/* line 544, ../scss/_base.scss */
 #follow_us_tile ul li {
   float: left;
   margin-right: 4.69%;
 }
-/* line 523, ../scss/_base.scss */
+/* line 548, ../scss/_base.scss */
 #follow_us_tile ul li a {
   background: url(../images/home/sprite-follow-us.png) no-repeat;
   display: block;
   width: 55px;
   height: 60px;
 }
-/* line 531, ../scss/_base.scss */
+/* line 556, ../scss/_base.scss */
 #follow_us_tile ul li.facebook a {
   background-position: 0 0;
 }
-/* line 534, ../scss/_base.scss */
+/* line 559, ../scss/_base.scss */
 #follow_us_tile ul li.facebook a:hover {
   background-position: 0 -60px;
 }
-/* line 539, ../scss/_base.scss */
+/* line 564, ../scss/_base.scss */
 #follow_us_tile ul li.twitter a {
   background-position: -67px 0;
 }
-/* line 542, ../scss/_base.scss */
+/* line 567, ../scss/_base.scss */
 #follow_us_tile ul li.twitter a:hover {
   background-position: -67px -60px;
 }
-/* line 547, ../scss/_base.scss */
+/* line 572, ../scss/_base.scss */
 #follow_us_tile ul li.instagram a {
   background-position: -134px 0;
 }
-/* line 550, ../scss/_base.scss */
+/* line 575, ../scss/_base.scss */
 #follow_us_tile ul li.instagram a:hover {
   background-position: -134px -60px;
 }
-/* line 555, ../scss/_base.scss */
+/* line 580, ../scss/_base.scss */
 #follow_us_tile ul li.pinterest {
   margin-right: 0;
 }
-/* line 559, ../scss/_base.scss */
+/* line 584, ../scss/_base.scss */
 #follow_us_tile ul li.pinterest a {
   background-position: -200px 0;
 }
-/* line 562, ../scss/_base.scss */
+/* line 587, ../scss/_base.scss */
 #follow_us_tile ul li.pinterest a:hover {
   background-position: -200px -60px;
 }
 
-/* line 571, ../scss/_base.scss */
+/* line 596, ../scss/_base.scss */
 .page-template-page-homepage-layout-2-php #follow_us_tile h2 {
   margin: 17% auto 0;
 }
 
-/* line 577, ../scss/_base.scss */
+/* line 602, ../scss/_base.scss */
 #about {
   background: url(../images/home/home-bg-2.jpg) no-repeat;
-  background-size: 100%;
+  background-size: 100% auto;
+  -ms-behavior: url(/backgroundsize.min.htc);
   width: 100%;
   height: 0;
   padding-bottom: 50%;
   position: relative;
 }
-/* line 585, ../scss/_base.scss */
+/* line 611, ../scss/_base.scss */
 #about h2 {
   background: url(../images/home/hdr-who-is.png) no-repeat;
-  background-size: 100%;
+  background-size: 100% auto;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 0;
   margin: 11.5% auto 0;
   padding-top: 27.2%;
@@ -1256,24 +1288,26 @@ POSTS & CONTENT STYLES
   max-width: 419px;
 }
 
-/* line 597, ../scss/_base.scss */
+/* line 624, ../scss/_base.scss */
 #american-art-legend {
   background-color: #f3f3f3;
-  background: url(../images/home/home-bg-3.jpg) no-repeat center center;
+  background: url(../images/home/home-bg-3-full.jpg) no-repeat center center;
   background-size: cover;
+  -ms-behavior: url(/backgroundsize.min.htc);
   width: 100%;
   position: relative;
 }
-/* line 604, ../scss/_base.scss */
+/* line 632, ../scss/_base.scss */
 #american-art-legend h2 {
   background: url(../images/home/hdr-art-legend.png) no-repeat;
   background-size: contain;
+  -ms-behavior: url(/backgroundsize.min.htc);
   height: 0;
   margin: 2.5% 0.75% 0;
   padding-top: 63%;
   max-width: 398px;
 }
-/* line 614, ../scss/_base.scss */
+/* line 644, ../scss/_base.scss */
 #american-art-legend p {
   color: #323232;
   margin: 2% 2.7%;
@@ -1282,17 +1316,17 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 625, ../scss/_base.scss */
+/* line 655, ../scss/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 
-/* line 628, ../scss/_base.scss */
+/* line 658, ../scss/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 630, ../scss/_base.scss */
+/* line 660, ../scss/_base.scss */
 .pagination ul {
   display: inline-block;
   white-space: nowrap;
@@ -1300,7 +1334,7 @@ PAGE NAVI STYLES
   clear: both;
   margin: 1px;
 }
-/* line 636, ../scss/_base.scss */
+/* line 666, ../scss/_base.scss */
 .pagination ul li {
   padding: 0;
   margin: 0;
@@ -1308,7 +1342,7 @@ PAGE NAVI STYLES
   display: inline;
   overflow: hidden;
 }
-/* line 642, ../scss/_base.scss */
+/* line 672, ../scss/_base.scss */
 .pagination ul li a, .pagination ul li span {
   margin: 0;
   text-decoration: none;
@@ -1320,18 +1354,18 @@ PAGE NAVI STYLES
   min-width: 1em;
   display: block;
 }
-/* line 653, ../scss/_base.scss */
+/* line 683, ../scss/_base.scss */
 .pagination ul li span.current {
   font-weight: bold;
 }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 668, ../scss/_base.scss */
+/* line 698, ../scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 672, ../scss/_base.scss */
+/* line 702, ../scss/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1341,12 +1375,12 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 683, ../scss/_base.scss */
+/* line 713, ../scss/_base.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 700, ../scss/_base.scss */
+/* line 730, ../scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1357,7 +1391,7 @@ COMMENT STYLES
   /* comment reply link */
   /* end .commentlist .comment-reply-link */
 }
-/* line 702, ../scss/_base.scss */
+/* line 732, ../scss/_base.scss */
 .commentlist li {
   position: relative;
   clear: both;
@@ -1367,63 +1401,63 @@ COMMENT STYLES
   padding: 0.7335em 10px;
   /* end .commentlist li ul.children */
 }
-/* line 710, ../scss/_base.scss */
+/* line 740, ../scss/_base.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 714, ../scss/_base.scss */
+/* line 744, ../scss/_base.scss */
 .commentlist li ul.children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 732, ../scss/_base.scss */
+/* line 762, ../scss/_base.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 736, ../scss/_base.scss */
+/* line 766, ../scss/_base.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 741, ../scss/_base.scss */
+/* line 771, ../scss/_base.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 755, ../scss/_base.scss */
+/* line 785, ../scss/_base.scss */
 .commentlist .odd {
   background: #eee;
 }
-/* line 758, ../scss/_base.scss */
+/* line 788, ../scss/_base.scss */
 .commentlist .even {
   background: #fefefe;
 }
-/* line 773, ../scss/_base.scss */
+/* line 803, ../scss/_base.scss */
 .commentlist .vcard {
   margin-left: 50px;
 }
-/* line 776, ../scss/_base.scss */
+/* line 806, ../scss/_base.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 784, ../scss/_base.scss */
+/* line 814, ../scss/_base.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 787, ../scss/_base.scss */
+/* line 817, ../scss/_base.scss */
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
-/* line 791, ../scss/_base.scss */
+/* line 821, ../scss/_base.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 801, ../scss/_base.scss */
+/* line 831, ../scss/_base.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -1431,17 +1465,17 @@ COMMENT STYLES
   border: 1px solid #cecece;
   background: #fff;
 }
-/* line 826, ../scss/_base.scss */
+/* line 856, ../scss/_base.scss */
 .commentlist .comment_content {
   margin-left: 50px;
 }
-/* line 829, ../scss/_base.scss */
+/* line 859, ../scss/_base.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 838, ../scss/_base.scss */
+/* line 868, ../scss/_base.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1453,7 +1487,7 @@ COMMENT STYLES
   font-weight: 700;
   font-size: 0.9em;
 }
-/* line 850, ../scss/_base.scss */
+/* line 880, ../scss/_base.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1462,27 +1496,27 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 862, ../scss/_base.scss */
+/* line 892, ../scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
-/* line 866, ../scss/_base.scss */
+/* line 896, ../scss/_base.scss */
 .respond-form form {
   margin: 0.75em 0;
 }
-/* line 869, ../scss/_base.scss */
+/* line 899, ../scss/_base.scss */
 .respond-form form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 875, ../scss/_base.scss */
+/* line 905, ../scss/_base.scss */
 .respond-form form li label,
 .respond-form form li small {
   display: none;
 }
-/* line 883, ../scss/_base.scss */
+/* line 913, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
@@ -1493,14 +1527,14 @@ COMMENT FORM STYLES
   line-height: 1.5em;
   /* form validation */
 }
-/* line 889, ../scss/_base.scss */
+/* line 919, ../scss/_base.scss */
 .respond-form form input[type=text]:focus,
 .respond-form form input[type=email]:focus,
 .respond-form form input[type=url]:focus,
 .respond-form form textarea:focus {
   background: #fff;
 }
-/* line 894, ../scss/_base.scss */
+/* line 924, ../scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1513,14 +1547,14 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 907, ../scss/_base.scss */
+/* line 937, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 912, ../scss/_base.scss */
+/* line 942, ../scss/_base.scss */
 .respond-form form textarea {
   resize: none;
   width: 97.3%;
@@ -1529,7 +1563,7 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-/* line 925, ../scss/_base.scss */
+/* line 955, ../scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -1537,13 +1571,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 938, ../scss/_base.scss */
+/* line 968, ../scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 943, ../scss/_base.scss */
+/* line 973, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1551,7 +1585,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 959, ../scss/_base.scss */
+/* line 989, ../scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
@@ -1559,19 +1593,19 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 980, ../scss/_base.scss */
+/* line 1010, ../scss/_base.scss */
 .footer {
   clear: both;
 }
 
-/* line 984, ../scss/_base.scss */
+/* line 1014, ../scss/_base.scss */
 .copyright {
   padding: 9px;
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 990, ../scss/_base.scss */
+/* line 1020, ../scss/_base.scss */
 .footer-nav {
   border: 0px;
   border-bottom: 0;
@@ -1579,7 +1613,7 @@ FOOTER STYLES
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 994, ../scss/_base.scss */
+/* line 1024, ../scss/_base.scss */
 .footer-nav li {
   border-bottom: 1px solid #fff;
   /*
@@ -1590,7 +1624,7 @@ FOOTER STYLES
   http://www.alistapart.com/articles/organizing-mobile/
   */
 }
-/* line 997, ../scss/_base.scss */
+/* line 1027, ../scss/_base.scss */
 .footer-nav li a {
   display: block;
   text-decoration: none;
@@ -1605,11 +1639,11 @@ FOOTER STYLES
   keep this file as small as possible!
   */
 }
-/* line 1011, ../scss/_base.scss */
+/* line 1041, ../scss/_base.scss */
 .footer-nav li a:hover, .footer-nav li a:focus {
   opacity: 1;
 }
-/* line 1032, ../scss/_base.scss */
+/* line 1062, ../scss/_base.scss */
 .footer-nav li ul.sub-menu li a,
 .footer-nav li ul.children li a {
   padding-left: 30px;
@@ -1826,23 +1860,25 @@ tweeners.
   /* line 103, ../scss/_481up.scss */
   #about h2 {
     background-size: contain;
+    -ms-behavior: url(/backgroundsize.min.htc);
     margin: 17.5% auto 0;
     padding-top: 20%;
     width: 100%;
   }
 
-  /* line 111, ../scss/_481up.scss */
+  /* line 113, ../scss/_481up.scss */
   #american-art-legend {
-    background: url(../images/home/ed-hardy-profile.png) no-repeat bottom right, url(../images/home/home-bg-3.jpg) no-repeat center center;
-    background-size: 42%, cover;
+    background: url(../images/home/ed-hardy-profile.png) no-repeat bottom right, url(../images/home/home-bg-3-full.jpg) no-repeat center center;
+    background-size: 42% auto, cover;
+    -ms-behavior: url(/backgroundsize.min.htc);
     width: 100%;
     position: relative;
   }
-  /* line 117, ../scss/_481up.scss */
+  /* line 120, ../scss/_481up.scss */
   #american-art-legend h2 {
     padding-top: 24.61%;
   }
-  /* line 121, ../scss/_481up.scss */
+  /* line 124, ../scss/_481up.scss */
   #american-art-legend p {
     width: 53%;
   }
@@ -2130,12 +2166,9 @@ you can add resource intensive styles.
   }
 }
 /*
-DESKTOP
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
+iPad Landscape
 */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
   /******************************************************************
   Site Name: Ed Hardy
   Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
@@ -2241,7 +2274,163 @@ you can add resource intensive styles.
   Site Name: Ed Hardy
   Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
   
-  Stylesheet: Desktop Stylsheet
+  Stylesheet: iPad Landscape Stylsheet
+  
+  ******************************************************************/
+  /*********************
+  GENERAL STYLES
+  *********************/
+  /* line 13, ../scss/_1024landscape.scss */
+  .hideme {
+    display: block;
+  }
+
+  /*********************
+  POSTS & CONTENT STYLES
+  *********************/
+  /* line 21, ../scss/_1024landscape.scss */
+  .gridbg {
+    padding-bottom: 25%;
+  }
+  /* line 24, ../scss/_1024landscape.scss */
+  .gridbg h2 {
+    font-size: 2.3em;
+  }
+
+  /* line 30, ../scss/_1024landscape.scss */
+  #about h2 {
+    background-size: 100% auto;
+    -ms-behavior: url(/backgroundsize.min.htc);
+    margin: 15.5% auto 1%;
+    padding-top: 27.2%;
+    width: 34.92%;
+  }
+
+  /* line 39, ../scss/_1024landscape.scss */
+  #american-art-legend {
+    background-size: 42% 98%, 100% auto;
+    -ms-behavior: url(/backgroundsize.min.htc);
+    height: 0;
+    padding-bottom: 50%;
+  }
+  /* line 45, ../scss/_1024landscape.scss */
+  #american-art-legend h2 {
+    padding-top: 21%;
+  }
+}
+/*
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 1030px) {
+  /******************************************************************
+  Site Name: Ed Hardy
+  Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
+  
+  Stylesheet: Grid Stylesheet
+  
+  I've seperated the grid so you can swap it out easily. It's
+  called at the top the style.scss stylesheet.
+  
+  There are a ton of grid solutions out there. You should definitely
+  experiment with your own. Here are some recommendations:
+  
+  http://gridsetapp.com - Love this site. Responsive Grids made easy.
+  http://susy.oddbird.net/ - Grids using Compass. Very elegant.
+  http://gridpak.com/ - Create your own responsive grid.
+  
+  The grid below is a combination of the 1140 grid and Twitter Boostrap.
+  I liked 1140 but Boostrap's grid was way more detailed so I merged them
+  together, let's see how this works out. If you want to use 1140, the original
+  values are commented out on each line.
+  
+  Agustin -- I changed this to use a 1200 grid since design is that way via Gridpak.
+  
+  ******************************************************************/
+  /* line 26, ../scss/_grid.scss */
+  .onecol {
+    width: 8.33333333333%;
+  }
+
+  /* line 27, ../scss/_grid.scss */
+  .twocol {
+    width: 16.6666666667%;
+  }
+
+  /* line 28, ../scss/_grid.scss */
+  .threecol {
+    width: 25.0%;
+  }
+
+  /* line 29, ../scss/_grid.scss */
+  .fourcol {
+    width: 33.3333333333%;
+  }
+
+  /* line 30, ../scss/_grid.scss */
+  .fivecol {
+    width: 41.6666666667%;
+  }
+
+  /* line 31, ../scss/_grid.scss */
+  .sixcol {
+    width: 50.0%;
+  }
+
+  /* line 32, ../scss/_grid.scss */
+  .sevencol {
+    width: 58.3333333333%;
+  }
+
+  /* line 33, ../scss/_grid.scss */
+  .eightcol {
+    width: 66.6666666667%;
+  }
+
+  /* line 34, ../scss/_grid.scss */
+  .ninecol {
+    width: 75.0%;
+  }
+
+  /* line 35, ../scss/_grid.scss */
+  .tencol {
+    width: 83.3333333333%;
+  }
+
+  /* line 36, ../scss/_grid.scss */
+  .elevencol {
+    width: 91.6666666667%;
+  }
+
+  /* line 37, ../scss/_grid.scss */
+  .twelvecol {
+    width: 100%;
+  }
+
+  /* line 40, ../scss/_grid.scss */
+  .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+    position: relative;
+    float: left;
+    margin-left: 0;
+  }
+
+  /* line 46, ../scss/_grid.scss */
+  .first {
+    margin-left: 0;
+  }
+
+  /* line 50, ../scss/_grid.scss */
+  .last {
+    float: right;
+  }
+
+  /******************************************************************
+  Site Name: Ed Hardy
+  Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
+  
+  Stylesheet: Desktop Stylesheet
   
   This is the desktop size. It's larger than an iPad so it will only
   be seen on the Desktop.
@@ -2250,7 +2439,7 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
-  /* line 16, ../scss/_1024up.scss */
+  /* line 16, ../scss/_1030up.scss */
   .hideme {
     display: block;
   }
@@ -2258,31 +2447,74 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 24, ../scss/_1024up.scss */
+  /* line 24, ../scss/_1030up.scss */
   .gridbg {
     padding-bottom: 25%;
   }
-
-  /* line 30, ../scss/_1024up.scss */
-  .page-template-page-homepage-layout-1-php .gridbg h2 {
+  /* line 29, ../scss/_1030up.scss */
+  .gridbg a h2 {
+    -webkit-transition: all 0.2s ease-in-out;
+    -transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    font-size: 5em;
+  }
+  /* line 35, ../scss/_1030up.scss */
+  .gridbg a:hover h2 {
+    opacity: 1;
     font-size: 2.3em;
   }
 
-  /* line 37, ../scss/_1024up.scss */
+  /* line 45, ../scss/_1030up.scss */
+  #about_tile:after {
+    opacity: 0;
+  }
+  /* line 49, ../scss/_1030up.scss */
+  #about_tile:hover:after {
+    opacity: 0.9;
+  }
+
+  /* line 56, ../scss/_1030up.scss */
+  #follow_us_tile h2 {
+    -webkit-transition: all 0.2s ease-in-out;
+    -transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+  }
+  /* line 60, ../scss/_1030up.scss */
+  #follow_us_tile ul {
+    -webkit-transition: all 0.2s ease-in-out;
+    -transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+  }
+  /* line 65, ../scss/_1030up.scss */
+  #follow_us_tile:hover h2 {
+    opacity: 1;
+    font-size: 2.3em;
+  }
+  /* line 69, ../scss/_1030up.scss */
+  #follow_us_tile:hover ul {
+    opacity: 1;
+  }
+
+  /* line 76, ../scss/_1030up.scss */
   #about h2 {
-    background-size: 100%;
+    background-size: 100% auto;
+    -ms-behavior: url(/backgroundsize.min.htc);
     margin: 15.5% auto 1%;
     padding-top: 27.2%;
     width: 34.92%;
   }
 
-  /* line 45, ../scss/_1024up.scss */
+  /* line 85, ../scss/_1030up.scss */
   #american-art-legend {
-    background-size: 42% 98%, 100% 100%;
+    background-size: 42% 98%, 100% auto;
+    -ms-behavior: url(/backgroundsize.min.htc);
     height: 0;
     padding-bottom: 50%;
   }
-  /* line 50, ../scss/_1024up.scss */
+  /* line 91, ../scss/_1030up.scss */
   #american-art-legend h2 {
     padding-top: 21%;
   }
@@ -2302,12 +2534,17 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
-  /* line 14, ../scss/_1240up.scss */
-  .page-template-page-homepage-layout-1-php .gridbg h2 {
+  /* line 17, ../scss/_1240up.scss */
+  .gridbg a:hover h2 {
     font-size: 2.812em;
   }
 
-  /* line 21, ../scss/_1240up.scss */
+  /* line 30, ../scss/_1240up.scss */
+  #follow_us_tile:hover h2 {
+    font-size: 2.812em;
+  }
+
+  /* line 39, ../scss/_1240up.scss */
   #american-art-legend p {
     font-size: 1.125em;
     line-height: 1.875;
@@ -2331,9 +2568,9 @@ query for retina AND a certain size if you want. Go Nuts.
   place.
   
   ******************************************************************/
-  /* 
+  /*
   
-  EXAMPLE 
+  EXAMPLE
   Let's say you have an image and you need to make sure it looks ok
   on retina screens. Let's say we have an icon which dimension are
   24px x 24px. In your regular stylesheets, it would look something
@@ -2352,12 +2589,13 @@ query for retina AND a certain size if you want. Go Nuts.
   .icon {
   	background: url(img/test@2x.png) no-repeat;
   	background-size: 24px 24px;
+  	-ms-behavior: url(/backgroundsize.min.htc);
   }
   
-  So, you would create the same icon, but at double the resolution, meaning 
+  So, you would create the same icon, but at double the resolution, meaning
   it would be 48px x 48px. You'd name it the same, but with a @2x at the end
   (this is pretty standard practice). Set the background image so it matches
-  the original dimensions and you are good to go. 
+  the original dimensions and you are good to go.
   
   */
 }

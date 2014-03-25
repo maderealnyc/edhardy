@@ -1,0 +1,48 @@
+/******************************************************************
+Site Name: Ed Hardy
+Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
+
+Stylesheet: iPad Landscape Stylsheet
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+.hideme {
+	display: block;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+.gridbg {
+    padding-bottom: 25%;
+
+    h2 {
+		font-size: 2.3em;
+	}
+}
+
+#about {
+	h2 {
+		background-size: 100% auto;
+		-ms-behavior: url(/backgroundsize.min.htc);
+	    margin: 15.5% auto 1%;
+	    padding-top: 27.2%;
+	    width: 34.92%;
+	}
+}
+
+#american-art-legend {
+	background-size: 42% 98%, 100% auto;
+	-ms-behavior: url(/backgroundsize.min.htc);
+    height: 0;
+    padding-bottom: 50%;
+
+	h2 {
+    	padding-top: 21%;
+	}
+}

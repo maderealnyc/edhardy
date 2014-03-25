@@ -102,15 +102,18 @@ POSTS & CONTENT STYLES
 #about {
 	h2 {
 		background-size: contain;
+		-ms-behavior: url(/backgroundsize.min.htc);
 	    margin: 17.5% auto 0;
 	    padding-top: 20%;
 	    width: 100%;
+
 	}
 }
 
 #american-art-legend {
-	background: url(../images/home/ed-hardy-profile.png) no-repeat bottom right, url(../images/home/home-bg-3.jpg) no-repeat center center;
-    background-size: 42%, cover;
+	background: url(../images/home/ed-hardy-profile.png) no-repeat bottom right, url(../images/home/home-bg-3-full.jpg) no-repeat center center;
+	background-size: 42% auto, cover;
+	-ms-behavior: url(/backgroundsize.min.htc);
     width: 100%;
 	position: relative;
 

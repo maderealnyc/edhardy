@@ -98,7 +98,7 @@
 	<?php // Homepage Layout 1 Tile 9 (About Tile) ?>
 	<?php $hp1_tile_9_bg_image = get_field('about_tile_bg_image'); ?>
 	<?php if( !empty($hp1_tile_9_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix grayscale" id="about_tile" style="background-image: url(<?php echo $hp1_tile_9_bg_image['url']; ?>);"><a href="#about"><h2>About <strong>Ed</strong></h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="about_tile" style="background-image: url(<?php echo $hp1_tile_9_bg_image['url']; ?>);"><a href="#about"><h2>About <strong>Ed</strong></h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 10 (Static Image Tile) ?>

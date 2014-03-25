@@ -2,7 +2,7 @@
 Site Name: Ed Hardy
 Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
 
-Stylesheet: Desktop Stylsheet
+Stylesheet: Desktop Stylesheet
 
 This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
@@ -23,19 +23,59 @@ POSTS & CONTENT STYLES
 
 .gridbg {
     padding-bottom: 25%;
+
+	a {
+
+		h2 {
+			@include transition(all 0.2s ease-in-out);
+			opacity: 0;
+			font-size: 5em;
+		}
+		&:hover {
+			h2 {
+				opacity: 1;
+				font-size: 2.3em;
+			}
+		}
+	}
 }
 
-.page-template-page-homepage-layout-1-php {
-	.gridbg {
+#about_tile {
+
+	&:after {
+		opacity: 0;
+	}
+	&:hover {
+		&:after {
+			opacity: 0.9;
+		}
+	}
+}
+
+#follow_us_tile {
+	h2 {
+		@include transition(all 0.2s ease-in-out);
+		opacity: 0;
+	}
+	ul {
+		@include transition(all 0.2s ease-in-out);
+		opacity: 0;
+	}
+	&:hover {
 		h2 {
+			opacity: 1;
 			font-size: 2.3em;
+		}
+		ul {
+			opacity: 1;
 		}
 	}
 }
 
 #about {
 	h2 {
-		background-size: 100%;
+		background-size: 100% auto;
+		-ms-behavior: url(/backgroundsize.min.htc);
 	    margin: 15.5% auto 1%;
 	    padding-top: 27.2%;
 	    width: 34.92%;
@@ -43,7 +83,8 @@ POSTS & CONTENT STYLES
 }
 
 #american-art-legend {
-    background-size: 42% 98%, 100% 100%;
+	background-size: 42% 98%, 100% auto;
+	-ms-behavior: url(/backgroundsize.min.htc);
     height: 0;
     padding-bottom: 50%;
 
