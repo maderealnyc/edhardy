@@ -1581,6 +1581,7 @@ FOOTER STYLES
 }
 /* line 994, ../scss/_base.scss */
 .footer-nav li {
+  border-bottom: 1px solid #fff;
   /*
   so you really have to rethink your dropdowns for mobile.
   you don't want to have it expand too much because the
@@ -1589,13 +1590,12 @@ FOOTER STYLES
   http://www.alistapart.com/articles/organizing-mobile/
   */
 }
-/* line 996, ../scss/_base.scss */
+/* line 997, ../scss/_base.scss */
 .footer-nav li a {
   display: block;
   text-decoration: none;
   opacity: 0.65;
   padding: 9px;
-  border-bottom: 1px solid #fff;
   text-transform: uppercase;
   text-align: center;
   /*
@@ -1844,7 +1844,7 @@ tweeners.
   }
   /* line 121, ../scss/_481up.scss */
   #american-art-legend p {
-    width: 55%;
+    width: 53%;
   }
 
   /*********************
@@ -2124,7 +2124,6 @@ you can add resource intensive styles.
   }
   /* line 307, ../scss/_768up.scss */
   .footer-nav > li a {
-    border: none;
     display: inline;
     padding: 0;
     text-align: left;
