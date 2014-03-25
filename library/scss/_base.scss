@@ -295,99 +295,21 @@ NAVIGATION STYLES
 		a {}
 	}  /* end current highlighters */
 
-} /* end .nav */
+	li.nav-newsletter > a {
+		font-size: 8.5px;
+		letter-spacing: 0.12em;
+		&:hover {
+			color: #c02f1a;
+		}
 
-li.nav-newsletter > a {
-	font-size: 8.5px;
-	letter-spacing: 0.12em;
-	&:hover {
-		color: #c02f1a;
-	}
-
-	strong {
-		display: block;
-		font-size: 11px;
-		letter-spacing: 0.2em;
-	}
-}
-
-/*
-all navs have a .nav class applied via
-the wp_menu function; this is so we can
-easily write one group of styles for
-the navs on the site so our css is cleaner
-and more scalable.
-*/
-
-.footer-nav {
-	border: 0px;
-	border-bottom: 0;
-
-	li {
-
-		a {
+		strong {
 			display: block;
-			text-decoration: none;
-			padding: 10px 10px;
-			border-bottom: 1px solid #ccc;
-
-			/*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/
-			&:hover, &:focus {
-
-			}
+			font-size: 11px;
+			letter-spacing: 0.2em;
 		}
+	}
 
-		&:first-child {}
-
-		&:last-child {}
-
-		/*
-		so you really have to rethink your dropdowns for mobile.
-		you don't want to have it expand too much because the
-		screen is so small. How you manage your menu should
-		depend on the project. Here's some great info on it:
-		http://www.alistapart.com/articles/organizing-mobile/
-		*/
-		ul.sub-menu,
-		ul.children {
-
-			li {
-
-				a {
-					padding-left: 30px;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-
-				}
-
-				&:first-child {}
-
-				&:last-child {}
-
-			}
-
-		}
-
-	} /* end .menu li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current-page-ancestor {
-
-		a {}
-
-	}  /* end current highlighters */
-
-} /* end .nav */
+} /* end .top-nav */
 
 /*********************
 POSTS & CONTENT STYLES
@@ -1059,25 +981,81 @@ FOOTER STYLES
 	clear: both;
 }
 
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-	.footer-links {
+.copyright {
+	padding: 9px;
+	text-transform: uppercase;
+	text-align: center;
+}
 
-		ul {
+.footer-nav {
+	border: 0px;
+	border-bottom: 0;
 
-			li {}
+	li {
+
+		a {
+			display: block;
+			text-decoration: none;
+			opacity: 0.65;
+			padding: 9px;
+			border-bottom: 1px solid #fff;
+			text-transform: uppercase;
+			text-align: center;
+
+			/*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+			&:hover, &:focus {
+				opacity: 1;
+			}
+		}
+
+		&:first-child {}
+
+		&:last-child {}
+
+		/*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+		ul.sub-menu,
+		ul.children {
+
+			li {
+
+				a {
+					padding-left: 30px;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+
+				}
+
+				&:first-child {}
+
+				&:last-child {}
+
+			}
 
 		}
 
-	} /* end .footer-links */
+	} /* end .menu li */
 
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
 
-	.copyright {}
+		a {}
 
+	}  /* end current highlighters */
+
+} /* end .nav */

@@ -75,7 +75,6 @@ NAVIGATION STYLES
 			*/
 
 			&:hover, &:focus {
-				opacity: 1;
 			}
 
 		}
@@ -288,24 +287,28 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links {
+.copyright {
+	float: left;
+	text-align: left;
+}
+
+.footer-nav {
+	float: right;
 	ul {
-		li {
-			a {
-				&:hover {}
-			}
-			/*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-			ul {}
+		margin-top:0;
+	}
+
+	> li {
+		border: none;
+		float: left;
+		padding: 5px 16px 9px 8px;
+		position: relative;
+
+		a {
+			border: none;
+			display: inline;
+			padding: 0;
+			text-align: left;
 		}
 	}
-} /* end .footer-links */
-
+}
