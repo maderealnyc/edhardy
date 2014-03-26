@@ -111,8 +111,8 @@ POSTS & CONTENT STYLES
 }
 
 #american-art-legend {
-	background: url(../images/home/ed-hardy-profile.png) no-repeat bottom right, url(../images/home/home-bg-3-full.jpg) no-repeat center center;
-	background-size: 42% auto, cover;
+	background: url(../images/home/home-bg-3-full.jpg) no-repeat center center;
+	background-size: 100% auto;
 	-ms-behavior: url(/backgroundsize.min.htc);
     width: 100%;
 	position: relative;
@@ -123,6 +123,16 @@ POSTS & CONTENT STYLES
 
 	p {
    		width: 53%;
+	}
+
+	.eh-pic {
+		background: url(../images/home/ed-hardy-profile.png) no-repeat;
+		background-size: contain;
+		width: 42%;
+		height: 98%;
+		position: absolute;
+		bottom: 0;
+		right: -2px;
 	}
 }
 

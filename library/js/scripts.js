@@ -36,39 +36,76 @@ jQuery(document).ready(function($) {
 	it, so be sure to research and find the one
 	that works for you best.
 	*/
-	
+
 	/* getting viewport width */
 	var responsive_viewport = $(window).width();
-	
+
 	/* if is below 481px */
 	if (responsive_viewport < 481) {
-	
+
 	} /* end smallest screen */
-	
+
 	/* if is larger than 481px */
 	if (responsive_viewport > 481) {
-	
+
 	} /* end larger than 481px */
-	
+
 	/* if is above or equal to 768px */
 	if (responsive_viewport >= 768) {
-	
+
 		/* load gravatars */
 		$('.comment img[data-gravatar]').each(function(){
 			$(this).attr('src',$(this).attr('data-gravatar'));
 		});
-		
+
 	}
-	
+
 	/* off the bat large screen actions */
 	if (responsive_viewport > 1030) {
-	
+
 	}
-	
-	
+
+
 	// add all your scripts here
-	
- 
+
+
+    //initialise Stellar.js
+    if(!Modernizr.touch){
+	    $.stellar({
+			// Set scrolling to be in either one or both directions
+			horizontalScrolling: false,
+			verticalScrolling: true,
+
+			// Set the global alignment offsets
+			horizontalOffset: 0,
+			verticalOffset: 0,
+
+			// Refreshes parallax content on window load and resize
+			responsive: true,
+
+			// Select which property is used to calculate scroll.
+			// Choose 'scroll', 'position', 'margin' or 'transform',
+			// or write your own 'scrollProperty' plugin.
+			scrollProperty: 'scroll',
+
+			// Select which property is used to position elements.
+			// Choose between 'position' or 'transform',
+			// or write your own 'positionProperty' plugin.
+			positionProperty: 'position',
+
+			// Enable or disable the two types of parallax
+			parallaxBackgrounds: true,
+			parallaxElements: true,
+
+			// Hide parallax elements that move outside the viewport
+			hideDistantElements: true,
+
+			// Customise how elements are shown and hidden
+			hideElement: function($elem) { $elem.hide(); },
+			showElement: function($elem) { $elem.show(); }
+		});
+	}
+
 }); /* end of as page load scripts */
 
 

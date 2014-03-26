@@ -34,11 +34,24 @@ POSTS & CONTENT STYLES
 	    padding-top: 27.2%;
 	    width: 34.92%;
 	}
+
+	.dagger {
+		background: url(../images/home/true-love-knife.png) no-repeat;
+		background-size: contain;
+		-ms-behavior: url(/backgroundsize.min.htc);
+		height: 0px;
+		// max-width: 144px;
+		width: 12%;
+		padding-bottom: 25%;
+		z-index: 9999999;
+		position: absolute;
+		left: 50%;
+		margin-left: -6%;
+		top: 59%;
+	}
 }
 
 #american-art-legend {
-	background-size: 42% 98%, 100% auto;
-	-ms-behavior: url(/backgroundsize.min.htc);
     height: 0;
     padding-bottom: 50%;
 

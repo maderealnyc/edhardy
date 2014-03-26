@@ -471,8 +471,8 @@ POSTS & CONTENT STYLES
 
 /* line 113, ../scss/_481up.scss */
 #american-art-legend {
-  background: url(../images/home/ed-hardy-profile.png) no-repeat bottom right, url(../images/home/home-bg-3-full.jpg) no-repeat center center;
-  background-size: 42% auto, cover;
+  background: url(../images/home/home-bg-3-full.jpg) no-repeat center center;
+  background-size: 100% auto;
   -ms-behavior: url(/backgroundsize.min.htc);
   width: 100%;
   position: relative;
@@ -484,6 +484,16 @@ POSTS & CONTENT STYLES
 /* line 124, ../scss/_481up.scss */
 #american-art-legend p {
   width: 53%;
+}
+/* line 128, ../scss/_481up.scss */
+#american-art-legend .eh-pic {
+  background: url(../images/home/ed-hardy-profile.png) no-repeat;
+  background-size: contain;
+  width: 42%;
+  height: 98%;
+  position: absolute;
+  bottom: 0;
+  right: -2px;
 }
 
 /*********************
@@ -772,12 +782,10 @@ POSTS & CONTENT STYLES
 
 /* line 85, ../scss/_1030up.scss */
 #american-art-legend {
-  background-size: 42% 98%, 100% auto;
-  -ms-behavior: url(/backgroundsize.min.htc);
   height: 0;
   padding-bottom: 50%;
 }
-/* line 91, ../scss/_1030up.scss */
+/* line 89, ../scss/_1030up.scss */
 #american-art-legend h2 {
   padding-top: 21%;
 }

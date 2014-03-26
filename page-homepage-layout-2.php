@@ -14,12 +14,10 @@ Template Name: Homepage Layout 2
 
 				<?php include('homepage-variables-controller.php'); ?>
 
-				<div class="twelvecol clearfix" id="about">
-					<h2 class="image-replacement">Who Is Ed Hardy?</h2>
-				</div>
+				<?php include('about-edhardy.php'); ?>
 
 				<?php include('american-art-legend.php'); ?>
-				
+
 				<?php include('footer-video.php'); ?>
 
 			</div>

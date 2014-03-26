@@ -135,6 +135,9 @@ function bones_scripts_and_styles() {
 		// instafeed
 		wp_register_script( 'bones-instafeed', get_stylesheet_directory_uri() . '/library/js/libs/instafeed.min.js', array(), '', false );
 
+		// stellar
+		wp_register_script( 'bones-stellar', get_stylesheet_directory_uri() . '/library/js/libs/jquery.stellar.min.js', array(), '', false );
+
 		// mediaelement
 		wp_register_script( 'bones-mediaelement', get_stylesheet_directory_uri() . '/library/js/libs/mediaelement-and-player.min.js', array(), '', false );
 
@@ -159,6 +162,7 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_script( 'bones-html5shiv' );
 		wp_enqueue_script( 'bones-instafeed' );
+		wp_enqueue_script( 'bones-stellar' );
 		wp_enqueue_script( 'bones-mediaelement' );
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bones-mediaelement-stylesheet' );

@@ -617,6 +617,19 @@ POSTS & CONTENT STYLES
 	}
 }
 
+#image_below_grid {
+	position: relative;
+	height: 0;
+	padding-bottom: 54.3%;
+	overflow: hidden;
+
+	img {
+		position: absolute;
+		top: center;
+		left: center;
+	}
+}
+
 #about {
 	background: url(../images/home/home-bg-2.jpg) no-repeat;
     background-size: 100% auto;
@@ -640,10 +653,9 @@ POSTS & CONTENT STYLES
 }
 
 #american-art-legend {
-	background-color: #f3f3f3;
-	background: url(../images/home/home-bg-3-full.jpg) no-repeat center center;
-	background-size: cover;
-		-ms-behavior: url(/backgroundsize.min.htc);
+	background: #f3f3f3 url(../images/home/home-bg-3-full.jpg) no-repeat center center;
+	background-size: contain;
+	-ms-behavior: url(/backgroundsize.min.htc);
     width: 100%;
 	position: relative;
 
@@ -656,7 +668,6 @@ POSTS & CONTENT STYLES
 	    padding-top: 63%;
 	    // width: 100%;
 	    max-width: 398px;
-
 	}
 
 	p {
