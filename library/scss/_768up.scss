@@ -39,6 +39,10 @@ HEADER STYLES
 
 	#inner-header {
 		padding: 14px;
+
+		nav {
+			float: right;
+		}
 	}
 
 	#logo {
@@ -53,21 +57,20 @@ NAVIGATION STYLES
 .top-nav {
 	background: black;
 	border: 0;
-	float: right;
+	float: left;
 	margin: 0;
+
 	ul {
 		margin-top:0;
 	}
 	> li {
-		border: none;
+		display: inline;
 		float: left;
-		padding: 5px 16px 9px 8px;
-		position: relative;
+		border: none;
+		padding: 6px 16px 9px 8px;
 
 		a {
-			border-bottom: 0;
-			display: inline;
-			text-align: left;
+			padding: 9px;
 
 			/*
 			you can use hover styles here even though this size
@@ -82,37 +85,12 @@ NAVIGATION STYLES
 		&:first-child {}
 		&:last-child {}
 
-		/*
-		social links
-		*/
-		ul.sub-menu {
-			border: none;
-			float: left;
-			margin: 0 0 0 8px;
-			text-align: left;
-
-			li {
-				display: inline;
-				float: left;
-			}
-
-			li.nav-facebook,
-			li.nav-twitter,
-			li.nav-youtube,
-			li.nav-instagram,
-			li.nav-pinterest {
-				padding: 9px 4.5px 9px 9px;
-			}
-			li.nav-facebook {
-				background: url(../images/separator-newsletter.png) no-repeat 0 0;
-			}
-
-		}
-
 	} /* end .menu ul li */
 
 	li.nav-about,
 	li.nav-lookbook {
+		top: auto;
+
 		a {
 			padding: 0 0 4px 0;
 			&:hover {
@@ -136,7 +114,7 @@ NAVIGATION STYLES
 		a {}
 	}  /* end current highlighters */
 
-} /* end .nav */
+} /* end .top-nav */
 
 li.nav-newsletter {
 	padding: 0;
@@ -146,10 +124,34 @@ li.nav-newsletter {
 li.nav-newsletter-mobile {
 	display: none;
 }
-li.nav-newsletter > a {
-	float: left;
-	background: url(../images/arrow-newsletter.png) no-repeat 100% 50%;
-	padding-right: 19px;
+
+/*
+social links
+*/
+#inner-header {
+	ul.social-nav {
+		border: none;
+		float: left;
+		margin: 0 0 0 8px;
+		text-align: left;
+
+		li {
+			display: inline;
+			float: left;
+		}
+
+		li.facebook,
+		li.twitter,
+		li.youtube,
+		li.instagram,
+		li.pinterest {
+			padding: 9px 4.5px 9px 9px;
+		}
+		li.facebook {
+			background: url(../images/separator-newsletter.png) no-repeat 0 0;
+		}
+
+	}
 }
 
 /*********************
@@ -286,28 +288,3 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-
-.copyright {
-	float: left;
-	text-align: left;
-}
-
-.footer-nav {
-	float: right;
-	ul {
-		margin-top:0;
-	}
-
-	> li {
-		border: none;
-		float: left;
-		padding: 5px 16px 9px 8px;
-		position: relative;
-
-		a {
-			display: inline;
-			padding: 0;
-			text-align: left;
-		}
-	}
-}

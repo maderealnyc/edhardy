@@ -112,12 +112,7 @@
 	<?php if( !empty($hp1_tile_11_bg_image) ): ?>
 		<div class="threecol grid gridbg clearfix grayscale" id="follow_us_tile" style="background-image: url(<?php echo $hp1_tile_11_bg_image['url']; ?>);">
 			<h2>Follow Us</h2>
-			<ul class="clearfix">
-				<li class="facebook"><a class="image-replacement" href="https://www.facebook.com/edhardy" target="_blank">Facebook (https://www.facebook.com/edhardy)</a></li>
-				<li class="twitter"><a class="image-replacement" href="https://twitter.com/edhardy" target="_blank">Twitter (https://twitter.com/edhardy)</a></li>
-				<li class="instagram"><a class="image-replacement" href="http://instagram.com/OfficialEdHardy" target="_blank">Instagram (http://instagram.com/OfficialEdHardy)</a></li>
-				<li class="pinterest"><a class="image-replacement" href="http://www.pinterest.com/edhardyofficial/" target="_blank">Pinterest (http://www.pinterest.com/edhardyofficial/)</a></li>
-			</ul>
+			<?php bones_social_links(); ?>
 		</div>
 	<?php endif; ?>
 

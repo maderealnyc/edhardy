@@ -185,20 +185,22 @@ NAVIGATION STYLES
 	background: black;
 	border: 0;
 	margin: 0;
+	text-align: center;
+
 	ul {
-		margin-top:0;
+		margin: 0 auto;
+		overflow: hidden;
+		text-align: center;
 	}
 	> li {
-		border-top: 1px solid #fff;
+		display: inline-block;
+		padding: 0;
 		position: relative;
 
 		a {
-			border-bottom: 0;
-			display: block;
+			display: inline;
 			line-height: 1;
-			opacity: 0.65;
-			padding: 9px;
-			text-align: center;
+			padding: 4px 9px;
 			text-decoration: none;
 			text-transform: uppercase;
 
@@ -208,83 +210,12 @@ NAVIGATION STYLES
 			*/
 
 			&:hover, &:focus {
-				opacity: 1;
 			}
 
 		}
 
 		&:first-child {}
 		&:last-child {}
-
-		/*
-		social links
-		*/
-		ul.sub-menu {
-			border-top: 1px solid #fff;
-			margin: 0 auto;
-			overflow: hidden;
-			text-align: center;
-
-			li {
-				display: inline-block;
-			}
-
-			li.nav-facebook,
-			li.nav-twitter,
-			li.nav-youtube,
-			li.nav-instagram,
-			li.nav-pinterest {
-				padding: 9px 4.5px 9px 9px;
-			}
-			li.nav-facebook a,
-			li.nav-twitter a,
-			li.nav-youtube a,
-			li.nav-instagram a,
-			li.nav-pinterest a {
-				background: url(../images/sprite-social.png) no-repeat;
-				display: block;
-				height: 17px;
-				padding: 0;
-				text-indent: 100%;
-				white-space: nowrap;
-				overflow: hidden;
-			}
-			li.nav-facebook a {
-				background-position: 0 0;
-				width: 10px;
-				&:hover {
-					background-position: 0 -17px;
-				}
-			}
-			li.nav-twitter a {
-				background-position: -10px 0;
-				width: 16px;
-				&:hover {
-					background-position: -10px -17px;
-				}
-			}
-			li.nav-youtube a {
-				background-position: -26px 0;
-				width: 19px;
-				&:hover {
-					background-position: -26px -17px;
-				}
-			}
-			li.nav-instagram a {
-				background-position: -45px 0;
-				width: 16px;
-				&:hover {
-					background-position: -45px -17px;
-				}
-			}
-			li.nav-pinterest a {
-				background-position: -61px 0;
-				width: 11px;
-				&:hover {
-					background-position: -61px -17px;
-				}
-			}
-		}
 
 	} /* end .menu ul li */
 
@@ -295,9 +226,18 @@ NAVIGATION STYLES
 		a {}
 	}  /* end current highlighters */
 
+	li.nav-about,
+	li.nav-lookbook {
+		top: -10px;
+	}
+
 	li.nav-newsletter > a {
+		float: left;
+		background: url(../images/arrow-newsletter.png) no-repeat 100% 50%;
+		padding-right: 19px;
 		font-size: 8.5px;
 		letter-spacing: 0.12em;
+
 		&:hover {
 			color: #c02f1a;
 		}
@@ -310,6 +250,77 @@ NAVIGATION STYLES
 	}
 
 } /* end .top-nav */
+
+/*
+social links
+*/
+#inner-header {
+	ul.social-nav {
+		margin: 0 auto;
+		overflow: hidden;
+		text-align: center;
+
+		li {
+			display: inline-block;
+		}
+
+		li.facebook,
+		li.twitter,
+		li.youtube,
+		li.instagram,
+		li.pinterest {
+			padding: 6px 4.5px 9px 9px;
+		}
+		li.facebook a,
+		li.twitter a,
+		li.youtube a,
+		li.instagram a,
+		li.pinterest a {
+			background: url(../images/sprite-social.png) no-repeat;
+			display: block;
+			height: 17px;
+			padding: 0;
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		li.facebook a {
+			background-position: 0 0;
+			width: 10px;
+			&:hover {
+				background-position: 0 -17px;
+			}
+		}
+		li.twitter a {
+			background-position: -10px 0;
+			width: 16px;
+			&:hover {
+				background-position: -10px -17px;
+			}
+		}
+		li.youtube a {
+			background-position: -26px 0;
+			width: 19px;
+			&:hover {
+				background-position: -26px -17px;
+			}
+		}
+		li.instagram a {
+			background-position: -45px 0;
+			width: 16px;
+			&:hover {
+				background-position: -45px -17px;
+			}
+		}
+		li.pinterest a {
+			background-position: -61px 0;
+			width: 11px;
+			&:hover {
+				background-position: -61px -17px;
+			}
+		}
+	}
+}
 
 /*********************
 POSTS & CONTENT STYLES
@@ -550,6 +561,9 @@ POSTS & CONTENT STYLES
 				display: block;
 				width: 55px;
 				height: 60px;
+				text-indent: 100%;
+				white-space: nowrap;
+				overflow: hidden;
 			}
 		}
 
@@ -567,6 +581,10 @@ POSTS & CONTENT STYLES
 			&:hover {
 				background-position: -67px -60px;
 			}
+		}
+
+		li.youtube {
+			display: none;
 		}
 
 		li.instagram a {
@@ -1009,83 +1027,29 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
+	text-transform: uppercase;
 }
 
 .copyright {
-	padding: 9px;
-	text-transform: uppercase;
-	text-align: center;
+	float: left;
+	padding: 5px 16px 9px 8px;
+	text-align: left;
 }
 
 .footer-nav {
-	border: 0px;
-	border-bottom: 0;
+	float: right;
+	padding: 5px 16px 9px 8px;
 
-	li {
-		border-bottom: 1px solid #fff;
+	> li {
+		border: none;
+		float: left;
+		position: relative;
 
 		a {
-			display: block;
+			display: inline;
+			padding: 0;
+			text-align: left;
 			text-decoration: none;
-			opacity: 0.65;
-			padding: 9px;
-			text-transform: uppercase;
-			text-align: center;
-
-			/*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/
-			&:hover, &:focus {
-				opacity: 1;
-			}
 		}
-
-		&:first-child {}
-
-		&:last-child {}
-
-		/*
-		so you really have to rethink your dropdowns for mobile.
-		you don't want to have it expand too much because the
-		screen is so small. How you manage your menu should
-		depend on the project. Here's some great info on it:
-		http://www.alistapart.com/articles/organizing-mobile/
-		*/
-		ul.sub-menu,
-		ul.children {
-
-			li {
-
-				a {
-					padding-left: 30px;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-
-				}
-
-				&:first-child {}
-
-				&:last-child {}
-
-			}
-
-		}
-
-	} /* end .menu li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current-page-ancestor {
-
-		a {}
-
-	}  /* end current highlighters */
-
-} /* end .nav */
+	}
+}
