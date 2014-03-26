@@ -97,7 +97,7 @@
 	width: 100px;
 	height: 100px;
 	margin: -50px 0 0 -50px;
-	background: url(/wp-content/themes/edhardy/library/images/home/sprite-btn-video.png) no-repeat;
+	background: url(/wp-content/themes/edhardy/library/images/home/sprite-btn-video.svg) no-repeat;
 }
 
 .no-svg .mejs-overlay-button {
@@ -886,4 +886,8 @@
   top: 0; left: 0; right: 0; bottom: 0;
   width: 100% !important;
   height: 100% !important;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+	.mejs-overlay-play { display: none !important; }
 }

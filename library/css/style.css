@@ -767,7 +767,7 @@ body {
 }
 
 /* line 26, ../scss/_base.scss */
-img {
+img, video, object {
   max-width: 100%;
   height: auto;
 }
