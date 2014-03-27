@@ -448,21 +448,17 @@ POSTS & CONTENT STYLES
 
 /* line 113, ../scss/_481up.scss */
 #american-art-legend {
-  background: url(../images/home/home-bg-3-full.jpg) no-repeat center center;
   background-size: 100% auto;
-  -ms-behavior: url(/backgroundsize.min.htc);
-  width: 100%;
-  position: relative;
 }
-/* line 120, ../scss/_481up.scss */
+/* line 116, ../scss/_481up.scss */
 #american-art-legend h2 {
   padding-top: 24.61%;
 }
-/* line 124, ../scss/_481up.scss */
+/* line 120, ../scss/_481up.scss */
 #american-art-legend p {
   width: 53%;
 }
-/* line 128, ../scss/_481up.scss */
+/* line 124, ../scss/_481up.scss */
 #american-art-legend .eh-pic {
   background: url(../images/home/ed-hardy-profile.png) no-repeat bottom center;
   background-size: contain;

@@ -179,5 +179,18 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+/************* ADD NEW ROYAL SLIDER SKIN *****************/
+add_filter('new_royalslider_skins', 'new_royalslider_add_custom_skin', 10, 2);
+function new_royalslider_add_custom_skin($skins) {
+      $skins['lookbook'] = array(
+           'label' => 'Lookbook',
+           'path' => get_stylesheet_directory_uri() . '/royalslider/lookbook/lookbook.css'  // get_stylesheet_directory_uri returns path to your theme folder
+      );
+      $skins['tiles'] = array(
+           'label' => 'Tiles',
+           'path' => '/royalslider/lookbook/tiles.css'
+      );
+      return $skins;
+}
 
 ?>

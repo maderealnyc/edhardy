@@ -17,6 +17,16 @@
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 
+		<div id="newsletter-popup" class="mfp-hide">
+			<?php echo do_shortcode('[contact-form-7 id="101" title="Newsletter"]'); ?>
+		</div>
+
+		<script>
+			jQuery('.nav-newsletter a').magnificPopup({
+				type:'inline',
+				midClick: true
+			});
+		</script>
 	</body>
 
 </html>

@@ -40,8 +40,6 @@
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
 
-		<!-- Twitter Feed Tile (Tweetie ... customized for Ed Hardy) -->
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/tweetie/edhardy-tweetie.js"></script>
 		<style type="text/css">
 		    h2.twitter_handle, h2.twitter_handle a, h4.reply_retweet_favorite, h4.reply_retweet_favorite a {
 		        color: #FFFFFF;

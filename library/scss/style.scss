@@ -68,9 +68,6 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 768px) {
 
-	// import grids
-	@import "gridmobiletablet";
-
 	// styles in 768up.scss
 	@import "768up";
 
