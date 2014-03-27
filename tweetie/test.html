@@ -1,16 +1,24 @@
-
 <!doctype html>
+
 <html lang="en">
+
 <head>
+    
     <meta charset="UTF-8">
+    
     <title>Tweetie Demo (@edhardy)</title>
+    
     <style type="text/css">
-        body {
-    //        background: #ECF1F2;
-            color: #8e8e8e;
-            font-size: 16px;
-	    line-height: 20px;
-             }
+
+        h2.twitter_handle, h2.twitter_handle a, h4.reply_retweet_favorite, h4.reply_retweet_favorite a {
+            color: #FFFFFF;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        h2.twitter_handle a:hover, h4.reply_retweet_favorite a:hover {
+            color: #C02F1A;
+        }
 
         ul {
             list-style: none;
@@ -18,8 +26,12 @@
             padding: 0;
         }
 
+        p.the_tweet {
+            text-align: center;
+        }
+
         a {
-            color: #189acb;
+            color: #C02F1A;
             text-decoration: none;
         }
 
@@ -27,105 +39,68 @@
             text-decoration: underline;
         }
 
-        .source, .source2 {
-            width: 1350px;
-            margin: 0 auto;
-            border: 1px solid #e0e0e0;
-            background: white;
-            display: block;
-            white-space: pre;
-            -webkit-border-radius: 3px;
-               -moz-border-radius: 3px;
-                    border-radius: 3px;
-        }
-
-        .source2 {
-            width: 450px;
-        }
-
-        
-
-        .example2 {
-            width: 650px !importent;
-            //padding: 15px;
-            margin: 15px auto;
-            //background: white;
-            -webkit-border-radius: 3px;
-               -moz-border-radius: 3px;
-                    border-radius: 3px;
+        .twitter-tile-carousel {
+            background: #CCCCCC;
+            width: 300px !important;
+            margin: 0px auto;
+            padding: 10px;
         }
     
-        .example2 .tweet {
+        .twitter-tile-carousel .tweet {
             overflow: hidden;
         }
 
-        .example2 ul {
+        .twitter-tile-carousel ul {
             width: 99999px;
-            height: 180px;
+            height: 300px;
         }
 
-        .example2 ul li {
-            width: 200px;
-            height: 180px;
+        .twitter-tile-carousel ul li {
+            width: 300px;
+            height: 300px;
             float: left;
-            border-right: 1px solid #2f3029;
-            padding: 0 10px 0 0;
-            margin: 0 10px 0 0;
         }
-#left {
-background: none;
-border: 0;
-position: absolute;
-top: 0;
-left: 0;
-outline: none;
-}
-#right {
-position: absolute;
-right: 0;
-top: 0;
-border: 0;
-background: 0;
-outline: none;
-}
+
     </style>
+
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="tweetie.js"></script>
+    
+    <script type="text/javascript" src="http://edhardy.maderealnyc.com/wp-content/themes/edhardy/tweetie/edhardy-tweetie.js"></script>
+
 </head>
+
 <body>    
-<div><button id="left"><img src="prev.png" /></button></div>
-    <div class="example2" style="width: 650px;">
+    
+    <div><button id="left">PREVIOUS</button></div>
+    
+    <div class="twitter-tile-carousel" style="width: 200px;">
         <div class="tweet"></div>
     </div>
-<div><button id="right"><img src="next.png" /></button></div>
+    
+    <div><button id="right">NEXT</button></div>
+
     <script type="text/javascript">
-        jQuery('.example2 .tweet').twittie({
+
+        jQuery('.twitter-tile-carousel .tweet').twittie({
             dateFormat: '%b. %d, %Y',
-            template: '<strong class="date">{{date}}</strong> - {{tweet}}<br><br><br><br><br>@edhardy  {{date}}',
+            template: '<h2 class="twitter_handle"><a href="https://twitter.com/edhardy" target="_blank">@EdHardy</a></h2><p class="the_tweet">{{tweet}}</p><h4 class="reply_retweet_favorite"><a href="https://twitter.com/intent/tweet?in_reply_to={{tweet_id}}&related=EdHardy" target="_blank">REPLY</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://twitter.com/intent/retweet?tweet_id={{tweet_id}}&related=EdHardy" target="_blank">RETWEET</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://twitter.com/intent/favorite?tweet_id={{tweet_id}}" target="_blank">FAVORITE</a></h4>',
             count: 10
         });
-jQuery('#left').click(function(){
-var item = jQuery('.example2 .tweet ul').find('li:first');
-item.animate( {marginLeft: '-220px', 'opacity': '0'}, 90, function() {
-                jQuery(this).detach().appendTo('.example2 .tweet ul').removeAttr('style');
-            });
 
-})
-jQuery('#right').click(function(){
-var item = jQuery('.example2 .tweet ul').find('li:nth-child(1)');
-item.animate( {marginLeft: '220px', 'opacity': '0.3','float':'left'}, 90, function() {
-                jQuery(this).detach().appendTo('.example2 .tweet ul').removeAttr('style');
-            });
+        jQuery('#left').click(function(){
+            var item = jQuery('.twitter-tile-carousel .tweet ul').find('li:first');
+            item.animate( {marginLeft: '-300px', 'opacity': '0'}, 90, function() { jQuery(this).detach().appendTo('.twitter-tile-carousel .tweet ul').removeAttr('style'); });
+        })
 
-})
-        /*setInterval(function() {
-            var item = jQuery('.example2 .tweet ul').find('li:first');
-
-            item.animate( {marginLeft: '-220px', 'opacity': '0'}, 500, function() {
-            
-//jQuery(this).detach().appendTo('.example2 .tweet ul').removeAttr('style');
+        jQuery('#right').click(function(){
+            var item = jQuery('.twitter-tile-carousel .tweet ul').find('li:nth-child(1)');
+            item.animate( {marginLeft: '300px', 'opacity': '0.3','float':'left'}, 90, function() {
+                jQuery(this).detach().appendTo('.twitter-tile-carousel .tweet ul').removeAttr('style');
             });
-        }, 5000);*/
+        })
+
     </script>
+
 </body>
+
 </html>

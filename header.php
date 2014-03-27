@@ -33,11 +33,73 @@
 		<!-- Rockwell Font -->
 		<script type="text/javascript" src="http://fast.fonts.net/jsapi/e46af804-e87a-4682-b3ae-89da7497cf4c.js"></script>
 
+		<!-- Temp CSS -->
+		<link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/library/css/temp.css" type='text/css' media='all' />
+
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
 
+		<!-- Twitter Feed Tile (Tweetie ... customized for Ed Hardy) -->
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/tweetie/edhardy-tweetie.js"></script>
+		<style type="text/css">
+		    h2.twitter_handle, h2.twitter_handle a, h4.reply_retweet_favorite, h4.reply_retweet_favorite a {
+		        color: #FFFFFF;
+		        text-align: center;
+		        text-decoration: none;
+		    }
+		    h2.twitter_handle a:hover, h4.reply_retweet_favorite a:hover {
+		        color: #C02F1A;
+		    }
+		    ul {
+		        list-style: none;
+		        margin: 0;
+		        padding: 0;
+		    }
+		    p.the_tweet {
+		        text-align: center;
+		    }
+		    p.the_tweet a {
+		        color: #C02F1A;
+		        text-decoration: none;
+		    }
+		    p.the_tweet a:hover {
+		        text-decoration: underline;
+		    }
+		    .twitter-tile-carousel {
+		        width: 300px !important;
+		        margin: 0px auto;
+		        padding: 10px;
+		    }
+		    .twitter-tile-carousel .tweet {
+		        overflow: hidden;
+		    }
+		    .twitter-tile-carousel ul {
+		        width: 99999px;
+		        height: 300px;
+		    }
+		    .twitter-tile-carousel ul li {
+		        width: 300px;
+		        height: 300px;
+		        float: left;
+		    }
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="<?php echo get_template_directory_uri(); ?>/library/js/libs/html5shiv.js"></script>
+		<![endif]-->
+
 		<?php // drop Google Analytics Here ?>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-49365668-1', 'edhardyshop.com');
+		  ga('send', 'pageview');
+
+		</script>
 		<?php // end analytics ?>
 
 	</head>

@@ -1,6 +1,7 @@
 /**
  * Tweetie: A simple Twitter feed plugin
  * Author: Sonny T. <hi@sonnyt.com>, sonnyt.com
+ * Customized for EdHardyShop.com by Gennaro Monaco (MadeRealNYC.com)
  */
 
 (function ($) {
@@ -16,7 +17,7 @@
             'hideReplies': false,
             'dateFormat': '%b/%d/%Y',
             'template': '{{date}} - {{tweet}}',
-            'apiPath' : 'api/tweet.php'
+            'apiPath' : '/wp-content/themes/edhardy/tweetie/api/tweet.php'
         }, options);
 
         /**
@@ -72,7 +73,7 @@
          */
         var templating = function (data) {
             var temp = settings.template;
-            var temp_variables = ['date', 'tweet', 'avatar', 'url', 'retweeted'];
+            var temp_variables = ['date', 'tweet', 'avatar', 'url', 'retweeted', 'tweet_id'];
 
             for (var i = 0, len = temp_variables.length; i < len; i++) {
                 temp = temp.replace(new RegExp('{{' + temp_variables[i] + '}}', 'gi'), data[temp_variables[i]]);
@@ -98,7 +99,8 @@
                             tweet: linking(twt[i].text),
                             avatar: '<img src="'+ twt[i].user.profile_image_url +'" />',
                             url: 'http://twitter.com/' + twt[i].user.screen_name + '/status/' + twt[i].id_str,
-                            retweeted: twt[i].retweeted
+                            retweeted: twt[i].retweeted,
+                            tweet_id: twt[i].id_str
                         };
 
                         that.find('ul').append('<li>' + templating(temp_data) + '</li>');

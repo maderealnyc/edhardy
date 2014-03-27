@@ -92,7 +92,13 @@
 	<?php // Homepage Layout 1 Tile 8 (Twitter Feed Tile) ?>
 	<?php $hp1_tile_8_bg_image = get_field('twitter_feed_tile_bg_image'); ?>
 	<?php if( !empty($hp1_tile_8_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="twitter_feed_tile" style="background-image: url(<?php echo $hp1_tile_8_bg_image['url']; ?>);">Twitter Carousel</div>
+		<div class="threecol grid gridbg clearfix" id="twitter_feed_tile" style="background-image: url(<?php echo $hp1_tile_8_bg_image['url']; ?>);">
+			<div><button id="left">PREVIOUS</button></div>
+			<div class="twitter-tile-carousel">
+			    <div class="tweet"></div>
+			</div>
+			<div><button id="right">NEXT</button></div>
+		</div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 9 (About Tile) ?>
@@ -150,8 +156,7 @@
 	<?php if( !empty($hp2_tile_1_bg_image) ): ?>
 		<div class="sixcol grid gridbg clearfix" id="tile_1" style="background-image: url(<?php echo $hp2_tile_1_bg_image['url']; ?>);">
 			<?php if( !empty($hp2_tile_1_image_slider_shortcode) ): ?>
-				<?php echo $hp2_tile_1_image_slider_shortcode ?>
-				<?php echo do_shortcode( $hp2_tile_1_image_slider_shortcode ) ?>
+				<?php echo do_shortcode( htmlspecialchars_decode($hp2_tile_1_image_slider_shortcode) ) ?>
 			<?php endif; ?>
 		</div>
 	<?php endif; ?>
@@ -228,8 +233,7 @@
 	<?php if( !empty($hp3_tile_1_bg_image) ): ?>
 		<div class="twelvecol grid gridbg clearfix" id="tile_1" style="background-image: url(<?php echo $hp3_tile_1_bg_image['url']; ?>);">
 			<?php if( !empty($hp3_tile_1_image_slider_shortcode) ): ?>
-				<?php echo $hp3_tile_1_image_slider_shortcode ?>
-				<?php echo do_shortcode( $hp3_tile_1_image_slider_shortcode ) ?>
+				<?php echo do_shortcode( htmlspecialchars_decode($hp3_tile_1_image_slider_shortcode) ) ?>
 			<?php endif; ?>
 		</div>
 	<?php endif; ?>
@@ -276,3 +280,27 @@
 <?php if( !empty($image_below_grid) ): ?>
 	<div class="twelvecol clearfix" id="image_below_grid" style="background-image: url(<?php echo $image_below_grid['url']; ?>);" data-stellar-background-ratio="0.5"></div>
 <?php endif; ?>
+
+<?php /////// Twitter Feed Tiles (All 3 Homepage layouts) ///////////////////////////////////////////////////////////// ?>
+
+<script type="text/javascript">
+
+    jQuery('.twitter-tile-carousel .tweet').twittie({
+        dateFormat: '%b. %d, %Y',
+        template: '<h2 class="twitter_handle"><a href="https://twitter.com/edhardy" target="_blank">@EdHardy</a></h2><p class="the_tweet">{{tweet}}</p><h4 class="reply_retweet_favorite"><a href="https://twitter.com/intent/tweet?in_reply_to={{tweet_id}}&related=EdHardy" target="_blank">REPLY</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://twitter.com/intent/retweet?tweet_id={{tweet_id}}&related=EdHardy" target="_blank">RETWEET</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://twitter.com/intent/favorite?tweet_id={{tweet_id}}" target="_blank">FAVORITE</a></h4>',
+        count: 5
+    });
+
+    jQuery('#left').click(function(){
+        var item = jQuery('.twitter-tile-carousel .tweet ul').find('li:first');
+        item.animate( {marginLeft: '-300px', 'opacity': '0'}, 90, function() { jQuery(this).detach().appendTo('.twitter-tile-carousel .tweet ul').removeAttr('style'); });
+    })
+
+    jQuery('#right').click(function(){
+        var item = jQuery('.twitter-tile-carousel .tweet ul').find('li:nth-child(1)');
+        item.animate( {marginLeft: '300px', 'opacity': '0.3','float':'left'}, 90, function() {
+            jQuery(this).detach().appendTo('.twitter-tile-carousel .tweet ul').removeAttr('style');
+        });
+    })
+
+</script>
