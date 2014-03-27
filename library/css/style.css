@@ -1251,19 +1251,22 @@ POSTS & CONTENT STYLES
 
 /* line 619, ../scss/_base.scss */
 #image_below_grid {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  -ms-behavior: url(/backgroundsize.min.htc);
   position: relative;
+  width: 100%;
   height: 0;
-  padding-bottom: 54.3%;
+  padding-bottom: 52.75%;
   overflow: hidden;
 }
-/* line 625, ../scss/_base.scss */
+/* line 631, ../scss/_base.scss */
 #image_below_grid img {
   position: absolute;
-  top: center;
-  left: center;
 }
 
-/* line 632, ../scss/_base.scss */
+/* line 636, ../scss/_base.scss */
 #about {
   background: url(../images/home/home-bg-2.jpg) no-repeat;
   background-size: 100% auto;
@@ -1273,7 +1276,7 @@ POSTS & CONTENT STYLES
   padding-bottom: 50%;
   position: relative;
 }
-/* line 641, ../scss/_base.scss */
+/* line 645, ../scss/_base.scss */
 #about h2 {
   background: url(../images/home/hdr-who-is.png) no-repeat;
   background-size: 100% auto;
@@ -1286,15 +1289,16 @@ POSTS & CONTENT STYLES
   max-width: 419px;
 }
 
-/* line 654, ../scss/_base.scss */
+/* line 658, ../scss/_base.scss */
 #american-art-legend {
+  background-attachment: fixed;
   background: #f3f3f3 url(../images/home/home-bg-3-full.jpg) no-repeat center center;
   background-size: contain;
   -ms-behavior: url(/backgroundsize.min.htc);
   width: 100%;
   position: relative;
 }
-/* line 661, ../scss/_base.scss */
+/* line 666, ../scss/_base.scss */
 #american-art-legend h2 {
   background: url(../images/home/hdr-art-legend.png) no-repeat;
   background-size: contain;
@@ -1304,7 +1308,7 @@ POSTS & CONTENT STYLES
   padding-top: 63%;
   max-width: 398px;
 }
-/* line 672, ../scss/_base.scss */
+/* line 677, ../scss/_base.scss */
 #american-art-legend p {
   color: #323232;
   margin: 2% 2.7%;
@@ -1313,17 +1317,17 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 683, ../scss/_base.scss */
+/* line 688, ../scss/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 
-/* line 686, ../scss/_base.scss */
+/* line 691, ../scss/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 688, ../scss/_base.scss */
+/* line 693, ../scss/_base.scss */
 .pagination ul {
   display: inline-block;
   white-space: nowrap;
@@ -1331,7 +1335,7 @@ PAGE NAVI STYLES
   clear: both;
   margin: 1px;
 }
-/* line 694, ../scss/_base.scss */
+/* line 699, ../scss/_base.scss */
 .pagination ul li {
   padding: 0;
   margin: 0;
@@ -1339,7 +1343,7 @@ PAGE NAVI STYLES
   display: inline;
   overflow: hidden;
 }
-/* line 700, ../scss/_base.scss */
+/* line 705, ../scss/_base.scss */
 .pagination ul li a, .pagination ul li span {
   margin: 0;
   text-decoration: none;
@@ -1351,18 +1355,18 @@ PAGE NAVI STYLES
   min-width: 1em;
   display: block;
 }
-/* line 711, ../scss/_base.scss */
+/* line 716, ../scss/_base.scss */
 .pagination ul li span.current {
   font-weight: bold;
 }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 726, ../scss/_base.scss */
+/* line 731, ../scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 730, ../scss/_base.scss */
+/* line 735, ../scss/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1372,12 +1376,12 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 741, ../scss/_base.scss */
+/* line 746, ../scss/_base.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 758, ../scss/_base.scss */
+/* line 763, ../scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1388,7 +1392,7 @@ COMMENT STYLES
   /* comment reply link */
   /* end .commentlist .comment-reply-link */
 }
-/* line 760, ../scss/_base.scss */
+/* line 765, ../scss/_base.scss */
 .commentlist li {
   position: relative;
   clear: both;
@@ -1398,63 +1402,63 @@ COMMENT STYLES
   padding: 0.7335em 10px;
   /* end .commentlist li ul.children */
 }
-/* line 768, ../scss/_base.scss */
+/* line 773, ../scss/_base.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 772, ../scss/_base.scss */
+/* line 777, ../scss/_base.scss */
 .commentlist li ul.children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 790, ../scss/_base.scss */
+/* line 795, ../scss/_base.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 794, ../scss/_base.scss */
+/* line 799, ../scss/_base.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 799, ../scss/_base.scss */
+/* line 804, ../scss/_base.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 813, ../scss/_base.scss */
+/* line 818, ../scss/_base.scss */
 .commentlist .odd {
   background: #eee;
 }
-/* line 816, ../scss/_base.scss */
+/* line 821, ../scss/_base.scss */
 .commentlist .even {
   background: #fefefe;
 }
-/* line 831, ../scss/_base.scss */
+/* line 836, ../scss/_base.scss */
 .commentlist .vcard {
   margin-left: 50px;
 }
-/* line 834, ../scss/_base.scss */
+/* line 839, ../scss/_base.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 842, ../scss/_base.scss */
+/* line 847, ../scss/_base.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 845, ../scss/_base.scss */
+/* line 850, ../scss/_base.scss */
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
-/* line 849, ../scss/_base.scss */
+/* line 854, ../scss/_base.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 859, ../scss/_base.scss */
+/* line 864, ../scss/_base.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -1462,17 +1466,17 @@ COMMENT STYLES
   border: 1px solid #cecece;
   background: #fff;
 }
-/* line 884, ../scss/_base.scss */
+/* line 889, ../scss/_base.scss */
 .commentlist .comment_content {
   margin-left: 50px;
 }
-/* line 887, ../scss/_base.scss */
+/* line 892, ../scss/_base.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 896, ../scss/_base.scss */
+/* line 901, ../scss/_base.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1484,7 +1488,7 @@ COMMENT STYLES
   font-weight: 700;
   font-size: 0.9em;
 }
-/* line 908, ../scss/_base.scss */
+/* line 913, ../scss/_base.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1493,27 +1497,27 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 920, ../scss/_base.scss */
+/* line 925, ../scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
-/* line 924, ../scss/_base.scss */
+/* line 929, ../scss/_base.scss */
 .respond-form form {
   margin: 0.75em 0;
 }
-/* line 927, ../scss/_base.scss */
+/* line 932, ../scss/_base.scss */
 .respond-form form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 933, ../scss/_base.scss */
+/* line 938, ../scss/_base.scss */
 .respond-form form li label,
 .respond-form form li small {
   display: none;
 }
-/* line 941, ../scss/_base.scss */
+/* line 946, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
@@ -1524,14 +1528,14 @@ COMMENT FORM STYLES
   line-height: 1.5em;
   /* form validation */
 }
-/* line 947, ../scss/_base.scss */
+/* line 952, ../scss/_base.scss */
 .respond-form form input[type=text]:focus,
 .respond-form form input[type=email]:focus,
 .respond-form form input[type=url]:focus,
 .respond-form form textarea:focus {
   background: #fff;
 }
-/* line 952, ../scss/_base.scss */
+/* line 957, ../scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1544,14 +1548,14 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 965, ../scss/_base.scss */
+/* line 970, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 970, ../scss/_base.scss */
+/* line 975, ../scss/_base.scss */
 .respond-form form textarea {
   resize: none;
   width: 97.3%;
@@ -1560,7 +1564,7 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-/* line 983, ../scss/_base.scss */
+/* line 988, ../scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -1568,13 +1572,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 996, ../scss/_base.scss */
+/* line 1001, ../scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 1001, ../scss/_base.scss */
+/* line 1006, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1582,7 +1586,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 1017, ../scss/_base.scss */
+/* line 1022, ../scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
@@ -1590,31 +1594,31 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1038, ../scss/_base.scss */
+/* line 1043, ../scss/_base.scss */
 .footer {
   clear: both;
   text-transform: uppercase;
 }
 
-/* line 1043, ../scss/_base.scss */
+/* line 1048, ../scss/_base.scss */
 .copyright {
   float: left;
   padding: 5px 16px 9px 8px;
   text-align: left;
 }
 
-/* line 1049, ../scss/_base.scss */
+/* line 1054, ../scss/_base.scss */
 .footer-nav {
   float: right;
   padding: 5px 16px 9px 8px;
 }
-/* line 1053, ../scss/_base.scss */
+/* line 1058, ../scss/_base.scss */
 .footer-nav > li {
   border: none;
   float: left;
   position: relative;
 }
-/* line 1058, ../scss/_base.scss */
+/* line 1063, ../scss/_base.scss */
 .footer-nav > li a {
   display: inline;
   padding: 0;
@@ -1981,22 +1985,23 @@ you can add resource intensive styles.
     border: 0;
     float: left;
     margin: 0;
+    text-align: left;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 63, ../scss/_768up.scss */
+  /* line 64, ../scss/_768up.scss */
   .top-nav ul {
     margin-top: 0;
   }
-  /* line 66, ../scss/_768up.scss */
+  /* line 67, ../scss/_768up.scss */
   .top-nav > li {
     display: inline;
     float: left;
     border: none;
     padding: 6px 16px 9px 8px;
   }
-  /* line 72, ../scss/_768up.scss */
+  /* line 73, ../scss/_768up.scss */
   .top-nav > li a {
     padding: 9px;
     /*
@@ -2004,38 +2009,38 @@ you can add resource intensive styles.
     has the possibility of being a mobile device.
     */
   }
-  /* line 91, ../scss/_768up.scss */
+  /* line 92, ../scss/_768up.scss */
   .top-nav li.nav-about,
   .top-nav li.nav-lookbook {
     top: auto;
   }
-  /* line 94, ../scss/_768up.scss */
+  /* line 95, ../scss/_768up.scss */
   .top-nav li.nav-about a,
   .top-nav li.nav-lookbook a {
     padding: 0 0 4px 0;
   }
-  /* line 96, ../scss/_768up.scss */
+  /* line 97, ../scss/_768up.scss */
   .top-nav li.nav-about a:hover,
   .top-nav li.nav-lookbook a:hover {
     background: url(../images/sprite-navhover.png) no-repeat;
   }
-  /* line 102, ../scss/_768up.scss */
+  /* line 103, ../scss/_768up.scss */
   .top-nav li.nav-about a:hover {
     background-position: 0 100%;
   }
-  /* line 106, ../scss/_768up.scss */
+  /* line 107, ../scss/_768up.scss */
   .top-nav li.nav-lookbook a:hover {
     background-position: -68px 100%;
   }
 
   /* end .top-nav */
-  /* line 119, ../scss/_768up.scss */
+  /* line 120, ../scss/_768up.scss */
   li.nav-newsletter {
     padding: 0;
     background: url(../images/separator-newsletter.png) no-repeat 0 0;
   }
 
-  /* line 124, ../scss/_768up.scss */
+  /* line 125, ../scss/_768up.scss */
   li.nav-newsletter-mobile {
     display: none;
   }
@@ -2043,19 +2048,19 @@ you can add resource intensive styles.
   /*
   social links
   */
-  /* line 132, ../scss/_768up.scss */
+  /* line 133, ../scss/_768up.scss */
   #inner-header ul.social-nav {
     border: none;
     float: left;
     margin: 0 0 0 8px;
     text-align: left;
   }
-  /* line 138, ../scss/_768up.scss */
+  /* line 139, ../scss/_768up.scss */
   #inner-header ul.social-nav li {
     display: inline;
     float: left;
   }
-  /* line 147, ../scss/_768up.scss */
+  /* line 148, ../scss/_768up.scss */
   #inner-header ul.social-nav li.facebook,
   #inner-header ul.social-nav li.twitter,
   #inner-header ul.social-nav li.youtube,
@@ -2063,7 +2068,7 @@ you can add resource intensive styles.
   #inner-header ul.social-nav li.pinterest {
     padding: 9px 4.5px 9px 9px;
   }
-  /* line 150, ../scss/_768up.scss */
+  /* line 151, ../scss/_768up.scss */
   #inner-header ul.social-nav li.facebook {
     background: url(../images/separator-newsletter.png) no-repeat 0 0;
   }
@@ -2071,7 +2076,7 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 161, ../scss/_768up.scss */
+  /* line 162, ../scss/_768up.scss */
   .gridbg {
     padding-bottom: 50%;
   }
@@ -2079,28 +2084,28 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 169, ../scss/_768up.scss */
+  /* line 170, ../scss/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 173, ../scss/_768up.scss */
+  /* line 174, ../scss/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 178, ../scss/_768up.scss */
+  /* line 179, ../scss/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 183, ../scss/_768up.scss */
+  /* line 184, ../scss/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 191, ../scss/_768up.scss */
+  /* line 192, ../scss/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -2495,7 +2500,13 @@ you can add resource intensive styles.
     opacity: 1;
   }
 
-  /* line 95, ../scss/_1030up.scss */
+  /* line 94, ../scss/_1030up.scss */
+  #image_below_grid {
+    background-attachment: fixed;
+    background-size: auto;
+  }
+
+  /* line 100, ../scss/_1030up.scss */
   #about h2 {
     background-size: 100% auto;
     -ms-behavior: url(/backgroundsize.min.htc);
@@ -2504,12 +2515,12 @@ you can add resource intensive styles.
     width: 34.92%;
   }
 
-  /* line 104, ../scss/_1030up.scss */
+  /* line 109, ../scss/_1030up.scss */
   #american-art-legend {
     height: 0;
     padding-bottom: 50%;
   }
-  /* line 108, ../scss/_1030up.scss */
+  /* line 113, ../scss/_1030up.scss */
   #american-art-legend h2 {
     padding-top: 21%;
   }
