@@ -67,29 +67,6 @@ TOOLS
   overflow: hidden;
 }
 
-/* line 48, ../scss/_mixins.scss */
-.grayscale {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  /* Firefox 10+ */
-  filter: gray;
-  /* IE6-9 */
-  -webkit-filter: grayscale(100%);
-  /* Chrome 19+ & Safari 6+ */
-  -webkit-transition: all .6s ease;
-  /* Fade to color for Chrome and Safari */
-  transition: all 0.6s ease;
-  -webkit-backface-visibility: hidden;
-  /* Fix for transition flickering */
-  backface-visibility: hidden;
-  /* Fix for transition flickering */
-}
-
-/* line 58, ../scss/_mixins.scss */
-.grayscale:hover {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
-  -webkit-filter: grayscale(0%);
-}
-
 /*********************
 COLORS
 Need help w/ choosing your colors? Try this site out:
@@ -125,53 +102,53 @@ TYPOGRAPHY
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-/* line 125, ../scss/_mixins.scss */
+/* line 109, ../scss/_mixins.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
 }
 
-/* line 131, ../scss/_mixins.scss */
+/* line 115, ../scss/_mixins.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 132, ../scss/_mixins.scss */
+/* line 116, ../scss/_mixins.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 133, ../scss/_mixins.scss */
+/* line 117, ../scss/_mixins.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 137, ../scss/_mixins.scss */
+/* line 121, ../scss/_mixins.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
 }
 
-/* line 143, ../scss/_mixins.scss */
+/* line 127, ../scss/_mixins.scss */
 .alert-help {
   border-color: #e8dc59;
   background: #ebe16f;
 }
 
-/* line 149, ../scss/_mixins.scss */
+/* line 133, ../scss/_mixins.scss */
 .alert-info {
   border-color: #bfe4f4;
   background: #d5edf8;
 }
 
-/* line 155, ../scss/_mixins.scss */
+/* line 139, ../scss/_mixins.scss */
 .alert-error {
   border-color: #f8cdce;
   background: #fbe3e4;
 }
 
-/* line 161, ../scss/_mixins.scss */
+/* line 145, ../scss/_mixins.scss */
 .alert-success {
   border-color: #deeaae;
   background: #e6efc2;
@@ -201,7 +178,7 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 222, ../scss/_mixins.scss */
+/* line 206, ../scss/_mixins.scss */
 .button, .button:visited {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #9a9a9a;
@@ -225,7 +202,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #bbbbbb, #aeaeae);
   background-image: linear-gradient(to bottom, #bbbbbb, #aeaeae);
 }
-/* line 241, ../scss/_mixins.scss */
+/* line 225, ../scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
   color: white;
   border: 1px solid #9a9a9a;
@@ -238,7 +215,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #aeaeae, #a2a2a2);
   background-image: linear-gradient(to bottom, #aeaeae, #a2a2a2);
 }
-/* line 249, ../scss/_mixins.scss */
+/* line 233, ../scss/_mixins.scss */
 .button:active, .button:visited:active {
   background-color: #bbbbbb;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#aeaeae), to(#bbbbbb));
@@ -248,7 +225,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #aeaeae, #bbbbbb);
 }
 
-/* line 254, ../scss/_mixins.scss */
+/* line 238, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -260,7 +237,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
-/* line 260, ../scss/_mixins.scss */
+/* line 244, ../scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background-color: #1472ad;
@@ -270,7 +247,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1784c9, #1472ad);
   background-image: linear-gradient(to bottom, #1784c9, #1472ad);
 }
-/* line 264, ../scss/_mixins.scss */
+/* line 248, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background-color: #1990db;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
@@ -487,7 +464,7 @@ POSTS & CONTENT STYLES
 }
 /* line 128, ../scss/_481up.scss */
 #american-art-legend .eh-pic {
-  background: url(../images/home/ed-hardy-profile.png) no-repeat;
+  background: url(../images/home/ed-hardy-profile.png) no-repeat bottom center;
   background-size: contain;
   width: 42%;
   height: 98%;
@@ -720,11 +697,39 @@ GENERAL STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 24, ../scss/_1030up.scss */
+/* line 26, ../scss/_1030up.scss */
+.grid,
+.grid img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+  -webkit-transition: all .6s ease;
+  /* Fade to color for Chrome and Safari */
+  transition: all 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  /* Fix for transition flickering */
+  backface-visibility: hidden;
+  /* Fix for transition flickering */
+}
+/* line 35, ../scss/_1030up.scss */
+.grid:hover,
+.grid img:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+
+/* line 41, ../scss/_1030up.scss */
 .gridbg {
   padding-bottom: 25%;
 }
-/* line 29, ../scss/_1030up.scss */
+/* line 44, ../scss/_1030up.scss */
+.gridbg a {
+  color: #bbbbbb;
+}
+/* line 47, ../scss/_1030up.scss */
 .gridbg a h2 {
   -webkit-transition: all 0.2s ease-in-out;
   -transition: all 0.2s ease-in-out;
@@ -732,46 +737,47 @@ POSTS & CONTENT STYLES
   opacity: 0;
   font-size: 5em;
 }
-/* line 35, ../scss/_1030up.scss */
+/* line 53, ../scss/_1030up.scss */
 .gridbg a:hover h2 {
+  color: white;
   opacity: 1;
   font-size: 2.3em;
 }
 
-/* line 45, ../scss/_1030up.scss */
+/* line 64, ../scss/_1030up.scss */
 #about_tile:after {
   opacity: 0;
 }
-/* line 49, ../scss/_1030up.scss */
+/* line 68, ../scss/_1030up.scss */
 #about_tile:hover:after {
   opacity: 0.9;
 }
 
-/* line 56, ../scss/_1030up.scss */
+/* line 75, ../scss/_1030up.scss */
 #follow_us_tile h2 {
   -webkit-transition: all 0.2s ease-in-out;
   -transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 0;
 }
-/* line 60, ../scss/_1030up.scss */
+/* line 79, ../scss/_1030up.scss */
 #follow_us_tile ul {
   -webkit-transition: all 0.2s ease-in-out;
   -transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 0;
 }
-/* line 65, ../scss/_1030up.scss */
+/* line 84, ../scss/_1030up.scss */
 #follow_us_tile:hover h2 {
   opacity: 1;
   font-size: 2.3em;
 }
-/* line 69, ../scss/_1030up.scss */
+/* line 88, ../scss/_1030up.scss */
 #follow_us_tile:hover ul {
   opacity: 1;
 }
 
-/* line 76, ../scss/_1030up.scss */
+/* line 95, ../scss/_1030up.scss */
 #about h2 {
   background-size: 100% auto;
   -ms-behavior: url(/backgroundsize.min.htc);
@@ -780,12 +786,12 @@ POSTS & CONTENT STYLES
   width: 34.92%;
 }
 
-/* line 85, ../scss/_1030up.scss */
+/* line 104, ../scss/_1030up.scss */
 #american-art-legend {
   height: 0;
   padding-bottom: 50%;
 }
-/* line 89, ../scss/_1030up.scss */
+/* line 108, ../scss/_1030up.scss */
 #american-art-legend h2 {
   padding-top: 21%;
 }

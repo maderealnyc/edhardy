@@ -523,29 +523,6 @@ TOOLS
   overflow: hidden;
 }
 
-/* line 48, ../scss/_mixins.scss */
-.grayscale {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  /* Firefox 10+ */
-  filter: gray;
-  /* IE6-9 */
-  -webkit-filter: grayscale(100%);
-  /* Chrome 19+ & Safari 6+ */
-  -webkit-transition: all .6s ease;
-  /* Fade to color for Chrome and Safari */
-  transition: all 0.6s ease;
-  -webkit-backface-visibility: hidden;
-  /* Fix for transition flickering */
-  backface-visibility: hidden;
-  /* Fix for transition flickering */
-}
-
-/* line 58, ../scss/_mixins.scss */
-.grayscale:hover {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
-  -webkit-filter: grayscale(0%);
-}
-
 /*********************
 COLORS
 Need help w/ choosing your colors? Try this site out:
@@ -581,53 +558,53 @@ TYPOGRAPHY
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-/* line 125, ../scss/_mixins.scss */
+/* line 109, ../scss/_mixins.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
 }
 
-/* line 131, ../scss/_mixins.scss */
+/* line 115, ../scss/_mixins.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 132, ../scss/_mixins.scss */
+/* line 116, ../scss/_mixins.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 133, ../scss/_mixins.scss */
+/* line 117, ../scss/_mixins.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 137, ../scss/_mixins.scss */
+/* line 121, ../scss/_mixins.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
 }
 
-/* line 143, ../scss/_mixins.scss */
+/* line 127, ../scss/_mixins.scss */
 .alert-help {
   border-color: #e8dc59;
   background: #ebe16f;
 }
 
-/* line 149, ../scss/_mixins.scss */
+/* line 133, ../scss/_mixins.scss */
 .alert-info {
   border-color: #bfe4f4;
   background: #d5edf8;
 }
 
-/* line 155, ../scss/_mixins.scss */
+/* line 139, ../scss/_mixins.scss */
 .alert-error {
   border-color: #f8cdce;
   background: #fbe3e4;
 }
 
-/* line 161, ../scss/_mixins.scss */
+/* line 145, ../scss/_mixins.scss */
 .alert-success {
   border-color: #deeaae;
   background: #e6efc2;
@@ -657,7 +634,7 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 222, ../scss/_mixins.scss */
+/* line 206, ../scss/_mixins.scss */
 .button, .button:visited {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #9a9a9a;
@@ -681,7 +658,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #bbbbbb, #aeaeae);
   background-image: linear-gradient(to bottom, #bbbbbb, #aeaeae);
 }
-/* line 241, ../scss/_mixins.scss */
+/* line 225, ../scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
   color: white;
   border: 1px solid #9a9a9a;
@@ -694,7 +671,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #aeaeae, #a2a2a2);
   background-image: linear-gradient(to bottom, #aeaeae, #a2a2a2);
 }
-/* line 249, ../scss/_mixins.scss */
+/* line 233, ../scss/_mixins.scss */
 .button:active, .button:visited:active {
   background-color: #bbbbbb;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#aeaeae), to(#bbbbbb));
@@ -704,7 +681,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #aeaeae, #bbbbbb);
 }
 
-/* line 254, ../scss/_mixins.scss */
+/* line 238, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -716,7 +693,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
-/* line 260, ../scss/_mixins.scss */
+/* line 244, ../scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background-color: #1472ad;
@@ -726,7 +703,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1784c9, #1472ad);
   background-image: linear-gradient(to bottom, #1784c9, #1472ad);
 }
-/* line 264, ../scss/_mixins.scss */
+/* line 248, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background-color: #1990db;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
@@ -760,7 +737,7 @@ GENERAL STYLES
 /* line 18, ../scss/_base.scss */
 body {
   background: #000;
-  font-family: "Rockwell W01";
+  font-family: "Rockwell W01", serif;
   font-size: 100%;
   line-height: 1.5;
   color: #FFFFFF;
@@ -854,7 +831,7 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 /* line 117, ../scss/_base.scss */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Rockwell W01";
+  font-family: "Rockwell W01", serif;
   text-rendering: optimizelegibility;
   font-weight: 500;
   /*
@@ -1165,31 +1142,29 @@ POSTS & CONTENT STYLES
 }
 /* line 506, ../scss/_base.scss */
 .gridbg h2 {
-  font-family: "Rockwell W01 Light";
+  color: white;
+  font-family: "Rockwell W01 Light", serif;
   font-size: 2.812em;
   line-height: 1em;
   margin: 35% auto;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 514, ../scss/_base.scss */
+/* line 515, ../scss/_base.scss */
 .gridbg h2 strong {
   display: block;
-  font-family: "Rockwell W01 Bold";
+  font-family: "Rockwell W01 Bold", serif;
   font-weight: normal;
 }
 
-/* line 522, ../scss/_base.scss */
+/* line 523, ../scss/_base.scss */
 #about_tile {
-  -webkit-transition: all 0.2s ease-in-out;
-  -transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   overflow: hidden;
 }
 /* line 526, ../scss/_base.scss */
 #about_tile:after {
-  backface-visibility: hidden;
   content: "";
+  display: inline-block;
   background: #000;
   opacity: 0.9;
   top: 0;
@@ -1200,28 +1175,25 @@ POSTS & CONTENT STYLES
   z-index: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.2s ease-in-out;
-  -transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
-/* line 545, ../scss/_base.scss */
+/* line 544, ../scss/_base.scss */
 #follow_us_tile h2 {
   margin-bottom: 6px;
 }
-/* line 549, ../scss/_base.scss */
+/* line 548, ../scss/_base.scss */
 #follow_us_tile ul {
   list-style: none;
   margin: 0 auto;
   padding: 0;
   max-width: 256px;
 }
-/* line 555, ../scss/_base.scss */
+/* line 554, ../scss/_base.scss */
 #follow_us_tile ul li {
   float: left;
   margin-right: 4.69%;
 }
-/* line 559, ../scss/_base.scss */
+/* line 558, ../scss/_base.scss */
 #follow_us_tile ul li a {
   background: url(../images/home/sprite-follow-us.png) no-repeat;
   display: block;
@@ -1231,67 +1203,67 @@ POSTS & CONTENT STYLES
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 570, ../scss/_base.scss */
+/* line 569, ../scss/_base.scss */
 #follow_us_tile ul li.facebook a {
   background-position: 0 0;
 }
-/* line 573, ../scss/_base.scss */
+/* line 572, ../scss/_base.scss */
 #follow_us_tile ul li.facebook a:hover {
   background-position: 0 -60px;
 }
-/* line 578, ../scss/_base.scss */
+/* line 577, ../scss/_base.scss */
 #follow_us_tile ul li.twitter a {
   background-position: -67px 0;
 }
-/* line 581, ../scss/_base.scss */
+/* line 580, ../scss/_base.scss */
 #follow_us_tile ul li.twitter a:hover {
   background-position: -67px -60px;
 }
-/* line 586, ../scss/_base.scss */
+/* line 585, ../scss/_base.scss */
 #follow_us_tile ul li.youtube {
   display: none;
 }
-/* line 590, ../scss/_base.scss */
+/* line 589, ../scss/_base.scss */
 #follow_us_tile ul li.instagram a {
   background-position: -134px 0;
 }
-/* line 593, ../scss/_base.scss */
+/* line 592, ../scss/_base.scss */
 #follow_us_tile ul li.instagram a:hover {
   background-position: -134px -60px;
 }
-/* line 598, ../scss/_base.scss */
+/* line 597, ../scss/_base.scss */
 #follow_us_tile ul li.pinterest {
   margin-right: 0;
 }
-/* line 602, ../scss/_base.scss */
+/* line 601, ../scss/_base.scss */
 #follow_us_tile ul li.pinterest a {
   background-position: -200px 0;
 }
-/* line 605, ../scss/_base.scss */
+/* line 604, ../scss/_base.scss */
 #follow_us_tile ul li.pinterest a:hover {
   background-position: -200px -60px;
 }
 
-/* line 614, ../scss/_base.scss */
+/* line 613, ../scss/_base.scss */
 .page-template-page-homepage-layout-2-php #follow_us_tile h2 {
   margin: 17% auto 0;
 }
 
-/* line 620, ../scss/_base.scss */
+/* line 619, ../scss/_base.scss */
 #image_below_grid {
   position: relative;
   height: 0;
   padding-bottom: 54.3%;
   overflow: hidden;
 }
-/* line 626, ../scss/_base.scss */
+/* line 625, ../scss/_base.scss */
 #image_below_grid img {
   position: absolute;
   top: center;
   left: center;
 }
 
-/* line 633, ../scss/_base.scss */
+/* line 632, ../scss/_base.scss */
 #about {
   background: url(../images/home/home-bg-2.jpg) no-repeat;
   background-size: 100% auto;
@@ -1301,7 +1273,7 @@ POSTS & CONTENT STYLES
   padding-bottom: 50%;
   position: relative;
 }
-/* line 642, ../scss/_base.scss */
+/* line 641, ../scss/_base.scss */
 #about h2 {
   background: url(../images/home/hdr-who-is.png) no-repeat;
   background-size: 100% auto;
@@ -1314,7 +1286,7 @@ POSTS & CONTENT STYLES
   max-width: 419px;
 }
 
-/* line 655, ../scss/_base.scss */
+/* line 654, ../scss/_base.scss */
 #american-art-legend {
   background: #f3f3f3 url(../images/home/home-bg-3-full.jpg) no-repeat center center;
   background-size: contain;
@@ -1322,7 +1294,7 @@ POSTS & CONTENT STYLES
   width: 100%;
   position: relative;
 }
-/* line 662, ../scss/_base.scss */
+/* line 661, ../scss/_base.scss */
 #american-art-legend h2 {
   background: url(../images/home/hdr-art-legend.png) no-repeat;
   background-size: contain;
@@ -1332,7 +1304,7 @@ POSTS & CONTENT STYLES
   padding-top: 63%;
   max-width: 398px;
 }
-/* line 673, ../scss/_base.scss */
+/* line 672, ../scss/_base.scss */
 #american-art-legend p {
   color: #323232;
   margin: 2% 2.7%;
@@ -1341,17 +1313,17 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 684, ../scss/_base.scss */
+/* line 683, ../scss/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 
-/* line 687, ../scss/_base.scss */
+/* line 686, ../scss/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 689, ../scss/_base.scss */
+/* line 688, ../scss/_base.scss */
 .pagination ul {
   display: inline-block;
   white-space: nowrap;
@@ -1359,7 +1331,7 @@ PAGE NAVI STYLES
   clear: both;
   margin: 1px;
 }
-/* line 695, ../scss/_base.scss */
+/* line 694, ../scss/_base.scss */
 .pagination ul li {
   padding: 0;
   margin: 0;
@@ -1367,7 +1339,7 @@ PAGE NAVI STYLES
   display: inline;
   overflow: hidden;
 }
-/* line 701, ../scss/_base.scss */
+/* line 700, ../scss/_base.scss */
 .pagination ul li a, .pagination ul li span {
   margin: 0;
   text-decoration: none;
@@ -1379,18 +1351,18 @@ PAGE NAVI STYLES
   min-width: 1em;
   display: block;
 }
-/* line 712, ../scss/_base.scss */
+/* line 711, ../scss/_base.scss */
 .pagination ul li span.current {
   font-weight: bold;
 }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 727, ../scss/_base.scss */
+/* line 726, ../scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 731, ../scss/_base.scss */
+/* line 730, ../scss/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1400,12 +1372,12 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 742, ../scss/_base.scss */
+/* line 741, ../scss/_base.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 759, ../scss/_base.scss */
+/* line 758, ../scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1416,7 +1388,7 @@ COMMENT STYLES
   /* comment reply link */
   /* end .commentlist .comment-reply-link */
 }
-/* line 761, ../scss/_base.scss */
+/* line 760, ../scss/_base.scss */
 .commentlist li {
   position: relative;
   clear: both;
@@ -1426,63 +1398,63 @@ COMMENT STYLES
   padding: 0.7335em 10px;
   /* end .commentlist li ul.children */
 }
-/* line 769, ../scss/_base.scss */
+/* line 768, ../scss/_base.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 773, ../scss/_base.scss */
+/* line 772, ../scss/_base.scss */
 .commentlist li ul.children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 791, ../scss/_base.scss */
+/* line 790, ../scss/_base.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 795, ../scss/_base.scss */
+/* line 794, ../scss/_base.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 800, ../scss/_base.scss */
+/* line 799, ../scss/_base.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 814, ../scss/_base.scss */
+/* line 813, ../scss/_base.scss */
 .commentlist .odd {
   background: #eee;
 }
-/* line 817, ../scss/_base.scss */
+/* line 816, ../scss/_base.scss */
 .commentlist .even {
   background: #fefefe;
 }
-/* line 832, ../scss/_base.scss */
+/* line 831, ../scss/_base.scss */
 .commentlist .vcard {
   margin-left: 50px;
 }
-/* line 835, ../scss/_base.scss */
+/* line 834, ../scss/_base.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 843, ../scss/_base.scss */
+/* line 842, ../scss/_base.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 846, ../scss/_base.scss */
+/* line 845, ../scss/_base.scss */
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
-/* line 850, ../scss/_base.scss */
+/* line 849, ../scss/_base.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 860, ../scss/_base.scss */
+/* line 859, ../scss/_base.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -1490,17 +1462,17 @@ COMMENT STYLES
   border: 1px solid #cecece;
   background: #fff;
 }
-/* line 885, ../scss/_base.scss */
+/* line 884, ../scss/_base.scss */
 .commentlist .comment_content {
   margin-left: 50px;
 }
-/* line 888, ../scss/_base.scss */
+/* line 887, ../scss/_base.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 897, ../scss/_base.scss */
+/* line 896, ../scss/_base.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1512,7 +1484,7 @@ COMMENT STYLES
   font-weight: 700;
   font-size: 0.9em;
 }
-/* line 909, ../scss/_base.scss */
+/* line 908, ../scss/_base.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1521,27 +1493,27 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 921, ../scss/_base.scss */
+/* line 920, ../scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
-/* line 925, ../scss/_base.scss */
+/* line 924, ../scss/_base.scss */
 .respond-form form {
   margin: 0.75em 0;
 }
-/* line 928, ../scss/_base.scss */
+/* line 927, ../scss/_base.scss */
 .respond-form form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 934, ../scss/_base.scss */
+/* line 933, ../scss/_base.scss */
 .respond-form form li label,
 .respond-form form li small {
   display: none;
 }
-/* line 942, ../scss/_base.scss */
+/* line 941, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
@@ -1552,14 +1524,14 @@ COMMENT FORM STYLES
   line-height: 1.5em;
   /* form validation */
 }
-/* line 948, ../scss/_base.scss */
+/* line 947, ../scss/_base.scss */
 .respond-form form input[type=text]:focus,
 .respond-form form input[type=email]:focus,
 .respond-form form input[type=url]:focus,
 .respond-form form textarea:focus {
   background: #fff;
 }
-/* line 953, ../scss/_base.scss */
+/* line 952, ../scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1572,14 +1544,14 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 966, ../scss/_base.scss */
+/* line 965, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 971, ../scss/_base.scss */
+/* line 970, ../scss/_base.scss */
 .respond-form form textarea {
   resize: none;
   width: 97.3%;
@@ -1588,7 +1560,7 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-/* line 984, ../scss/_base.scss */
+/* line 983, ../scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -1596,13 +1568,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 997, ../scss/_base.scss */
+/* line 996, ../scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 1002, ../scss/_base.scss */
+/* line 1001, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1610,7 +1582,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 1018, ../scss/_base.scss */
+/* line 1017, ../scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
@@ -1618,31 +1590,31 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1039, ../scss/_base.scss */
+/* line 1038, ../scss/_base.scss */
 .footer {
   clear: both;
   text-transform: uppercase;
 }
 
-/* line 1044, ../scss/_base.scss */
+/* line 1043, ../scss/_base.scss */
 .copyright {
   float: left;
   padding: 5px 16px 9px 8px;
   text-align: left;
 }
 
-/* line 1050, ../scss/_base.scss */
+/* line 1049, ../scss/_base.scss */
 .footer-nav {
   float: right;
   padding: 5px 16px 9px 8px;
 }
-/* line 1054, ../scss/_base.scss */
+/* line 1053, ../scss/_base.scss */
 .footer-nav > li {
   border: none;
   float: left;
   position: relative;
 }
-/* line 1059, ../scss/_base.scss */
+/* line 1058, ../scss/_base.scss */
 .footer-nav > li a {
   display: inline;
   padding: 0;
@@ -1884,7 +1856,7 @@ tweeners.
   }
   /* line 128, ../scss/_481up.scss */
   #american-art-legend .eh-pic {
-    background: url(../images/home/ed-hardy-profile.png) no-repeat;
+    background: url(../images/home/ed-hardy-profile.png) no-repeat bottom center;
     background-size: contain;
     width: 42%;
     height: 98%;
@@ -2443,11 +2415,39 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 24, ../scss/_1030up.scss */
+  /* line 26, ../scss/_1030up.scss */
+  .grid,
+  .grid img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    /* Firefox 10+ */
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+    /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease;
+    /* Fade to color for Chrome and Safari */
+    transition: all 0.6s ease;
+    -webkit-backface-visibility: hidden;
+    /* Fix for transition flickering */
+    backface-visibility: hidden;
+    /* Fix for transition flickering */
+  }
+  /* line 35, ../scss/_1030up.scss */
+  .grid:hover,
+  .grid img:hover {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+  }
+
+  /* line 41, ../scss/_1030up.scss */
   .gridbg {
     padding-bottom: 25%;
   }
-  /* line 29, ../scss/_1030up.scss */
+  /* line 44, ../scss/_1030up.scss */
+  .gridbg a {
+    color: #bbbbbb;
+  }
+  /* line 47, ../scss/_1030up.scss */
   .gridbg a h2 {
     -webkit-transition: all 0.2s ease-in-out;
     -transition: all 0.2s ease-in-out;
@@ -2455,46 +2455,47 @@ you can add resource intensive styles.
     opacity: 0;
     font-size: 5em;
   }
-  /* line 35, ../scss/_1030up.scss */
+  /* line 53, ../scss/_1030up.scss */
   .gridbg a:hover h2 {
+    color: white;
     opacity: 1;
     font-size: 2.3em;
   }
 
-  /* line 45, ../scss/_1030up.scss */
+  /* line 64, ../scss/_1030up.scss */
   #about_tile:after {
     opacity: 0;
   }
-  /* line 49, ../scss/_1030up.scss */
+  /* line 68, ../scss/_1030up.scss */
   #about_tile:hover:after {
     opacity: 0.9;
   }
 
-  /* line 56, ../scss/_1030up.scss */
+  /* line 75, ../scss/_1030up.scss */
   #follow_us_tile h2 {
     -webkit-transition: all 0.2s ease-in-out;
     -transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 0;
   }
-  /* line 60, ../scss/_1030up.scss */
+  /* line 79, ../scss/_1030up.scss */
   #follow_us_tile ul {
     -webkit-transition: all 0.2s ease-in-out;
     -transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 0;
   }
-  /* line 65, ../scss/_1030up.scss */
+  /* line 84, ../scss/_1030up.scss */
   #follow_us_tile:hover h2 {
     opacity: 1;
     font-size: 2.3em;
   }
-  /* line 69, ../scss/_1030up.scss */
+  /* line 88, ../scss/_1030up.scss */
   #follow_us_tile:hover ul {
     opacity: 1;
   }
 
-  /* line 76, ../scss/_1030up.scss */
+  /* line 95, ../scss/_1030up.scss */
   #about h2 {
     background-size: 100% auto;
     -ms-behavior: url(/backgroundsize.min.htc);
@@ -2503,12 +2504,12 @@ you can add resource intensive styles.
     width: 34.92%;
   }
 
-  /* line 85, ../scss/_1030up.scss */
+  /* line 104, ../scss/_1030up.scss */
   #american-art-legend {
     height: 0;
     padding-bottom: 50%;
   }
-  /* line 89, ../scss/_1030up.scss */
+  /* line 108, ../scss/_1030up.scss */
   #american-art-legend h2 {
     padding-top: 21%;
   }
