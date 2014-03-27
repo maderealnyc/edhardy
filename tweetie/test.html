@@ -1,0 +1,131 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweetie Demo (@edhardy)</title>
+    <style type="text/css">
+        body {
+    //        background: #ECF1F2;
+            color: #8e8e8e;
+            font-size: 16px;
+	    line-height: 20px;
+             }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #189acb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .source, .source2 {
+            width: 1350px;
+            margin: 0 auto;
+            border: 1px solid #e0e0e0;
+            background: white;
+            display: block;
+            white-space: pre;
+            -webkit-border-radius: 3px;
+               -moz-border-radius: 3px;
+                    border-radius: 3px;
+        }
+
+        .source2 {
+            width: 450px;
+        }
+
+        
+
+        .example2 {
+            width: 650px !importent;
+            //padding: 15px;
+            margin: 15px auto;
+            //background: white;
+            -webkit-border-radius: 3px;
+               -moz-border-radius: 3px;
+                    border-radius: 3px;
+        }
+    
+        .example2 .tweet {
+            overflow: hidden;
+        }
+
+        .example2 ul {
+            width: 99999px;
+            height: 180px;
+        }
+
+        .example2 ul li {
+            width: 200px;
+            height: 180px;
+            float: left;
+            border-right: 1px solid #2f3029;
+            padding: 0 10px 0 0;
+            margin: 0 10px 0 0;
+        }
+#left {
+background: none;
+border: 0;
+position: absolute;
+top: 0;
+left: 0;
+outline: none;
+}
+#right {
+position: absolute;
+right: 0;
+top: 0;
+border: 0;
+background: 0;
+outline: none;
+}
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="tweetie.js"></script>
+</head>
+<body>    
+<div><button id="left"><img src="prev.png" /></button></div>
+    <div class="example2" style="width: 650px;">
+        <div class="tweet"></div>
+    </div>
+<div><button id="right"><img src="next.png" /></button></div>
+    <script type="text/javascript">
+        jQuery('.example2 .tweet').twittie({
+            dateFormat: '%b. %d, %Y',
+            template: '<strong class="date">{{date}}</strong> - {{tweet}}<br><br><br><br><br>@edhardy  {{date}}',
+            count: 10
+        });
+jQuery('#left').click(function(){
+var item = jQuery('.example2 .tweet ul').find('li:first');
+item.animate( {marginLeft: '-220px', 'opacity': '0'}, 90, function() {
+                jQuery(this).detach().appendTo('.example2 .tweet ul').removeAttr('style');
+            });
+
+})
+jQuery('#right').click(function(){
+var item = jQuery('.example2 .tweet ul').find('li:nth-child(1)');
+item.animate( {marginLeft: '220px', 'opacity': '0.3','float':'left'}, 90, function() {
+                jQuery(this).detach().appendTo('.example2 .tweet ul').removeAttr('style');
+            });
+
+})
+        /*setInterval(function() {
+            var item = jQuery('.example2 .tweet ul').find('li:first');
+
+            item.animate( {marginLeft: '-220px', 'opacity': '0'}, 500, function() {
+            
+//jQuery(this).detach().appendTo('.example2 .tweet ul').removeAttr('style');
+            });
+        }, 5000);*/
+    </script>
+</body>
+</html>

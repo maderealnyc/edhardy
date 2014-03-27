@@ -8,7 +8,7 @@
 	<?php // Homepage Layout 1 Tile 1 (Static Image Tile) ?>
 	<?php $hp1_tile_1_bg_image = get_field('hp1_tile_1_bg_image'); ?>
 	<?php if( !empty($hp1_tile_1_bg_image) ): ?>
-		<div class="threecol grid clearfix hideme" id="tile_1"><img src="<?php echo $hp1_tile_1_bg_image['url']; ?>" alt="<?php echo $hp1_tile_1_bg_image['alt']; ?>" /></div>
+		<div class="threecol grid gridbg clearfix hideme" id="tile_1" style="background-image: url(<?php echo $hp1_tile_1_bg_image['url']; ?>);"></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 2 (Instagram Tile) ?>
@@ -58,7 +58,7 @@
 	<?php // Homepage Layout 1 Tile 5 (Lookbook Tile) ?>
 	<?php $hp1_tile_5_bg_image = get_field('lookbook_tile_bg_image'); ?>
 	<?php if( !empty($hp1_tile_5_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="tile_5" style="background-image: url(<?php echo $hp1_tile_5_bg_image['url']; ?>);"><a href="/lookbook"><h2>2014 <strong>Lookbook</strong></h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="tile_5" style="background-image: url(<?php echo $hp1_tile_5_bg_image['url']; ?>);"><a href="/lookbook"><h2>Lookbook</h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 6 (Instagram Tile) ?>
@@ -86,7 +86,7 @@
 	<?php // Homepage Layout 1 Tile 7 (Static Image Tile) ?>
 	<?php $hp1_tile_7_bg_image = get_field('hp1_tile_7_bg_image'); ?>
 	<?php if( !empty($hp1_tile_7_bg_image) ): ?>
-		<div class="threecol grid clearfix hideme" id="tile_7"><img src="<?php echo $hp1_tile_7_bg_image['url']; ?>" alt="<?php echo $hp1_tile_7_bg_image['alt']; ?>" /></div>
+		<div class="threecol grid gridbg clearfix hideme" id="tile_7" style="background-image: url(<?php echo $hp1_tile_7_bg_image['url']; ?>);"></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 8 (Twitter Feed Tile) ?>
@@ -104,7 +104,7 @@
 	<?php // Homepage Layout 1 Tile 10 (Static Image Tile) ?>
 	<?php $hp1_tile_10_bg_image = get_field('hp1_tile_10_bg_image'); ?>
 	<?php if( !empty($hp1_tile_10_bg_image) ): ?>
-		<div class="threecol grid clearfix hideme" id="tile_10"><img src="<?php echo $hp1_tile_10_bg_image['url']; ?>" alt="<?php echo $hp1_tile_10_bg_image['alt']; ?>" /></div>
+		<div class="threecol grid gridbg clearfix hideme" id="tile_10" style="background-image: url(<?php echo $hp1_tile_10_bg_image['url']; ?>);"></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 11 (Follow Us Tile) ?>
@@ -144,10 +144,16 @@
 
 <?php if( $page_template_slug == 'page-homepage-layout-2.php' ): ?>
 
-	<?php // Homepage Layout 2 Tile 1 (Static Image Tile) ?>
+	<?php // Homepage Layout 2 Tile 1 (Static Image / Slider / Video Tile) ?>
 	<?php $hp2_tile_1_bg_image = get_field('hp2_tile_1_bg_image'); ?>
+	<?php $hp2_tile_1_image_slider_shortcode = get_field('hp2_tile_1_image_slider_shortcode'); ?>
 	<?php if( !empty($hp2_tile_1_bg_image) ): ?>
-		<div class="sixcol grid clearfix" id="tile_1"><img src="<?php echo $hp2_tile_1_bg_image['url']; ?>" alt="<?php echo $hp2_tile_1_bg_image['alt']; ?>" /></div>
+		<div class="sixcol grid gridbg clearfix" id="tile_1" style="background-image: url(<?php echo $hp2_tile_1_bg_image['url']; ?>);">
+			<?php if( !empty($hp2_tile_1_image_slider_shortcode) ): ?>
+				<?php echo $hp2_tile_1_image_slider_shortcode ?>
+				<?php echo do_shortcode( $hp2_tile_1_image_slider_shortcode ) ?>
+			<?php endif; ?>
+		</div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 2 Tile 2 (Instagram Tile) ?>
@@ -169,13 +175,13 @@
 	<?php // Homepage Layout 2 Tile 3 (Static Image Tile) ?>
 	<?php $hp2_tile_3_bg_image = get_field('hp2_tile_3_bg_image'); ?>
 	<?php if( !empty($hp2_tile_3_bg_image) ): ?>
-		<div class="threecol grid clearfix hideme" id="tile_3"><img src="<?php echo $hp2_tile_3_bg_image['url']; ?>" alt="<?php echo $hp2_tile_3_bg_image['alt']; ?>" /></div>
+		<div class="threecol grid gridbg clearfix hideme" id="tile_3" style="background-image: url(<?php echo $hp2_tile_3_bg_image['url']; ?>);"><img src="<?php echo $hp2_tile_3_bg_image['url']; ?>" alt="<?php echo $hp2_tile_3_bg_image['alt']; ?>" /></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 2 Tile 4 (Static Image Tile) ?>
 	<?php $hp2_tile_4_bg_image = get_field('hp2_tile_4_bg_image'); ?>
 	<?php if( !empty($hp2_tile_4_bg_image) ): ?>
-		<div class="threecol grid clearfix hideme" id="tile_4"><img src="<?php echo $hp2_tile_4_bg_image['url']; ?>" alt="<?php echo $hp2_tile_4_bg_image['alt']; ?>" /></div>
+		<div class="threecol grid gridbg clearfix hideme" id="tile_4" style="background-image: url(<?php echo $hp2_tile_4_bg_image['url']; ?>);"><img src="<?php echo $hp2_tile_4_bg_image['url']; ?>" alt="<?php echo $hp2_tile_4_bg_image['alt']; ?>" /></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 2 Tile 5 (Twitter Feed Tile) ?>
@@ -187,7 +193,7 @@
 	<?php // Homepage Layout 2 Tile 6 (Lookbook Tile) ?>
 	<?php $hp2_tile_6_bg_image = get_field('lookbook_tile_bg_image'); ?>
 	<?php if( !empty($hp2_tile_6_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="tile_6" style="background-image: url(<?php echo $hp2_tile_6_bg_image['url']; ?>);"><a href="/lookbook"><h2>2014 <strong>Lookbook</strong></h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="tile_6" style="background-image: url(<?php echo $hp2_tile_6_bg_image['url']; ?>);"><a href="/lookbook"><h2>Lookbook</h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 2 Tile 7 (Follow Us Tile) ?>
@@ -216,16 +222,22 @@
 
 <?php if( $page_template_slug == 'page-homepage-layout-3.php' ): ?>
 
-	<?php // Homepage Layout 3 Tile 1 (Static Image Tile) ?>
+	<?php // Homepage Layout 3 Tile 1 (Static Image / Slider / Video Tile) ?>
 	<?php $hp3_tile_1_bg_image = get_field('hp3_tile_1_bg_image'); ?>
+	<?php $hp3_tile_1_image_slider_shortcode = get_field('hp3_tile_1_image_slider_shortcode'); ?>
 	<?php if( !empty($hp3_tile_1_bg_image) ): ?>
-		<div class="twelvecol grid clearfix" id="tile_1"><img src="<?php echo $hp3_tile_1_bg_image['url']; ?>" alt="<?php echo $hp3_tile_1_bg_image['alt']; ?>" /></div>
+		<div class="twelvecol grid gridbg clearfix" id="tile_1" style="background-image: url(<?php echo $hp3_tile_1_bg_image['url']; ?>);">
+			<?php if( !empty($hp3_tile_1_image_slider_shortcode) ): ?>
+				<?php echo $hp3_tile_1_image_slider_shortcode ?>
+				<?php echo do_shortcode( $hp3_tile_1_image_slider_shortcode ) ?>
+			<?php endif; ?>
+		</div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 3 Tile 2 (Lookbook Tile) ?>
 	<?php $hp3_tile_2_bg_image = get_field('lookbook_tile_bg_image'); ?>
 	<?php if( !empty($hp3_tile_2_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="tile_2" style="background-image: url(<?php echo $hp3_tile_2_bg_image['url']; ?>);"><a href="/lookbook"><h2>2014 <strong>Lookbook</strong></h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="tile_2" style="background-image: url(<?php echo $hp3_tile_2_bg_image['url']; ?>);"><a href="/lookbook"><h2>Lookbook</h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 3 Tile 3 (Twitter Feed Tile) ?>
@@ -262,5 +274,5 @@
 
 <?php $image_below_grid = get_field('image_below_grid'); ?>
 <?php if( !empty($image_below_grid) ): ?>
-	<div class="twelvecol clearfix" id="image_below_grid" style="background-image: url(<?php echo $image_below_grid['url']; ?>);" data-stellar-background-ratio="0.9"></div>
+	<div class="twelvecol clearfix" id="image_below_grid" style="background-image: url(<?php echo $image_below_grid['url']; ?>);" data-stellar-background-ratio="0.5"></div>
 <?php endif; ?>
