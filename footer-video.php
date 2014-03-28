@@ -16,6 +16,7 @@
 			<script>
 			jQuery(document).ready(function($) {
 				// declare object for video
+				// $('#player1').mediaelementplayer({
 				var player = new MediaElementPlayer("#player1", {
 					startVolume: 0.5, // initial volume when the player starts
 					features: ["playpause","progress","tracks","volume"] //control bar features

@@ -31,7 +31,6 @@ dimensions, this is what we would put in our retina stylesheet:
 .icon {
 	background: url(img/test@2x.png) no-repeat;
 	background-size: 24px 24px;
-	-ms-behavior: url(/backgroundsize.min.htc);
 }
 
 So, you would create the same icon, but at double the resolution, meaning

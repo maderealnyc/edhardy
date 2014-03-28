@@ -41,7 +41,7 @@ POSTS & CONTENT STYLES
 #about {
 	h2 {
 		background-size: 100% auto;
-		-ms-behavior: url(/backgroundsize.min.htc);
+		// -ms-behavior: url(/backgroundsize.min.htc);
 	    margin: 15.5% auto 1%;
 	    padding-top: 27.2%;
 	    width: 34.92%;
@@ -50,7 +50,7 @@ POSTS & CONTENT STYLES
 	.dagger {
 		background: url(../images/home/true-love-knife.png) no-repeat;
 		background-size: contain;
-		-ms-behavior: url(/backgroundsize.min.htc);
+		// -ms-behavior: url(/backgroundsize.min.htc);
 		height: 0px;
 		// max-width: 144px;
 		width: 12%;
@@ -59,7 +59,8 @@ POSTS & CONTENT STYLES
 		position: absolute;
 		left: 50%;
 		margin-left: -6%;
-		top: 59%;
+		// top: 59%;
+		bottom: -10%;
 	}
 }
 

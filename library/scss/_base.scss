@@ -490,7 +490,7 @@ POSTS & CONTENT STYLES
 
 .gridbg {
 	background-size: contain;
-	-ms-behavior: url(/backgroundsize.min.htc);
+	// -ms-behavior: url(/backgroundsize.min.htc);
     height: 0;
     padding-bottom: 100%;
     position: relative;
@@ -559,7 +559,8 @@ POSTS & CONTENT STYLES
 
 		li {
 			float: left;
-			margin-right: 4.69%;
+			margin-right: 4%;
+			// margin-right: 4.69%;
 
 			a {
 				background: url(../images/home/sprite-follow-us.png) no-repeat;
@@ -625,6 +626,7 @@ POSTS & CONTENT STYLES
 .page-template-page-homepage-layout-2-php {
 	#tile_1 {
 		padding-bottom: 100% !important;
+		@include css-gradient($link-color,$black);
 	}
 }
 
@@ -652,6 +654,7 @@ POSTS & CONTENT STYLES
 			    float: left;
 			    position: relative;
 			    padding-bottom: 100%;
+			    width: 100%;
 
 			    &:first-child {
 			    	display: block;
@@ -708,6 +711,8 @@ POSTS & CONTENT STYLES
 #twitter_feed_tile #right {
 	border: none;
 	background: url(../images/sprite-twitter-arrows.png) no-repeat;
+	display: block;
+	font-size: 0;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -715,6 +720,7 @@ POSTS & CONTENT STYLES
 	height: 40px;
 	position: absolute;
 	top: 42%;
+	outline: none;
 }
 #twitter_feed_tile #left {
 	background-position: 0 0;
@@ -745,7 +751,7 @@ POSTS & CONTENT STYLES
 #about {
 	background: url(../images/home/home-bg-2.jpg) no-repeat;
     background-size: 100% auto;
-	-ms-behavior: url(/backgroundsize.min.htc);
+	// -ms-behavior: url(/backgroundsize.min.htc);
     width: 100%;
     height: 0;
     padding-bottom: 50%;
@@ -754,7 +760,7 @@ POSTS & CONTENT STYLES
 	h2 {
 		background: url(../images/home/hdr-who-is.png) no-repeat;
 		background-size: 100% auto;
-		-ms-behavior: url(/backgroundsize.min.htc);
+		// -ms-behavior: url(/backgroundsize.min.htc);
 		height: 0;
 	    margin: 11.5% auto 0;
 	    padding-top: 27.2%;
@@ -767,12 +773,12 @@ POSTS & CONTENT STYLES
 #american-art-legend {
 	background: #f3f3f3 url(../images/home/home-bg-3-full.jpg) no-repeat center center;
 	background-size: contain;
-	-ms-behavior: url(/backgroundsize.min.htc);
+	// -ms-behavior: url(/backgroundsize.min.htc);
 
 	h2 {
 		background: url(../images/home/hdr-art-legend.png) no-repeat;
 		background-size: contain;
-		-ms-behavior: url(/backgroundsize.min.htc);
+		// -ms-behavior: url(/backgroundsize.min.htc);
 		height: 0;
 		margin: 2.5% 0.75% 0;
 	    padding-top: 63%;

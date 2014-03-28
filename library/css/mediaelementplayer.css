@@ -66,9 +66,10 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-size: contain ;
-	background-position: 50% 50% ;
-	background-repeat: no-repeat ;
+	background-size: 100% auto;
+	/*background-size: contain;*/
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 }
 :root .mejs-poster img {
 	display: none ;
@@ -875,7 +876,13 @@
 .mejs-container {
   width: 100% !important;
   height: auto !important;
-  padding-top: 57%;
+  padding-top: 56.7%;
+}
+.page-template-page-homepage-layout-3-php #tile_1 .mejs-container {
+  padding-top: 50%;
+}
+.page-template-page-homepage-layout-2-php #tile_1 .mejs-container {
+  top: 21.94%;
 }
 .mejs-overlay, .mejs-poster {
   width: 100% !important;

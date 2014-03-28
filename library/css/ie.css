@@ -440,7 +440,6 @@ POSTS & CONTENT STYLES
 /* line 103, ../scss/_481up.scss */
 #about h2 {
   background-size: contain;
-  -ms-behavior: url(/backgroundsize.min.htc);
   margin: 17.5% auto 0;
   padding-top: 20%;
   width: 100%;
@@ -449,16 +448,17 @@ POSTS & CONTENT STYLES
 /* line 113, ../scss/_481up.scss */
 #american-art-legend {
   background-size: 100% auto;
+  background-position: 50% 50%;
 }
-/* line 116, ../scss/_481up.scss */
+/* line 117, ../scss/_481up.scss */
 #american-art-legend h2 {
   padding-top: 24.61%;
 }
-/* line 120, ../scss/_481up.scss */
+/* line 121, ../scss/_481up.scss */
 #american-art-legend p {
   width: 53%;
 }
-/* line 124, ../scss/_481up.scss */
+/* line 125, ../scss/_481up.scss */
 #american-art-legend .eh-pic {
   background: url(../images/home/ed-hardy-profile.png) no-repeat bottom center;
   background-size: contain;
@@ -466,7 +466,7 @@ POSTS & CONTENT STYLES
   height: 98%;
   position: absolute;
   bottom: 0;
-  right: -2px;
+  right: 0;
 }
 
 /*********************
@@ -493,15 +493,10 @@ come into play. Have fun!
 /*********************
 GENERAL STYLES
 *********************/
-/* line 22, ../scss/_768up.scss */
-.hidemedesktop {
-  display: none;
-}
-
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-/* line 30, ../scss/_768up.scss */
+/* line 26, ../scss/_768up.scss */
 .wrap {
   max-width: 1200px;
 }
@@ -509,16 +504,16 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
-/* line 40, ../scss/_768up.scss */
+/* line 36, ../scss/_768up.scss */
 #inner-header {
   padding: 14px;
 }
-/* line 43, ../scss/_768up.scss */
+/* line 39, ../scss/_768up.scss */
 #inner-header nav {
   float: right;
 }
 
-/* line 48, ../scss/_768up.scss */
+/* line 44, ../scss/_768up.scss */
 #logo {
   float: left;
   margin: 0;
@@ -527,7 +522,7 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 57, ../scss/_768up.scss */
+/* line 53, ../scss/_768up.scss */
 .top-nav {
   background: black;
   border: 0;
@@ -538,18 +533,18 @@ NAVIGATION STYLES
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 64, ../scss/_768up.scss */
+/* line 60, ../scss/_768up.scss */
 .top-nav ul {
   margin-top: 0;
 }
-/* line 67, ../scss/_768up.scss */
+/* line 63, ../scss/_768up.scss */
 .top-nav > li {
   display: inline;
   float: left;
   border: none;
   padding: 6px 16px 9px 8px;
 }
-/* line 73, ../scss/_768up.scss */
+/* line 69, ../scss/_768up.scss */
 .top-nav > li a {
   padding: 9px;
   /*
@@ -557,38 +552,38 @@ NAVIGATION STYLES
   has the possibility of being a mobile device.
   */
 }
-/* line 92, ../scss/_768up.scss */
+/* line 88, ../scss/_768up.scss */
 .top-nav li.nav-about,
 .top-nav li.nav-lookbook {
   top: auto;
 }
-/* line 95, ../scss/_768up.scss */
+/* line 91, ../scss/_768up.scss */
 .top-nav li.nav-about a,
 .top-nav li.nav-lookbook a {
   padding: 0 0 4px 0;
 }
-/* line 97, ../scss/_768up.scss */
+/* line 93, ../scss/_768up.scss */
 .top-nav li.nav-about a:hover,
 .top-nav li.nav-lookbook a:hover {
   background: url(../images/sprite-navhover.png) no-repeat;
 }
-/* line 103, ../scss/_768up.scss */
+/* line 99, ../scss/_768up.scss */
 .top-nav li.nav-about a:hover {
   background-position: 0 100%;
 }
-/* line 107, ../scss/_768up.scss */
+/* line 103, ../scss/_768up.scss */
 .top-nav li.nav-lookbook a:hover {
   background-position: -68px 100%;
 }
 
 /* end .top-nav */
-/* line 120, ../scss/_768up.scss */
+/* line 116, ../scss/_768up.scss */
 li.nav-newsletter {
   padding: 0;
   background: url(../images/separator-newsletter.png) no-repeat 0 0;
 }
 
-/* line 125, ../scss/_768up.scss */
+/* line 121, ../scss/_768up.scss */
 li.nav-newsletter-mobile {
   display: none;
 }
@@ -596,19 +591,19 @@ li.nav-newsletter-mobile {
 /*
 social links
 */
-/* line 133, ../scss/_768up.scss */
+/* line 129, ../scss/_768up.scss */
 #inner-header ul.social-nav {
   border: none;
   float: left;
   margin: 0 0 0 8px;
   text-align: left;
 }
-/* line 139, ../scss/_768up.scss */
+/* line 135, ../scss/_768up.scss */
 #inner-header ul.social-nav li {
   display: inline;
   float: left;
 }
-/* line 148, ../scss/_768up.scss */
+/* line 144, ../scss/_768up.scss */
 #inner-header ul.social-nav li.facebook,
 #inner-header ul.social-nav li.twitter,
 #inner-header ul.social-nav li.youtube,
@@ -616,7 +611,7 @@ social links
 #inner-header ul.social-nav li.pinterest {
   padding: 9px 4.5px 9px 9px;
 }
-/* line 151, ../scss/_768up.scss */
+/* line 147, ../scss/_768up.scss */
 #inner-header ul.social-nav li.facebook {
   background: url(../images/separator-newsletter.png) no-repeat 0 0;
 }
@@ -624,7 +619,7 @@ social links
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 162, ../scss/_768up.scss */
+/* line 158, ../scss/_768up.scss */
 .gridbg {
   padding-bottom: 50%;
 }
@@ -632,28 +627,28 @@ POSTS & CONTENT STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 170, ../scss/_768up.scss */
+/* line 166, ../scss/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 174, ../scss/_768up.scss */
+/* line 170, ../scss/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 179, ../scss/_768up.scss */
+/* line 175, ../scss/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 184, ../scss/_768up.scss */
+/* line 180, ../scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 192, ../scss/_768up.scss */
+/* line 188, ../scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -686,15 +681,10 @@ be seen on the Desktop.
 /*********************
 GENERAL STYLES
 *********************/
-/* line 16, ../scss/_1030up.scss */
-.hideme {
-  display: block;
-}
-
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 26, ../scss/_1030up.scss */
+/* line 22, ../scss/_1030up.scss */
 .grid,
 .grid img {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
@@ -711,22 +701,22 @@ POSTS & CONTENT STYLES
   backface-visibility: hidden;
   /* Fix for transition flickering */
 }
-/* line 35, ../scss/_1030up.scss */
+/* line 31, ../scss/_1030up.scss */
 .grid:hover,
 .grid img:hover {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
 }
 
-/* line 41, ../scss/_1030up.scss */
+/* line 37, ../scss/_1030up.scss */
 .gridbg {
   padding-bottom: 25%;
 }
-/* line 44, ../scss/_1030up.scss */
+/* line 40, ../scss/_1030up.scss */
 .gridbg a {
   color: #bbbbbb;
 }
-/* line 47, ../scss/_1030up.scss */
+/* line 43, ../scss/_1030up.scss */
 .gridbg a h2.gridh2 {
   -webkit-transition: all 0.2s ease-in-out;
   -transition: all 0.2s ease-in-out;
@@ -734,69 +724,52 @@ POSTS & CONTENT STYLES
   opacity: 0;
   font-size: 5em;
 }
-/* line 53, ../scss/_1030up.scss */
+/* line 49, ../scss/_1030up.scss */
 .gridbg a:hover h2.gridh2 {
   color: white;
   opacity: 1;
   font-size: 2.3em;
 }
 
-/* line 64, ../scss/_1030up.scss */
+/* line 60, ../scss/_1030up.scss */
 #about_tile:after {
   opacity: 0;
 }
-/* line 68, ../scss/_1030up.scss */
+/* line 64, ../scss/_1030up.scss */
 #about_tile:hover:after {
   opacity: 0.9;
 }
 
-/* line 75, ../scss/_1030up.scss */
+/* line 71, ../scss/_1030up.scss */
 #follow_us_tile h2 {
   -webkit-transition: all 0.2s ease-in-out;
   -transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 0;
 }
-/* line 79, ../scss/_1030up.scss */
+/* line 75, ../scss/_1030up.scss */
 #follow_us_tile ul {
   -webkit-transition: all 0.2s ease-in-out;
   -transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 0;
 }
-/* line 84, ../scss/_1030up.scss */
+/* line 80, ../scss/_1030up.scss */
 #follow_us_tile:hover h2 {
   opacity: 1;
   font-size: 2.3em;
 }
-/* line 88, ../scss/_1030up.scss */
+/* line 84, ../scss/_1030up.scss */
 #follow_us_tile:hover ul {
   opacity: 1;
 }
 
-/* line 94, ../scss/_1030up.scss */
-#image_below_grid {
-  background-attachment: fixed;
-  background-size: auto;
-}
-
-/* line 100, ../scss/_1030up.scss */
+/* line 96, ../scss/_1030up.scss */
 #about h2 {
   background-size: 100% auto;
-  -ms-behavior: url(/backgroundsize.min.htc);
   margin: 15.5% auto 1%;
   padding-top: 27.2%;
   width: 34.92%;
-}
-
-/* line 109, ../scss/_1030up.scss */
-#american-art-legend {
-  height: 0;
-  padding-bottom: 50%;
-}
-/* line 113, ../scss/_1030up.scss */
-#american-art-legend h2 {
-  padding-top: 21%;
 }
 
 /*
