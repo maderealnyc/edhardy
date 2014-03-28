@@ -52,13 +52,13 @@
 	<?php // Homepage Layout 1 Tile 4 (Latest News Tile) ?>
 	<?php $hp1_tile_4_bg_image = get_field('latest_news_tile_bg_image'); ?>
 	<?php if( !empty($hp1_tile_4_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="tile_4" style="background-image: url(<?php echo $hp1_tile_4_bg_image['url']; ?>);"><a href="#newsletter"><h2>Latest <strong>News</strong></h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="tile_4" style="background-image: url(<?php echo $hp1_tile_4_bg_image['url']; ?>);"><a href="#newsletter"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 5 (Lookbook Tile) ?>
 	<?php $hp1_tile_5_bg_image = get_field('lookbook_tile_bg_image'); ?>
 	<?php if( !empty($hp1_tile_5_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="tile_5" style="background-image: url(<?php echo $hp1_tile_5_bg_image['url']; ?>);"><a href="/lookbook"><h2>Lookbook</h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="lookbook_tile" style="background-image: url(<?php echo $hp1_tile_5_bg_image['url']; ?>);"><a href="/lookbook"><h2 class="gridh2">Lookbook</h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 6 (Instagram Tile) ?>
@@ -93,10 +93,10 @@
 	<?php $hp1_tile_8_bg_image = get_field('twitter_feed_tile_bg_image'); ?>
 	<?php if( !empty($hp1_tile_8_bg_image) ): ?>
 		<div class="threecol grid gridbg clearfix" id="twitter_feed_tile" style="background-image: url(<?php echo $hp1_tile_8_bg_image['url']; ?>);">
-			<div><button id="left">PREVIOUS</button></div>
 			<div class="twitter-tile-carousel">
 			    <div class="tweet"></div>
 			</div>
+			<div><button id="left">PREVIOUS</button></div>
 			<div><button id="right">NEXT</button></div>
 		</div>
 	<?php endif; ?>
@@ -104,7 +104,7 @@
 	<?php // Homepage Layout 1 Tile 9 (About Tile) ?>
 	<?php $hp1_tile_9_bg_image = get_field('about_tile_bg_image'); ?>
 	<?php if( !empty($hp1_tile_9_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="about_tile" style="background-image: url(<?php echo $hp1_tile_9_bg_image['url']; ?>);"><a href="#about"><h2>About <strong>Ed</strong></h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="about_tile" style="background-image: url(<?php echo $hp1_tile_9_bg_image['url']; ?>);"><a href="#about"><h2 class="gridh2">About <strong>Ed</strong></h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 10 (Static Image Tile) ?>
@@ -117,7 +117,7 @@
 	<?php $hp1_tile_11_bg_image = get_field('follow_us_tile_hp1_bg_image'); ?>
 	<?php if( !empty($hp1_tile_11_bg_image) ): ?>
 		<div class="threecol grid gridbg clearfix" id="follow_us_tile" style="background-image: url(<?php echo $hp1_tile_11_bg_image['url']; ?>);">
-			<h2>Follow Us</h2>
+			<h2 class="gridh2">Follow Us</h2>
 			<?php bones_social_links(); ?>
 		</div>
 	<?php endif; ?>
@@ -192,20 +192,26 @@
 	<?php // Homepage Layout 2 Tile 5 (Twitter Feed Tile) ?>
 	<?php $hp2_tile_5_bg_image = get_field('twitter_feed_tile_bg_image'); ?>
 	<?php if( !empty($hp2_tile_5_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="twitter_feed_tile" style="background-image: url(<?php echo $hp2_tile_5_bg_image['url']; ?>);">Twitter Carousel</div>
+		<div class="threecol grid gridbg clearfix" id="twitter_feed_tile" style="background-image: url(<?php echo $hp2_tile_5_bg_image['url']; ?>);">
+			<div class="twitter-tile-carousel">
+			    <div class="tweet"></div>
+			</div>
+			<div><button id="left">PREVIOUS</button></div>
+			<div><button id="right">NEXT</button></div>
+		</div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 2 Tile 6 (Lookbook Tile) ?>
 	<?php $hp2_tile_6_bg_image = get_field('lookbook_tile_bg_image'); ?>
 	<?php if( !empty($hp2_tile_6_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="tile_6" style="background-image: url(<?php echo $hp2_tile_6_bg_image['url']; ?>);"><a href="/lookbook"><h2>Lookbook</h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="lookbook_tile" style="background-image: url(<?php echo $hp2_tile_6_bg_image['url']; ?>);"><a href="/lookbook"><h2 class="gridh2">Lookbook</h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 2 Tile 7 (Follow Us Tile) ?>
 	<?php $hp2_tile_7_bg_image = get_field('follow_us_tile_hp2_bg_image'); ?>
 	<?php if( !empty($hp2_tile_7_bg_image) ): ?>
 		<div class="sixcol grid gridbg clearfix hideme" id="follow_us_tile" style="background-image: url(<?php echo $hp2_tile_7_bg_image['url']; ?>);">
-			<h2>Follow Us</h2>
+			<h2 class="gridh2">Follow Us</h2>
 			<ul class="clearfix">
 				<li class="facebook"><a class="image-replacement" href="https://www.facebook.com/edhardy" target="_blank">Facebook (https://www.facebook.com/edhardy)</a></li>
 				<li class="twitter"><a class="image-replacement" href="https://twitter.com/edhardy" target="_blank">Twitter (https://twitter.com/edhardy)</a></li>
@@ -218,7 +224,7 @@
 	<?php // Homepage Layout 2 Tile 8 (Latest News Tile) ?>
 	<?php $hp2_tile_8_bg_image = get_field('latest_news_tile_bg_image'); ?>
 	<?php if( !empty($hp2_tile_8_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="tile_8" style="background-image: url(<?php echo $hp2_tile_8_bg_image['url']; ?>);"><a href="#newsletter"><h2>Latest <strong>News</strong></h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="tile_8" style="background-image: url(<?php echo $hp2_tile_8_bg_image['url']; ?>);"><a href="#newsletter"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
 	<?php endif; ?>
 
 <?php endif; ?>
@@ -241,19 +247,25 @@
 	<?php // Homepage Layout 3 Tile 2 (Lookbook Tile) ?>
 	<?php $hp3_tile_2_bg_image = get_field('lookbook_tile_bg_image'); ?>
 	<?php if( !empty($hp3_tile_2_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="tile_2" style="background-image: url(<?php echo $hp3_tile_2_bg_image['url']; ?>);"><a href="/lookbook"><h2>Lookbook</h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="lookbook_tile" style="background-image: url(<?php echo $hp3_tile_2_bg_image['url']; ?>);"><a href="/lookbook"><h2 class="gridh2">Lookbook</h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 3 Tile 3 (Twitter Feed Tile) ?>
 	<?php $hp3_tile_3_bg_image = get_field('twitter_feed_tile_bg_image'); ?>
 	<?php if( !empty($hp3_tile_3_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="twitter_feed_tile" style="background-image: url(<?php echo $hp3_tile_3_bg_image['url']; ?>);">Twitter Carousel</div>
+		<div class="threecol grid gridbg clearfix" id="twitter_feed_tile" style="background-image: url(<?php echo $hp3_tile_3_bg_image['url']; ?>);">
+			<div class="twitter-tile-carousel">
+			    <div class="tweet"></div>
+			</div>
+			<div><button id="left">PREVIOUS</button></div>
+			<div><button id="right">NEXT</button></div>
+		</div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 3 Tile 4 (Latest News Tile) ?>
 	<?php $hp3_tile_4_bg_image = get_field('latest_news_tile_bg_image'); ?>
 	<?php if( !empty($hp3_tile_4_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="tile_4" style="background-image: url(<?php echo $hp3_tile_4_bg_image['url']; ?>);"><a href="#newsletter"><h2>Latest <strong>News</strong></h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="tile_4" style="background-image: url(<?php echo $hp3_tile_4_bg_image['url']; ?>);"><a href="#newsletter"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 3 Tile 5 (Instagram Tile) ?>
@@ -293,12 +305,14 @@
 
     jQuery('#left').click(function(){
         var item = jQuery('.twitter-tile-carousel .tweet ul').find('li:first');
-        item.animate( {marginLeft: '-300px', 'opacity': '0'}, 90, function() { jQuery(this).detach().appendTo('.twitter-tile-carousel .tweet ul').removeAttr('style'); });
+        item.animate( {'display': 'none', 'opacity': '0'}, 90, function() { jQuery(this).detach().appendTo('.twitter-tile-carousel .tweet ul').removeAttr('style'); });
+        // item.animate( {marginLeft: '-300px', 'opacity': '0'}, 90, function() { jQuery(this).detach().appendTo('.twitter-tile-carousel .tweet ul').removeAttr('style'); });
     })
 
     jQuery('#right').click(function(){
         var item = jQuery('.twitter-tile-carousel .tweet ul').find('li:nth-child(1)');
-        item.animate( {marginLeft: '300px', 'opacity': '0.3','float':'left'}, 90, function() {
+        item.animate( {'display': 'none', 'opacity': '0.3'}, 90, function() {
+        // item.animate( {marginLeft: '300px', 'opacity': '0.3','float':'left'}, 90, function() {
             jQuery(this).detach().appendTo('.twitter-tile-carousel .tweet ul').removeAttr('style');
         });
     })

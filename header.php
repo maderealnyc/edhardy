@@ -40,49 +40,6 @@
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
 
-		<style type="text/css">
-		    h2.twitter_handle, h2.twitter_handle a, h4.reply_retweet_favorite, h4.reply_retweet_favorite a {
-		        color: #FFFFFF;
-		        text-align: center;
-		        text-decoration: none;
-		    }
-		    h2.twitter_handle a:hover, h4.reply_retweet_favorite a:hover {
-		        color: #C02F1A;
-		    }
-		    ul {
-		        list-style: none;
-		        margin: 0;
-		        padding: 0;
-		    }
-		    p.the_tweet {
-		        text-align: center;
-		    }
-		    p.the_tweet a {
-		        color: #C02F1A;
-		        text-decoration: none;
-		    }
-		    p.the_tweet a:hover {
-		        text-decoration: underline;
-		    }
-		    .twitter-tile-carousel {
-		        width: 300px !important;
-		        margin: 0px auto;
-		        padding: 10px;
-		    }
-		    .twitter-tile-carousel .tweet {
-		        overflow: hidden;
-		    }
-		    .twitter-tile-carousel ul {
-		        width: 99999px;
-		        height: 300px;
-		    }
-		    .twitter-tile-carousel ul li {
-		        width: 300px;
-		        height: 300px;
-		        float: left;
-		    }
-		</style>
-
 		<!--[if lt IE 9]>
 		<script src="<?php echo get_template_directory_uri(); ?>/library/js/libs/html5shiv.js"></script>
 		<![endif]-->

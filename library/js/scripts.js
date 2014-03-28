@@ -30,6 +30,8 @@ if (!window.getComputedStyle) {
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
 
+	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
 	/*
 	Responsive jQuery is a tricky thing.
 	There's a bunch of different ways to handle
@@ -70,7 +72,7 @@ jQuery(document).ready(function($) {
 
 
     //initialise Stellar.js
-    if(!Modernizr.touch){
+    if(!isMobile){
 	    $.stellar({
 			// Set scrolling to be in either one or both directions
 			horizontalScrolling: false,

@@ -13,8 +13,29 @@ POSTS & CONTENT STYLES
 .gridbg {
     padding-bottom: 50%;
 
-	h2 {
+	h2.gridh2 {
 		font-size: 2.2em;
+	}
+}
+
+
+.twitter-tile-carousel {
+
+    .tweet {
+
+	    ul {
+
+		    li {
+
+			    p.the_tweet {
+					font-size: 0.8em;
+				}
+
+				h4.reply_retweet_favorite {
+					font-size: 0.8em;
+				}
+			}
+		}
 	}
 }
 

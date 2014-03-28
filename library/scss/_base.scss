@@ -503,7 +503,7 @@ POSTS & CONTENT STYLES
 		z-index: 1;
 	}
 
-	h2 {
+	h2.gridh2 {
 		color: $white;
 		font-family: $rw-light;
 		font-size: 2.812em;
@@ -517,6 +517,12 @@ POSTS & CONTENT STYLES
 			font-family: $rw-bold;
 			font-weight: normal;
 		}
+	}
+}
+
+#lookbook_tile {
+	h2.gridh2 {
+		margin: 45% auto;
 	}
 }
 
@@ -625,6 +631,97 @@ POSTS & CONTENT STYLES
 .page-template-page-homepage-layout-3-php {
 	#tile_1 {
 		padding-bottom: 50% !important;
+	}
+}
+
+.twitter-tile-carousel {
+
+    .tweet {
+    	overflow: hidden;
+    	text-align: center;
+
+	    ul {
+		    list-style: none;
+		    margin: 0;
+		    padding: 0;
+
+		    li {
+			    float: left;
+			    position: relative;
+			    padding-bottom: 100%;
+
+				h2.twitter_handle {
+					color: $white;
+					font-size: 1.37em;
+					margin-top: 25%;
+
+					a {
+						color: $white;
+						font-size: 1.37em;
+    					text-decoration: none;
+					}
+				}
+
+			    p.the_tweet {
+					color: #bbb;
+					font-family: "Rockwell W01", serif;
+					font-size: 0.97em;
+					line-height: 1.2;
+				    text-align: center;
+				    margin: 0 12%;
+
+				    a {
+					    color: $red;
+					    text-decoration: none;
+
+					    &:hover {
+							color: #d85240;
+						}
+					}
+				}
+
+				h4.reply_retweet_favorite {
+					font-size: 0.97em;
+
+					a {
+						color: $white;
+						font-size: 0.97em;
+						text-decoration: none;
+
+						&:hover {
+							color: $red;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#twitter_feed_tile #left,
+#twitter_feed_tile #right {
+	border: none;
+	background: url(../images/sprite-twitter-arrows.png) no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 42%;
+}
+#twitter_feed_tile #left {
+	background-position: 0 0;
+
+	&:hover {
+		background-position: 0 -40px;
+	}
+}
+#twitter_feed_tile #right {
+	background-position: -40px 0;
+	right: 0;
+
+	&:hover {
+		background-position: -40px -40px;
 	}
 }
 

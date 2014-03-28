@@ -558,53 +558,53 @@ TYPOGRAPHY
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-/* line 109, ../scss/_mixins.scss */
+/* line 110, ../scss/_mixins.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
 }
 
-/* line 115, ../scss/_mixins.scss */
+/* line 116, ../scss/_mixins.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 116, ../scss/_mixins.scss */
+/* line 117, ../scss/_mixins.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 117, ../scss/_mixins.scss */
+/* line 118, ../scss/_mixins.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 121, ../scss/_mixins.scss */
+/* line 122, ../scss/_mixins.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
 }
 
-/* line 127, ../scss/_mixins.scss */
+/* line 128, ../scss/_mixins.scss */
 .alert-help {
   border-color: #e8dc59;
   background: #ebe16f;
 }
 
-/* line 133, ../scss/_mixins.scss */
+/* line 134, ../scss/_mixins.scss */
 .alert-info {
   border-color: #bfe4f4;
   background: #d5edf8;
 }
 
-/* line 139, ../scss/_mixins.scss */
+/* line 140, ../scss/_mixins.scss */
 .alert-error {
   border-color: #f8cdce;
   background: #fbe3e4;
 }
 
-/* line 145, ../scss/_mixins.scss */
+/* line 146, ../scss/_mixins.scss */
 .alert-success {
   border-color: #deeaae;
   background: #e6efc2;
@@ -634,7 +634,7 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 206, ../scss/_mixins.scss */
+/* line 207, ../scss/_mixins.scss */
 .button, .button:visited {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #9a9a9a;
@@ -658,7 +658,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #bbbbbb, #aeaeae);
   background-image: linear-gradient(to bottom, #bbbbbb, #aeaeae);
 }
-/* line 225, ../scss/_mixins.scss */
+/* line 226, ../scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
   color: white;
   border: 1px solid #9a9a9a;
@@ -671,7 +671,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #aeaeae, #a2a2a2);
   background-image: linear-gradient(to bottom, #aeaeae, #a2a2a2);
 }
-/* line 233, ../scss/_mixins.scss */
+/* line 234, ../scss/_mixins.scss */
 .button:active, .button:visited:active {
   background-color: #bbbbbb;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#aeaeae), to(#bbbbbb));
@@ -681,7 +681,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #aeaeae, #bbbbbb);
 }
 
-/* line 238, ../scss/_mixins.scss */
+/* line 239, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -693,7 +693,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
-/* line 244, ../scss/_mixins.scss */
+/* line 245, ../scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background-color: #1472ad;
@@ -703,7 +703,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1784c9, #1472ad);
   background-image: linear-gradient(to bottom, #1784c9, #1472ad);
 }
-/* line 248, ../scss/_mixins.scss */
+/* line 249, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background-color: #1990db;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
@@ -1141,7 +1141,7 @@ POSTS & CONTENT STYLES
   z-index: 1;
 }
 /* line 506, ../scss/_base.scss */
-.gridbg h2 {
+.gridbg h2.gridh2 {
   color: white;
   font-family: "Rockwell W01 Light", serif;
   font-size: 2.812em;
@@ -1151,17 +1151,22 @@ POSTS & CONTENT STYLES
   text-transform: uppercase;
 }
 /* line 515, ../scss/_base.scss */
-.gridbg h2 strong {
+.gridbg h2.gridh2 strong {
   display: block;
   font-family: "Rockwell W01 Bold", serif;
   font-weight: normal;
 }
 
-/* line 523, ../scss/_base.scss */
+/* line 524, ../scss/_base.scss */
+#lookbook_tile h2.gridh2 {
+  margin: 45% auto;
+}
+
+/* line 529, ../scss/_base.scss */
 #about_tile {
   overflow: hidden;
 }
-/* line 526, ../scss/_base.scss */
+/* line 532, ../scss/_base.scss */
 #about_tile:after {
   content: "";
   display: inline-block;
@@ -1177,23 +1182,23 @@ POSTS & CONTENT STYLES
   height: 100%;
 }
 
-/* line 544, ../scss/_base.scss */
+/* line 550, ../scss/_base.scss */
 #follow_us_tile h2 {
   margin-bottom: 6px;
 }
-/* line 548, ../scss/_base.scss */
+/* line 554, ../scss/_base.scss */
 #follow_us_tile ul {
   list-style: none;
   margin: 0 auto;
   padding: 0;
   max-width: 256px;
 }
-/* line 554, ../scss/_base.scss */
+/* line 560, ../scss/_base.scss */
 #follow_us_tile ul li {
   float: left;
   margin-right: 4.69%;
 }
-/* line 558, ../scss/_base.scss */
+/* line 564, ../scss/_base.scss */
 #follow_us_tile ul li a {
   background: url(../images/home/sprite-follow-us.png) no-repeat;
   display: block;
@@ -1203,74 +1208,169 @@ POSTS & CONTENT STYLES
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 569, ../scss/_base.scss */
+/* line 575, ../scss/_base.scss */
 #follow_us_tile ul li.facebook a {
   background-position: 0 0;
 }
-/* line 572, ../scss/_base.scss */
+/* line 578, ../scss/_base.scss */
 #follow_us_tile ul li.facebook a:hover {
   background-position: 0 -60px;
 }
-/* line 577, ../scss/_base.scss */
+/* line 583, ../scss/_base.scss */
 #follow_us_tile ul li.twitter a {
   background-position: -67px 0;
 }
-/* line 580, ../scss/_base.scss */
+/* line 586, ../scss/_base.scss */
 #follow_us_tile ul li.twitter a:hover {
   background-position: -67px -60px;
 }
-/* line 585, ../scss/_base.scss */
+/* line 591, ../scss/_base.scss */
 #follow_us_tile ul li.youtube {
   display: none;
 }
-/* line 589, ../scss/_base.scss */
+/* line 595, ../scss/_base.scss */
 #follow_us_tile ul li.instagram a {
   background-position: -134px 0;
 }
-/* line 592, ../scss/_base.scss */
+/* line 598, ../scss/_base.scss */
 #follow_us_tile ul li.instagram a:hover {
   background-position: -134px -60px;
 }
-/* line 597, ../scss/_base.scss */
+/* line 603, ../scss/_base.scss */
 #follow_us_tile ul li.pinterest {
   margin-right: 0;
 }
-/* line 601, ../scss/_base.scss */
+/* line 607, ../scss/_base.scss */
 #follow_us_tile ul li.pinterest a {
   background-position: -200px 0;
 }
-/* line 604, ../scss/_base.scss */
+/* line 610, ../scss/_base.scss */
 #follow_us_tile ul li.pinterest a:hover {
   background-position: -200px -60px;
 }
 
-/* line 613, ../scss/_base.scss */
+/* line 619, ../scss/_base.scss */
 .page-template-page-homepage-layout-2-php #follow_us_tile h2 {
   margin: 17% auto 0;
 }
 
-/* line 620, ../scss/_base.scss */
+/* line 626, ../scss/_base.scss */
 .page-template-page-homepage-layout-2-php #tile_1 {
   padding-bottom: 100% !important;
 }
 
-/* line 626, ../scss/_base.scss */
+/* line 632, ../scss/_base.scss */
 .page-template-page-homepage-layout-3-php #tile_1 {
   padding-bottom: 50% !important;
 }
 
-/* line 631, ../scss/_base.scss */
+/* line 639, ../scss/_base.scss */
+.twitter-tile-carousel .tweet {
+  overflow: hidden;
+  text-align: center;
+}
+/* line 643, ../scss/_base.scss */
+.twitter-tile-carousel .tweet ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 648, ../scss/_base.scss */
+.twitter-tile-carousel .tweet ul li {
+  float: left;
+  position: relative;
+  padding-bottom: 100%;
+}
+/* line 653, ../scss/_base.scss */
+.twitter-tile-carousel .tweet ul li h2.twitter_handle {
+  color: white;
+  font-size: 1.37em;
+  margin-top: 25%;
+}
+/* line 658, ../scss/_base.scss */
+.twitter-tile-carousel .tweet ul li h2.twitter_handle a {
+  color: white;
+  font-size: 1.37em;
+  text-decoration: none;
+}
+/* line 665, ../scss/_base.scss */
+.twitter-tile-carousel .tweet ul li p.the_tweet {
+  color: #bbb;
+  font-family: "Rockwell W01", serif;
+  font-size: 0.97em;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 12%;
+}
+/* line 673, ../scss/_base.scss */
+.twitter-tile-carousel .tweet ul li p.the_tweet a {
+  color: #c02f1a;
+  text-decoration: none;
+}
+/* line 677, ../scss/_base.scss */
+.twitter-tile-carousel .tweet ul li p.the_tweet a:hover {
+  color: #d85240;
+}
+/* line 683, ../scss/_base.scss */
+.twitter-tile-carousel .tweet ul li h4.reply_retweet_favorite {
+  font-size: 0.97em;
+}
+/* line 686, ../scss/_base.scss */
+.twitter-tile-carousel .tweet ul li h4.reply_retweet_favorite a {
+  color: white;
+  font-size: 0.97em;
+  text-decoration: none;
+}
+/* line 691, ../scss/_base.scss */
+.twitter-tile-carousel .tweet ul li h4.reply_retweet_favorite a:hover {
+  color: #c02f1a;
+}
+
+/* line 701, ../scss/_base.scss */
+#twitter_feed_tile #left,
+#twitter_feed_tile #right {
+  border: none;
+  background: url(../images/sprite-twitter-arrows.png) no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 42%;
+}
+
+/* line 712, ../scss/_base.scss */
+#twitter_feed_tile #left {
+  background-position: 0 0;
+}
+/* line 715, ../scss/_base.scss */
+#twitter_feed_tile #left:hover {
+  background-position: 0 -40px;
+}
+
+/* line 719, ../scss/_base.scss */
+#twitter_feed_tile #right {
+  background-position: -40px 0;
+  right: 0;
+}
+/* line 723, ../scss/_base.scss */
+#twitter_feed_tile #right:hover {
+  background-position: -40px -40px;
+}
+
+/* line 728, ../scss/_base.scss */
 #image_below_grid {
   height: 0;
   padding-bottom: 52.75%;
   overflow: hidden;
 }
-/* line 636, ../scss/_base.scss */
+/* line 733, ../scss/_base.scss */
 #image_below_grid img {
   position: absolute;
 }
 
-/* line 641, ../scss/_base.scss */
+/* line 738, ../scss/_base.scss */
 #about {
   background: url(../images/home/home-bg-2.jpg) no-repeat;
   background-size: 100% auto;
@@ -1280,7 +1380,7 @@ POSTS & CONTENT STYLES
   padding-bottom: 50%;
   position: relative;
 }
-/* line 650, ../scss/_base.scss */
+/* line 747, ../scss/_base.scss */
 #about h2 {
   background: url(../images/home/hdr-who-is.png) no-repeat;
   background-size: 100% auto;
@@ -1293,13 +1393,13 @@ POSTS & CONTENT STYLES
   max-width: 419px;
 }
 
-/* line 663, ../scss/_base.scss */
+/* line 760, ../scss/_base.scss */
 #american-art-legend {
   background: #f3f3f3 url(../images/home/home-bg-3-full.jpg) no-repeat center center;
   background-size: contain;
   -ms-behavior: url(/backgroundsize.min.htc);
 }
-/* line 668, ../scss/_base.scss */
+/* line 765, ../scss/_base.scss */
 #american-art-legend h2 {
   background: url(../images/home/hdr-art-legend.png) no-repeat;
   background-size: contain;
@@ -1309,7 +1409,7 @@ POSTS & CONTENT STYLES
   padding-top: 63%;
   max-width: 398px;
 }
-/* line 679, ../scss/_base.scss */
+/* line 776, ../scss/_base.scss */
 #american-art-legend p {
   color: #323232;
   margin: 2% 2.7%;
@@ -1318,17 +1418,17 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 690, ../scss/_base.scss */
+/* line 787, ../scss/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 
-/* line 693, ../scss/_base.scss */
+/* line 790, ../scss/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 695, ../scss/_base.scss */
+/* line 792, ../scss/_base.scss */
 .pagination ul {
   display: inline-block;
   white-space: nowrap;
@@ -1336,7 +1436,7 @@ PAGE NAVI STYLES
   clear: both;
   margin: 1px;
 }
-/* line 701, ../scss/_base.scss */
+/* line 798, ../scss/_base.scss */
 .pagination ul li {
   padding: 0;
   margin: 0;
@@ -1344,7 +1444,7 @@ PAGE NAVI STYLES
   display: inline;
   overflow: hidden;
 }
-/* line 707, ../scss/_base.scss */
+/* line 804, ../scss/_base.scss */
 .pagination ul li a, .pagination ul li span {
   margin: 0;
   text-decoration: none;
@@ -1356,18 +1456,18 @@ PAGE NAVI STYLES
   min-width: 1em;
   display: block;
 }
-/* line 718, ../scss/_base.scss */
+/* line 815, ../scss/_base.scss */
 .pagination ul li span.current {
   font-weight: bold;
 }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 733, ../scss/_base.scss */
+/* line 830, ../scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 737, ../scss/_base.scss */
+/* line 834, ../scss/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1377,12 +1477,12 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 748, ../scss/_base.scss */
+/* line 845, ../scss/_base.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 765, ../scss/_base.scss */
+/* line 862, ../scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1393,7 +1493,7 @@ COMMENT STYLES
   /* comment reply link */
   /* end .commentlist .comment-reply-link */
 }
-/* line 767, ../scss/_base.scss */
+/* line 864, ../scss/_base.scss */
 .commentlist li {
   position: relative;
   clear: both;
@@ -1403,63 +1503,63 @@ COMMENT STYLES
   padding: 0.7335em 10px;
   /* end .commentlist li ul.children */
 }
-/* line 775, ../scss/_base.scss */
+/* line 872, ../scss/_base.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 779, ../scss/_base.scss */
+/* line 876, ../scss/_base.scss */
 .commentlist li ul.children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 797, ../scss/_base.scss */
+/* line 894, ../scss/_base.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 801, ../scss/_base.scss */
+/* line 898, ../scss/_base.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 806, ../scss/_base.scss */
+/* line 903, ../scss/_base.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 820, ../scss/_base.scss */
+/* line 917, ../scss/_base.scss */
 .commentlist .odd {
   background: #eee;
 }
-/* line 823, ../scss/_base.scss */
+/* line 920, ../scss/_base.scss */
 .commentlist .even {
   background: #fefefe;
 }
-/* line 838, ../scss/_base.scss */
+/* line 935, ../scss/_base.scss */
 .commentlist .vcard {
   margin-left: 50px;
 }
-/* line 841, ../scss/_base.scss */
+/* line 938, ../scss/_base.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 849, ../scss/_base.scss */
+/* line 946, ../scss/_base.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 852, ../scss/_base.scss */
+/* line 949, ../scss/_base.scss */
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
-/* line 856, ../scss/_base.scss */
+/* line 953, ../scss/_base.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 866, ../scss/_base.scss */
+/* line 963, ../scss/_base.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -1467,17 +1567,17 @@ COMMENT STYLES
   border: 1px solid #cecece;
   background: #fff;
 }
-/* line 891, ../scss/_base.scss */
+/* line 988, ../scss/_base.scss */
 .commentlist .comment_content {
   margin-left: 50px;
 }
-/* line 894, ../scss/_base.scss */
+/* line 991, ../scss/_base.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 903, ../scss/_base.scss */
+/* line 1000, ../scss/_base.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1489,7 +1589,7 @@ COMMENT STYLES
   font-weight: 700;
   font-size: 0.9em;
 }
-/* line 915, ../scss/_base.scss */
+/* line 1012, ../scss/_base.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1498,27 +1598,27 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 927, ../scss/_base.scss */
+/* line 1024, ../scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
-/* line 931, ../scss/_base.scss */
+/* line 1028, ../scss/_base.scss */
 .respond-form form {
   margin: 0.75em 0;
 }
-/* line 934, ../scss/_base.scss */
+/* line 1031, ../scss/_base.scss */
 .respond-form form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 940, ../scss/_base.scss */
+/* line 1037, ../scss/_base.scss */
 .respond-form form li label,
 .respond-form form li small {
   display: none;
 }
-/* line 948, ../scss/_base.scss */
+/* line 1045, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
@@ -1529,14 +1629,14 @@ COMMENT FORM STYLES
   line-height: 1.5em;
   /* form validation */
 }
-/* line 954, ../scss/_base.scss */
+/* line 1051, ../scss/_base.scss */
 .respond-form form input[type=text]:focus,
 .respond-form form input[type=email]:focus,
 .respond-form form input[type=url]:focus,
 .respond-form form textarea:focus {
   background: #fff;
 }
-/* line 959, ../scss/_base.scss */
+/* line 1056, ../scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1549,14 +1649,14 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 972, ../scss/_base.scss */
+/* line 1069, ../scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 977, ../scss/_base.scss */
+/* line 1074, ../scss/_base.scss */
 .respond-form form textarea {
   resize: none;
   width: 97.3%;
@@ -1565,7 +1665,7 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-/* line 990, ../scss/_base.scss */
+/* line 1087, ../scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -1573,13 +1673,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 1003, ../scss/_base.scss */
+/* line 1100, ../scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 1008, ../scss/_base.scss */
+/* line 1105, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1587,7 +1687,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 1024, ../scss/_base.scss */
+/* line 1121, ../scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
@@ -1595,31 +1695,31 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1045, ../scss/_base.scss */
+/* line 1142, ../scss/_base.scss */
 .footer {
   clear: both;
   text-transform: uppercase;
 }
 
-/* line 1050, ../scss/_base.scss */
+/* line 1147, ../scss/_base.scss */
 .copyright {
   float: left;
   padding: 5px 16px 9px 8px;
   text-align: left;
 }
 
-/* line 1056, ../scss/_base.scss */
+/* line 1153, ../scss/_base.scss */
 .footer-nav {
   float: right;
   padding: 5px 16px 9px 8px;
 }
-/* line 1060, ../scss/_base.scss */
+/* line 1157, ../scss/_base.scss */
 .footer-nav > li {
   border: none;
   float: left;
   position: relative;
 }
-/* line 1065, ../scss/_base.scss */
+/* line 1162, ../scss/_base.scss */
 .footer-nav > li a {
   display: inline;
   padding: 0;
@@ -1690,16 +1790,25 @@ BASE (MOBILE) SIZE -- LANDSCAPE
     padding-bottom: 50%;
   }
   /* line 16, ../scss/_480landscape.scss */
-  .gridbg h2 {
+  .gridbg h2.gridh2 {
     font-size: 2.2em;
   }
 
-  /* line 23, ../scss/_480landscape.scss */
+  /* line 30, ../scss/_480landscape.scss */
+  .twitter-tile-carousel .tweet ul li p.the_tweet {
+    font-size: 0.8em;
+  }
+  /* line 34, ../scss/_480landscape.scss */
+  .twitter-tile-carousel .tweet ul li h4.reply_retweet_favorite {
+    font-size: 0.8em;
+  }
+
+  /* line 44, ../scss/_480landscape.scss */
   #follow_us_tile ul li {
     margin-right: 2.75%;
   }
 
-  /* line 30, ../scss/_480landscape.scss */
+  /* line 51, ../scss/_480landscape.scss */
   #american-art-legend h2 {
     padding-top: 54%;
   }
@@ -2207,7 +2316,7 @@ iPad Landscape
     padding-bottom: 25%;
   }
   /* line 24, ../scss/_1024landscape.scss */
-  .gridbg h2 {
+  .gridbg h2.gridh2 {
     font-size: 2.3em;
   }
 
@@ -2416,7 +2525,7 @@ you can add resource intensive styles.
     color: #bbbbbb;
   }
   /* line 47, ../scss/_1030up.scss */
-  .gridbg a h2 {
+  .gridbg a h2.gridh2 {
     -webkit-transition: all 0.2s ease-in-out;
     -transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -2424,7 +2533,7 @@ you can add resource intensive styles.
     font-size: 5em;
   }
   /* line 53, ../scss/_1030up.scss */
-  .gridbg a:hover h2 {
+  .gridbg a:hover h2.gridh2 {
     color: white;
     opacity: 1;
     font-size: 2.3em;
@@ -2504,12 +2613,12 @@ This is for the larger monitors and possibly full screen viewers.
   
   ******************************************************************/
   /* line 17, ../scss/_1240up.scss */
-  .gridbg a:hover h2 {
+  .gridbg a:hover h2.gridh2 {
     font-size: 2.812em;
   }
 
   /* line 30, ../scss/_1240up.scss */
-  #follow_us_tile:hover h2 {
+  #follow_us_tile:hover h2.gridh2 {
     font-size: 2.812em;
   }
 
