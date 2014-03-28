@@ -644,11 +644,18 @@ POSTS & CONTENT STYLES
 		    list-style: none;
 		    margin: 0;
 		    padding: 0;
+		    overflow: hidden;
+		    width: 100%;
 
 		    li {
+		    	display: none;
 			    float: left;
 			    position: relative;
 			    padding-bottom: 100%;
+
+			    &:first-child {
+			    	display: block;
+			    }
 
 				h2.twitter_handle {
 					color: $white;
