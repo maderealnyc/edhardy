@@ -52,7 +52,7 @@
 	<?php // Homepage Layout 1 Tile 4 (Latest News Tile) ?>
 	<?php $hp1_tile_4_bg_image = get_field('latest_news_tile_bg_image'); ?>
 	<?php if( !empty($hp1_tile_4_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="tile_4" style="background-image: url(<?php echo $hp1_tile_4_bg_image['url']; ?>);"><a href="#newsletter"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="tile_4" style="background-image: url(<?php echo $hp1_tile_4_bg_image['url']; ?>);"><a class="newsletter-tile" href="#newsletter-popup"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 5 (Lookbook Tile) ?>
@@ -153,13 +153,26 @@
 	<?php // Homepage Layout 2 Tile 1 (Static Image / Slider / Video Tile) ?>
 	<?php $hp2_tile_1_bg_image = get_field('hp2_tile_1_bg_image'); ?>
 	<?php $hp2_tile_1_image_slider_shortcode = get_field('hp2_tile_1_image_slider_shortcode'); ?>
-	<?php if( !empty($hp2_tile_1_bg_image) ): ?>
-		<div class="sixcol grid gridbg clearfix" id="tile_1" style="background-image: url(<?php echo $hp2_tile_1_bg_image['url']; ?>);">
-			<?php if( !empty($hp2_tile_1_image_slider_shortcode) ): ?>
-				<?php echo do_shortcode( htmlspecialchars_decode($hp2_tile_1_image_slider_shortcode) ) ?>
-			<?php endif; ?>
-		</div>
-	<?php endif; ?>
+	<?php $hp2_tile_1_optional_video_youtube_url = get_field('hp2_tile_1_optional_video_youtube_url'); ?>
+	<?php $hp2_tile_1_optional_poster_image = get_field('hp2_tile_1_optional_poster_image'); ?>
+	<div class="sixcol grid gridbg clearfix" id="tile_1" style="background-color: #000000;<?php if( !empty($hp2_tile_1_bg_image) ): ?> background-image: url(<?php echo $hp2_tile_1_bg_image['url']; ?>);<?php endif; ?>">
+		<?php if( !empty($hp2_tile_1_optional_video_youtube_url) ): ?>
+			<video width="1200" height="600" style="width: 100%; height: 100%;" id="playertile1" preload="none" <?php if ( !wp_is_mobile() ) : echo 'poster="' . $hp2_tile_1_optional_poster_image["url"] . '"'; endif; ?>>
+			    <source type="video/youtube" src="<?php echo $hp2_tile_1_optional_video_youtube_url; ?>" />
+			</video>
+			<script>
+			jQuery(document).ready(function($) {
+				// declare object for video
+				var player = new MediaElementPlayer("#playertile1", {
+					startVolume: 0.5, // initial volume when the player starts
+					features: ["playpause","progress","tracks","volume"] //control bar features
+				});
+			});
+			</script>
+		<?php elseif( !empty($hp2_tile_1_image_slider_shortcode) ): ?>
+			<?php echo do_shortcode( htmlspecialchars_decode($hp2_tile_1_image_slider_shortcode) ) ?>
+		<?php endif; ?>
+	</div>
 
 	<?php // Homepage Layout 2 Tile 2 (Instagram Tile) ?>
 	<script type="text/javascript">
@@ -236,13 +249,27 @@
 	<?php // Homepage Layout 3 Tile 1 (Static Image / Slider / Video Tile) ?>
 	<?php $hp3_tile_1_bg_image = get_field('hp3_tile_1_bg_image'); ?>
 	<?php $hp3_tile_1_image_slider_shortcode = get_field('hp3_tile_1_image_slider_shortcode'); ?>
-	<?php if( !empty($hp3_tile_1_bg_image) ): ?>
-		<div class="twelvecol grid gridbg clearfix" id="tile_1" style="background-image: url(<?php echo $hp3_tile_1_bg_image['url']; ?>);">
-			<?php if( !empty($hp3_tile_1_image_slider_shortcode) ): ?>
-				<?php echo do_shortcode( htmlspecialchars_decode($hp3_tile_1_image_slider_shortcode) ) ?>
-			<?php endif; ?>
-		</div>
-	<?php endif; ?>
+	<?php $hp3_tile_1_optional_video_youtube_url = get_field('hp3_tile_1_optional_video_youtube_url'); ?>
+	<?php $hp3_tile_1_optional_poster_image = get_field('hp3_tile_1_optional_poster_image'); ?>
+	<div class="twelvecol grid gridbg clearfix" id="tile_1" style="background-color: #000000;<?php if( !empty($hp3_tile_1_bg_image) ): ?> background-image: url(<?php echo $hp3_tile_1_bg_image['url']; ?>);<?php endif; ?>">
+		<?php if( !empty($hp3_tile_1_optional_video_youtube_url) ): ?>
+			<video width="600" height="600" style="width: 100%; height: 100%;" id="playertile1" preload="none" <?php if ( !wp_is_mobile() ) : echo 'poster="' . $hp3_tile_1_optional_poster_image["url"] . '"'; endif; ?>>
+			    <source type="video/youtube" src="<?php echo $hp3_tile_1_optional_video_youtube_url; ?>" />
+			</video>
+			<script>
+			jQuery(document).ready(function($) {
+				// declare object for video
+				var player = new MediaElementPlayer("#playertile1", {
+					startVolume: 0.5, // initial volume when the player starts
+					features: ["playpause","progress","tracks","volume"] //control bar features
+				});
+			});
+			</script>
+		<?php elseif( !empty($hp3_tile_1_image_slider_shortcode) ): ?>
+			<?php echo do_shortcode( htmlspecialchars_decode($hp3_tile_1_image_slider_shortcode) ) ?>
+		<?php endif; ?>
+	</div>
+
 
 	<?php // Homepage Layout 3 Tile 2 (Lookbook Tile) ?>
 	<?php $hp3_tile_2_bg_image = get_field('lookbook_tile_bg_image'); ?>
@@ -311,7 +338,7 @@
 
     jQuery('#right').click(function(){
         var item = jQuery('.twitter-tile-carousel .tweet ul').find('li:nth-child(1)');
-        item.animate( {'display': 'none', 'opacity': '0.3'}, 90, function() {
+        item.animate( {'display': 'none', 'opacity': '0'}, 90, function() {
         // item.animate( {marginLeft: '300px', 'opacity': '0.3','float':'left'}, 90, function() {
             jQuery(this).detach().appendTo('.twitter-tile-carousel .tweet ul').removeAttr('style');
         });
