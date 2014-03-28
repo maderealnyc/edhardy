@@ -882,7 +882,7 @@
   padding-top: 50%;
 }
 .page-template-page-homepage-layout-2-php #tile_1 .mejs-container {
-  top: 21.94%;
+  margin-top: 21.94%;
 }
 .mejs-overlay, .mejs-poster {
   width: 100% !important;
