@@ -1256,12 +1256,6 @@ POSTS & CONTENT STYLES
 /* line 627, ../scss/_base.scss */
 .page-template-page-homepage-layout-2-php #tile_1 {
   padding-bottom: 100% !important;
-  background-color: black;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#bbbbbb), to(black));
-  background-image: -webkit-linear-gradient(top, #bbbbbb, black);
-  background-image: -moz-linear-gradient(top, #bbbbbb, black);
-  background-image: -o-linear-gradient(top, #bbbbbb, black);
-  background-image: linear-gradient(to bottom, #bbbbbb, #000000);
 }
 
 /* line 634, ../scss/_base.scss */
