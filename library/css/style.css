@@ -2049,22 +2049,23 @@ you can add resource intensive styles.
     float: left;
     margin: 0;
     text-align: left;
+    min-width: 323px;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 60, ../scss/_768up.scss */
+  /* line 61, ../scss/_768up.scss */
   .top-nav ul {
     margin-top: 0;
   }
-  /* line 63, ../scss/_768up.scss */
+  /* line 64, ../scss/_768up.scss */
   .top-nav > li {
     display: inline;
     float: left;
     border: none;
     padding: 6px 16px 9px 8px;
   }
-  /* line 69, ../scss/_768up.scss */
+  /* line 70, ../scss/_768up.scss */
   .top-nav > li a {
     padding: 9px;
     /*
@@ -2072,38 +2073,38 @@ you can add resource intensive styles.
     has the possibility of being a mobile device.
     */
   }
-  /* line 88, ../scss/_768up.scss */
+  /* line 89, ../scss/_768up.scss */
   .top-nav li.nav-about,
   .top-nav li.nav-lookbook {
     top: auto;
   }
-  /* line 91, ../scss/_768up.scss */
+  /* line 92, ../scss/_768up.scss */
   .top-nav li.nav-about a,
   .top-nav li.nav-lookbook a {
     padding: 0 0 4px 0;
   }
-  /* line 93, ../scss/_768up.scss */
+  /* line 94, ../scss/_768up.scss */
   .top-nav li.nav-about a:hover,
   .top-nav li.nav-lookbook a:hover {
     background: url(../images/sprite-navhover.png) no-repeat;
   }
-  /* line 99, ../scss/_768up.scss */
+  /* line 100, ../scss/_768up.scss */
   .top-nav li.nav-about a:hover {
     background-position: 0 100%;
   }
-  /* line 103, ../scss/_768up.scss */
+  /* line 104, ../scss/_768up.scss */
   .top-nav li.nav-lookbook a:hover {
     background-position: -68px 100%;
   }
 
   /* end .top-nav */
-  /* line 116, ../scss/_768up.scss */
+  /* line 117, ../scss/_768up.scss */
   li.nav-newsletter {
     padding: 0;
     background: url(../images/separator-newsletter.png) no-repeat 0 0;
   }
 
-  /* line 121, ../scss/_768up.scss */
+  /* line 122, ../scss/_768up.scss */
   li.nav-newsletter-mobile {
     display: none;
   }
@@ -2111,19 +2112,20 @@ you can add resource intensive styles.
   /*
   social links
   */
-  /* line 129, ../scss/_768up.scss */
+  /* line 130, ../scss/_768up.scss */
   #inner-header ul.social-nav {
     border: none;
     float: left;
     margin: 0 0 0 8px;
     text-align: left;
+    min-width: 140px;
   }
-  /* line 135, ../scss/_768up.scss */
+  /* line 137, ../scss/_768up.scss */
   #inner-header ul.social-nav li {
     display: inline;
     float: left;
   }
-  /* line 144, ../scss/_768up.scss */
+  /* line 146, ../scss/_768up.scss */
   #inner-header ul.social-nav li.facebook,
   #inner-header ul.social-nav li.twitter,
   #inner-header ul.social-nav li.youtube,
@@ -2131,7 +2133,7 @@ you can add resource intensive styles.
   #inner-header ul.social-nav li.pinterest {
     padding: 9px 4.5px 9px 9px;
   }
-  /* line 147, ../scss/_768up.scss */
+  /* line 149, ../scss/_768up.scss */
   #inner-header ul.social-nav li.facebook {
     background: url(../images/separator-newsletter.png) no-repeat 0 0;
   }
@@ -2139,7 +2141,7 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  /* line 158, ../scss/_768up.scss */
+  /* line 160, ../scss/_768up.scss */
   .gridbg {
     padding-bottom: 50%;
   }
@@ -2147,28 +2149,28 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 166, ../scss/_768up.scss */
+  /* line 168, ../scss/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 170, ../scss/_768up.scss */
+  /* line 172, ../scss/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 175, ../scss/_768up.scss */
+  /* line 177, ../scss/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 180, ../scss/_768up.scss */
+  /* line 182, ../scss/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 188, ../scss/_768up.scss */
+  /* line 190, ../scss/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
