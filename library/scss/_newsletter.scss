@@ -1,0 +1,217 @@
+#newsletter-popup {
+    background: transparent url('/wp-content/themes/edhardy/library/images/newsletter/newsletter-bg-b.png') no-repeat bottom;
+    margin: 0 auto;
+    max-width: 467px;
+    padding-bottom: 47px;
+    position: relative;
+    width: 100%;
+
+    #subscribe-now {
+        background: transparent url('/wp-content/themes/edhardy/library/images/newsletter/newsletter-bg.png') no-repeat;
+        margin: 0 auto;
+        max-width: 467px;
+        padding-top: 40px;
+        width: 100%;
+
+        h2 {
+            background: transparent url('/wp-content/themes/edhardy/library/images/newsletter/hdr-subscribe-now.png') no-repeat;
+            display: block;
+            height: 20px;
+            margin: 0 auto 30px;
+            text-indent: -9999px;
+            width: 248px;
+        }
+
+        fieldset {
+            border: none;
+            color: #959494;
+            font-size: 12px;
+            padding: 0 0 10px 70px;
+        }
+
+        .fcol {
+            float: left;
+            width: 156px;
+        }
+
+        input,
+        select {
+            background: transparent url('/wp-content/themes/edhardy/library/images/newsletter/sprite-form.png') no-repeat;
+            border: none;
+            color: #373737;
+            height: 31px;
+            padding: 0 8px;
+            width: 156px;
+            outline: none;
+        }
+
+        input {
+            background-position: -155px 0;
+            outline: none;
+        }
+
+        select {
+            background-position: 0 -68px;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            outline: none;
+            text-indent: 0.01px; /* Removes default arrow from firefox*/
+            text-overflow: "";
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"] + span {
+            background: url('/wp-content/themes/edhardy/library/images/newsletter/sprite-checkbox.png') left top no-repeat;
+            cursor: pointer;
+            display: inline-block;
+            height: 21px;
+            margin: -1px 0 0 0;
+            outline: none;
+            text-indent: -9999px;
+            vertical-align: middle;
+            width: 31px;
+        }
+
+        input[type="checkbox"]:checked + span {
+            background: url('/wp-content/themes/edhardy/library/images/newsletter/sprite-checkbox.png') 0 -26px no-repeat;
+            height: 25px;
+            width: 31px;
+        }
+
+        .signup-terms {
+            margin: 15px 0;
+
+            .clabel {
+                color: #FFF;
+                float: left;
+                width: 110px;
+            }
+
+            .wpcf7-not-valid-tip {
+                bottom: -54px;
+                position: absolute;
+                width: 135px;
+            }
+        }
+
+        .submit {
+            background-image: none;
+            color: #FFF;
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 2px;
+            outline: none;
+            width: auto;
+
+            &:active,
+            &:hover {
+                background: url('/wp-content/themes/edhardy/library/images/newsletter/btn-submit-hover.png') bottom no-repeat;
+            }
+        }
+
+        br {
+            display: none;
+        }
+        p {
+            margin: 0;
+        }
+    }
+
+    @media only screen and (max-width: 568px) {
+        padding-bottom: 0;
+    }
+}
+
+
+.mfp-close-btn-in {
+    .mfp-close {
+        background: transparent url('/wp-content/themes/edhardy/library/images/newsletter/sprite-close.png') no-repeat;
+        height: 16px;
+        right: 15px;
+        top: 15px;
+        width: 22px;
+
+        &:focus,
+        &:active,
+        &:hover {
+            background-position: 0 -16px;
+            right: 15px;
+            top: 15px;
+        }
+    }
+}
+
+/* Contact Form 7 Overrides */
+span.wpcf7-list-item.first {
+    float: left;
+    margin: 0;
+}
+span.wpcf7-not-valid-tip {
+    font-size: 10px;
+}
+span.wpcf7-response-output {
+    font-size: 12px;
+    margin: 0 10% .5em !important;
+    width: 80%;
+}
+div.wpcf7-validation-errors {
+    border-color: #f00 !important;
+    color: #f00;
+}
+
+div.wpcf7-response-output.wpcf7-mail-sent-ok {
+    color: #398f14;
+}
+
+div.wpcf7 img.ajax-loader {
+    display: block;
+    margin: 0 auto !important;
+    width: 16px;
+}
+
+/* Browser Resets */
+::-webkit-input-placeholder {
+    color: #373737;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #373737;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #373737;
+}
+:-ms-input-placeholder {
+    color: #373737;
+}
+*::selection {
+    background-color:transparent;
+}
+*::-moz-selection {
+    background-color:transparent;
+}
+* {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    /*IE10*/
+    -ms-user-select: none;
+    user-select: none;
+
+    /*You just need this if you are only concerned with android and not desktop browsers.*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input[type="text"], textarea, [contenteditable] {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}

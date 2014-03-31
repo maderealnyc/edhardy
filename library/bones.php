@@ -151,7 +151,7 @@ function bones_scripts_and_styles() {
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
 
 		// mediaelement stylesheet
-		wp_register_style( 'bones-mediaelement-stylesheet', get_stylesheet_directory_uri() . '/library/css/mediaelementplayer.css', array(), '' );
+		// wp_register_style( 'bones-mediaelement-stylesheet', get_stylesheet_directory_uri() . '/library/css/mediaelementplayer.css', array(), '' );
 
 		// ie-only stylesheet
 		wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
@@ -173,7 +173,7 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'bones-tweetie' );
 		wp_enqueue_script( 'bones-magnific' );
 		wp_enqueue_style( 'bones-stylesheet' );
-		wp_enqueue_style( 'bones-mediaelement-stylesheet' );
+		// wp_enqueue_style( 'bones-mediaelement-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
 
 		$wp_scripts->add_data( 'bones-html5shiv', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie html5shiv script

@@ -33,9 +33,6 @@
 		<!-- Rockwell Font -->
 		<script type="text/javascript" src="http://fast.fonts.net/jsapi/e46af804-e87a-4682-b3ae-89da7497cf4c.js"></script>
 
-		<!-- Temp CSS -->
-		<link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/library/css/temp.css" type='text/css' media='all' />
-
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
