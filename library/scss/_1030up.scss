@@ -43,13 +43,23 @@ POSTS & CONTENT STYLES
 		h2.gridh2 {
 			@include transition(all 0.2s ease-in-out);
 			opacity: 0;
-			font-size: 5em;
+			-webkit-transform:scale(1.5);
+			-moz-transform:scale(1.5);
+			-ms-transform:scale(1.5);
+			-o-transform:scale(1.5);
+			transform:scale(1.5);
+			// font-size: 5em;
 		}
 		&:hover {
 			h2.gridh2 {
 				color: $link-hover;
 				opacity: 1;
-				font-size: 2.3em;
+				-webkit-transform:scale(1);
+				-moz-transform:scale(1);
+				-ms-transform:scale(1);
+				-o-transform:scale(1);
+				transform:scale(1);
+				// font-size: 2.3em;
 			}
 		}
 	}
