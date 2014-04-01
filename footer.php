@@ -22,10 +22,10 @@
 		</div>
 
 		<script>
-			jQuery('.nav-newsletter a').magnificPopup({
-				type:'inline',
-				midClick: true
-			});
+		jQuery('.nav-newsletter a, a.newsletter-tile').magnificPopup({
+			type:'inline',
+			midClick: true
+		});
 		</script>
 	</body>
 
