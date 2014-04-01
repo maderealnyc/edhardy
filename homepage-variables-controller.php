@@ -237,7 +237,7 @@
 	<?php // Homepage Layout 2 Tile 8 (Latest News Tile) ?>
 	<?php $hp2_tile_8_bg_image = get_field('latest_news_tile_bg_image'); ?>
 	<?php if( !empty($hp2_tile_8_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="tile_8" style="background-image: url(<?php echo $hp2_tile_8_bg_image['url']; ?>);"><a href="#newsletter"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="tile_8" style="background-image: url(<?php echo $hp2_tile_8_bg_image['url']; ?>);"><a class="newsletter-tile" href="#newsletter-popup"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
 	<?php endif; ?>
 
 <?php endif; ?>
@@ -259,7 +259,8 @@
 			<script>
 				jQuery(document).ready(function($) {
 					// declare object for video
-					var player = new MediaElementPlayer("#playertile1", {
+					$('#playertile1').mediaelementplayer({
+					// var player = new MediaElementPlayer("#playertile1", {
 						startVolume: 0.5, // initial volume when the player starts
 						features: ["playpause","progress","tracks","volume"] //control bar features
 					});
@@ -292,7 +293,7 @@
 	<?php // Homepage Layout 3 Tile 4 (Latest News Tile) ?>
 	<?php $hp3_tile_4_bg_image = get_field('latest_news_tile_bg_image'); ?>
 	<?php if( !empty($hp3_tile_4_bg_image) ): ?>
-		<div class="threecol grid gridbg clearfix" id="tile_4" style="background-image: url(<?php echo $hp3_tile_4_bg_image['url']; ?>);"><a href="#newsletter"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
+		<div class="threecol grid gridbg clearfix" id="tile_4" style="background-image: url(<?php echo $hp3_tile_4_bg_image['url']; ?>);"><a class="newsletter-tile" href="#newsletter-popup"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 3 Tile 5 (Instagram Tile) ?>
