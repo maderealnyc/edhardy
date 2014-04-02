@@ -227,7 +227,9 @@ NAVIGATION STYLES
 	}  /* end current highlighters */
 
 	li.nav-about,
-	li.nav-lookbook {
+	li.nav-blog,
+	li.nav-lookbook,
+	li.nav-connect {
 		top: -10px;
 	}
 
@@ -325,6 +327,14 @@ social links
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+body.blog div#main,
+body.archive div#main,
+body.category div#main,
+body.single div#main {
+	padding: 10px;
+	background: #fff;
+	color: #000;
+}
 
 /* #content {
 	margin-top: 2.2em;
