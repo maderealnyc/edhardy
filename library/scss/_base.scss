@@ -327,13 +327,22 @@ social links
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+
+body.blog div#inner-content,
+body.archive div#inner-content,
+body.category div#inner-content,
+body.single div#inner-content {
+	background: #fff;
+	color: #000;
+}
+
 body.blog div#main,
 body.archive div#main,
 body.category div#main,
 body.single div#main {
 	padding: 10px;
-	background: #fff;
-	color: #000;
+	width: 66.66%;
+	max-width: 800px;
 }
 
 /* #content {
@@ -1134,7 +1143,10 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
+.sidebar {
+	width: 33.33%;
+	max-width: 400px;
+}
 
 	.widgettitle {}
 
