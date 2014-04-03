@@ -18,7 +18,14 @@
 				// declare object for video
 				var player = new MediaElementPlayer("#player1", {
 					startVolume: 0.5, // initial volume when the player starts
-					features: ["playpause","progress","tracks","volume"] //control bar features
+					features: ["playpause","progress","tracks","volume"], //control bar features
+					success:  function (mediaElement, domObject) {
+			            mediaElement.addEventListener("ended", function(e){
+			                // Revert to the poster image when ended
+			                var $thisMediaElement = (mediaElement.id) ? jQuery("#"+mediaElement.id) : jQuery(mediaElement);
+			                $thisMediaElement.parents(".mejs-inner").find(".mejs-poster").show();
+			            });
+			        }
 				});
 			});
 			</script>
