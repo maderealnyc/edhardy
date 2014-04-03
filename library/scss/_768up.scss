@@ -86,7 +86,9 @@ NAVIGATION STYLES
 	} /* end .menu ul li */
 
 	li.nav-about,
-	li.nav-lookbook {
+	li.nav-blog,
+	li.nav-lookbook,
+	li.nav-connect {
 		top: auto;
 
 		a {
@@ -101,7 +103,15 @@ NAVIGATION STYLES
 		background-position: 0 100%;
 	}
 
+	li.nav-blog a:hover {
+		background-position: 0 100%;
+	}
+
 	li.nav-lookbook a:hover {
+		background-position: -68px 100%;
+	}
+
+	li.nav-connect a:hover {
 		background-position: -68px 100%;
 	}
 

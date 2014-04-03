@@ -1,1 +1,821 @@
-.clearfix{zoom:1}.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.image-replacement{text-indent:100%;white-space:nowrap;overflow:hidden}span.amp{font-family:Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;font-style:italic}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.alert-help,.alert-info,.alert-error,.alert-success{margin:10px;padding:5px 18px;border:1px solid}.alert-help{border-color:#e8dc59;background:#ebe16f}.alert-info{border-color:#bfe4f4;background:#d5edf8}.alert-error{border-color:#f8cdce;background:#fbe3e4}.alert-success{border-color:#deeaae;background:#e6efc2}.button,.button:visited{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;border:1px solid #9a9a9a;border-top-color:#a9a9a9;border-left-color:#a9a9a9;padding:4px 12px;color:#fff;display:inline-block;font-size:11px;font-weight:bold;text-decoration:none;text-shadow:0 1px rgba(0,0,0,0.75);cursor:pointer;margin-bottom:20px;line-height:21px;border-radius:4px;background-color:#aeaeae;background-image:-webkit-gradient(linear, left top, left bottom, from(#bbb), to(#aeaeae));background-image:-webkit-linear-gradient(top, #bbb, #aeaeae);background-image:-moz-linear-gradient(top, #bbb, #aeaeae);background-image:-o-linear-gradient(top, #bbb, #aeaeae);background-image:linear-gradient(to bottom, #bbbbbb,#aeaeae)}.button:hover,.button:focus,.button:visited:hover,.button:visited:focus{color:#fff;border:1px solid #9a9a9a;border-top-color:#888;border-left-color:#888;background-color:#a2a2a2;background-image:-webkit-gradient(linear, left top, left bottom, from(#aeaeae), to(#a2a2a2));background-image:-webkit-linear-gradient(top, #aeaeae, #a2a2a2);background-image:-moz-linear-gradient(top, #aeaeae, #a2a2a2);background-image:-o-linear-gradient(top, #aeaeae, #a2a2a2);background-image:linear-gradient(to bottom, #aeaeae,#a2a2a2)}.button:active,.button:visited:active{background-color:#bbb;background-image:-webkit-gradient(linear, left top, left bottom, from(#aeaeae), to(#bbb));background-image:-webkit-linear-gradient(top, #aeaeae, #bbb);background-image:-moz-linear-gradient(top, #aeaeae, #bbb);background-image:-o-linear-gradient(top, #aeaeae, #bbb);background-image:linear-gradient(to bottom, #aeaeae,#bbbbbb)}.blue-button,.blue-button:visited{border-color:#1472ad;text-shadow:0 1px 1px #1472ad;background-color:#1681c4;background-image:-webkit-gradient(linear, left top, left bottom, from(#1990db), to(#1681c4));background-image:-webkit-linear-gradient(top, #1990db, #1681c4);background-image:-moz-linear-gradient(top, #1990db, #1681c4);background-image:-o-linear-gradient(top, #1990db, #1681c4);background-image:linear-gradient(to bottom, #1990db,#1681c4);box-shadow:inset 0 0 3px #59b3ec}.blue-button:hover,.blue-button:focus,.blue-button:visited:hover,.blue-button:visited:focus{border-color:#116396;background-color:#1472ad;background-image:-webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));background-image:-webkit-linear-gradient(top, #1784c9, #1472ad);background-image:-moz-linear-gradient(top, #1784c9, #1472ad);background-image:-o-linear-gradient(top, #1784c9, #1472ad);background-image:linear-gradient(to bottom, #1784c9,#1472ad)}.blue-button:active,.blue-button:visited:active{background-color:#1990db;background-image:-webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));background-image:-webkit-linear-gradient(top, #1681c4, #1990db);background-image:-moz-linear-gradient(top, #1681c4, #1990db);background-image:-o-linear-gradient(top, #1681c4, #1990db);background-image:linear-gradient(to bottom, #1681c4,#1990db)}.onecol{width:8.33333333333%}.twocol{width:16.6666666667%}.threecol{width:25.0%}.fourcol{width:33.3333333333%}.fivecol{width:41.6666666667%}.sixcol{width:50.0%}.sevencol{width:58.3333333333%}.eightcol{width:66.6666666667%}.ninecol{width:75.0%}.tencol{width:83.3333333333%}.elevencol{width:91.6666666667%}.twelvecol{width:100%}.onecol,.twocol,.threecol,.fourcol,.fivecol,.sixcol,.sevencol,.eightcol,.ninecol,.tencol,.elevencol,.twelvecol{position:relative;float:left;margin-left:0}.first{margin-left:0}.last{float:right}.entry-content .alignleft,.entry-content img.alignleft{margin-right:1.5em;display:inline;float:left}.entry-content .alignright,.entry-content img.alignright{margin-left:1.5em;display:inline;float:right}.entry-content .aligncenter,.entry-content img.aligncenter{margin-right:auto;margin-left:auto;display:block;clear:both}.gridbg{padding-bottom:50%}#about h2{background-size:contain;margin:17.5% auto 0;padding-top:20%;width:100%}#american-art-legend{background-size:100% auto;background-position:50% 50%}#american-art-legend h2{padding-top:24.61%}#american-art-legend p{width:53%}#american-art-legend .eh-pic{background:url(../images/home/ed-hardy-profile.png) no-repeat bottom center;background-size:contain;width:42%;height:98%;position:absolute;bottom:0;right:0}.wrap{max-width:1200px}#inner-header{padding:14px}#inner-header nav{float:right}#logo{float:left;margin:0}.top-nav{background:black;border:0;float:left;margin:0;text-align:left;min-width:313px}.top-nav ul{margin-top:0}.top-nav>li{display:inline;float:left;border:none;padding:6px 16px 9px 8px}.top-nav>li a{padding:9px}.top-nav li.nav-about,.top-nav li.nav-lookbook{top:auto}.top-nav li.nav-about a,.top-nav li.nav-lookbook a{padding:0 0 4px 0}.top-nav li.nav-about a:hover,.top-nav li.nav-lookbook a:hover{background:url(../images/sprite-navhover.png) no-repeat}.top-nav li.nav-about a:hover{background-position:0 100%}.top-nav li.nav-lookbook a:hover{background-position:-68px 100%}li.nav-newsletter{padding:0;background:url(../images/separator-newsletter.png) no-repeat 0 0}li.nav-newsletter-mobile{display:none}#inner-header ul.social-nav{border:none;float:left;margin:0 0 0 8px;text-align:left;min-width:140px}#inner-header ul.social-nav li{display:inline;float:left}#inner-header ul.social-nav li.facebook,#inner-header ul.social-nav li.twitter,#inner-header ul.social-nav li.youtube,#inner-header ul.social-nav li.instagram,#inner-header ul.social-nav li.pinterest{padding:9px 4.5px 9px 9px}#inner-header ul.social-nav li.facebook{background:url(../images/separator-newsletter.png) no-repeat 0 0}.gridbg{padding-bottom:50%}.sidebar{margin-top:2.2em}.widgettitle{border-bottom:2px solid #444;margin-bottom:0.75em}.widget{padding:0 10px;margin:2.2em 0}.widget ul li{margin-bottom:0.75em}.widget ul li ul{margin-top:0.75em;padding-left:1em}.grid,.grid img{filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");filter:gray;-webkit-filter:grayscale(100%);-webkit-transition:all .6s ease;transition:all 0.6s ease;-webkit-backface-visibility:hidden;backface-visibility:hidden}.grid:hover,.grid img:hover{filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");-webkit-filter:grayscale(0%)}.gridbg{padding-bottom:25%}.gridbg a{color:#bbb}.gridbg a h2.gridh2{-webkit-transition:all 0.2s ease-in-out;-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;opacity:0;-webkit-transform:scale(1.5);-moz-transform:scale(1.5);-ms-transform:scale(1.5);-o-transform:scale(1.5);transform:scale(1.5)}.gridbg a:hover h2.gridh2{color:#fff;opacity:1;-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1)}#about_tile:after{opacity:0}#about_tile:hover:after{opacity:0.9}#follow_us_tile h2{-webkit-transition:all 0.2s ease-in-out;-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;opacity:0}#follow_us_tile ul{-webkit-transition:all 0.2s ease-in-out;-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;opacity:0}#follow_us_tile:hover h2{opacity:1;font-size:2.3em}#follow_us_tile:hover ul{opacity:1}#about h2{background-size:100% auto;margin:15.5% auto 1%;padding-top:27.2%;width:34.92%}
+/******************************************************************
+Site Name: Ed Hardy
+Author: Gennaro Monaco, Agustin Feliz
+
+Stylesheet: IE Stylesheet
+
+So instead of using the respond.js file to add media query support
+to IE, we're going to use SASS to create an easily readable css file.
+Here, we import all the styles the standard stylesheet gets, only
+without the media queries. No need to worry about editing anything!
+
+******************************************************************/
+/*
+Remember, all the BASE styles are called already since IE can
+read those. Below, we need to import only the stuff IE can't
+understand (what's inside the media queries). We also need to
+import the mixins file so SASS can understand the variables.
+*/
+/* import mixins */
+/******************************************************************
+Site Name: Ed Hardy
+Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of Sass' great features:
+Mixins & Constants. I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques gradients.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more.
+
+******************************************************************/
+/*********************
+CLEARFIXIN'
+*********************/
+/* line 23, ../scss/_mixins.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 25, ../scss/_mixins.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 26, ../scss/_mixins.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*********************
+TOOLS
+*********************/
+/* line 34, ../scss/_mixins.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 41, ../scss/_mixins.scss */
+.image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+/*********************
+TYPOGRAPHY
+*********************/
+/* 	To embed your own fonts, use this syntax
+	and place your fonts inside the
+	library/fonts folder. For more information
+	on embedding fonts, go to:
+	http://www.fontsquirrel.com/
+	Be sure to remove the comment brackets.
+*/
+/*	@font-face {
+    	font-family: 'Font Name';
+    	src: url('../fonts/font-name.eot');
+    	src: url('../fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/font-name.woff') format('woff'),
+             url('../fonts/font-name.ttf') format('truetype'),
+             url('../fonts/font-name.svg#font-name') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+*/
+/*
+use the best ampersand
+http://simplebits.com/notebook/2008/08/14/ampersands-2/
+*/
+/* line 110, ../scss/_mixins.scss */
+span.amp {
+  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
+  font-style: italic;
+}
+
+/* line 116, ../scss/_mixins.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 117, ../scss/_mixins.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 118, ../scss/_mixins.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 122, ../scss/_mixins.scss */
+.alert-help, .alert-info, .alert-error, .alert-success {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+}
+
+/* line 128, ../scss/_mixins.scss */
+.alert-help {
+  border-color: #e8dc59;
+  background: #ebe16f;
+}
+
+/* line 134, ../scss/_mixins.scss */
+.alert-info {
+  border-color: #bfe4f4;
+  background: #d5edf8;
+}
+
+/* line 140, ../scss/_mixins.scss */
+.alert-error {
+  border-color: #f8cdce;
+  background: #fbe3e4;
+}
+
+/* line 146, ../scss/_mixins.scss */
+.alert-success {
+  border-color: #deeaae;
+  background: #e6efc2;
+}
+
+/*********************
+TRANSITION
+*********************/
+/*
+I totally rewrote this to be cleaner and easier to use.
+You'll need to be using Sass 3.2+ for these to work.
+Thanks to @anthonyshort for the inspiration on these.
+USAGE: @include transition(all 0.2s ease-in-out);
+*/
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can
+really slow down your CSS. Don't overdo it.
+*********************/
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+/*********************
+BOX SIZING
+*********************/
+/* @include box-sizing(border-box); */
+/* NOTE: value of "padding-box" is only supported in Gecko. So
+probably best not to use it. I mean, were you going to anyway? */
+/*********************
+BUTTONS
+*********************/
+/* line 207, ../scss/_mixins.scss */
+.button, .button:visited {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid #9a9a9a;
+  border-top-color: darkgrey;
+  border-left-color: darkgrey;
+  padding: 4px 12px;
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  margin-bottom: 20px;
+  line-height: 21px;
+  border-radius: 4px;
+  background-color: #aeaeae;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bbbbbb), to(#aeaeae));
+  background-image: -webkit-linear-gradient(top, #bbbbbb, #aeaeae);
+  background-image: -moz-linear-gradient(top, #bbbbbb, #aeaeae);
+  background-image: -o-linear-gradient(top, #bbbbbb, #aeaeae);
+  background-image: linear-gradient(to bottom, #bbbbbb, #aeaeae);
+}
+/* line 226, ../scss/_mixins.scss */
+.button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
+  color: white;
+  border: 1px solid #9a9a9a;
+  border-top-color: #888888;
+  border-left-color: #888888;
+  background-color: #a2a2a2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#aeaeae), to(#a2a2a2));
+  background-image: -webkit-linear-gradient(top, #aeaeae, #a2a2a2);
+  background-image: -moz-linear-gradient(top, #aeaeae, #a2a2a2);
+  background-image: -o-linear-gradient(top, #aeaeae, #a2a2a2);
+  background-image: linear-gradient(to bottom, #aeaeae, #a2a2a2);
+}
+/* line 234, ../scss/_mixins.scss */
+.button:active, .button:visited:active {
+  background-color: #bbbbbb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#aeaeae), to(#bbbbbb));
+  background-image: -webkit-linear-gradient(top, #aeaeae, #bbbbbb);
+  background-image: -moz-linear-gradient(top, #aeaeae, #bbbbbb);
+  background-image: -o-linear-gradient(top, #aeaeae, #bbbbbb);
+  background-image: linear-gradient(to bottom, #aeaeae, #bbbbbb);
+}
+
+/* line 239, ../scss/_mixins.scss */
+.blue-button, .blue-button:visited {
+  border-color: #1472ad;
+  text-shadow: 0 1px 1px #1472ad;
+  background-color: #1681c4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1990db), to(#1681c4));
+  background-image: -webkit-linear-gradient(top, #1990db, #1681c4);
+  background-image: -moz-linear-gradient(top, #1990db, #1681c4);
+  background-image: -o-linear-gradient(top, #1990db, #1681c4);
+  background-image: linear-gradient(to bottom, #1990db, #1681c4);
+  box-shadow: inset 0 0 3px #59b3ec;
+}
+/* line 245, ../scss/_mixins.scss */
+.blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
+  border-color: #116396;
+  background-color: #1472ad;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
+  background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
+  background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
+  background-image: -o-linear-gradient(top, #1784c9, #1472ad);
+  background-image: linear-gradient(to bottom, #1784c9, #1472ad);
+}
+/* line 249, ../scss/_mixins.scss */
+.blue-button:active, .blue-button:visited:active {
+  background-color: #1990db;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
+  background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
+  background-image: -moz-linear-gradient(top, #1681c4, #1990db);
+  background-image: -o-linear-gradient(top, #1681c4, #1990db);
+  background-image: linear-gradient(to bottom, #1681c4, #1990db);
+}
+
+/******************************************************************
+Site Name: Ed Hardy
+Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
+
+Stylesheet: Grid Stylesheet
+
+I've seperated the grid so you can swap it out easily. It's
+called at the top the style.scss stylesheet.
+
+There are a ton of grid solutions out there. You should definitely
+experiment with your own. Here are some recommendations:
+
+http://gridsetapp.com - Love this site. Responsive Grids made easy.
+http://susy.oddbird.net/ - Grids using Compass. Very elegant.
+http://gridpak.com/ - Create your own responsive grid.
+
+The grid below is a combination of the 1140 grid and Twitter Boostrap.
+I liked 1140 but Boostrap's grid was way more detailed so I merged them
+together, let's see how this works out. If you want to use 1140, the original
+values are commented out on each line.
+
+Agustin -- I changed this to use a 1200 grid since design is that way via Gridpak.
+
+******************************************************************/
+/* line 26, ../scss/_grid.scss */
+.onecol {
+  width: 8.33333333333%;
+}
+
+/* line 27, ../scss/_grid.scss */
+.twocol {
+  width: 16.6666666667%;
+}
+
+/* line 28, ../scss/_grid.scss */
+.threecol {
+  width: 25.0%;
+}
+
+/* line 29, ../scss/_grid.scss */
+.fourcol {
+  width: 33.3333333333%;
+}
+
+/* line 30, ../scss/_grid.scss */
+.fivecol {
+  width: 41.6666666667%;
+}
+
+/* line 31, ../scss/_grid.scss */
+.sixcol {
+  width: 50.0%;
+}
+
+/* line 32, ../scss/_grid.scss */
+.sevencol {
+  width: 58.3333333333%;
+}
+
+/* line 33, ../scss/_grid.scss */
+.eightcol {
+  width: 66.6666666667%;
+}
+
+/* line 34, ../scss/_grid.scss */
+.ninecol {
+  width: 75.0%;
+}
+
+/* line 35, ../scss/_grid.scss */
+.tencol {
+  width: 83.3333333333%;
+}
+
+/* line 36, ../scss/_grid.scss */
+.elevencol {
+  width: 91.6666666667%;
+}
+
+/* line 37, ../scss/_grid.scss */
+.twelvecol {
+  width: 100%;
+}
+
+/* line 40, ../scss/_grid.scss */
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+  position: relative;
+  float: left;
+  margin-left: 0;
+}
+
+/* line 46, ../scss/_grid.scss */
+.first {
+  margin-left: 0;
+}
+
+/* line 50, ../scss/_grid.scss */
+.last {
+  float: right;
+}
+
+/******************************************************************
+Site Name: Ed Hardy
+Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection.
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+/*********************
+NAVIGATION STYLES
+*********************/
+/* .menu is clearfixed inside mixins.scss */
+/* line 27, ../scss/_481up.scss */
+.menu {
+  /* end .menu ul */
+}
+/* line 28, ../scss/_481up.scss */
+.menu ul {
+  /* end .menu ul li */
+  /* highlight current page */
+  /* end current highlighters */
+}
+/* line 29, ../scss/_481up.scss */
+.menu ul li {
+  /*
+  plan your menus and drop-downs wisely.
+  */
+}
+/* line 30, ../scss/_481up.scss */
+.menu ul li a {
+  /*
+  you can use hover styles here even though this size
+  has the possibility of being a mobile device.
+  */
+}
+
+/* end .menu */
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+/* entry content */
+/* line 75, ../scss/_481up.scss */
+.entry-content {
+  /* at this larger size, we can start to align images */
+}
+/* line 79, ../scss/_481up.scss */
+.entry-content .alignleft, .entry-content img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+}
+/* line 84, ../scss/_481up.scss */
+.entry-content .alignright, .entry-content img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+}
+/* line 89, ../scss/_481up.scss */
+.entry-content .aligncenter, .entry-content img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+}
+
+/* end .entry-content */
+/* line 98, ../scss/_481up.scss */
+.gridbg {
+  padding-bottom: 50%;
+}
+
+/* line 103, ../scss/_481up.scss */
+#about h2 {
+  background-size: contain;
+  margin: 17.5% auto 0;
+  padding-top: 20%;
+  width: 100%;
+}
+
+/* line 113, ../scss/_481up.scss */
+#american-art-legend {
+  background-size: 100% auto;
+  background-position: 50% 50%;
+}
+/* line 117, ../scss/_481up.scss */
+#american-art-legend h2 {
+  padding-top: 24.61%;
+}
+/* line 121, ../scss/_481up.scss */
+#american-art-legend p {
+  width: 53%;
+}
+/* line 125, ../scss/_481up.scss */
+#american-art-legend .eh-pic {
+  background: url(../images/home/ed-hardy-profile.png) no-repeat bottom center;
+  background-size: contain;
+  width: 42%;
+  height: 98%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+/*
+check your menus here. do they look good?
+do they need tweaking?
+*/
+/* end .footer-links */
+/******************************************************************
+Site Name: Ed Hardy
+Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+/*********************
+GENERAL STYLES
+*********************/
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+/* line 26, ../scss/_768up.scss */
+.wrap {
+  max-width: 1200px;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+/* line 36, ../scss/_768up.scss */
+#inner-header {
+  padding: 14px;
+}
+/* line 39, ../scss/_768up.scss */
+#inner-header nav {
+  float: right;
+}
+
+/* line 44, ../scss/_768up.scss */
+#logo {
+  float: left;
+  margin: 0;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+/* line 53, ../scss/_768up.scss */
+.top-nav {
+  background: black;
+  border: 0;
+  float: left;
+  margin: 0;
+  text-align: left;
+  min-width: 313px;
+  /* end .menu ul li */
+  /* highlight current page */
+  /* end current highlighters */
+}
+/* line 61, ../scss/_768up.scss */
+.top-nav ul {
+  margin-top: 0;
+}
+/* line 64, ../scss/_768up.scss */
+.top-nav > li {
+  display: inline;
+  float: left;
+  border: none;
+  padding: 6px 16px 9px 8px;
+}
+/* line 70, ../scss/_768up.scss */
+.top-nav > li a {
+  padding: 9px;
+  /*
+  you can use hover styles here even though this size
+  has the possibility of being a mobile device.
+  */
+}
+/* line 91, ../scss/_768up.scss */
+.top-nav li.nav-about,
+.top-nav li.nav-blog,
+.top-nav li.nav-lookbook,
+.top-nav li.nav-connect {
+  top: auto;
+}
+/* line 94, ../scss/_768up.scss */
+.top-nav li.nav-about a,
+.top-nav li.nav-blog a,
+.top-nav li.nav-lookbook a,
+.top-nav li.nav-connect a {
+  padding: 0 0 4px 0;
+}
+/* line 96, ../scss/_768up.scss */
+.top-nav li.nav-about a:hover,
+.top-nav li.nav-blog a:hover,
+.top-nav li.nav-lookbook a:hover,
+.top-nav li.nav-connect a:hover {
+  background: url(../images/sprite-navhover.png) no-repeat;
+}
+/* line 102, ../scss/_768up.scss */
+.top-nav li.nav-about a:hover {
+  background-position: 0 100%;
+}
+/* line 106, ../scss/_768up.scss */
+.top-nav li.nav-blog a:hover {
+  background-position: 0 100%;
+}
+/* line 110, ../scss/_768up.scss */
+.top-nav li.nav-lookbook a:hover {
+  background-position: -68px 100%;
+}
+/* line 114, ../scss/_768up.scss */
+.top-nav li.nav-connect a:hover {
+  background-position: -68px 100%;
+}
+
+/* end .top-nav */
+/* line 127, ../scss/_768up.scss */
+li.nav-newsletter {
+  padding: 0;
+  background: url(../images/separator-newsletter.png) no-repeat 0 0;
+}
+
+/* line 132, ../scss/_768up.scss */
+li.nav-newsletter-mobile {
+  display: none;
+}
+
+/*
+social links
+*/
+/* line 140, ../scss/_768up.scss */
+#inner-header ul.social-nav {
+  border: none;
+  float: left;
+  margin: 0 0 0 8px;
+  text-align: left;
+  min-width: 140px;
+}
+/* line 147, ../scss/_768up.scss */
+#inner-header ul.social-nav li {
+  display: inline;
+  float: left;
+}
+/* line 156, ../scss/_768up.scss */
+#inner-header ul.social-nav li.facebook,
+#inner-header ul.social-nav li.twitter,
+#inner-header ul.social-nav li.youtube,
+#inner-header ul.social-nav li.instagram,
+#inner-header ul.social-nav li.pinterest {
+  padding: 9px 4.5px 9px 9px;
+}
+/* line 159, ../scss/_768up.scss */
+#inner-header ul.social-nav li.facebook {
+  background: url(../images/separator-newsletter.png) no-repeat 0 0;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+/* line 170, ../scss/_768up.scss */
+.gridbg {
+  padding-bottom: 50%;
+}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+/* line 178, ../scss/_768up.scss */
+.sidebar {
+  margin-top: 2.2em;
+}
+
+/* line 182, ../scss/_768up.scss */
+.widgettitle {
+  border-bottom: 2px solid #444;
+  margin-bottom: 0.75em;
+}
+
+/* line 187, ../scss/_768up.scss */
+.widget {
+  padding: 0 10px;
+  margin: 2.2em 0;
+}
+/* line 192, ../scss/_768up.scss */
+.widget ul li {
+  margin-bottom: 0.75em;
+  /* deep nesting */
+}
+/* line 200, ../scss/_768up.scss */
+.widget ul li ul {
+  margin-top: 0.75em;
+  padding-left: 1em;
+}
+
+/* links widget */
+/* meta widget */
+/* pages widget */
+/* recent-posts widget */
+/* archives widget */
+/* tag-cloud widget */
+/* calendar widget */
+/* category widget */
+/* recent-comments widget */
+/* search widget */
+/* text widget */
+/*********************
+FOOTER STYLES
+*********************/
+/******************************************************************
+Site Name: Ed Hardy
+Author: Gennaro Monaco, Agustin Feliz, Rich Hyun
+
+Stylesheet: Desktop Stylesheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+/*********************
+GENERAL STYLES
+*********************/
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+/* line 22, ../scss/_1030up.scss */
+.grid,
+.grid img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+  -webkit-transition: all .6s ease;
+  /* Fade to color for Chrome and Safari */
+  transition: all 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  /* Fix for transition flickering */
+  backface-visibility: hidden;
+  /* Fix for transition flickering */
+}
+/* line 31, ../scss/_1030up.scss */
+.grid:hover,
+.grid img:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+
+/* line 37, ../scss/_1030up.scss */
+.gridbg {
+  padding-bottom: 25%;
+}
+/* line 40, ../scss/_1030up.scss */
+.gridbg a {
+  color: #bbbbbb;
+}
+/* line 43, ../scss/_1030up.scss */
+.gridbg a h2.gridh2 {
+  -webkit-transition: all 0.2s ease-in-out;
+  -transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
+/* line 54, ../scss/_1030up.scss */
+.gridbg a:hover h2.gridh2 {
+  color: white;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 70, ../scss/_1030up.scss */
+#about_tile:after {
+  opacity: 0;
+}
+/* line 74, ../scss/_1030up.scss */
+#about_tile:hover:after {
+  opacity: 0.9;
+}
+
+/* line 81, ../scss/_1030up.scss */
+#follow_us_tile h2 {
+  -webkit-transition: all 0.2s ease-in-out;
+  -transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+/* line 85, ../scss/_1030up.scss */
+#follow_us_tile ul {
+  -webkit-transition: all 0.2s ease-in-out;
+  -transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+/* line 90, ../scss/_1030up.scss */
+#follow_us_tile:hover h2 {
+  opacity: 1;
+  font-size: 2.3em;
+}
+/* line 94, ../scss/_1030up.scss */
+#follow_us_tile:hover ul {
+  opacity: 1;
+}
+
+/* line 106, ../scss/_1030up.scss */
+#about h2 {
+  background-size: 100% auto;
+  margin: 15.5% auto 1%;
+  padding-top: 27.2%;
+  width: 34.92%;
+}
+
+/*
+you can call the larger styles if you want, but there's really no need
+*/
+/******************************************************************
+ADDITIONAL IE FIXES
+These fixes are now ONLY seen by IE, so you don't have to worry
+about using prefixes, although it's best practice. For more info
+on using Modernizr classes, check out this link:
+http://www.modernizr.com/docs/
+******************************************************************/
+/*
+For example, you can use something like:
+
+.no-textshadow .class { ... }
+
+You can also target specific versions by using the classes applied to
+the html element. These can sometimes change, so take a look inside the
+header.php file to see what they are:
+
+
+.lt-ie8 .class { ... }
+
+*/
