@@ -11,7 +11,7 @@
 		<?php // Google Chrome Frame for IE ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title><?php wp_title(''); ?></title>
+		<title><?php if(wp_title('')!=null) { wp_title(''); } else { echo ' Ed Hardy '; } ?></title>
 
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
@@ -42,6 +42,7 @@
 		<![endif]-->
 
 		<?php // Google Analytics ?>
+		<!-- Google Analytics Tag -->
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -50,6 +51,7 @@
 		  ga('create', 'UA-1444952-31', 'edhardyshop.com');
 		  ga('send', 'pageview');
 		</script>
+		<!-- End Google Analytics tag -->
 		<?php // End Google Analytics ?>
 
 		<?php // Quantcast Universal Tag ?>
