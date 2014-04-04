@@ -331,6 +331,7 @@ POSTS & CONTENT STYLES
 body.blog div#inner-content,
 body.archive div#inner-content,
 body.category div#inner-content,
+body.search div#inner-content,
 body.single div#inner-content {
 	background: #fff;
 	color: #000;
@@ -339,6 +340,7 @@ body.single div#inner-content {
 body.blog div#main,
 body.archive div#main,
 body.category div#main,
+body.search div#main,
 body.single div#main {
 	padding: 10px;
 	width: 66.66%;
