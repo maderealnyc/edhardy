@@ -18,21 +18,23 @@ POSTS & CONTENT STYLES
 	}
 }
 
+#twitter_feed_tile {
 
-.twitter-tile-carousel {
+	.twitter-tile-carousel {
 
-    .tweet {
+	    .tweet {
 
-	    ul {
+		    ul {
 
-		    li {
+			    li {
 
-			    p.the_tweet {
-					font-size: 0.8em;
-				}
+				    p.the_tweet {
+						font-size: 0.8em;
+					}
 
-				h4.reply_retweet_favorite {
-					font-size: 0.8em;
+					h4.reply_retweet_favorite {
+						font-size: 0.8em;
+					}
 				}
 			}
 		}
