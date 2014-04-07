@@ -88,6 +88,14 @@ duplicate one of the lines in the array and name it according to your
 new image size.
 */
 
+/************* BLOG POST FEATURED IMAGES ********************/
+
+// Featured Thumb Sizes
+if ( function_exists( 'add_theme_support' ) ) {
+	add_theme_support( 'post-thumbnails' );
+        set_post_thumbnail_size( 673, 5000 );
+}
+
 /************* ACTIVE SIDEBARS ********************/
 
 // Sidebars & Widgetizes Areas
@@ -179,6 +187,12 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+/* Newsletter custom ajax loader */
+add_filter('wpcf7_ajax_loader', 'my_wpcf7_ajax_loader');
+function my_wpcf7_ajax_loader () {
+	return  get_bloginfo('stylesheet_directory') . '/library/images/newsletter/ajax-loader.png';
+}
+
 /************* ADD NEW ROYAL SLIDER SKIN *****************/
 add_filter('new_royalslider_skins', 'new_royalslider_add_custom_skin', 10, 2);
 function new_royalslider_add_custom_skin($skins) {
@@ -188,7 +202,7 @@ function new_royalslider_add_custom_skin($skins) {
       );
       $skins['tiles'] = array(
            'label' => 'Tiles',
-           'path' => '/royalslider/lookbook/tiles.css'
+           'path' => get_stylesheet_directory_uri() . '/royalslider/tiles/tiles.css'
       );
       return $skins;
 }

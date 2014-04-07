@@ -250,3 +250,28 @@ BUTTONS
 		@include css-gradient( darken($bones-blue, 5%), $bones-blue );
 	}
 }
+
+/*********************
+SHARE BUTTONS
+*********************/
+
+#sharrre .button, #sharrre .button:visited {
+    font-family: $sans-serif;
+    border: 0px;
+    padding: 0px;
+    color: $white;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 0px;
+    line-height: 20px;
+    border-radius: 0px;
+
+    &:hover, &:focus {
+    }
+
+    &:active {
+    }
+}

@@ -4,7 +4,7 @@
 
 				<div id="inner-content" class="wrap clearfix">
 
-					<div id="main" class="eightcol first clearfix" role="main">
+					<div id="main" class="fourcol first clearfix" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -13,9 +13,9 @@
 								<header class="article-header">
 
 									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&amp;</span> filed under %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', ') );
-									?></p>
+									<!--<p class="byline vcard"><?php
+										//printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&amp;</span> filed under %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', ') );
+									?></p>-->
 
 								</header>
 
@@ -24,11 +24,31 @@
 								</section>
 
 								<footer class="article-footer">
-									<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+
+									<?php //the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+									
+									<!-- Social Sharing Buttons via Sharrre -->
+									<?php
+									$share = new Sharrre_Wordpress_plugin();
+									$share->google_plus_options(array(
+										'url' => get_permalink(),
+										'size' => 'Large',
+										'lang' => 'en-US',
+										'annotation' => ''
+									));
+									$share->twitter_button(array(
+										'url' => get_permalink(),
+									));
+									$share->add_button(array('twitter', 'facebook', 'googlePlus'), 'sharrre', home_url(), array('enableCounter' => false, 'enableHover' => false));
+									?>
+									<div id="sharrre"></div>
+									<!-- End: Social Sharing Buttons via Sharrre -->
+
+									<p>Subscribe to our <a href="/feed" target="_blank">RSS Feed</a></p>
 
 								</footer>
 
-								<?php comments_template(); ?>
+								<?php //comments_template(); ?>
 
 							</article>
 

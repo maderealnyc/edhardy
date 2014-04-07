@@ -51,9 +51,16 @@
 ****************/
 #navThumbs { 
 	float: none;
-	margin: -200px auto 0;
+	margin: -100px auto 0;
 	max-width: 945px;
 	padding: 25px;
+}
+
+.rsThumbsContainer {
+	position: relative !important;
+	width: 945px !important;
+	-webkit-transition: none !important;
+	-webkit-transform: none !important;
 }
 
 .rsThumb {
@@ -61,20 +68,16 @@
 	margin: 0 10px 20px;
 }
 
-.rsThumb.rsNavSelected {
+.rsThumb.rsThumb:hover {
 	background: #be2e1a;
 }
-.rsThumb.rsNavSelected img {
+.rsThumb.rsThumb:hover img {
 	opacity: 0.3;
 	filter: alpha(opacity=30);
 }
 
 .rsTmb img { 
 	height: 243px;
-}
-
-.rsTmb img:hover {
- 	background: #be2e1a;
 }
 
 

@@ -25,7 +25,7 @@
         fieldset {
             border: none;
             color: #959494;
-            font-size: 12px;
+            font-size: 11px;
             padding: 0 0 10px 70px;
         }
 
@@ -38,7 +38,8 @@
         select {
             background: transparent url('/wp-content/themes/edhardy/library/images/newsletter/sprite-form.png') no-repeat;
             border: none;
-            color: #373737;
+            color: #FFF;
+            font-family: helvetica, sans-serif;
             height: 31px;
             padding: 0 8px;
             width: 156px;
@@ -50,8 +51,12 @@
             outline: none;
         }
 
+        input.wpcf7-not-valid {
+             background-position: -155px -33px;
+        }
+
         select {
-            background-position: 0 -68px;
+            background-position: 0 -135px;
             border: none;
             cursor: pointer;
             display: inline-block;
@@ -61,6 +66,10 @@
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
+        }
+
+        select.wpcf7-not-valid {
+            background-position: 0 -169px;  
         }
 
         select::-ms-expand {
@@ -95,11 +104,20 @@
             .clabel {
                 color: #FFF;
                 float: left;
+                font-family: helvetica, sans-serif;
                 width: 110px;
+
+                a { 
+                    color: #FFF; 
+                    &:hover { 
+                        color: #c12f1a; 
+                    }
+                }
             }
 
             .wpcf7-not-valid-tip {
                 bottom: -54px;
+                display: block;
                 position: absolute;
                 width: 135px;
             }
@@ -107,8 +125,9 @@
 
         .submit {
             background-image: none;
-            color: #FFF;
+            color: #BBB; 
             display: block;
+            font-family: "Rockwell W01", serif;
             margin: 0 auto;
             padding-bottom: 2px;
             outline: none;
@@ -117,6 +136,7 @@
             &:active,
             &:hover {
                 background: url('/wp-content/themes/edhardy/library/images/newsletter/btn-submit-hover.png') bottom no-repeat;
+                color: #FFF; 
             }
         }
 
@@ -133,11 +153,11 @@
     }
 }
 
-
 .mfp-close-btn-in {
     .mfp-close {
         background: transparent url('/wp-content/themes/edhardy/library/images/newsletter/sprite-close.png') no-repeat;
         height: 16px;
+        opacity: 1;
         right: 15px;
         top: 15px;
         width: 22px;
@@ -159,8 +179,9 @@ span.wpcf7-list-item.first {
 }
 span.wpcf7-not-valid-tip {
     font-size: 10px;
+    display: none;
 }
-span.wpcf7-response-output {
+div.wpcf7-response-output {
     font-size: 12px;
     margin: 0 10% .5em !important;
     width: 80%;
@@ -199,13 +220,13 @@ div.wpcf7 img.ajax-loader {
 *::-moz-selection {
     background-color:transparent;
 }
+:focus::-webkit-input-placeholder{
+     text-indent: -999px
+}
+:focus::-moz-placeholder{
+     text-indent: -999px
+}
 * {
-    -webkit-user-select: none;
-    -moz-user-select: -moz-none;
-    /*IE10*/
-    -ms-user-select: none;
-    user-select: none;
-
     /*You just need this if you are only concerned with android and not desktop browsers.*/
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

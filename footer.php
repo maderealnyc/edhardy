@@ -24,7 +24,9 @@
 		<script>
 		jQuery('.nav-newsletter a, a.newsletter-tile').magnificPopup({
 			type:'inline',
-			midClick: true
+			midClick: true,
+			mainClass: 'mfp-fade',
+			removalDelay: 300
 		});
 		</script>
 	</body>
@@ -77,8 +79,7 @@
 @media screen and (max-width: 768px) {
 	.blog #main { margin: 30px 10%; padding: 0 !important; width: 80% !important; }
 	.sidebar { display: none; }
-
-
 }
+
 </style>
 </html>
