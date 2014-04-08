@@ -346,9 +346,111 @@ body.archive div#main,
 body.category div#main,
 body.search div#main,
 body.single div#main {
-	padding: 10px;
-	width: 66.66%;
-	max-width: 800px;
+	margin: 30px 0 30px 6.25%;
+	padding: 0;
+	width: 56.25%;
+	max-width: 675px;
+
+	h1 {
+		color: #000; 
+		line-height: 1; 
+		margin: 0 0 20px; 
+		text-transform: uppercase;
+	}
+
+	p {
+		color: #646363; 
+		font-family: arial; 
+		font-size: 15px; 
+		margin-top: 0; 
+	}
+
+	a {
+		color: #c12f1a; text-decoration: none;
+
+		&:hover {
+			 color: #c12f1a; text-decoration: underline;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		margin: 30px 10%; 
+		padding: 0; 
+		width: auto; 
+	}
+}
+
+body.blog,
+body.search {
+
+	#main {
+
+		article {
+			border-bottom: 2px dotted #C2C2C2; color: #646363; font-family: arial; font-size: 15px; margin-top: 0; margin-bottom: 30px; padding-bottom: 25px;
+
+			h1 { 
+				margin-bottom: 5px; text-transform: uppercase;
+
+				a { 
+					color: #000; 
+
+					&:hover {
+						color: #c12f1a; text-decoration: none;
+					}
+				}
+			}
+
+			img { 
+				margin-bottom: 15px; 
+
+				filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'1\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+				-webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+
+				&:hover {
+					filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+					filter: gray; /* IE6-9 */
+					-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+				    @include transition(all 0.6s ease);
+				    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+				    backface-visibility: hidden; /* Fix for transition flickering */
+				    -webkit-perspective: 1000;
+				}
+			}
+
+			a.read-more { 
+				font-size: 10px; 
+				text-decoration: none; 
+				text-transform: capitalize; 
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+body.single {
+
+	.rss-subscribe { 
+		border-bottom: 2px dotted #C2C2C2; 
+		font-family: "Rockwell W01", serif; 
+		font-size: 15px; 
+		padding-bottom: 20px; 
+	}
+
+	.post-nav span a { 
+		font-family: "Rockwell W01", serif; 
+		font-size: 15px; 
+	}
+
+	.post-nav .link-prev { 
+		float: left; 
+	}
+
+	.post-nav .link-next { 
+		float: right; 
+	}
 }
 
 /* #content {
@@ -848,22 +950,52 @@ PAGE NAVI STYLES
                 display: inline;
                 overflow: hidden;
                 a, span {
-                    margin: 0;
-                    text-decoration: none;
+                	background: transparent url('/wp-content/themes/edhardy/library/images/blog/sprite-pagination.png') no-repeat;
+                	color: #D4D4D4 !important; 
+                	display: block;
+                	height: 30px; 
+                	line-height: 1;
+                	margin: 0 5px 0 0;
                     padding: 0;
-                    line-height: 1em;
                     font-size: 1em;
                     font-weight: normal;
                     padding: .5em;
-                    min-width: 1em;
-                    display: block;
+                    text-decoration: none;
+                    width: 29px;
+
+                    &:hover {
+                    	background-position: -30px 0; 
+                    	color: #000 !important;
+                    	text-decoration: none !important;
+                    }
                 }
-                span.current{
+                span.current {
+                	background-position: -30px 0; 
+                	color: #c12f1a !important;
                 	font-weight: bold;
                 }
-                a:hover, a:focus {
-
+                a.prev, 
+                a.next { 
+                	height: 11px; 
+                	margin-top: 10px; 
+                	padding: 0; 
+                	text-indent: -9999px; 
+                	width: 11px; 
                 }
+				a.prev { 
+					background-position: 0 -31px;
+
+					&:hover {
+						background-position: 0 -42px; 
+					}
+				}
+				a.next { 
+					background-position: -12px -31px; 
+					
+					&:hover { 
+						background-position: -12px -42px; 
+					}
+				}
             }
         }
     } /* end .bones_page_navi */
@@ -1157,32 +1289,107 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	width: 33.33%;
-	max-width: 400px;
-}
+	margin-right: 6.25%; 
+	max-width: 300px; 
+	width: 25%;
 
-	.widgettitle {}
+	#searchform { 
+
+		.screen-reader-text { 
+			display: none; 
+		}
+		
+		input[type="text"] { 
+			background-color: #000; 
+			border: none; 
+			color: #a2a2a2; 
+			font-family: "Rockwell W01", serif; 
+			outline: none; 
+			padding: 7px; 
+			width: 85%; 
+
+			@media screen and (max-width: 790px) {
+				width: 80%;
+			}
+		}
+
+		::-webkit-input-placeholder {
+		   color: #a2a2a2;
+		}
+		:-moz-placeholder { /* Firefox 18- */
+		   color: #a2a2a2;  
+		}
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: #a2a2a2;  
+		}
+		:-ms-input-placeholder {  
+		   color: #a2a2a2;  
+		}
+
+		#searchsubmit { 
+			background: #000 url('/wp-content/themes/edhardy/library/images/blog/icon-search.png') no-repeat 10px center; 
+			border: none; 
+			margin: 0 0 0 -4px; 
+			min-width: 26px; 
+			outline: none; 
+			padding: 7px; 
+			text-indent: -9999px;  
+			width: 15%; 
+
+			@media screen and (max-width: 1024px) {
+				background-position: 5px center;
+
+			}
+
+			@media screen and (max-width: 900px) {
+				background-position: 0 center;
+				width: 10%;
+
+			}
+		}
+	}
+
+	.widgettitle {
+		border-bottom: 2px dotted #C2C2C2; 
+		color: #000; 
+		font-family: "Rockwell W01", serif; 
+		font-size: 1.2em; 
+		line-height: 1.4em; 
+		text-transform: uppercase; 
+	}
 
 	.widget {
+		margin: 25px 0;
 
 		ul {
+			list-style-image:url('/wp-content/themes/edhardy/library/images/blog/icon-star.png'); 
+			margin-left: 15px;
 
 			li {
+				color: #7a7a7a;
 
 				&:first-child {}
 
 				&:last-child {}
 
-				a {}
+				a { 
+					color: #7a7a7a; 
+					font-family: "Rockwell W01", serif; 
+					font-size: 15px; 
+					text-decoration: none; 
 
-				/* deep nesting */
-				ul {}
-
+					&:hover {
+						color: #c12f1a;
+					}
+				}
 			}
-
 		}
-
 	}
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
 
 /*********************
 FOOTER STYLES

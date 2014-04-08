@@ -181,7 +181,7 @@ function bones_comments( $comment, $args, $depth ) {
 function bones_wpsearch($form) {
 	$form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
 	<label class="screen-reader-text" for="s">' . __( 'Search for:', 'bonestheme' ) . '</label>
-	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . esc_attr__( 'Search the Site...', 'bonestheme' ) . '" />
+	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . esc_attr__( 'Search Blog...', 'bonestheme' ) . '" />
 	<input type="submit" id="searchsubmit" value="' . esc_attr__( 'Search' ) .'" />
 	</form>';
 	return $form;
@@ -190,7 +190,7 @@ function bones_wpsearch($form) {
 /* Newsletter custom ajax loader */
 add_filter('wpcf7_ajax_loader', 'my_wpcf7_ajax_loader');
 function my_wpcf7_ajax_loader () {
-	return  get_bloginfo('stylesheet_directory') . '/library/images/newsletter/ajax-loader.png';
+	return  get_bloginfo('stylesheet_directory') . '/library/images/newsletter/ajax-loader.gif';
 }
 
 /************* ADD NEW ROYAL SLIDER SKIN *****************/
