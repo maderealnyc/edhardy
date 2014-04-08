@@ -756,9 +756,9 @@ POSTS & CONTENT STYLES
 }
 /* line 45, ../scss/_1030up.scss */
 .gridbg h2.gridh2 {
-  -webkit-transition: all 0.3s ease-in-out;
-  -transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   opacity: 0;
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
@@ -793,9 +793,9 @@ POSTS & CONTENT STYLES
 
 /* line 89, ../scss/_1030up.scss */
 #follow_us_tile ul {
-  -webkit-transition: all 0.3s ease-in-out;
-  -transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   opacity: 0;
 }
 /* line 98, ../scss/_1030up.scss */
@@ -805,15 +805,15 @@ POSTS & CONTENT STYLES
 
 /* line 114, ../scss/_1030up.scss */
 #twitter_feed_tile .twitter-tile-carousel .tweet ul li h2.twitter_handle {
-  -webkit-transition: all 0.3s ease-in-out;
-  -transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 /* line 118, ../scss/_1030up.scss */
 #twitter_feed_tile .twitter-tile-carousel .tweet ul li h4.reply_retweet_favorite {
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.15s ease-in-out;
+  -transition: opacity 0.15s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
   opacity: 0;
   -webkit-backface-visibility: hidden;
   /* Fix for transition flickering */

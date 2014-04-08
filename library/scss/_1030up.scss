@@ -43,7 +43,7 @@ POSTS & CONTENT STYLES
 	}
 
 	h2.gridh2 {
-		@include transition(all 0.3s ease-in-out);
+		@include transition(all 0.15s ease-in-out);
 		opacity: 0;
 		-webkit-transform:scale(1.5);
 		-moz-transform:scale(1.5);
@@ -87,7 +87,7 @@ POSTS & CONTENT STYLES
 	// 	opacity: 0;
 	// }
 	ul {
-		@include transition(all 0.3s ease-in-out);
+		@include transition(all 0.15s ease-in-out);
 		opacity: 0;
 	}
 	&:hover {
@@ -112,11 +112,11 @@ POSTS & CONTENT STYLES
 			    li {
 
 			    	h2.twitter_handle {
-			    		@include transition(all 0.3s ease-in-out);
+			    		@include transition(all 0.15s ease-in-out);
 			    	}
 
 					h4.reply_retweet_favorite {
-						@include transition(opacity 0.3s ease-in-out);
+						@include transition(opacity 0.15s ease-in-out);
 						opacity: 0;
 					    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
 					    backface-visibility: hidden; /* Fix for transition flickering */
