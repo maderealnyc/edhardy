@@ -332,51 +332,28 @@ social links
 POSTS & CONTENT STYLES
 *********************/
 
-body.blog div#inner-content,
-body.archive div#inner-content,
-body.category div#inner-content,
-body.search div#inner-content,
-body.single div#inner-content {
-	background: #fff;
-	color: #000;
-}
+body.blog,
+body.archive,
+body.category,
+body.search,
+body.single {
+	
+	#content {
+		background: #fff;
+		color: #646363;
 
-body.blog div#main,
-body.archive div#main,
-body.category div#main,
-body.search div#main,
-body.single div#main {
-	margin: 30px 0 30px 6.25%;
-	padding: 0;
-	width: 56.25%;
-	max-width: 675px;
+		#main {
+			margin: 30px 0 30px 6.25%;
+			padding: 0;
+			width: 56.25%;
+			max-width: 675px;
 
-	h1 {
-		color: #000; 
-		line-height: 1; 
-		margin: 0 0 20px; 
-		text-transform: uppercase;
-	}
-
-	p {
-		color: #646363; 
-		font-family: arial; 
-		font-size: 15px; 
-		margin-top: 0; 
-	}
-
-	a {
-		color: #c12f1a; text-decoration: none;
-
-		&:hover {
-			 color: #c12f1a; text-decoration: underline;
+			@media screen and (max-width: 768px) {
+				margin: 30px 10%; 
+				padding: 0; 
+				width: auto; 
+			}
 		}
-	}
-
-	@media screen and (max-width: 768px) {
-		margin: 30px 10%; 
-		padding: 0; 
-		width: auto; 
 	}
 }
 
@@ -387,35 +364,66 @@ body.search {
 
 	#main {
 
-		article {
-			border-bottom: 2px dotted #C2C2C2; color: #646363; font-family: arial; font-size: 15px; margin-top: 0; margin-bottom: 30px; padding-bottom: 25px;
+		h1 {
+			color: #c2331c;
+			font-family: "Rockwell W01 Light", serif; 
+			font-size: 12px; 
+			font-weight: bold;
+			margin-top: -22px;
+			text-rendering: optimizelegibility;
+			text-transform: uppercase;
+		}
 
-			h1 { 
-				margin-bottom: 5px; text-transform: uppercase;
+		article {
+			border-bottom: 1px dashed #C2C2C2; 
+			color: #646363; 
+			font-family: arial; 
+			font-size: 15px; 
+			margin-top: 0; 
+			margin-bottom: 30px; 
+			padding-bottom: 25px;
+
+			h2 { 
+				color: #000; 
+				line-height: 1; 
+				margin: 0 0 7px; 
+				text-transform: uppercase;
 
 				a { 
 					color: #000; 
 
 					&:hover {
-						color: #c12f1a; text-decoration: none;
+						color: #c12f1a; 
+						text-decoration: none;
 					}
 				}
 			}
 
 			img { 
-				margin-bottom: 15px; 
-
-				filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'1\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
-				-webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+				margin-bottom: 20px; 
 
 				&:hover {
-					filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
-					filter: gray; /* IE6-9 */
-					-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 				    @include transition(all 0.6s ease);
 				    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
 				    backface-visibility: hidden; /* Fix for transition flickering */
 				    -webkit-perspective: 1000;
+				    opacity: .5;
+				}
+			}
+
+			p {
+				font-family: arial; 
+				font-size: 15px; 
+				margin-top: 0; 
+			}
+
+			a {
+				color: #c12f1a; 
+				text-decoration: none;
+
+				&:hover {
+					 color: #c12f1a; 
+					 text-decoration: underline;
 				}
 			}
 
@@ -434,24 +442,50 @@ body.search {
 
 body.single {
 
-	.rss-subscribe { 
-		border-bottom: 2px dotted #C2C2C2; 
-		font-family: "Rockwell W01", serif; 
-		font-size: 15px; 
-		padding-bottom: 20px; 
-	}
+	#main {
 
-	.post-nav span a { 
-		font-family: "Rockwell W01", serif; 
-		font-size: 15px; 
-	}
+		h1 {
+			color: #000; 
+			line-height: 1; 
+			margin: 0 0 20px; 
+			text-transform: uppercase;
+		}
 
-	.post-nav .link-prev { 
-		float: left; 
-	}
+		p {
+			font-family: arial; 
+			font-size: 15px; 
+			margin-top: 0; 
+		}
 
-	.post-nav .link-next { 
-		float: right; 
+		a {
+			color: #c12f1a; 
+			text-decoration: none;
+
+			&:hover {
+				 color: #c12f1a; 
+				 text-decoration: underline;
+			}
+		}
+
+		.rss-subscribe { 
+			border-bottom: 1px dashed #C2C2C2; 
+			font-family: "Rockwell W01", serif; 
+			font-size: 15px; 
+			padding-bottom: 20px; 
+		}
+
+		.post-nav span a { 
+			font-family: "Rockwell W01", serif; 
+			font-size: 15px; 
+		}
+
+		.post-nav .link-prev { 
+			float: left; 
+		}
+
+		.post-nav .link-next { 
+			float: right; 
+		}
 	}
 }
 
@@ -950,19 +984,19 @@ PAGE NAVI STYLES
                 margin: 0;
                 float: left;
                 display: inline;
+                margin-right: 5px;
                 overflow: hidden;
                 a, span {
                 	background: transparent url('/wp-content/themes/edhardy/library/images/blog/sprite-pagination.png') no-repeat;
                 	color: #D4D4D4 !important; 
-                	display: block;
+                	display: table-cell;
                 	height: 30px; 
                 	line-height: 1;
-                	margin: 0 5px 0 0;
                     padding: 0;
                     font-size: 1em;
                     font-weight: normal;
-                    padding: .5em;
                     text-decoration: none;
+                    vertical-align: middle;
                     width: 29px;
 
                     &:hover {
@@ -974,10 +1008,10 @@ PAGE NAVI STYLES
                 span.current {
                 	background-position: -30px 0; 
                 	color: #c12f1a !important;
-                	font-weight: bold;
                 }
                 a.prev, 
                 a.next { 
+                	display: block !important;
                 	height: 11px; 
                 	margin-top: 10px; 
                 	padding: 0; 
@@ -1305,9 +1339,11 @@ SIDEBARS & ASIDES
 			background-color: #000; 
 			border: none; 
 			color: #a2a2a2; 
-			font-family: "Rockwell W01", serif; 
+			float: left;
+			font-family: "Rockwell W01 Light", serif; 
+			font-size: 15px;
 			outline: none; 
-			padding: 7px; 
+			padding: 11px 7px 7px 7px; 
 			width: 85%; 
 
 			@media screen and (max-width: 790px) {
@@ -1352,11 +1388,13 @@ SIDEBARS & ASIDES
 	}
 
 	.widgettitle {
-		border-bottom: 2px dotted #C2C2C2; 
+		border-bottom: 1px dashed #C2C2C2; 
 		color: #000; 
 		font-family: "Rockwell W01", serif; 
 		font-size: 1.2em; 
+		font-weight: 500;
 		line-height: 1.4em; 
+		text-rendering: optimizelegibility;
 		text-transform: uppercase; 
 	}
 
