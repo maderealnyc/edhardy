@@ -83,7 +83,7 @@
         };
 
         // Set loading
-        this.html('<span>Loading...</span>');
+        this.html('<span></span>');
 
         var that = this;
 
