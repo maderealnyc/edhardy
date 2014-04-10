@@ -20,6 +20,8 @@ Template Name: Homepage Layout 2
 
 				<?php include('footer-video.php'); ?>
 
+				<?php include('instagram-popup.php'); ?>
+
 			</div>
 
 		</div>

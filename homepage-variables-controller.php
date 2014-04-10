@@ -8,7 +8,7 @@
 	<?php // Homepage Layout 1 Tile 1 (Static Image Tile) ?>
 	<?php $hp1_tile_1_bg_image = get_field('hp1_tile_1_bg_image'); ?>
 	<?php if( !empty($hp1_tile_1_bg_image) ): ?>
-		<div class="threecol grid gridbg grayscale clearfix hideme" id="tile_1" style="background-image: url(<?php echo $hp1_tile_1_bg_image['url']; ?>);"></div>
+		<div class="threecol grid gridbg instagram-tile clearfix hideme" id="tile_1" style="background-image: url(<?php echo $hp1_tile_1_bg_image['url']; ?>);"></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 2 (Instagram Tile) ?>
@@ -20,12 +20,12 @@
 	        target: 'instagram_hp_1_tile_2',
 	        sortBy: 'most-recent',
 	        resolution: 'low_resolution',
-	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt="" /></a>',
+        	template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 	        limit: 1
 	    });
 	    instagramHP1Tile2.run();
 	</script>
-	<div class="threecol grid grayscale clearfix hideme" id="instagram_hp_1_tile_2"></div>
+	<div class="threecol grid instagram-tile clearfix hideme"><span data-mfp-src="#instagram-popup" class="instafeed-modal"><a id="instagram_hp_1_tile_2" href="#instagram-2"></a></span></div>
 
 	<?php // Homepage Layout 1 Tile 3 (Instagram Tile) ?>
 	<script type="text/javascript">
@@ -37,7 +37,7 @@
 	        target: 'instagram_hp_1_tile_3',
 	        sortBy: 'most-recent',
 	        resolution: 'low_resolution',
-	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt="" /></a>',
+	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 			success: function() {
 				instagram_hp_1_tile_3_count = 0;
 			},
@@ -47,7 +47,7 @@
 	    });
 	    instagramHP1Tile3.run();
 	</script>
-	<div class="threecol grid grayscale clearfix hideme" id="instagram_hp_1_tile_3"></div>
+	<div class="threecol grid instagram-tile clearfix hideme"><a href="#instagram-2" id="instagram_hp_1_tile_3" data-mfp-src="#instagram-popup" class="instafeed-modal"></a></div>
 
 	<?php // Homepage Layout 1 Tile 4 (Latest News Tile) ?>
 	<?php $hp1_tile_4_bg_image = get_field('latest_news_tile_bg_image'); ?>
@@ -71,7 +71,7 @@
 	        target: 'instagram_hp_1_tile_6',
 	        sortBy: 'most-recent',
 	        resolution: 'low_resolution',
-	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt="" /></a>',
+	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 			success: function() {
 				instagram_hp_1_tile_6_count = 0;
 			},
@@ -81,7 +81,7 @@
 	    });
 	    instagramHP1Tile6.run();
 	</script>
-	<div class="threecol grid grayscale clearfix hideme" id="instagram_hp_1_tile_6"></div>
+	<div class="threecol grid instagram-tile clearfix hideme"><a href="#instagram-popup" id="instagram_hp_1_tile_6" class="instafeed-modal"></a></div>
 
 	<?php // Homepage Layout 1 Tile 7 (Static Image Tile) ?>
 	<?php $hp1_tile_7_bg_image = get_field('hp1_tile_7_bg_image'); ?>
@@ -132,7 +132,7 @@
 	        target: 'instagram_hp_1_tile_12',
 	        sortBy: 'most-recent',
 	        resolution: 'low_resolution',
-	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt="" /></a>',
+	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 			success: function() {
 				instagram_hp_1_tile_12_count = 0;
 			},
@@ -142,7 +142,7 @@
 	    });
 	    instagramHP1Tile12.run();
 	</script>
-	<div class="threecol grid grayscale clearfix" id="instagram_hp_1_tile_12"></div>
+	<div class="threecol grid instagram-tile clearfix"><a href="#instagram-popup" id="instagram_hp_1_tile_12" class="instafeed-modal"></a></div>
 
 <?php endif; ?>
 
@@ -190,12 +190,12 @@
 	        target: 'instagram_hp_2_tile_2',
 	        sortBy: 'most-recent',
 	        resolution: 'low_resolution',
-	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt="" /></a>',
+	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 	        limit: 1
 	    });
 	    instagramHP2Tile2.run();
 	</script>
-	<div class="threecol grid grayscale clearfix" id="instagram_hp_2_tile_2"></div>
+	<div class="threecol grid instagram-tile clearfix"><a href="#instagram-popup" id="instagram_hp_2_tile_2" class="instafeed-modal"></a></div>
 
 	<?php // Homepage Layout 2 Tile 3 (Static Image Tile) ?>
 	<?php $hp2_tile_3_bg_image = get_field('hp2_tile_3_bg_image'); ?>
@@ -319,12 +319,12 @@
 	        target: 'instagram_hp_3_tile_5',
 	        sortBy: 'most-recent',
 	        resolution: 'low_resolution',
-	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" alt="" /></a>',
+	        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
 	        limit: 1
 	    });
 	    instagramHP3Tile5.run();
 	</script>
-	<div class="threecol grid grayscale clearfix" id="instagram_hp_3_tile_5"></div>
+	<div class="threecol grid instagram-tile clearfix"><a href="#instagram-popup" id="instagram_hp_3_tile_5" class="instafeed-modal"></a></div>
 
 <?php endif; ?>
 

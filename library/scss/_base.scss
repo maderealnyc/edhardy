@@ -800,6 +800,17 @@ body.single {
 	}
 }
 
+.instagram-tile {
+	&:hover {
+		background: #be2e1a url('/wp-content/themes/edhardy/library/images/home/instagram-tile-hover.png') no-repeat center;
+
+		img {
+			opacity: 0.3;
+			filter: alpha(opacity=30);
+		}
+	}
+}
+
 #twitter_feed_tile {
 
 	.twitter-tile-carousel {
