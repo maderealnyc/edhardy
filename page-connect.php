@@ -25,12 +25,18 @@ Template Name: Connect Template
 				        clientId: 'f3b5503d3d114e28991618cc5e64815d',
 				        target: 'connect_tiles',
 				        resolution: 'low_resolution',
-				        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
+				        template: '<a href="{{link}}" target="_blank"><img src="{{image}}" data-instagram-id="{{id}}" /></a>',
+						filter: function(image) {
+							if (image.id === '695634921347231249_232954234') {
+								return false;
+							} else {
+								return true;
+							}
+						}
 				    });
 				    connectFeed.run();
 				</script>
 				<div id="connect_tiles"></div>
-
 			</div>
 
 		</div>
