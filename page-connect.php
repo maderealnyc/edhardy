@@ -12,12 +12,13 @@ Template Name: Connect Template
 		z-index: 999;
 		width: 600px;
 		height: 300px;
+		margin: 0px auto;
+		text-align: center;
+		left: 50%;
+		margin-left: -300px;
 		background-color: rgba(0,0,0,0.78);
 		opacity: 0.78;
 		filter: alpha(opacity=78);
-
-		margin: 0px auto;
-		text-align: center;
 	}
 
 	#connect_tiles img {
