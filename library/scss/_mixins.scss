@@ -78,9 +78,9 @@ TYPOGRAPHY
 
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
-$rw:      			"Rockwell W01", serif;
-$rw-bold:      		"Rockwell W01 Bold", serif;
-$rw-light:      	"Rockwell W01 Light", serif;
+$rw:      			"Rockwell Std", serif;
+$rw-bold:      		"Rockwell Std Bold", serif;
+$rw-light:      	"Rockwell Std Light", serif;
 
 
 /* 	To embed your own fonts, use this syntax
@@ -90,6 +90,42 @@ $rw-light:      	"Rockwell W01 Light", serif;
 	http://www.fontsquirrel.com/
 	Be sure to remove the comment brackets.
 */
+
+@font-face {
+  font-family: 'Rockwell Std';
+  src: url('/wp-content/themes/edhardy/library/fonts/RockwellStd.eot'); /* IE9 Compat Modes */
+  src: url('/wp-content/themes/edhardy/library/fonts/RockwellStd.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/wp-content/themes/edhardy/library/fonts/RockwellStd.woff') format('woff'), /* Modern Browsers */
+       url('/wp-content/themes/edhardy/library/fonts/RockwellStd.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/wp-content/themes/edhardy/library/fonts/RockwellStd.svg#5b3b76b3d6dc41019fa81ab49344d872') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Rockwell Std Light';
+  src: url('/wp-content/themes/edhardy/library/fonts/RockwellStd-Light.eot'); /* IE9 Compat Modes */
+  src: url('/wp-content/themes/edhardy/library/fonts/RockwellStd-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/wp-content/themes/edhardy/library/fonts/RockwellStd-Light.woff') format('woff'), /* Modern Browsers */
+       url('/wp-content/themes/edhardy/library/fonts/RockwellStd-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/wp-content/themes/edhardy/library/fonts/RockwellStd-Light.svg#6cad18060702688d5a08740c6f749592') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+  
+@font-face {
+  font-family: 'Rockwell Std Bold';
+  src: url('/wp-content/themes/edhardy/library/fonts/RockwellStd-Bold.eot'); /* IE9 Compat Modes */
+  src: url('/wp-content/themes/edhardy/library/fonts/RockwellStd-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/wp-content/themes/edhardy/library/fonts/RockwellStd-Bold.woff') format('woff'), /* Modern Browsers */
+       url('/wp-content/themes/edhardy/library/fonts/RockwellStd-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/wp-content/themes/edhardy/library/fonts/RockwellStd-Bold.svg#9d80a877711fd1aaa53360958f9f424a') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
 
 /*	@font-face {
     	font-family: 'Font Name';

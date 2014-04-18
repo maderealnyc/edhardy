@@ -17,6 +17,7 @@ GENERAL STYLES
 
 html {
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -25,6 +26,13 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: #FFF;
+
+	::selection { 
+		background: #bc2d18;
+	}
+	::-moz-selection { 
+		background: #bc2d18;
+	}
 }
 
 img, video, object {
@@ -172,6 +180,7 @@ HEADER STYLES
 	#logo {
 		background: url(../images/sprite-logo.png) no-repeat;
 		display: block;
+		color: transparent;
 		width: 171px;
 		height: 34px;
 		margin: 14px auto;
@@ -283,6 +292,7 @@ social links
 		li.instagram a,
 		li.pinterest a {
 			background: url(../images/sprite-social.png) no-repeat;
+			color: transparent;
 			display: block;
 			height: 17px;
 			padding: 0;
@@ -366,7 +376,7 @@ body.search {
 
 		h1 {
 			color: #c2331c;
-			font-family: "Rockwell W01 Light", serif; 
+			font-family: $rw-light; 
 			font-size: 12px; 
 			font-weight: bold;
 			margin-top: -22px;
@@ -401,9 +411,14 @@ body.search {
 
 			img { 
 				margin-bottom: 20px; 
+				opacity: 1;
+				transition: opacity .25s ease-in-out;
+				-moz-transition: opacity .25s ease-in-out;
+				-webkit-transition: opacity .25s ease-in-out;
+				-webkit-backface-visibility: hidden; /* Fix for transition flickering */
+			    backface-visibility: hidden; /* Fix for transition flickering */
 
 				&:hover {
-				    @include transition(all 0.6s ease);
 				    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
 				    backface-visibility: hidden; /* Fix for transition flickering */
 				    -webkit-perspective: 1000;
@@ -422,8 +437,7 @@ body.search {
 				text-decoration: none;
 
 				&:hover {
-					 color: #c12f1a; 
-					 text-decoration: underline;
+					 color: #d85240; 
 				}
 			}
 
@@ -433,7 +447,6 @@ body.search {
 				text-transform: capitalize; 
 
 				&:hover {
-					text-decoration: underline;
 				}
 			}
 		}
@@ -462,20 +475,19 @@ body.single {
 			text-decoration: none;
 
 			&:hover {
-				 color: #c12f1a; 
-				 text-decoration: underline;
+				 color: #d85240; 
 			}
 		}
 
 		.rss-subscribe { 
 			border-bottom: 1px dashed #C2C2C2; 
-			font-family: "Rockwell W01", serif; 
+			font-family: $rw; 
 			font-size: 15px; 
 			padding-bottom: 20px; 
 		}
 
 		.post-nav span a { 
-			font-family: "Rockwell W01", serif; 
+			font-family: $rw; 
 			font-size: 15px; 
 		}
 
@@ -800,7 +812,7 @@ body.single {
 	}
 }
 
-.instagram-tile {
+/* .instagram-tile {
 	&:hover {
 		background: #be2e1a url('/wp-content/themes/edhardy/library/images/home/instagram-tile-hover.png') no-repeat center;
 
@@ -809,7 +821,7 @@ body.single {
 			filter: alpha(opacity=30);
 		}
 	}
-}
+} */
 
 #twitter_feed_tile {
 
@@ -851,7 +863,7 @@ body.single {
 
 				    p.the_tweet {
 						color: #bbb;
-						font-family: "Rockwell W01", serif;
+						font-family: $rw;
 						font-size: 0.97em;
 						line-height: 1.2;
 					    text-align: center;
@@ -1003,11 +1015,10 @@ PAGE NAVI STYLES
                 	display: table-cell;
                 	height: 30px; 
                 	line-height: 1;
-                    padding: 0;
+                    padding-top: 9px;
                     font-size: 1em;
                     font-weight: normal;
                     text-decoration: none;
-                    vertical-align: middle;
                     width: 29px;
 
                     &:hover {
@@ -1351,8 +1362,9 @@ SIDEBARS & ASIDES
 			border: none; 
 			color: #a2a2a2; 
 			float: left;
-			font-family: "Rockwell W01 Light", serif; 
+			font-family: $rw-light; 
 			font-size: 15px;
+			height: 36px;
 			outline: none; 
 			padding: 11px 7px 7px 7px; 
 			width: 85%; 
@@ -1375,13 +1387,29 @@ SIDEBARS & ASIDES
 		   color: #a2a2a2;  
 		}
 
+		:focus::-webkit-input-placeholder {
+		   text-indent: -999px;
+		}
+		:focus:-moz-placeholder { /* Firefox 18- */
+		   text-indent: -999px;  
+		}
+		:focus::-moz-placeholder {  /* Firefox 19+ */
+		   text-indent: -999px;  
+		}
+		:focus:-ms-input-placeholder {  
+		   text-indent: -999px;  
+		}
+
+
+
 		#searchsubmit { 
 			background: #000 url('/wp-content/themes/edhardy/library/images/blog/icon-search.png') no-repeat 10px center; 
 			border: none; 
+			height: 36px;
 			margin: 0 0 0 -4px; 
 			min-width: 26px; 
 			outline: none; 
-			padding: 7px; 
+			padding: 10px 7px 7px 7px; 
 			text-indent: -9999px;  
 			width: 15%; 
 
@@ -1401,7 +1429,7 @@ SIDEBARS & ASIDES
 	.widgettitle {
 		border-bottom: 1px dashed #C2C2C2; 
 		color: #000; 
-		font-family: "Rockwell W01", serif; 
+		font-family: $rw; 
 		font-size: 1.2em; 
 		font-weight: 500;
 		line-height: 1.4em; 
@@ -1418,6 +1446,7 @@ SIDEBARS & ASIDES
 
 			li {
 				color: #7a7a7a;
+				margin-bottom: 10px;
 
 				&:first-child {}
 
@@ -1425,7 +1454,7 @@ SIDEBARS & ASIDES
 
 				a { 
 					color: #7a7a7a; 
-					font-family: "Rockwell W01", serif; 
+					font-family: $rw; 
 					font-size: 15px; 
 					text-decoration: none; 
 

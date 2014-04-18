@@ -204,6 +204,10 @@ function new_royalslider_add_custom_skin($skins) {
            'label' => 'Tiles',
            'path' => get_stylesheet_directory_uri() . '/royalslider/tiles/tiles.css'
       );
+      $skins['instagram'] = array(
+           'label' => 'Instagram',
+           'path' => get_stylesheet_directory_uri() . '/royalslider/instagram/instagram.css'
+      );
       return $skins;
 }
 

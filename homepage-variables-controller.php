@@ -8,7 +8,7 @@
 	<?php // Homepage Layout 1 Tile 1 (Static Image Tile) ?>
 	<?php $hp1_tile_1_bg_image = get_field('hp1_tile_1_bg_image'); ?>
 	<?php if( !empty($hp1_tile_1_bg_image) ): ?>
-		<div class="threecol grid gridbg instagram-tile clearfix hideme" id="tile_1" style="background-image: url(<?php echo $hp1_tile_1_bg_image['url']; ?>);"></div>
+		<div class="threecol grid gridbg grayscale instagram-tile clearfix hideme" id="tile_1" style="background-image: url(<?php echo $hp1_tile_1_bg_image['url']; ?>);"></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 2 (Instagram Tile) ?>
@@ -25,7 +25,7 @@
 	    });
 	    instagramHP1Tile2.run();
 	</script>
-	<div class="threecol grid instagram-tile clearfix hideme"><span data-mfp-src="#instagram-popup" class="instafeed-modal"><a id="instagram_hp_1_tile_2" href="#instagram-2"></a></span></div>
+	<div class="threecol grid grayscale instagram-tile clearfix hideme"><a id="instagram_hp_1_tile_2" href="#instagram-popup" data-mfp-src="#instagram-popup" class="instafeed-modal"></a></span></div>
 
 	<?php // Homepage Layout 1 Tile 3 (Instagram Tile) ?>
 	<script type="text/javascript">
@@ -47,7 +47,7 @@
 	    });
 	    instagramHP1Tile3.run();
 	</script>
-	<div class="threecol grid instagram-tile clearfix hideme"><a href="#instagram-2" id="instagram_hp_1_tile_3" data-mfp-src="#instagram-popup" class="instafeed-modal"></a></div>
+	<div class="threecol grid grayscale instagram-tile clearfix hideme"><a href="#instagram-2" id="instagram_hp_1_tile_3" data-mfp-src="#instagram-popup" class="instafeed-modal ig-tile-2" alt="ig-tile-2"></a></div>
 
 	<?php // Homepage Layout 1 Tile 4 (Latest News Tile) ?>
 	<?php $hp1_tile_4_bg_image = get_field('latest_news_tile_bg_image'); ?>
@@ -81,7 +81,7 @@
 	    });
 	    instagramHP1Tile6.run();
 	</script>
-	<div class="threecol grid instagram-tile clearfix hideme"><a href="#instagram-popup" id="instagram_hp_1_tile_6" class="instafeed-modal"></a></div>
+	<div class="threecol grid grayscale instagram-tile clearfix hideme"><a href="#instagram-popup" id="instagram_hp_1_tile_6" data-mfp-src="#instagram-popup" class="instafeed-modal ig-tile-3" alt="ig-tile-3"></a></div>
 
 	<?php // Homepage Layout 1 Tile 7 (Static Image Tile) ?>
 	<?php $hp1_tile_7_bg_image = get_field('hp1_tile_7_bg_image'); ?>
@@ -142,7 +142,7 @@
 	    });
 	    instagramHP1Tile12.run();
 	</script>
-	<div class="threecol grid instagram-tile clearfix"><a href="#instagram-popup" id="instagram_hp_1_tile_12" class="instafeed-modal"></a></div>
+	<div class="threecol grid instagram-tile clearfix"><a href="#instagram-popup" id="instagram_hp_1_tile_12" class="instafeed-modal ig-tile-4" alt="ig-tile-4"></a></div>
 
 <?php endif; ?>
 

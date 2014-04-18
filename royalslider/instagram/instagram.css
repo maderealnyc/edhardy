@@ -1,0 +1,199 @@
+/******************************
+*
+*  RoyalSlider Lookbook Skin 
+* 
+******************************/
+
+/***************
+*
+*  Custom Styles
+*
+****************/
+#instagram-popup { 
+	margin: -50px auto 0;
+	max-width: 600px;
+	width: 100%;
+}
+
+#instagram-popup header h3 { 
+	float: left; 
+	font-family: "Rockwell Std Bold", serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+}
+
+#instagram-popup header a { 
+	color: #c12f1a;
+	float: right; 
+	font-family: arial;
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+#instagram-popup header a:hover { 
+	color: #d85240;
+}
+
+#instagram-popup .instagram { 
+	margin: 0 auto;
+	width: 600px;
+}
+
+#instagram-popup .mfp-close {
+	display: none;
+}
+
+/***************
+*
+*  Thumbs
+*
+****************/
+#instagram-popup .rsThumbsHor {
+	width: 100%;
+	height: 110px;
+}
+
+#instagram-popup .rsWithThumbsHor .rsThumbsContainer {
+	position: relative;
+	height: 100%;
+	margin-left: 140px;
+}
+
+#instagram-popup .rsThumb {
+	float: left;
+	overflow: hidden;
+	width: 110px;
+	height: 110px;
+}
+
+#instagram-popup .rsThumb img {
+	width: 100%;
+	height: 100%;
+}
+
+#instagram-popup .rsTmb {
+	display: block;
+}
+
+/* Thumbnails arrow icons */
+#instagram-popup .rsThumbsArrow {
+	height: 100%;
+	width: 20px;
+	position: absolute;
+	display: block;
+	cursor: pointer;	
+	z-index: 21;	
+	background: #000;
+	background: rgba(0,0,0,0.75);
+}
+#instagram-popup .rsThumbsArrow:hover {
+	background: rgba(0,0,0,0.9);
+}
+#instagram-popup .rsWithThumbsVer .rsThumbsArrow {
+	width: 100%;
+	height: 20px;
+}
+#instagram-popup .rsWithThumbsVer .rsThumbsArrowLeft { top: 0; left: 0; }
+#instagram-popup .rsWithThumbsVer .rsThumbsArrowRight { bottom: 0;  left: 0; }
+
+#instagram-popup .rsWithThumbsHor .rsThumbsArrowLeft { left: 0; top: 0; }
+#instagram-popup .rsWithThumbsHor .rsThumbsArrowRight { right: 0; top:0; }
+
+#instagram-popup .rsThumbsArrowIcn {		
+	width: 16px;
+	height: 16px;
+	top: 50%;
+	left: 50%;
+	margin-top:-8px;	
+	margin-left: -8px;
+	position: absolute;	
+	cursor: pointer;	
+	background: url('rs-default.png');
+}
+
+#instagram-popup .rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -128px -32px; }
+#instagram-popup .rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -128px -48px; }
+
+#instagram-popup .rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -144px -32px; }
+#instagram-popup .rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -144px -48px; }
+
+#instagram-popup .rsThumbsArrowDisabled { display: none !important; }
+
+
+#instagram-popup #navThumbs { 
+	display: block !important;
+	/* float: left;
+	height: 100%;
+	margin: 0 0 0 -7.5px;
+	max-width: 615px;
+	padding: 15px 0;
+	width: 615px; */
+}
+
+
+/* #instagram-popup .rsThumbsContainer {
+	height: 233px;
+	overflow: hidden;
+	position: relative !important;
+	width: 615px !important;
+	-webkit-transition: none !important;
+	-webkit-transform: none !important;
+}  */
+
+#instagram-popup .rsThumb {
+	/* margin: 0 7.5px 15px; */
+}
+
+#instagram-popup .rsThumb.rsThumb:hover {
+	background: #be2e1a url('cross-hover.png') no-repeat center;
+}
+#instagram-popup .rsThumb.rsThumb:hover img {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
+
+
+/***************
+*
+*  Arrows
+*
+****************/
+#instagram-popup .rsArrow {
+	height: 100%;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+}
+
+#instagram-popup .rsHor .rsArrowLeft { 
+	left: -50px; 
+	top: 0; 
+}
+#instagram-popup .rsHor .rsArrowRight { 
+	right: -50px; 
+	top:0; 
+}
+		
+#instagram-popup .rsArrowIcn {		
+	height: 67px;
+	top: 50%;
+	left: 50%;
+	margin-top: -16px;	
+	margin-left: -16px;
+	position: absolute;	
+	cursor: pointer;	
+	background: url('sprite-arrows.png');
+}
+
+#instagram-popup .rsHor .rsArrowLeft .rsArrowIcn { background-position: 0 0; width: 34px; }
+#instagram-popup .rsHor .rsArrowRight .rsArrowIcn { background-position: -35px 0; width: 50px; }
+
+#instagram-popup .rsArrowDisabled .rsArrowIcn { 
+	opacity: .2; filter: alpha(opacity=20);  
+	*display: none; 
+}

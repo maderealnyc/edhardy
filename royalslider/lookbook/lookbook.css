@@ -49,34 +49,34 @@
 *  Thumbs
 *
 ****************/
-#navThumbs { 
+.page-template-page-lookbook-php #navThumbs { 
 	float: none;
 	margin: -100px auto 0;
 	max-width: 945px;
 	padding: 25px;
 }
 
-.rsThumbsContainer {
+.page-template-page-lookbook-php .rsThumbsContainer {
 	position: relative !important;
 	width: 945px !important;
 	-webkit-transition: none !important;
 	-webkit-transform: none !important;
 }
 
-.rsThumb {
+.page-template-page-lookbook-php .rsThumb {
 	height: 243px;
 	margin: 0 10px 20px;
 }
 
-.rsThumb.rsThumb:hover {
+.page-template-page-lookbook-php .rsThumb.rsThumb:hover {
 	background: #be2e1a;
 }
-.rsThumb.rsThumb:hover img {
+.page-template-page-lookbook-php .rsThumb.rsThumb:hover img {
 	opacity: 0.3;
 	filter: alpha(opacity=30);
 }
 
-.rsTmb img { 
+.page-template-page-lookbook-php .rsTmb img { 
 	height: 243px;
 }
 
@@ -86,7 +86,7 @@
 *  Arrows
 *
 ****************/
-.rsArrow {
+.lookbook .rsArrow {
 	height: 100%;
 	width: 44px;
 	position: absolute;
@@ -94,27 +94,27 @@
 	cursor: pointer;
 	z-index: 21;
 }
-.rsVer .rsArrow {
+.lookbook .rsVer .rsArrow {
 	width: 100%;
 	height: 44px;
 }
-.rsVer .rsArrowLeft { 
+.lookbook .rsVer .rsArrowLeft { 
 	left: 0;
 	top: 0;  
 }
-.rsVer .rsArrowRight { 
+.lookbook .rsVer .rsArrowRight { 
 	bottom: 0; 
 	left: 0; 
 }
-.rsHor .rsArrowLeft { 
+.lookbook .rsHor .rsArrowLeft { 
 	left: 0; 
 	top: 0; 
 }
-.rsHor .rsArrowRight { 
+.lookbook .rsHor .rsArrowRight { 
 	right: 0; 
 	top:0; 
 }
-.rsArrowIcn {		
+.lookbook .rsArrowIcn {		
 	width: 23px;
 	height: 52px;
 	top: 50%;
@@ -126,12 +126,12 @@
 	background: url('sprite-arrows.png');
 }
 
-.rsHor .rsArrowLeft .rsArrowIcn { background-position: 0 0; }
-.rsHor .rsArrowRight .rsArrowIcn { background-position: -52px 0; }
-.rsVer .rsArrowLeft .rsArrowIcn { background-position: - -32px; }
-.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -52px; }
+.lookbook .rsHor .rsArrowLeft .rsArrowIcn { background-position: 0 0; }
+.lookbook .rsHor .rsArrowRight .rsArrowIcn { background-position: -52px 0; }
+.lookbook .rsVer .rsArrowLeft .rsArrowIcn { background-position: - -32px; }
+.lookbook .rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -52px; }
 
-.rsArrowDisabled .rsArrowIcn { 
+.lookbook .rsArrowDisabled .rsArrowIcn { 
 	opacity: .2; filter: alpha(opacity=20);  
 	*display: none; 
 }
