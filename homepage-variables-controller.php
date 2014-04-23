@@ -25,7 +25,7 @@
 	    });
 	    instagramHP1Tile2.run();
 	</script>
-	<div class="threecol grid grayscale instagram-tile clearfix hideme"><a id="instagram_hp_1_tile_2" href="#instagram-popup" data-mfp-src="#instagram-popup" class="instafeed-modal"></a></span></div>
+	<div class="threecol grid grayscale instagram-tile clearfix hideme"><a id="instagram_hp_1_tile_2" href="#instagram-popup" data-mfp-src="#instagram-popup" class="instafeed-modal ig-tile-1" alt="ig-tile-1"></a></div>
 
 	<?php // Homepage Layout 1 Tile 3 (Instagram Tile) ?>
 	<script type="text/javascript">
@@ -47,12 +47,12 @@
 	    });
 	    instagramHP1Tile3.run();
 	</script>
-	<div class="threecol grid grayscale instagram-tile clearfix hideme"><a href="#instagram-2" id="instagram_hp_1_tile_3" data-mfp-src="#instagram-popup" class="instafeed-modal ig-tile-2" alt="ig-tile-2"></a></div>
+	<div class="threecol grid grayscale instagram-tile clearfix hideme"><a id="instagram_hp_1_tile_3" href="#" data-mfp-src="#instagram-popup" class="instafeed-modal ig-tile-2" alt="ig-tile-2"></a></div>
 
 	<?php // Homepage Layout 1 Tile 4 (Latest News Tile) ?>
 	<?php $hp1_tile_4_bg_image = get_field('latest_news_tile_bg_image'); ?>
 	<?php if( !empty($hp1_tile_4_bg_image) ): ?>
-		<div class="threecol grid gridbg grayscale clearfix" id="tile_4" style="background-image: url(<?php echo $hp1_tile_4_bg_image['url']; ?>);"><a class="newsletter-tile" href="#newsletter-popup"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
+		<div class="threecol grid gridbg grayscale clearfix" id="tile_4" style="background-image: url(<?php echo $hp1_tile_4_bg_image['url']; ?>);"><a href="/blog"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 1 Tile 5 (Lookbook Tile) ?>
@@ -244,7 +244,7 @@
 	<?php // Homepage Layout 2 Tile 8 (Latest News Tile) ?>
 	<?php $hp2_tile_8_bg_image = get_field('latest_news_tile_bg_image'); ?>
 	<?php if( !empty($hp2_tile_8_bg_image) ): ?>
-		<div class="threecol grid gridbg grayscale clearfix" id="tile_8" style="background-image: url(<?php echo $hp2_tile_8_bg_image['url']; ?>);"><a class="newsletter-tile" href="#newsletter-popup"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
+		<div class="threecol grid gridbg grayscale clearfix" id="tile_8" style="background-image: url(<?php echo $hp2_tile_8_bg_image['url']; ?>);"><a href="/blog"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
 	<?php endif; ?>
 
 <?php endif; ?>
@@ -307,7 +307,7 @@
 	<?php // Homepage Layout 3 Tile 4 (Latest News Tile) ?>
 	<?php $hp3_tile_4_bg_image = get_field('latest_news_tile_bg_image'); ?>
 	<?php if( !empty($hp3_tile_4_bg_image) ): ?>
-		<div class="threecol grid gridbg grayscale clearfix" id="tile_4" style="background-image: url(<?php echo $hp3_tile_4_bg_image['url']; ?>);"><a class="newsletter-tile" href="#newsletter-popup"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
+		<div class="threecol grid gridbg grayscale clearfix" id="tile_4" style="background-image: url(<?php echo $hp3_tile_4_bg_image['url']; ?>);"><a href="/blog"><h2 class="gridh2">Latest <strong>News</strong></h2></a></div>
 	<?php endif; ?>
 
 	<?php // Homepage Layout 3 Tile 5 (Instagram Tile) ?>
